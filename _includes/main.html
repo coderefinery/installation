@@ -1,0 +1,32 @@
+{% assign os = page.name | replace: ".md","" %}
+
+{% if os == 'linux' %}
+    {% assign collection = site.linux %}
+{% else if os == 'windows' %}
+    {% assign collection = site.windows %}
+{% else if os == 'osx' %}
+    {% assign collection = site.osx %}
+{% endif %}
+
+<h1>Installation instructions for {{ page.title }}</h1>
+
+<div class="row">
+    <div class="col-md-12">
+        <ul>
+            {% for x in collection %}
+                <li><a href="#{{ x.title | lowercase | replace: " ","-" }}">{{ x.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        {% for x in collection %}
+            <br>
+            <br>
+            <h2 id="{{ x.title | lowercase | replace: " ","-" }}">{{ x.title }}</h2>
+            {{ x }}
+        {% endfor %}
+    </div>
+</div>

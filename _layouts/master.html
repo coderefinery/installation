@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    {% include navigation.html %}
+                    {{ page.content | markdownify }}
+                </div>
+            </div>
+            {% if page.include %}
+                {% include {{ page.include }}.html %}
+            {% endif %}
+        </div>
+        {% include js.html %}
+    </body>
+</html>
