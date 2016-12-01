@@ -18,7 +18,7 @@ Add Markdown files to the directories:
 ```
 _linux
 _osx
-_windows
+_win
 ```
 
 The files in these directories are rendered in the alphabetical order.

@@ -58,7 +58,7 @@ include: ['_pages']
 collections:
   linux:
     output: false
-  windows:
+  win:
     output: false
   osx:
     output: false
