@@ -62,3 +62,12 @@ collections:
     output: false
   osx:
     output: false
+
+# https://github.com/jekyll/jekyll/issues/302
+permalink: pretty
+defaults:
+  -
+    scope:
+      type: "pages"
+    values:
+      permalink: /:path/:basename/
