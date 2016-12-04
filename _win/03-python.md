@@ -26,6 +26,9 @@ We will use the following Python packages in the CodeRefinery exercises:
 - matplotlib
 - pandas
 - jupyter
+- sphinx
+- pytest
+- pep8
  
 If you have installed a new Python environment via Anaconda, you will already have all these packages installed on your system. 
 
@@ -65,4 +68,3 @@ jupyter notebook
 ```
 
 and see if it opens up a new tab in your browser showing the Jupyter dashboard.
-

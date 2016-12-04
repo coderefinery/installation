@@ -47,6 +47,9 @@ We will use the following Python packages in the CodeRefinery exercises:
 - matplotlib
 - pandas
 - jupyter
+- sphinx
+- pytest
+- pep8
  
 If you have installed a new Python environment via Anaconda, you will already have all these packages installed on your system. 
 
