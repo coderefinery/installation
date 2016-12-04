@@ -3,6 +3,9 @@ layout: master
 permalink: /
 ---
 
-# Title
+# CodeRefinery workshop software installation instructions
 
-Write me.
+Please follow the instructions for your operating system.
+
+Corrections and contributions to the
+[repository](https://github.com/coderefinery/installation) are most welcome.
