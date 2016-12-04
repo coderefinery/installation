@@ -1,10 +1,25 @@
-<br>
-<br>
-<br>
+{% assign os = page.name | replace: ".md","" %}
 
-<h2><a href="{{ site.baseurl }}/linux/">Linux</a> |
-    <a href="{{ site.baseurl }}/win/">Windows</a> |
-    <a href="{{ site.baseurl }}/osx/">Mac OS X</a></h2>
-
-
-<a href="{{ site.baseurl }}/license/">License and credit</a>
+<ul class="nav nav-pills">
+    {% if os == 'linux' %}
+        <li class="active">
+    {% else %}
+        <li>
+    {% endif %}
+        <a href="{{ site.baseurl }}/linux/">Linux</a>
+    </li>
+    {% if os == 'win' %}
+        <li class="active">
+    {% else %}
+        <li>
+    {% endif %}
+        <a href="{{ site.baseurl }}/win/">Windows</a>
+    </li>
+    {% if os == 'osx' %}
+        <li class="active">
+    {% else %}
+        <li>
+    {% endif %}
+        <a href="{{ site.baseurl }}/osx/">Mac OS X</a>
+    </li>
+</ul>
