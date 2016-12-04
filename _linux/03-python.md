@@ -24,20 +24,20 @@ is to use the virtualenv (virtual environment) tool, see the documentation
 [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/). You first need
 to install the virtualenv package into your root python by:
 
-```bash
+```shell
 sudo pip install virtualenv
 ```
 
 Then create a virtual environment by:
 
-```bash
+```shell
 virtualenv -p python2.7 venv
 ```
 
 (replacing `python2.7` with the correct name of your python2.7 if necessary)
 and then type
 
-```bash
+```shell
 source venv/bin/activate
 ```
 
@@ -65,7 +65,7 @@ have all these packages installed on your system.
 If you installed Miniconda, you can install the required packages via the conda
 package manager:
 
-```bash
+```shell
 conda install <package-name>
 ```
 
@@ -73,7 +73,7 @@ If you're using virtualenv, and you have activated it with `source
 $HOME/venv/bin/activate`, your `pip` should be the one located in
 `$HOME/venv/bin/` and you can type
 
-```bash
+```shell
 pip install <package-name>
 ```
 
@@ -89,18 +89,18 @@ test your Anaconda/Miniconda installation by opening a new terminal (or type
 `source .bash_profile` in the terminal session in which you installed
 Anaconda/Miniconda), and type:
 
-```bash
+```shell
 $ python --version
 ```
 If your installation was successful, this should return something like
 
-```bash
+```shell
 Python 2.7.12 :: Continuum Analytics, Inc.
 ```
 
 To check if you can successfully import a specific package, you can type
 
-```bash
+```shell
 python -c "import <package-name>"
 ```
 
@@ -108,7 +108,7 @@ and ascertain that you do not get an ImportError.
 
 To see whether Jupyter is working as it should, type the command
 
-```bash
+```shell
 jupyter notebook
 ```
 

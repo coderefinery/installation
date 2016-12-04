@@ -39,7 +39,7 @@ have all these packages installed on your system.
 If you installed Miniconda, you can install the required packages via the conda
 package manager:
 
-```bash
+```shell
 conda install <package-name>
 ```
 
@@ -49,18 +49,18 @@ conda install <package-name>
 
 In the Command Prompt, type:
 
-```bash
+```shell
 $ python --version
 ```
 If your installation was successful, this should return something like
 
-```bash
+```shell
 Python 2.7.12 :: Continuum Analytics, Inc.
 ```
 
 To check if you can successfully import a specific package, you can type
 
-```bash
+```shell
 python -c "import <package-name>"
 ```
 
@@ -70,7 +70,7 @@ The Jupyter Notebook App can be launched by clicking on the Jupyter Notebook
 icon installed by Anaconda in the start menu, or by typing on the Start -
 Command Prompt:
 
-```bash
+```shell
 jupyter notebook
 ```
 
