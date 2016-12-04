@@ -59,7 +59,7 @@ conda install <package-name>
 If you're using virtualenv, and you have activated it with `source $HOME/venv/bin/activate`, your `pip` should be the one located in `$HOME/venv/bin/` and you can type
 
 ```bash
-pip install <package-name^
+pip install <package-name>
 ```
 
 If you want to install system-wide, simply use the above command using your root `pip` version.
