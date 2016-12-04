@@ -100,9 +100,9 @@ To check if you can successfully import a specific package, you can type
 $ python -c "import <package-name>"
 ```
 
-and ascertain that you do not get an ImportError.
+and verify that you do not get an ImportError.
 
-To see whether Jupyter is working as it should, type the command
+To see whether Jupyter is working as expected, type the command
 
 ```shell
 $ jupyter notebook
