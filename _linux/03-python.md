@@ -25,20 +25,20 @@ is to use the virtualenv (virtual environment) tool, see the documentation
 to install the virtualenv package into your root python by:
 
 ```shell
-sudo pip install virtualenv
+$ sudo pip install virtualenv
 ```
 
 Then create a virtual environment by:
 
 ```shell
-virtualenv -p python2.7 venv
+$ virtualenv -p python2.7 venv
 ```
 
 (replacing `python2.7` with the correct name of your python2.7 if necessary)
 and then type
 
 ```shell
-source venv/bin/activate
+$ source venv/bin/activate
 ```
 
 If you really want to install all packages we will use during the course in a
@@ -66,7 +66,7 @@ If you installed Miniconda, you can install the required packages via the conda
 package manager:
 
 ```shell
-conda install <package-name>
+$ conda install <package-name>
 ```
 
 If you're using virtualenv, and you have activated it with `source
@@ -74,7 +74,7 @@ $HOME/venv/bin/activate`, your `pip` should be the one located in
 `$HOME/venv/bin/` and you can type
 
 ```shell
-pip install <package-name>
+$ pip install <package-name>
 ```
 
 If you want to install system-wide, simply use the above command using your root `pip` version.
@@ -101,7 +101,7 @@ Python 2.7.12 :: Continuum Analytics, Inc.
 To check if you can successfully import a specific package, you can type
 
 ```shell
-python -c "import <package-name>"
+$ python -c "import <package-name>"
 ```
 
 and ascertain that you do not get an ImportError.
@@ -109,7 +109,7 @@ and ascertain that you do not get an ImportError.
 To see whether Jupyter is working as it should, type the command
 
 ```shell
-jupyter notebook
+$ jupyter notebook
 ```
 
 and see if it opens up a new tab in your browser showing the Jupyter dashboard.
