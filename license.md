@@ -9,7 +9,9 @@ work by [Software Carpentry](http://software-carpentry.org) which is licensed un
 [Creative Commons Attribution license (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
 In particular, we have copied a number of instructions from the [workshop
-template website](https://swcarpentry.github.io/workshop-template/), as well as copied and adapted
+template website](https://swcarpentry.github.io/workshop-template/)
+(instructions to install Bash, Python on Windows, and Git on Windows),
+as well as copied and adapted
 most of their [license text](http://software-carpentry.org/license/).
 
 
