@@ -2,7 +2,7 @@
 title: Bash
 ---
 
-See the [video tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
+Watch the [video tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
 (copyright Software Carpentry).
 
 First download the [Git for Windows installer](https://git-for-windows.github.io).
