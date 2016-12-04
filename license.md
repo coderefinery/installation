@@ -15,8 +15,6 @@ most of their [license text](http://software-carpentry.org/license/).
 
 ## Instructional Material
 
-<img src="/assets/img/creative-commons-attribution-license.png" alt="CC BY 4.0 icon" style="width:100px;" />
-
 All CodeRefinery instructional material is made available under the
 [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/).
 The following is a human-readable summary of (and not a substitute for)
@@ -52,8 +50,6 @@ With the understanding that:
 
 
 ## Software
-
-<img src="/assets/img/osi-approved-license.png" alt="OSI-approved license icon" style="width:100px;" />
 
 Except where otherwise noted, the example programs and other software provided
 by CodeRefinery are made available under the
