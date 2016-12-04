@@ -4,7 +4,7 @@ title: Python
 
 We recommend using Python version 2.7 for the exercises in the CodeRefinery
 workshop, but if you have a strong preference for version 3.5 that will work as
-well.  Although Python is likely already installed on your laptop, to avoid any
+well. Although Python is likely already installed on your laptop, to avoid any
 possible conflicts we recommend that you install a fresh Python environment
 through either a full Anaconda installation or a (much) more lightweight
 Miniconda installation. 
@@ -22,7 +22,7 @@ in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 If you for some reason prefer not to install Anaconda/Miniconda, an alternative
 is to use the virtualenv (virtual environment) tool, see the documentation
 [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/). You first need
-to install the virtualenv package into your root python by:
+to install the virtualenv package into your root Python by:
 
 ```shell
 $ sudo pip install virtualenv
@@ -41,9 +41,7 @@ and then type
 $ source venv/bin/activate
 ```
 
-If you really want to install all packages we will use during the course in a
-system-wide fashion, even though this comes with a nonzero risk of conflicts
-arising, you can use your system's root `pip` command.
+We do not recommend to install Python packages system-wide using the root account.
 
 
 ### Installing required packages
@@ -76,8 +74,6 @@ $HOME/venv/bin/activate`, your `pip` should be the one located in
 ```shell
 $ pip install <package-name>
 ```
-
-If you want to install system-wide, simply use the above command using your root `pip` version.
 
 
 ### How to verify the installation
