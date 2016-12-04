@@ -2,9 +2,9 @@
 
 {% if os == 'linux' %}
     {% assign collection = site.linux %}
-{% else if os == 'win' %}
+{% elsif os == 'win' %}
     {% assign collection = site.win %}
-{% else if os == 'osx' %}
+{% else %}
     {% assign collection = site.osx %}
 {% endif %}
 
