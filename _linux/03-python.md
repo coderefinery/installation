@@ -51,8 +51,13 @@ We will use the following Python packages in the CodeRefinery exercises:
 - numpy
 - scipy
 - matplotlib
-- pandas
 - jupyter
+- pandas
+- seaborn
+- cython
+- fortran-magic
+- numba
+- ipyparallel
 - sphinx
 - pytest
 - pep8
