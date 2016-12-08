@@ -8,18 +8,18 @@
     {% endif %}
         <a href="{{ site.baseurl }}/linux/">Linux</a>
     </li>
-    {% if os == 'win' %}
-        <li class="active">
-    {% else %}
-        <li>
-    {% endif %}
-        <a href="{{ site.baseurl }}/win/">Windows</a>
-    </li>
     {% if os == 'osx' %}
         <li class="active">
     {% else %}
         <li>
     {% endif %}
         <a href="{{ site.baseurl }}/osx/">Mac OS X</a>
+    </li>
+    {% if os == 'win' %}
+        <li class="active">
+    {% else %}
+        <li>
+    {% endif %}
+        <a href="{{ site.baseurl }}/win/">Windows</a>
     </li>
 </ul>
