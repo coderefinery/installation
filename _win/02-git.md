@@ -16,8 +16,3 @@ account if you don't have one already. Please consider what personal
 information you'd like to reveal. For example, you may want to review
 [these instructions](https://help.github.com/articles/keeping-your-email-address-private/)
 for keeping your email address private provided at GitHub.
-
-
-### How to verify the installation
-
-Write me ...

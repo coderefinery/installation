@@ -2,9 +2,7 @@
 title: Compilers
 ---
 
-Write me ...
+Try to get your compilers from [MinGW](http://www.mingw.org).
 
-
-### How to verify the installation
-
-Write me ...
+This is untested (we are Linux and Mac OS X users) and we appreciate feedback
+and contributions and corrections to this documentation.

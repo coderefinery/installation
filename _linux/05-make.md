@@ -2,7 +2,8 @@
 title: Make
 ---
 
-Install make using your default distribution package manager.
+Make is a standard tool on Linux systems and should already be available.
+If not, install make using your default distribution package manager.
 For Debian/Ubuntu run:
 
 ```shell
