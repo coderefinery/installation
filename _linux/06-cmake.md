@@ -2,6 +2,9 @@
 title: CMake
 ---
 
+CMake is an open-source, cross-platform family of tools designed to build, test
+and package software.
+
 Install CMake using your default distribution package manager.
 For Debian/Ubuntu run:
 

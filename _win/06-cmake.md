@@ -2,9 +2,7 @@
 title: CMake
 ---
 
-Write me ...
+CMake is an open-source, cross-platform family of tools designed to build, test
+and package software.
 
-
-### How to verify the installation
-
-Write me ...
+Install CMake following [this page](https://cmake.org/download/).
