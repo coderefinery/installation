@@ -55,7 +55,6 @@ We will use the following Python packages in the CodeRefinery exercises:
 - pandas
 - seaborn
 - cython
-- fortran-magic
 - numba
 - ipyparallel
 - sphinx
