@@ -26,7 +26,7 @@ $ conda create --prefix ~/coderef-pyenv python=2.7
 $ source activate ~/coderef-pyenv
 ```
 
-You can then install the required packages (listed below) via `pip install` or `conda install`. To deactivate the newly created environment, simply type `source deactivate`.
+You can then install the required packages (listed below) via `conda install` (recommended) or `pip install`. To deactivate the newly created environment, simply type `source deactivate`.
 
 If you for some reason prefer not to install Anaconda/Miniconda, an alternative
 is to use the virtualenv (virtual environment) tool, see the documentation
@@ -68,36 +68,15 @@ We will use the following Python packages in the CodeRefinery exercises:
 - sphinx
 - pytest
 - pep8
-- (optional) ipyparallel
-- (optional) rise
  
 If you have installed a new Python environment via Anaconda, you will already
-have all these packages installed on your system (except for ipyparallel and rise, see below). 
+have all these packages installed on your system (except for rise, see below). 
 
 If you installed Miniconda, you can install the required packages via the conda
 package manager:
 
 ```shell
 $ conda install <package-name>
-```
-
-If you want to try out RISE, the Reveal.js - Jupyter/IPython Slideshow Extension which will be demonstrated in the workshop, a few additional steps are required after installing Jupyter. The recommended way to install it is with 
-
-```shell
-$ conda install -c damianavila82 rise
-```
-
-but it can also be installed with pip (if you're not using Anaconda/Miniconda):
-
-```shell
-$ pip install RISE
-```
-
-After that the following two commands should be executed:
-
-```shell
-$ jupyter-nbextension install rise --py --sys-prefix
-$ jupyter-nbextension enable rise --py --sys-prefix
 ```
 
 If you're using virtualenv, and you have activated it with `source
@@ -107,6 +86,47 @@ $HOME/venv/bin/activate`, your `pip` should be the one located in
 ```shell
 $ pip install <package-name>
 ```
+
+#### Optional steps
+
+If you want to experiment with RISE, a slideshow extension to Jupyter, or if you're interested in using R, Julia or Matlab/Octave as a kernel to Jupyter, a few additional steps are required.
+
+To install RISE [(Reveal.js - Jupyter/IPython Slideshow Extension)](https://github.com/damianavila/RISE), which will be demonstrated in the workshop, you should run 
+
+```shell
+$ conda install -c damianavila82 rise
+```
+RISE can also be installed with pip (if you're not using Anaconda/Miniconda):
+
+```shell
+$ pip install RISE
+```
+After that the following two commands should be executed:
+
+```shell
+$ jupyter-nbextension install rise --py --sys-prefix
+$ jupyter-nbextension enable rise --py --sys-prefix
+```
+
+
+Python will be the main language used during the CodeRefinery workshop, but if you're an R person and want to experiment with using R in Jupyter, install the `r-essentials` package via
+
+```shell
+$ conda install -c r r-essentials
+```
+
+For further information on using R in Jupyter see [this page](https://www.continuum.io/blog/developer/jupyter-and-conda-r).
+
+Matlab and Octave can also be used as kernels to Jupyter. To install the Octave kernel, run
+
+```shell
+$ pip install octave_kernel
+$ python -m octave_kernel.install
+```
+
+See [this page](https://github.com/Calysto/octave_kernel) for further information.
+
+To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
 
 
 ### How to verify the installation
