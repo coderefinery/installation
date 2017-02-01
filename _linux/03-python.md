@@ -22,8 +22,8 @@ in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 If you install Anaconda or Miniconda, you may wish to install the required Python packages into an isolated conda environment. The command for creating a conda environment and activating it is
 
 ```shell
-$ conda create --prefix ~/jupyter-lesson python=2.7
-$ source activate ~/jupyter-lesson
+$ conda create --prefix ~/coderef-pyenv python=2.7
+$ source activate ~/coderef-pyenv
 ```
 
 You can then install the required packages (listed below) via `pip install` or `conda install`. To deactivate the newly created environment, simply type `source deactivate`.
@@ -72,7 +72,7 @@ We will use the following Python packages in the CodeRefinery exercises:
 - (optional) rise
  
 If you have installed a new Python environment via Anaconda, you will already
-have all these packages installed on your system. 
+have all these packages installed on your system (except for rise, see below). 
 
 If you installed Miniconda, you can install the required packages via the conda
 package manager:
