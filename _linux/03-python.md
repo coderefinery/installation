@@ -17,7 +17,16 @@ Follow these links for download and installation instructions:
 Note that it is best to install Anaconda/Miniconda into a directory in the home
 folder, rather than in a system directory, and one should not `sudo` it. Also
 note that Python2 and Python3 versions of Anaconda are conventionally installed
-in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda). 
+in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
+
+If you install Anaconda or Miniconda, you may wish to install the required Python packages into an isolated conda environment. The command for creating a conda environment and activating it is
+
+```shell
+$ conda create --prefix ~/jupyter-lesson python=2.7
+$ source activate ~/jupyter-lesson
+```
+
+You can then install the required packages (listed below) via `pip install` or `conda install`. To deactivate the newly created environment, simply type `source deactivate`.
 
 If you for some reason prefer not to install Anaconda/Miniconda, an alternative
 is to use the virtualenv (virtual environment) tool, see the documentation
