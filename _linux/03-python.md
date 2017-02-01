@@ -65,14 +65,14 @@ We will use the following Python packages in the CodeRefinery exercises:
 - seaborn
 - cython
 - numba
-- ipyparallel
 - sphinx
 - pytest
 - pep8
+- (optional) ipyparallel
 - (optional) rise
  
 If you have installed a new Python environment via Anaconda, you will already
-have all these packages installed on your system (except for rise, see below). 
+have all these packages installed on your system (except for ipyparallel and rise, see below). 
 
 If you installed Miniconda, you can install the required packages via the conda
 package manager:
@@ -99,7 +99,6 @@ After that the following two commands should be executed:
 $ jupyter-nbextension install rise --py --sys-prefix
 $ jupyter-nbextension enable rise --py --sys-prefix
 ```
-
 
 If you're using virtualenv, and you have activated it with `source
 $HOME/venv/bin/activate`, your `pip` should be the one located in
