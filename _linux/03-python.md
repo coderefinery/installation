@@ -69,6 +69,7 @@ We will use the following Python packages in the CodeRefinery exercises:
 - sphinx
 - pytest
 - pep8
+- (optional) rise
  
 If you have installed a new Python environment via Anaconda, you will already
 have all these packages installed on your system. 
@@ -79,6 +80,26 @@ package manager:
 ```shell
 $ conda install <package-name>
 ```
+
+If you want to try out RISE, the Reveal.js - Jupyter/IPython Slideshow Extension which will be demonstrated in the workshop, a few additional steps are required after installing Jupyter. The recommended way to install it is with 
+
+```shell
+$ conda install -c damianavila82 rise
+```
+
+but it can also be installed with pip (if you're not using Anaconda/Miniconda):
+
+```shell
+$ pip install RISE
+```
+
+After that the following two commands should be executed:
+
+```shell
+$ jupyter-nbextension install rise --py --sys-prefix
+$ jupyter-nbextension enable rise --py --sys-prefix
+```
+
 
 If you're using virtualenv, and you have activated it with `source
 $HOME/venv/bin/activate`, your `pip` should be the one located in
