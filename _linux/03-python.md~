@@ -19,8 +19,18 @@ folder, rather than in a system directory, and one should not `sudo` it. Also
 note that Python2 and Python3 versions of Anaconda are conventionally installed
 in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 
+You can then install the required packages (listed below) via `pip install` or `conda install`. 
 
+<<<<<<< HEAD
 After installing Anaconda/Miniconda you can install the required packages (listed below) via `conda install` (recommended) or `pip install`. 
+=======
+```shell
+$ conda create --prefix ~/coderef-pyenv python=2.7
+$ source activate ~/coderef-pyenv
+```
+
+You can then install the required packages (listed below) via `conda install` (recommended) or `pip install`. To deactivate the newly created environment, simply type `source deactivate`.
+>>>>>>> d038d12f2dbb60e637d81c151b366e792bd197cf
 
 If you for some reason prefer not to install Anaconda/Miniconda, an alternative
 is to use the virtualenv (virtual environment) tool, see the documentation
@@ -64,7 +74,11 @@ We will use the following Python packages in the CodeRefinery exercises:
 - pep8
  
 If you have installed a new Python environment via Anaconda, you will already
+<<<<<<< HEAD
 have all these packages installed on your system.
+=======
+have all these packages installed on your system (except for rise, see below). 
+>>>>>>> d038d12f2dbb60e637d81c151b366e792bd197cf
 
 If you installed Miniconda, you can install the required packages via the conda
 package manager:
@@ -101,6 +115,7 @@ After that the following two commands should be executed:
 $ jupyter-nbextension install rise --py --sys-prefix
 $ jupyter-nbextension enable rise --py --sys-prefix
 ```
+
 
 Python will be the main language used during the CodeRefinery workshop, but if you're an R person and want to experiment with using R in Jupyter, install the `r-essentials` package via
 
