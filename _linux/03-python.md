@@ -19,14 +19,9 @@ folder, rather than in a system directory, and one should not `sudo` it. Also
 note that Python2 and Python3 versions of Anaconda are conventionally installed
 in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 
-If you install Anaconda or Miniconda, you may wish to install the required Python packages into an isolated conda environment. The command for creating a conda environment and activating it is
+You can then install the required packages (listed below) via `pip install` or `conda install`. 
 
-```shell
-$ conda create --prefix ~/coderef-pyenv python=2.7
-$ source activate ~/coderef-pyenv
-```
-
-You can then install the required packages (listed below) via `pip install` or `conda install`. To deactivate the newly created environment, simply type `source deactivate`.
+After installing Anaconda/Miniconda you can install the required packages (listed below) via `conda install` (recommended) or `pip install`. 
 
 If you for some reason prefer not to install Anaconda/Miniconda, an alternative
 is to use the virtualenv (virtual environment) tool, see the documentation
@@ -68,11 +63,9 @@ We will use the following Python packages in the CodeRefinery exercises:
 - sphinx
 - pytest
 - pep8
-- (optional) ipyparallel
-- (optional) rise
  
 If you have installed a new Python environment via Anaconda, you will already
-have all these packages installed on your system (except for ipyparallel and rise, see below). 
+have all these packages installed on your system.
 
 If you installed Miniconda, you can install the required packages via the conda
 package manager:
@@ -111,7 +104,7 @@ $ pip install <package-name>
 
 ### How to verify the installation
 
-Anaconda/Miniconda prepends your PATH with `$HOME/anaconda3/bin` (or
+Anaconda/Miniconda prepends your PATH with `$HOME/anaconda2/bin` (or
 `$HOME/miniconda2/bin`), assuming that `$HOME/anaconda2` is where you installed
 Anaconda2, by adding a line to your .bash_profile file. This means that you can
 test your Anaconda/Miniconda installation by opening a new terminal (or type
