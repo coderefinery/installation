@@ -14,22 +14,17 @@ Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
 - Install Python 2 using all of the defaults for installation except make sure to check
   `Make Anaconda the default Python`.
 
-You may wish to install the required Python packages into an isolated conda environment. The command for creating a conda environment and activating it is
+Anaconda already contains all the required Python packages which will be used during the CodeRefinery workshop. 
 
-```shell
-$ conda create --prefix ~/coderef-pyenv python=2.7
-$ activate ~/coderef-pyenv
-```
+#### Optional steps
 
-To deactivate the newly created environment, simply type `deactivate`.
+If you want to experiment with RISE, a slideshow extension to Jupyter, or if you're interested in using R, Julia or Matlab/Octave as a kernel to Jupyter, a few additional steps are required.
 
-Anaconda already contains all the required Python packages which will be used during the CodeRefinery workshop, with the exception of ipyparallel and rise. 
-If you want to try out RISE, the Reveal.js - Jupyter/IPython Slideshow Extension which will be demonstrated in the workshop, a few additional steps are required after installing Jupyter. The recommended way to install it is with 
+To install RISE [(Reveal.js - Jupyter/IPython Slideshow Extension)](https://github.com/damianavila/RISE), which will be demonstrated in the workshop, you should run 
 
 ```shell
 $ conda install -c damianavila82 rise
 ```
-
 After that the following two commands should be executed:
 
 ```shell
@@ -37,6 +32,24 @@ $ jupyter-nbextension install rise --py --sys-prefix
 $ jupyter-nbextension enable rise --py --sys-prefix
 ```
 
+Python will be the main language used during the CodeRefinery workshop, but if you're an R person and want to experiment with using R in Jupyter, install the `r-essentials` package via
+
+```shell
+$ conda install -c r r-essentials
+```
+
+For further information on using R in Jupyter see [this page](https://www.continuum.io/blog/developer/jupyter-and-conda-r).
+
+Matlab and Octave can also be used as kernels to Jupyter. To install the Octave kernel, run
+
+```shell
+$ pip install octave_kernel
+$ python -m octave_kernel.install
+```
+
+See [this page](https://github.com/Calysto/octave_kernel) for further information.
+
+To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
 
 ### How to verify the installation
 
