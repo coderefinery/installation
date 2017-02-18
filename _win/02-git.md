@@ -18,6 +18,7 @@ information you'd like to reveal. For example, you may want to review
 for keeping your email address private provided at GitHub.
 
 ### Configuring Git
+
 After signing up for a GitHub account,
 you should go through the following steps to configure Git.
 First, the following commands will set your user name and email address:

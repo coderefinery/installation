@@ -32,7 +32,9 @@ Use the most recent available installer labelled "snow-leopard" available
 [here](http://sourceforge.net/projects/git-osx-installer/files/).
 
 ### Configuring Git
-After signing up for a GitHub account and installing Git on your machine,
+
+After signing up for a GitHub account
+and installing Git on your machine,
 you should go through the following steps to configure Git.
 First, the following commands will set your user name and email address:
 
