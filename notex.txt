@@ -1,5 +1,0 @@
-packages in case of miniconda3 installation
-conda install numpy
-conda install matplotlib
-conda install pandas
-conda install jupyter
