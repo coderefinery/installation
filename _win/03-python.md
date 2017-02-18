@@ -14,13 +14,13 @@ Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
 - Install Python 2 using all of the defaults for installation except make sure to check
   `Make Anaconda the default Python`.
 
-Anaconda already contains all the required Python packages which will be used during the CodeRefinery workshop. 
+Anaconda already contains all the required Python packages which will be used during the CodeRefinery workshop.
 
 #### Optional steps
 
 If you want to experiment with RISE, a slideshow extension to Jupyter, or if you're interested in using R, Julia or Matlab/Octave as a kernel to Jupyter, a few additional steps are required.
 
-To install RISE [(Reveal.js - Jupyter/IPython Slideshow Extension)](https://github.com/damianavila/RISE), which will be demonstrated in the workshop, you should run 
+To install RISE [(Reveal.js - Jupyter/IPython Slideshow Extension)](https://github.com/damianavila/RISE), which will be demonstrated in the workshop, you should run
 
 ```shell
 $ conda install -c damianavila82 rise

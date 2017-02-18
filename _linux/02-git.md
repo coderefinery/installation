@@ -31,7 +31,7 @@ $ sudo yum install git
 ### Configuring Git
 
 After signing up for a GitHub account
-and installing Git on your machine, 
+and installing Git on your machine,
 you should go through the following steps to configure Git.
 First, the following commands will set your user name and email address:
 
@@ -51,7 +51,7 @@ $ git config --global core.editor emacs
 ```
 You can replace emacs with vim, nano or any other editor of your choice.
 
-It is also useful to set the default push behavior of Git. 
+It is also useful to set the default push behavior of Git.
 We recommend the following option:
 
 ```shell

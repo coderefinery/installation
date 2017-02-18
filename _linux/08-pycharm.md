@@ -7,7 +7,7 @@ contains plenty of must-have features.
 
 Please visit download and installation guide
 [page](https://www.jetbrains.com/pycharm/download/#section) and install
-"Community" version of the software. 
+"Community" version of the software.
 
 
 ### How to verify the installation

@@ -7,7 +7,7 @@ workshop, but if you have a strong preference for version 3.5 that will work as
 well. Although Python is likely already installed on your laptop, to avoid any
 possible conflicts we recommend that you install a fresh Python environment
 through either a full Anaconda installation or a (much) more lightweight
-Miniconda installation. 
+Miniconda installation.
 
 Follow these links for download and installation instructions:
 
@@ -20,7 +20,7 @@ note that Python2 and Python3 versions of Anaconda are conventionally installed
 in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 
 
-After installing Anaconda/Miniconda you can install the required packages (listed below) via `conda install` (recommended) or `pip install`. 
+After installing Anaconda/Miniconda you can install the required packages (listed below) via `conda install` (recommended) or `pip install`.
 
 If you for some reason prefer not to install Anaconda/Miniconda, an alternative
 is to use the virtualenv (virtual environment) tool, see the documentation
@@ -62,7 +62,7 @@ We will use the following Python packages in the CodeRefinery exercises:
 - sphinx
 - pytest
 - pep8
- 
+
 If you have installed a new Python environment via Anaconda, you will already
 have all these packages installed on your system.
 
@@ -85,7 +85,7 @@ $ pip install <package-name>
 
 If you want to experiment with RISE, a slideshow extension to Jupyter, or if you're interested in using R, Julia or Matlab/Octave as a kernel to Jupyter, a few additional steps are required.
 
-To install RISE [(Reveal.js - Jupyter/IPython Slideshow Extension)](https://github.com/damianavila/RISE), which will be demonstrated in the workshop, you should run 
+To install RISE [(Reveal.js - Jupyter/IPython Slideshow Extension)](https://github.com/damianavila/RISE), which will be demonstrated in the workshop, you should run
 
 ```shell
 $ conda install -c damianavila82 rise
