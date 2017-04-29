@@ -4,7 +4,9 @@ title: Git
 
 Git is a version control system that lets you track who made changes to what
 when and has options for easily updating a shared or public version of your
-code on [GitHub](https://github.com). You will need a supported web browser
+code on source code repository hosting platforms such as
+[GitHub](https://github.com) or [GitLab](https://gitlab.com) or
+[Bitbucket](https://bitbucket.org/). You will need a supported web browser
 (current versions of Chrome, Firefox, Safari, or Internet Explorer version 9 or
 above).
 
@@ -13,9 +15,14 @@ Git should be installed on your computer as part of your Bash install (described
 You will need an account at [GitHub](https://github.com) for parts of the Git
 lesson. Basic GitHub accounts are free. We recommend you to create a GitHub
 account if you don't have one already. Please consider what personal
-information you'd like to reveal. For example, you may want to review
-[these instructions](https://help.github.com/articles/keeping-your-email-address-private/)
+information you'd like to reveal. For example, you may want to review [these
+instructions](https://help.github.com/articles/keeping-your-email-address-private/)
 for keeping your email address private provided at GitHub.
+
+If you do not wish to use [GitHub](https://github.com) and a corresponding
+account, you can instead use your favourite source code repository hosting
+platform. Most aspects of our material and exercises are transferable to all
+popular platforms.
 
 ### Configuring Git
 
@@ -50,4 +57,9 @@ $ git config --global color.diff auto
 $ git config --global color.status auto
 $ git config --global color.branch auto
 $ git config --global color.ui true
+```
+
+To see where this information is stored, use:
+```shell
+$ git config --list --show-origin
 ```
