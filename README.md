@@ -1,8 +1,6 @@
 
 
-# Software installation instructions
-
-- https://coderefinery.github.io/installation/
+# [CodeRefinery workshop software installation instructions](https://coderefinery.github.io/installation/)
 
 
 ## License and credit
