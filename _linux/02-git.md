@@ -90,3 +90,12 @@ version is different on your system):
 ```shell
 git version 2.10.2
 ```
+
+### Setting up SSH keys
+
+Using the SSH protocol, you can connect and authenticate to remote servers and
+services. With SSH keys, you can connect to GitHub without supplying your
+username or password at each visit.
+
+Follow [this guide](https://help.github.com/articles/connecting-to-github-with-ssh/) to connect
+to GitHub with SSH keys.
