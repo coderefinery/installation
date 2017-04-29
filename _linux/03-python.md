@@ -7,7 +7,9 @@ workshop, but if you have a strong preference for version 3.5 that will work as
 well. Although Python is likely already installed on your laptop, to avoid any
 possible conflicts we recommend that you install a fresh Python environment
 through either a full Anaconda installation or a (much) more lightweight
-Miniconda installation.
+Miniconda installation. If you are very comfortable with Python and know how
+to install packages without root privileges, you can jump directly to the packages
+listed below and install them.
 
 Follow these links for download and installation instructions:
 
@@ -16,16 +18,16 @@ Follow these links for download and installation instructions:
 
 Note that it is best to install Anaconda/Miniconda into a directory in the home
 folder, rather than in a system directory, and one should not `sudo` it. Also
-note that Python2 and Python3 versions of Anaconda are conventionally installed
+note that Python 2 and Python 3 versions of Anaconda are conventionally installed
 in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 
-
-After installing Anaconda/Miniconda you can install the required packages (listed below) via `conda install` (recommended) or `pip install`.
+After installing Anaconda/Miniconda you can install the required packages
+(listed below) via `conda install` (recommended) or `pip install`.
 
 If you for some reason prefer not to install Anaconda/Miniconda, an alternative
-is to use the virtualenv (virtual environment) tool, see the documentation
-[here](http://docs.python-guide.org/en/latest/dev/virtualenvs/). You first need
-to install the virtualenv package into your root Python by:
+is to use
+[virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/). You
+first need to install the virtualenv package into your root Python by:
 
 ```shell
 $ sudo pip install virtualenv
@@ -37,8 +39,8 @@ Then create a virtual environment by:
 $ virtualenv -p python2.7 venv
 ```
 
-(replacing `python2.7` with the correct name of your python2.7 if necessary)
-and then type
+(replacing `python2.7` with the correct name of your preferred Python version if necessary)
+and then type:
 
 ```shell
 $ source venv/bin/activate
@@ -120,7 +122,6 @@ $ python -m octave_kernel.install
 See [this page](https://github.com/Calysto/octave_kernel) for further information.
 
 To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
-
 
 ### How to verify the installation
 

@@ -18,7 +18,7 @@ Add MinGW to your user path variable:
 - In control panel, search for "env", click on "Edit environmental variables for your account".
 - In box for user variables, click PATH, click Edit ..., and add `\bin` (probably `C:\MinGW\bin`) at the end of the variables value, separated from the previous entry by a semicolon.
 
-Restart your computer.
+Finally, restart your computer.
 
 ### How to verify the installation in bash
 
