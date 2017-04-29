@@ -21,9 +21,9 @@ workshop website](http://hpcarcher.github.io/2014-12-03-edinburgh/).
 ## Instructional Material
 
 All CodeRefinery instructional material is made available under the
-[Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/).
+[Creative Commons Attribution license](https://creativecommons.org/licenses/by-sa/4.0/).
 The following is a human-readable summary of (and not a substitute for)
-the [full legal text of the CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode).
+the [full legal text of the CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
 You are free:
 
@@ -36,10 +36,12 @@ for any purpose, even commercially. The licensor cannot revoke these freedoms as
   (mentioning that your work is derived from work that is Copyright
   (c) CodeRefinery and, where practical, linking to
   http://coderefinery.org), provide
-  a [link to the license](https://creativecommons.org/licenses/by/4.0/),
+  a [link to the license](https://creativecommons.org/licenses/by-sa/4.0/),
   and indicate if changes were made. You may do so in any
   reasonable manner, but not in any way that suggests the licensor
   endorses you or your use.
+- **ShareAlike** - If you remix, transform, or build upon the material, you
+  must distribute your contributions under the same license as the original.
 
 **No additional restrictions** - You may not apply legal terms or technological
 measures that legally restrict others from doing anything the license permits.
