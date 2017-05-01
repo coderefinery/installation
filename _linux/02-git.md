@@ -32,7 +32,7 @@ $ sudo apt-get install git
 For Fedora:
 
 ```shell
-$ sudo yum install git
+$ sudo dnf install git
 ```
 
 ### Configuring Git

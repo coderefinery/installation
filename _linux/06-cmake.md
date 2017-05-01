@@ -15,7 +15,7 @@ $ sudo apt-get install cmake
 For Fedora:
 
 ```shell
-$ sudo yum install cmake
+$ sudo dnf install cmake
 ```
 
 
