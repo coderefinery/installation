@@ -13,7 +13,7 @@ $ sudo apt-get install build-essential
 For Fedora:
 
 ```shell
-$ sudo yum install make
+$ sudo dnf install make
 ```
 
 

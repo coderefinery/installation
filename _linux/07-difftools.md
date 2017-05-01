@@ -16,7 +16,7 @@ $ sudo apt-get install meld
 For Fedora:
 
 ```shell
-$ sudo yum install meld
+$ sudo dnf install meld
 ```
 
 

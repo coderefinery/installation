@@ -12,7 +12,7 @@ $ sudo apt-get install gfortran gcc g++
 For Fedora:
 
 ```shell
-$ sudo yum install gfortran gcc g++
+$ sudo dnf install gfortran gcc g++
 ```
 
 
