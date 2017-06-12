@@ -14,7 +14,14 @@ Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
 - Install Python 2 using all of the defaults for installation except make sure to check
   `Make Anaconda the default Python`.
 
-Anaconda already contains all the required Python packages which will be used during the CodeRefinery workshop.
+Anaconda contains almost all the required Python packages which will be used during the CodeRefinery workshop.
+
+One exception is pybind11 which can be installed into your Anacoda environment using:
+
+```shell
+$ conda install -c conda-forge pybind11=2.1.1
+```
+
 
 #### Optional steps
 

@@ -64,6 +64,8 @@ We will use the following Python packages in the CodeRefinery exercises:
 - sphinx
 - pytest
 - pep8
+- cffi
+- pybind11
 
 If you have installed a new Python environment via Anaconda, you will already
 have all these packages installed on your system.
