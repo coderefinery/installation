@@ -12,6 +12,8 @@ Please follow the instructions for your operating system.
 - [Git](/git/)
 - [Python](/python/)
 - [Compilers](/compilers/)
+- [Make](/make/)
+- [CMake](/cmake/)
 - [PyCharm](/pycharm/)
 
 Corrections and contributions to the
