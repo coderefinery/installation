@@ -11,6 +11,7 @@ Please follow the instructions for your operating system.
 - [Bash](/bash/)
 - [Git](/git/)
 - [Python](/python/)
+- [Compilers](/compilers/)
 
 Corrections and contributions to the
 [repository](https://github.com/coderefinery/installation) are most welcome.

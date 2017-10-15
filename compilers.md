@@ -1,6 +1,33 @@
 ---
-title: Compilers
+layout: master
 ---
+
+# Compilers
+
+## Installation on Linux
+
+Install gfortran, gcc, and g++ using your default distribution package manager.
+For Debian/Ubuntu run:
+
+```shell
+$ sudo apt-get install gfortran gcc g++
+```
+
+For Fedora:
+
+```shell
+$ sudo dnf install gfortran gcc g++
+```
+
+
+## Installation on Mac OS X
+
+To install compilers on Mac OSX you should install Apple's Xcode software.
+Very good instructions for doing this can be found
+[on this website](https://wiki.helsinki.fi/display/HUGG/GNU+compiler+install+on+Mac+OS+X).
+
+
+## Installation on Windows
 
 Get your compilers from [MinGW](http://www.mingw.org):
 - Click "Download Installer" button on the top right.
@@ -20,7 +47,10 @@ Add MinGW to your user path variable:
 
 Finally, restart your computer.
 
-### How to verify the installation in bash
+
+## How to verify the installation
+
+These commands should give you the compiler versions and not throw errors:
 
 ```shell
 $ gfortran --version
