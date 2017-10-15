@@ -4,14 +4,14 @@ layout: master
 
 # Bash
 
-## Linux
+## Installation on Linux
 
 The default shell is usually Bash, but if your machine is set up differently
 you can run it by opening a terminal and typing `bash`. There is no need to
 install anything.
 
 
-## Mac OS X
+## Installation on Mac OS X
 
 The default shell in all versions of Mac OS X is Bash, so no need to install
 anything. You access Bash from the terminal (found in
@@ -23,7 +23,7 @@ Watch the Git installation [video tutorial](https://www.youtube.com/watch?v=9LQh
 You may want to keep the terminal in your dock for this workshop.
 
 
-## Windows
+## Installation on Windows
 
 Watch the [video tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
 (copyright Software Carpentry).
