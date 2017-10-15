@@ -16,21 +16,6 @@ See also [license and credit](/license/).
 
 Get inspired by https://swcarpentry.github.io/workshop-template/ but add attribution.
 
-Add Markdown files to the directories:
-
-```
-_linux
-_osx
-_win
-```
-
-The files in these directories are rendered in the alphabetical order.
-
-If you use identical instructions for several operating systems, use symlinks
-to make it clear in the sources and to avoid accidentally diverging
-documentation.  If you want to edit a file that is symlinked and where a
-symlink does not make sense anymore, feel free to create a separate file.
-
 
 ## Styling
 
