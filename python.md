@@ -94,29 +94,6 @@ $ pip install <package-name>
 
 ### Optional steps
 
-If you want to experiment with RISE, a slideshow extension to Jupyter, or if
-you're interested in using R, Julia or Matlab/Octave as a kernel to Jupyter, a
-few additional steps are required.
-
-To install RISE [(Reveal.js - Jupyter/IPython Slideshow
-Extension)](https://github.com/damianavila/RISE), which will be demonstrated in
-the workshop, you should run:
-
-```shell
-$ conda install -c damianavila82 rise
-```
-RISE can also be installed with pip (if you're not using Anaconda/Miniconda):
-
-```shell
-$ pip install RISE
-```
-After that the following two commands should be executed:
-
-```shell
-$ jupyter-nbextension install rise --py --sys-prefix
-$ jupyter-nbextension enable rise --py --sys-prefix
-```
-
 Python will be the main language used during the CodeRefinery workshop, but if
 you are an R developer and want to experiment with using R in Jupyter, install the
 `r-essentials` package via
@@ -188,22 +165,6 @@ Anaconda contains almost all the required Python packages which will be used dur
 
 
 ### Optional steps
-
-If you want to experiment with RISE, a slideshow extension to Jupyter, or if
-you're interested in using R, Julia or Matlab/Octave as a kernel to Jupyter, a
-few additional steps are required.
-
-To install RISE [(Reveal.js - Jupyter/IPython Slideshow Extension)](https://github.com/damianavila/RISE), which will be demonstrated in the workshop, you should run
-
-```shell
-$ conda install -c damianavila82 rise
-```
-After that the following two commands should be executed:
-
-```shell
-$ jupyter-nbextension install rise --py --sys-prefix
-$ jupyter-nbextension enable rise --py --sys-prefix
-```
 
 Python will be the main language used during the CodeRefinery workshop, but if you're an R person and want to experiment with using R in Jupyter, install the `r-essentials` package via
 
