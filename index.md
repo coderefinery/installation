@@ -15,6 +15,7 @@ Please follow the instructions for your operating system.
 - [Make](/make/)
 - [CMake](/cmake/)
 - [PyCharm](/pycharm/)
+- [Visual diff tools](/difftools/)
 
 Corrections and contributions to the
 [repository](https://github.com/coderefinery/installation) are most welcome.
