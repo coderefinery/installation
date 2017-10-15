@@ -1,6 +1,8 @@
 ---
-title: Git
+layout: master
 ---
+
+# Git
 
 Git is a version control system that lets you track who made changes to what
 when and has options for easily updating a shared or public version of your
@@ -22,6 +24,27 @@ account, you can instead use your favourite source code repository hosting
 platform. Most aspects of our material and exercises are transferable to all
 popular platforms.
 
+Follow the installation instructions below but do not forget to also configure Git (see below).
+
+
+## Installation on Linux
+
+If Git is not already available on your machine you can try to install it via
+your distribution package manager. For Debian/Ubuntu run:
+
+```shell
+$ sudo apt-get install git
+```
+
+For Fedora:
+
+```shell
+$ sudo dnf install git
+```
+
+
+## Installation on Mac OS X
+
 ### OS X 10.9 and higher
 
 Install Git for Mac by downloading and running the most recent "mavericks"
@@ -37,7 +60,29 @@ folder, as Git is a command line program.
 Use the most recent available installer labelled "snow-leopard" available
 [here](http://sourceforge.net/projects/git-osx-installer/files/).
 
-### Configuring Git
+
+## Installation on Windows
+
+Git should be installed on your computer as part of the Bash installation.
+
+
+## How to verify the installation
+
+Typing:
+
+```shell
+$ git --version
+```
+
+Should give you a version (like here) and not an error (do not worry if the
+version is different on your system):
+
+```shell
+git version 2.10.2
+```
+
+
+## Configuring Git
 
 After signing up for a GitHub account
 and installing Git on your machine,
@@ -78,22 +123,8 @@ To see where this information is stored, use:
 $ git config --list --show-origin
 ```
 
-### How to verify the installation
 
-Typing:
-
-```shell
-$ git --version
-```
-
-Should give you a version (like here) and not an error (do not worry if the
-version is different on your system):
-
-```shell
-git version 2.10.2
-```
-
-### Setting up SSH keys
+## Setting up SSH keys
 
 Using the SSH protocol, you can connect and authenticate to remote servers and
 services. With SSH keys, you can connect to GitHub without supplying your
