@@ -1,1 +1,0 @@
-../_linux/08-pycharm.md

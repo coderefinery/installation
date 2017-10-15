@@ -12,6 +12,7 @@ Please follow the instructions for your operating system.
 - [Git](/git/)
 - [Python](/python/)
 - [Compilers](/compilers/)
+- [PyCharm](/pycharm/)
 
 Corrections and contributions to the
 [repository](https://github.com/coderefinery/installation) are most welcome.
