@@ -30,11 +30,24 @@ Follow the installation instructions below but do not forget to also configure G
 ## Installation on Linux
 
 If Git is not already available on your machine you can try to install it via
-your distribution package manager. For Debian/Ubuntu run:
+your distribution package manager. 
+
+For Debian/Ubuntu run:
 
 ```shell
 $ sudo apt-get install git
+
+Check the version after installing
+$ git --version
+
+If the version you get is far behind the latest (https://git-scm.com/downloads), then you would need the following additional steps to get the latest version.
+
+$ sudo apt-get update
+$ sudo add-apt-repository ppa:git-core/ppa
+$ sudo apt-get install git
+$ git --version
 ```
+
 
 For Fedora:
 
