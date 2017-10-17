@@ -40,7 +40,10 @@ $ sudo apt-get install git
 Check the version after installing
 $ git --version
 
-If the version you get is far behind the latest (https://git-scm.com/downloads), then you would need the following additional steps to get the latest version.
+If the version you get is far behind the latest (https://git-scm.com/downloads), 
+then you would need the following additional steps to get the latest version.
+Please make sure the version you have and what is used in the lecture notes are
+the same
 
 $ sudo apt-get update
 $ sudo add-apt-repository ppa:git-core/ppa
