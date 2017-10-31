@@ -55,7 +55,7 @@ You will now be able to run make within your shell.
 
 Get make:
 
-- Go to http://gnuwin32.sourceforge.net/install.html and click on "Package List" link in the Installation section.
+- Go to [http://gnuwin32.sourceforge.net/install.html](http://gnuwin32.sourceforge.net/install.html) and click on "Package List" link in the Installation section.
 - Download and install make.
 
 Add make to your user path variable:
