@@ -92,7 +92,16 @@ $ pip install <package-name>
 ```
 
 
-### Optional steps
+### Jupyter
+
+Jupyter can be installed according to the instructions given above.
+If you did not install Python through Anaconda, and if you installed Jupyter 
+using `pip` and not `conda`, you will need to execute this command in a terminal in order to 
+activate widgets in Jupyter:
+
+```shell
+$ jupyter nbextension enable --py widgetsnbextension
+```
 
 Python will be the main language used during the CodeRefinery workshop, but if
 you are an R developer and want to experiment with using R in Jupyter, install the
@@ -115,6 +124,13 @@ See [this page](https://github.com/Calysto/octave_kernel) for further informatio
 
 To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
 
+To see whether Jupyter is working as expected, type the command
+
+```shell
+$ jupyter notebook
+```
+
+and see if it opens up a new tab in your browser showing the Jupyter dashboard.
 
 ### How to verify the installation
 
@@ -142,14 +158,6 @@ $ python -c "import <package-name>"
 
 and verify that you do not get an ImportError.
 
-To see whether Jupyter is working as expected, type the command
-
-```shell
-$ jupyter notebook
-```
-
-and see if it opens up a new tab in your browser showing the Jupyter dashboard.
-
 
 ## Installation on Windows
 
@@ -164,9 +172,20 @@ Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
 Anaconda contains almost all the required Python packages which will be used during the CodeRefinery workshop.
 
 
-### Optional steps
+### Jupyter
 
-Python will be the main language used during the CodeRefinery workshop, but if you're an R person and want to experiment with using R in Jupyter, install the `r-essentials` package via
+Jupyter can be installed according to the instructions given above.
+If you did not install Python through Anaconda, and if you installed Jupyter 
+using `pip` and not `conda`, you will need to execute this command in a terminal in order to 
+activate widgets in Jupyter:
+
+```shell
+$ jupyter nbextension enable --py widgetsnbextension
+```
+
+Python will be the main language used during the CodeRefinery workshop, but if
+you are an R developer and want to experiment with using R in Jupyter, install the
+`r-essentials` package via
 
 ```shell
 $ conda install -c r r-essentials
@@ -185,6 +204,9 @@ See [this page](https://github.com/Calysto/octave_kernel) for further informatio
 
 To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
 
+The Jupyter Notebook App can be launched by clicking on the Jupyter Notebook
+icon installed by Anaconda in the start menu.
+Verify that it opens up a new tab in your browser showing the Jupyter dashboard.
 
 ### How to verify the installation
 
@@ -207,6 +229,3 @@ $ python -c "import <package-name>"
 
 and verify that you do not get an ImportError.
 
-The Jupyter Notebook App can be launched by clicking on the Jupyter Notebook
-icon installed by Anaconda in the start menu.
-Verify that it opens up a new tab in your browser showing the Jupyter dashboard.
