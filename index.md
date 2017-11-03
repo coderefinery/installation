@@ -43,7 +43,7 @@ will help you with the account deletion.
 #### Coveralls
 
 You can remove projects and delete your account. To achieve this,
-read section "CANCELING" on https://coveralls.io/legal.
+read section "CANCELING" on [https://coveralls.io/legal](https://coveralls.io/legal).
 
 
 #### Read the Docs
