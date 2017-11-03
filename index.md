@@ -22,11 +22,9 @@ Please follow the instructions for your operating system.
 
 We create a couple of accounts and projects during the course. The motivation
 for this is to provide a real life hands-on experience using tools with massive
-traction and network effect.
-
-However, you may wish to remove the projects and accounts that we have created.
-
-Here we list instructions for how to achieve that:
+traction and network effect.  However, you may wish to remove the projects and
+accounts that we have created.  Here we list instructions for how to achieve
+that:
 
 
 #### GitHub
