@@ -29,26 +29,26 @@ However, you may wish to remove the projects and accounts that we have created.
 Here we list instructions for how to achieve that:
 
 
-### GitHub
+#### GitHub
 
 - [Deleting a GitHub repository](https://help.github.com/articles/deleting-a-repository/)
 - [Deleting a GitHub account](https://help.github.com/articles/deleting-your-user-account/)
 
 
-### Travis CI
+#### Travis CI
 
 At the moment it is not possible for a user to delete their Travis CI account directly from their account settings.
 However, you can send an email to support@travis-ci.com and ask them to delete your account. They are very responsive and
 will help you with the account deletion.
 
 
-### Coveralls
+#### Coveralls
 
 You can remove projects and delete your account. To achieve this,
 read section "CANCELING" on https://coveralls.io/legal.
 
 
-### Read the Docs
+#### Read the Docs
 
 - [Deleting a Read the Docs account](https://readthedocs.org/accounts/delete/)
 
