@@ -16,6 +16,7 @@ Please follow the instructions for your operating system.
 - [CMake](/installation/cmake/)
 - [PyCharm](/installation/pycharm/)
 - [Visual diff tools](/installation/difftools/)
+- [Docker](/installation/docker/)
 
 
 ## Instructions for removing accounts
