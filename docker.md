@@ -6,6 +6,9 @@ layout: master
 
 Docker provides a way to run applications securely isolated in a container, packaged with all its dependencies and libraries.
 
+**Note: Installing Docker is optional. We will give a brief introduction to containers and how they can be used to package all dependencies and libraries together. It is not mandatory to have docker installed to get an idea about the containers. On the other hand, if you have Docker installed, then you can try creating images and running containers together with the instructor.**
+
+
 ## Installation on Linux
 
 ### Ubuntu
@@ -143,7 +146,7 @@ Please visit the [download and install Docker for Windows](https://docs.docker.c
 
 ## How to verify the installation
 
-These commands should give you the docker version and not throw errors:
+The following command should give you the docker version and not throw errors:
 
 ```shell
 $ docker --version
