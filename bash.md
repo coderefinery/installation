@@ -34,9 +34,11 @@ Then run the installer and follow these steps:
 
 - Click on "Next".
 - Click on "Next".
+- Choose "Nano" as the editor (unless you know you prefer vi or notepad++)
 - Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
   If you forgot to do this programs that you need for the workshop will not work properly.
   If this happens rerun the installer and select the appropriate option.
+- Click on "Next".
 - Click on "Next".
 - Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
 - Keep "Use Windows' default console window" selected and click on "Next".
