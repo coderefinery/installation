@@ -4,8 +4,14 @@ layout: master
 
 # PyCharm
 
-PyCharm is a Python IDE for Professional/Scientific/Educational developers and
+PyCharm is a Python integrated development environment (IDE)
+for Professional/Scientific/Educational developers and
 contains plenty of must-have features.
+
+The installation of PyCharm is optional. If you are not a Python developer or are not interested
+in installing a Python IDE, you can skip the installation and take the session as a demo.
+If you install it, you will be able to follow the session by testing things out on your computer
+during the session.
 
 
 ## Installation on Linux, Mac OS X, and Windows
