@@ -17,7 +17,7 @@ Please follow the instructions for your operating system.
 - [PyCharm](/installation/pycharm/)
 - [Visual diff tools](/installation/difftools/)
 - [Docker](/installation/docker/)
-
+- [Configuration problems and solutions](/installation/troubleshooting/)
 
 ## Instructions for removing accounts
 
