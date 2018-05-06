@@ -61,13 +61,10 @@ We do not recommend to install Python packages system-wide using the root accoun
 We will use the following Python packages in the CodeRefinery exercises:
 
 - numpy
-- scipy
 - matplotlib
 - jupyter
 - pandas
 - seaborn
-- cython
-- numba
 - sphinx
 - pytest
 - pep8
