@@ -135,9 +135,9 @@ and see if it opens up a new tab in your browser showing the Jupyter dashboard.
 
 ### How to verify the Python installation
 
-Anaconda/Miniconda prepends your PATH with `$HOME/anaconda2/bin` (or
-`$HOME/miniconda2/bin`), assuming that `$HOME/anaconda2` is where you installed
-Anaconda2, by adding a line to your .bash_profile file. This means that you can
+Anaconda/Miniconda prepends your PATH with `$HOME/anaconda3/bin` (or
+`$HOME/miniconda3/bin`), assuming that `$HOME/anaconda3` is where you installed
+Anaconda3, by adding a line to your .bash_profile file. This means that you can
 test your Anaconda/Miniconda installation by opening a new terminal (or type
 `source .bash_profile` in the terminal session in which you installed
 Anaconda/Miniconda), and type:
