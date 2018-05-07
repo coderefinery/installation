@@ -4,8 +4,8 @@ layout: master
 
 # Python
 
-We recommend using Python version 2.7 for the exercises in the CodeRefinery
-workshop, but if you have a strong preference for version 3.5 that will work as
+We recommend using Python version 3.5 or 3.6 for the exercises in the CodeRefinery
+workshop, but if you have a strong preference for version 2.7 that will work as
 well.
 
 
@@ -28,6 +28,11 @@ folder, rather than in a system directory, and one should not `sudo` it. Also
 note that Python 2 and Python 3 versions of Anaconda are conventionally installed
 in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 
+If you already have an Anaconda2 distribution installed but would like to switch to Python3
+for the CodeRefinery workshop, you don't need to install the full Anaconda3 distribution. 
+Instead, you can create a separate Python3 conda environment under your Anaconda2 installation, 
+as [described here](https://conda.io/docs/user-guide/tasks/manage-python.html).
+
 After installing Anaconda/Miniconda you can install the required packages
 (listed below) via `conda install` (recommended) or `pip install`.
 
@@ -43,10 +48,10 @@ $ sudo pip install virtualenv
 Then create a virtual environment by:
 
 ```shell
-$ virtualenv -p python2.7 venv
+$ virtualenv -p python3.6 venv
 ```
 
-(replacing `python2.7` with the correct name of your preferred Python version if necessary)
+(replacing `python3.6` with the correct name of your preferred Python version if necessary)
 and then type:
 
 ```shell
@@ -183,7 +188,7 @@ $ python --version
 If your installation was successful, this should return something like
 
 ```shell
-Python 2.7.12 :: Continuum Analytics, Inc.
+Python 3.6.5 :: Continuum Analytics, Inc.
 ```
 
 To check if you can successfully import a specific package, you can type
@@ -201,8 +206,8 @@ Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
 (copyright Software Carpentry).
 
 - Open [http://continuum.io/downloads](http://continuum.io/downloads) with your web browser.
-- Download the Python 2 installer for Windows.
-- Install Python 2 using all of the defaults for installation except make sure to check
+- Download the Python 3 installer for Windows.
+- Install Python 3 using all of the defaults for installation except make sure to check
   `Make Anaconda the default Python`.
 
 Anaconda contains almost all the required Python packages which will be used during the CodeRefinery workshop.
@@ -276,7 +281,7 @@ $ python --version
 If your installation was successful, this should return something like
 
 ```shell
-Python 2.7.12 :: Continuum Analytics, Inc.
+Python 3.6.5 :: Continuum Analytics, Inc.
 ```
 
 To check if you can successfully import a specific package, you can type
