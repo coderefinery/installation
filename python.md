@@ -133,45 +133,6 @@ $ jupyter notebook
 
 and see if it opens up a new tab in your browser showing the Jupyter dashboard.
 
-### Common workflow language (CWL)
-
-**Note: Installing the reference CWL implementation (`cwltool`) is optional. 
-We will give a brief introduction to the CWL standard and how it can be used with workflow tools that support 
-CWL, and for this purpose we will use the reference implementation of CWL called `cwltool`. The presentation can be followed 
-without typing out the commands, but if you would like to run the commands yourself follow the below instructions to install `cwltool`.**
-
-The `cwltool` gets installed into your Python environment. Full installation and test instructions for Linux and Mac systems 
-can be found [here](https://github.com/common-workflow-language/cwltool#install), but the installation will in most cases be as follows.
- 
-Inside your Python environment (Anaconda, Miniconda, virtualenv), install `cwltool` as
-
-```shell
-$ pip install cwlref-runner
-```
-
-However, if you are installing `cwltool` alongside another CWL implementation (i.e. a workflow tool that supports CWL), you 
-should instead run
-
-```shell
-$ pip install cwltool
-```
-
-It is also possible to install from source:
-
-```shell
-$ git clone https://github.com/common-workflow-language/cwltool.git # clone cwltool repo
-$ cd cwltool         # Switch to source directory
-$ pip install .      # Install `cwltool` from source
-$ cwltool --version  # Check if the installation works correctly
-```
-
-To check that the installation was successful, type `cwltool --version` in a terminal and ensure that the output looks similar to:
-
-```shell
-$ cwltool --version
-/Users/username/anaconda2/envs/cwl/bin/cwltool 1.0.20180211183944
-```
-
 ### How to verify the Python installation
 
 Anaconda/Miniconda prepends your PATH with `$HOME/anaconda2/bin` (or
@@ -247,28 +208,6 @@ To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/1
 The Jupyter Notebook App can be launched by clicking on the Jupyter Notebook
 icon installed by Anaconda in the start menu.
 Verify that it opens up a new tab in your browser showing the Jupyter dashboard.
-
-### Common workflow language (CWL)
-
-**Note: Installing the reference CWL implementation (`cwltool`) is optional. 
-We will give a brief introduction to the CWL standard and how it can be used with workflow tools that support 
-CWL, and for this purpose we will use the reference implementation of CWL called `cwltool`. The presentation can be followed 
-without typing out the commands, but if you would like to run the commands yourself follow the below instructions to install `cwltool`.**
-
-`cwltool` is compatible with Windows, i.e. you can create and run CWL workflows on Windows, but all workflows and tools are executed in a 
-Docker container. So you will first need to install Docker as described [here](../docker).
-
-The `cwltool` gets installed into your Python environment. Full installation and test instructions for Windows
-can be found [here](https://github.com/common-workflow-language/cwltool/blob/master/windowsdoc.md).
-After installing [Docker for Windows](../docker), you can install `cwltool` by typing in a command prompt:
-
-```shell
-$ pip install cwltool
-```
-
-In order to test if `cwltool` has been successfully installed on your Windows system, run `cwltool` in the command prompt. 
-If you see help instructions, `cwltool` was successfully installed.
-
 
 ### How to verify the Python installation
 
