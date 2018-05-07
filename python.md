@@ -133,6 +133,27 @@ $ jupyter notebook
 
 and see if it opens up a new tab in your browser showing the Jupyter dashboard.
 
+### Snakemake
+
+The Snakemake workflow management tool requires Python version 3.4 or higher.
+It can be installed into a conda environment by:
+
+```shell 
+$ conda install -c bioconda snakemake
+```
+
+To verify the installation, type the command
+
+```shell
+$ snakemake --version
+```
+
+It should return something like 
+
+```shell
+4.8.1
+```
+
 ### How to verify the Python installation
 
 Anaconda/Miniconda prepends your PATH with `$HOME/anaconda3/bin` (or
@@ -208,6 +229,27 @@ To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/1
 The Jupyter Notebook App can be launched by clicking on the Jupyter Notebook
 icon installed by Anaconda in the start menu.
 Verify that it opens up a new tab in your browser showing the Jupyter dashboard.
+
+### Snakemake
+
+The Snakemake workflow management tool requires Python version 3.4 or higher.
+It can be installed into a conda environment by:
+
+```shell 
+$ conda install -c bioconda snakemake
+```
+
+To verify the installation, type the command
+
+```shell
+$ snakemake --version
+```
+
+It should return something like 
+
+```shell
+4.8.1
+```
 
 ### How to verify the Python installation
 
