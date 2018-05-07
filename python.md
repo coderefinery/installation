@@ -4,8 +4,8 @@ layout: master
 
 # Python
 
-We recommend using Python version 2.7 for the exercises in the CodeRefinery
-workshop, but if you have a strong preference for version 3.5 that will work as
+We recommend using Python version 3.5 or 3.6 for the exercises in the CodeRefinery
+workshop, but if you have a strong preference for version 2.7 that will work as
 well.
 
 
@@ -27,6 +27,11 @@ Note that it is best to install Anaconda/Miniconda into a directory in the home
 folder, rather than in a system directory, and one should not `sudo` it. Also
 note that Python 2 and Python 3 versions of Anaconda are conventionally installed
 in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
+
+If you already have an Anaconda2 distribution installed but would like to switch to Python3
+for the CodeRefinery workshop, you don't need to install the full Anaconda3 distribution. 
+Instead, you can create a separate Python3 conda environment under your Anaconda2 installation, 
+as [described here](https://conda.io/docs/user-guide/tasks/manage-python.html).
 
 After installing Anaconda/Miniconda you can install the required packages
 (listed below) via `conda install` (recommended) or `pip install`.
