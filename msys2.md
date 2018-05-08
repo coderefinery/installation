@@ -24,3 +24,6 @@ If you get these questions after typing `pacman -Syu`, you can answer "y":
 :: msys2-runtime and catgets are in conflict. Remove cadgets? [y/N] y
 :: msys2-runtime and libcatgets are in conflict. Remove cadgets? [y/N] y
 ```
+
+It is no problem to run `pacman -Syu` several times. Once you see that no packages
+get updates, you know that the installation is complete and up to date.
