@@ -84,7 +84,12 @@ Use the most recent available installer labelled "snow-leopard" available
 
 ## Installation on Windows
 
-Git should be installed on your computer as part of the Bash installation.
+First install [MSYS2](/installation/msys2/). Once you have MSYS2 installed,
+open the MSYS2 terminal (MSYS2 MinGW 32-bit or 64-bit) and install Git:
+
+```
+$ pacman -S git
+```
 
 
 ## How to verify the installation
