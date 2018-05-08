@@ -4,16 +4,22 @@ layout: master
 
 # Docker
 
-Docker provides a way to run applications securely isolated in a container, packaged with all its dependencies and libraries.
+Docker provides a way to run applications securely isolated in a container,
+packaged with all its dependencies and libraries.
 
-**Note: Installing Docker is optional. We will give a brief introduction to containers and how they can be used to package all dependencies and libraries together. It is not mandatory to have docker installed to get an idea about the containers. On the other hand, if you have Docker installed, then you can try creating images and running containers together with the instructor.**
+**Note: Installing Docker is optional. We will give a brief introduction to
+containers and how they can be used to package all dependencies and libraries
+together. It is not mandatory to have docker installed to get an idea about the
+containers. On the other hand, if you have Docker installed, then you can try
+creating images and running containers together with the instructor.**
 
 
 ## Installation on Linux
 
 ### Ubuntu
 
-To install Docker Community Edition (CE), you need the 64-bit version of one of these Ubuntu versions:
+To install Docker Community Edition (CE), you need the 64-bit version of one of
+these Ubuntu versions:
 
   * Artful 17.10 (Docker CE 17.11 Edge only)
   * Zesty 17.04
@@ -24,7 +30,7 @@ Add official GPG key of the Docker repository to the system
 ```shell
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
-Setup the docker repository 
+Setup the docker repository
 
 **amd64**
 ```shell
@@ -46,11 +52,13 @@ $ sudo apt-get install docker-ce
 
 For more information on installation instructions, please visit [docker install guide for ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
 
+
 ### CentOS
 
-To install Docker Community Edition (CE), you need a maintained version of CentOS 7. Archived versions aren’t supported or tested.
+To install Docker Community Edition (CE), you need a maintained version of
+CentOS 7. Archived versions are not supported or tested.
 
-Setup the Docker repository  
+Setup the Docker repository
 
 ```shell
 $ sudo yum-config-manager \
@@ -68,9 +76,11 @@ $ sudo systemctl start docker
 
 For more information on installation instructions, please visit [docker install guide for centos](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)
 
+
 ### Debian
- 
-To install Docker Community Edition (CE), you need the 64-bit version of one of these Debian or Raspbian versions:
+
+To install Docker Community Edition (CE), you need the 64-bit version of one of
+these Debian or Raspbian versions:
 
 * Buster 10 (Docker CE 17.11 Edge only)
 * Stretch 9 (stable) / Raspbian Stretch
@@ -102,7 +112,10 @@ Install the latest version of Docker CE. Any existing installation of Docker is 
 $ sudo apt-get install docker-ce
 ```
 
-For more information on installation instructions, please visit [docker install guide for Debian](https://docs.docker.com/engine/installation/linux/docker-ce/debian/)
+For more information on installation instructions, please visit [docker install
+guide for
+Debian](https://docs.docker.com/engine/installation/linux/docker-ce/debian/)
+
 
 ### Fedora
 
@@ -127,21 +140,31 @@ Start Docker.
 ```shell
 $ sudo systemctl start docker
 ```
-For more information on installation instructions, please visit [docker install guide for Fedora](https://docs.docker.com/engine/installation/linux/docker-ce/fedora/)
+For more information on installation instructions, please visit [docker install
+guide for
+Fedora](https://docs.docker.com/engine/installation/linux/docker-ce/fedora/)
 
 
 ## Installation on Mac OS X
 
-On Mac OSX you can install Docker Community Ediiton using **Docker for Mac** app. The Docker for Mac install package includes everything you need to run Docker on a Mac. 
+On Mac OSX you can install Docker Community Ediiton using **Docker for Mac**
+app. The Docker for Mac install package includes everything you need to run
+Docker on a Mac.
 
-Please visit the [download and install Docker for Mac](https://docs.docker.com/docker-for-mac/install/) and install Docker app via Stable Channel. 
+Please visit the [download and install Docker for
+Mac](https://docs.docker.com/docker-for-mac/install/) and install Docker app
+via Stable Channel.
 
 
 ## Installation on Windows
 
-On Windows you can install Docker Community Edition using **Docker for Windows** app. The Docker for Windows install package includes everything you need to run Docker on a Windows system.
+On Windows you can install Docker Community Edition using **Docker for
+Windows** app. The Docker for Windows install package includes everything you
+need to run Docker on a Windows system.
 
-Please visit the [download and install Docker for Windows](https://docs.docker.com/docker-for-windows/install/) and install Docker app via Stable Channel. 
+Please visit the [download and install Docker for
+Windows](https://docs.docker.com/docker-for-windows/install/) and install
+Docker app via Stable Channel.
 
 
 ## How to verify the installation
@@ -152,6 +175,6 @@ The following command should give you the docker version and not throw errors:
 $ docker --version
 ```
 
-## If you would like to publish/share docker images 
+## If you would like to publish/share docker images
 
 Create an account in [Docker Hub](https://hub.docker.com/)
