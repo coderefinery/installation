@@ -43,7 +43,7 @@ Please follow installation instructions from [http://meldmerge.org](http://meldm
 ## How to verify the installation
 
 To test it create two files which are similar and then compare them
-with Meld or Diffuse:
+with the visual diff tool (e.g. using Meld):
 
 ```shell
 $ meld file1 file2

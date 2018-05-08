@@ -7,7 +7,10 @@ permalink: /
 
 This page contains installation instructions for Linux, Mac OS X, and Windows.
 Please follow the instructions for your operating system.
+Note that not all components are needed for every workshop. Please check your
+workshop page to see which components you will need.
 
+- [MSYS2 (only Windows)](/installation/msys2/)
 - [Bash](/installation/bash/)
 - [Git](/installation/git/)
 - [Python](/installation/python/)
@@ -18,6 +21,7 @@ Please follow the instructions for your operating system.
 - [Visual diff tools](/installation/difftools/)
 - [Docker](/installation/docker/)
 - [Configuration problems and solutions](/installation/troubleshooting/)
+
 
 ## Instructions for removing accounts
 

@@ -25,30 +25,15 @@ You may want to keep the terminal in your dock for this workshop.
 
 ## Installation on Windows
 
-Watch the [video tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
-(copyright Software Carpentry).
+First install [MSYS2](/installation/msys2/). Once you have MSYS2 installed,
+open the MSYS2 terminal (MSYS2 MinGW 32-bit or 64-bit) and you have Bash!
 
-First download the [Git for Windows installer](https://git-for-windows.github.io).
+Try:
+```
+$ bash --version
+```
 
-Then run the installer and follow these steps:
-
-- Click on "Next".
-- Click on "Next".
-- Choose "Nano" as the editor (unless you know you prefer vi or notepad++)
-- Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
-  If you forgot to do this programs that you need for the workshop will not work properly.
-  If this happens rerun the installer and select the appropriate option.
-- Click on "Next".
-- Click on "Next".
-- Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
-- Keep "Use Windows' default console window" selected and click on "Next".
-- Click on "Install".
-- Click on "Finish".
-
-If your "HOME" environment variable is not set (or you don't know what this is):
-- Open command prompt (Open Start Menu then type `cmd` and press [Enter])
-- Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
-- Press [Enter], you should see `SUCCESS: Specified value was saved.`
-- Quit command prompt by typing `exit` then pressing [Enter].
-
-This will provide you with both git and bash in the git bash program.
+You can close the terminal by typing:
+```
+$ exit
+```
