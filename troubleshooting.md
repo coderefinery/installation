@@ -8,7 +8,7 @@ Follow the steps below to configure python and Anaconda scripts (sphinx-quicksta
 
 - Open windows command prompt
 - Type "where python” to check where python is installed
-    - If you use Anaconda, usually it is : “C:\Users<username>\Anaconda3\python.exe"
+    - If you use Anaconda, usually it is : “C:\Users\<username>\Anaconda3\python.exe"
 - Add python and anaconda scripts to your path
 
 ```shell
