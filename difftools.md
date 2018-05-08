@@ -25,12 +25,12 @@ $ sudo dnf install meld
 ```
 
 
-## Installation on Mac OS X
+## Installation on macOS
 
-Meld is available for Mac OS X but not officially supported yet, please follow
+Meld is available for macOS but not officially supported yet, please follow
 installation instructions from [http://meldmerge.org](http://meldmerge.org).
 
-On Mac OS X, there are other visual comparison tools. Please browse the net and
+On macOS, there are other visual comparison tools. Please browse the net and
 install your favourite one. Make sure they cooperate with Git since this often
 makes comparison and conflict resolution easier.
 

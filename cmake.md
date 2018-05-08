@@ -24,7 +24,7 @@ $ sudo dnf install cmake
 ```
 
 
-## Installation on Mac OS X
+## Installation on macOS
 
 Install CMake following [this page](https://cmake.org/download/).
 

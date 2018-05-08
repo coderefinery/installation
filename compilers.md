@@ -20,9 +20,9 @@ $ sudo dnf install gfortran gcc g++
 ```
 
 
-## Installation on Mac OS X
+## Installation on macOS
 
-To install compilers on Mac OSX you should install Apple's Xcode software.
+To install compilers on macOS you should install Apple's Xcode software.
 Very good instructions for doing this can be found
 [on this website](https://wiki.helsinki.fi/display/HUGG/GNU+compiler+install+on+Mac+OS+X).
 

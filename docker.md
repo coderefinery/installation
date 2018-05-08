@@ -145,9 +145,9 @@ guide for
 Fedora](https://docs.docker.com/engine/installation/linux/docker-ce/fedora/)
 
 
-## Installation on Mac OS X
+## Installation on macOS
 
-On Mac OSX you can install Docker Community Ediiton using **Docker for Mac**
+On macOS you can install Docker Community Ediiton using **Docker for Mac**
 app. The Docker for Mac install package includes everything you need to run
 Docker on a Mac.
 

@@ -9,7 +9,7 @@ workshop, but if you have a strong preference for version 2.7 that will work as
 well.
 
 
-## Installation on Linux and Mac OS X
+## Installation on Linux and macOS
 
 Although Python is likely already installed on your laptop, to avoid any
 possible conflicts we recommend that you install a fresh Python environment

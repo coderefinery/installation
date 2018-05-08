@@ -14,7 +14,7 @@ If you install it, you will be able to follow the session by testing things out 
 during the session.
 
 
-## Installation on Linux, Mac OS X, and Windows
+## Installation on Linux, macOS, and Windows
 
 Please visit the [download and installation guide](https://www.jetbrains.com/pycharm/download/#section) and install the
 "Community" version of the software.
