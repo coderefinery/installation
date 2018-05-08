@@ -64,7 +64,7 @@ $ sudo dnf install git
 ```
 
 
-## Installation on Mac OS X
+## Installation on macOS
 
 ### OS X 10.9 and higher
 

@@ -22,7 +22,7 @@ $ sudo dnf install make
 ```
 
 
-## Installation on Mac OS X
+## Installation on macOS
 
 For OS X, version 10.9 (Mavericks) or above, download the Command Line Tools by doing:
 

@@ -5,7 +5,7 @@ permalink: /
 
 # CodeRefinery workshop software installation instructions
 
-This page contains installation instructions for Linux, Mac OS X, and Windows.
+This page contains installation instructions for Linux, macOS, and Windows.
 Please follow the instructions for your operating system.
 
 - [Bash](/installation/bash/)

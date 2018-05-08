@@ -11,9 +11,9 @@ you can run it by opening a terminal and typing `bash`. There is no need to
 install anything.
 
 
-## Installation on Mac OS X
+## Installation on macOS
 
-The default shell in all versions of Mac OS X is Bash, so no need to install
+The default shell in all versions of macOS is Bash, so no need to install
 anything. You access Bash from the terminal (found in
 `/Applications/Utilities`).
 
