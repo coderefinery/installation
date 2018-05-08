@@ -18,3 +18,9 @@ the steps on
 [https://www.msys2.org](https://www.msys2.org),
 including the "pacman" commands
 to update the package database and core system packages.
+
+If you get these questions after typing `pacman -Syu`, you can answer "y":
+```
+:: msys2-runtime and catgets are in conflict. Remove cadgets? [y/N] y
+:: msys2-runtime and libcatgets are in conflict. Remove cadgets? [y/N] y
+```
