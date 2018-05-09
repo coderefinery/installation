@@ -93,3 +93,12 @@ $ emacs mytext.txt
 #### To close a file
 
 Type Ctrl-x followed by Ctrl-c.
+
+
+## Other good alternatives, in particular for Windows
+
+It is a matter of taste. Experiment and find the one you like best:
+
+- [Visual Studio Code](https://code.visualstudio.com)
+- [Atom](https://atom.io)
+- [Notepad++](https://notepad-plus-plus.org)
