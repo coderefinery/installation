@@ -21,7 +21,7 @@ Git for Windows:
 ```shell
  nano mytext.txt
 ```
-#### To save kontent    
+#### To save content    
 Ctrl + o (hold the Ctlr key and press the o)
 #### To close a file 
 Ctrl + x (hold the Ctlr key and press the x)
@@ -33,7 +33,7 @@ Navigate to where the text to be deleted located in the document using arrow key
 Video:https://www.youtube.com/watch?v=cLyUZAabf40
 
 ## Vi/Vim
- This editor takes a little effort to get started. But has more functionality than Nano, especially if you write programing code. 
+ This editor takes a little effort to get started. But has more functionality than Nano, especially if you write programming code. 
 
 ### How to install
 Ubuntu : 
