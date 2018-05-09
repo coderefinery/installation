@@ -72,10 +72,9 @@ Interactive VIM tutorial : http://www.openvim.com/
 
 ## Emacs
 
-The most powerful and takes much effort to get started. Once you get started
-there is "nothing" you can not do with this. This is the favorite editor for
-hard-core programmers, they write, version control  and even compile and run
-all from the editor it self.
+Like Vim, Emacs takes some effort and learning to get started and offers almost unlimited
+functionality. It is possible to interact with version control, even compile and run code,
+send emails, etc. all from the editor itself.
 
 #### To create or open a files called mytext.txt
 
