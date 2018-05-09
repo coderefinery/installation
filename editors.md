@@ -76,9 +76,14 @@ Like Vim, Emacs takes some effort and learning to get started and offers almost 
 functionality. It is possible to interact with version control, even compile and run code,
 send emails, etc. all from the editor itself.
 
+Emacs guided tour:https://www.gnu.org/software/emacs/tour/
+
 #### To create or open a files called mytext.txt
 
 ```shell
 $ emacs mytext.txt
 ```
-Emacs guided tour:https://www.gnu.org/software/emacs/tour/
+
+#### To close a file
+
+Type Ctrl-x followed by Ctrl-c.
