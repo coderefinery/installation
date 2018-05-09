@@ -17,7 +17,8 @@ we list few common options and give some pros/cons.
 
 Easiest to use but with minimal functionality. This comes installed as default
 on most Linux distributions.  If you do not already have a favorite editor, we
-recommend this to be used with this during the course.
+recommend this to be used with this during the course. Later you can grow into a more
+advanced editor such as Emacs or Vim.
 
 
 ### How to use it
