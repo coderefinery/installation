@@ -58,16 +58,21 @@ Tutorial :https://www.tutorialspoint.com/articles/how-to-use-nano-text-editor
 
 ## Vi/Vim
 
-This editor takes a little effort to get started. But has more functionality
+This editor takes some effort to get started. But has more functionality
 than Nano, especially if you write programming code. Syntax highlighting,
 clever copy-paste and better refactoring are some features.
+
+Interactive VIM tutorial : http://www.openvim.com
 
 #### To create or open a files called mytext.txt
 
 ```shell
 $ vi mytext.txt
 ```
-Interactive VIM tutorial : http://www.openvim.com/
+
+#### To close a file
+
+Hit Escape, then type `:wq` and hit Enter.
 
 
 ## Emacs
