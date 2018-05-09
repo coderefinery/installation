@@ -33,10 +33,18 @@ Tutorial :https://www.tutorialspoint.com/articles/how-to-use-nano-text-editor
 ## Vi/Vim
  This editor takes a little effort to get started. But has more functionality than Nano, especially if you write programming code. Syntax highlighting, clever copy-paste and better refactoring are some features.  
 
+#### To create or open a files called mytext.txt
+```shell
+ vi mytext.txt
+```
 Interactive VIM tutorial : http://www.openvim.com/
       
 ## Emacs:
   The most powerful and takes much effort to get started. Once you get started there is "nothing" you can not do with this. This is the favorite editor for hard-core programmers, they write, version control  and even compile and run all from the editor it self. 
 
+#### To create or open a files called mytext.txt
+```shell
+ emacs mytext.txt
+```
 Emacs guided tour:https://www.gnu.org/software/emacs/tour/
 
