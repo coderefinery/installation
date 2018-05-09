@@ -1,7 +1,8 @@
+---
+layout: master
+---
 
-
-# [CodeRefinery workshop software installation instructions](https://coderefinery.github.io/installation/)
-
+# Terminal editors
 
 Usually, when we want to create a text document, what we do is to use a program like Word. When the icon for Word is clicked, a graphical user interface (GUI) opens with an area to type what you want and menus and icons to perform operations like copy-paste and save. 
 
@@ -16,16 +17,18 @@ Mac:
 Git for Windows:
 
 ### How to use it:
-To create or open a files called mytext.txt
-$ nano mytext.txt
-      2. To save kontent    
+#### To create or open a files called mytext.txt
+```shell
+ nano mytext.txt
+```
+#### To save kontent    
 Ctrl + o (hold the Ctlr key and press the o)
-      3.  To close a file 
-    Ctrl + x (hold the Ctlr key and press the x)
-      4. To move up, down, left or right with the document
-    Use the arrow keys and Page-up, Page-down keys
-      5. Delete text
-    Navigate to where the text to be deleted located in the document using arrow keys. Use the Delete or Backspace keys to delete text. 
+#### To close a file 
+Ctrl + x (hold the Ctlr key and press the x)
+#### To move up, down, left or right with the document
+Use the arrow keys and Page-up, Page-down keys
+#### Delete text
+Navigate to where the text to be deleted located in the document using arrow keys. Use the Delete or Backspace keys to delete text. 
 
 Video:https://www.youtube.com/watch?v=cLyUZAabf40
 
