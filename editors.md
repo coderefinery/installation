@@ -4,17 +4,13 @@ layout: master
 
 # Terminal editors
 
-Usually, when we want to create a text document, what we do is to use a program
-like Word. When the icon for Word is clicked, a graphical user interface (GUI)
-opens with an area to type what you want and menus and icons to perform
-operations like copy-paste and save.
+There are text editors with a graphical user interface and text editors that
+allow you to edit text in the terminal. Some allow both modes of operation.
 
-When we work on the terminal we do not have a GUI. But there are programs
-called “terminal text editors”, that we can use to type text. We can do the
-same open, type,find,cut,copy,paste,save operations on these editors as well.
-However, we have to use keyboard shortcuts instead of the mouse. The keyboard
-shortcuts involves pressing and holding the Ctrl key or the Alt and pressing
-another key at the same time. There are some examples of such editors below.
+Choosing the right editor is a matter of taste and preferences. Since we often
+spend significant portions of our days editing text and source code, it can be
+valuable to invest time into learning your favourite editor really well. Below
+we list few common options and give some pros/cons.
 
 
 ## Nano
