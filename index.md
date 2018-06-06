@@ -14,6 +14,7 @@ Please follow the instructions for your operating system.
 - [Compilers](/installation/compilers/)
 - [Make](/installation/make/)
 - [CMake](/installation/cmake/)
+- [Visual Studio Code](/installation/vscode/)
 - [PyCharm](/installation/pycharm/)
 - [Visual diff tools](/installation/difftools/)
 - [Docker](/installation/docker/)
