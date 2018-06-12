@@ -136,10 +136,18 @@ and see if it opens up a new tab in your browser showing the Jupyter dashboard.
 ### Snakemake
 
 The Snakemake workflow management tool requires Python version 3.4 or higher.
-It can be installed into a conda environment by:
+Detailed installation instructions can be found in 
+[the Snakemake documentation](https://snakemake.readthedocs.io/en/v5.1.4/getting_started/installation.html).
+In short, Snakemake can be installed into a conda environment by:
 
 ```shell 
-$ conda install -c bioconda snakemake
+$ conda install -c bioconda -c conda-forge snakemake
+```
+
+or, alternatively, by:
+
+```shell
+$ pip3 install snakemake
 ```
 
 To verify the installation, type the command
@@ -233,10 +241,18 @@ Verify that it opens up a new tab in your browser showing the Jupyter dashboard.
 ### Snakemake
 
 The Snakemake workflow management tool requires Python version 3.4 or higher.
-It can be installed into a conda environment by:
+Detailed installation instructions can be found in 
+[the Snakemake documentation](https://snakemake.readthedocs.io/en/v5.1.4/getting_started/installation.html).
+In short, Snakemake can be installed into a conda environment by:
 
 ```shell 
-$ conda install -c bioconda snakemake
+$ conda install -c bioconda -c conda-forge snakemake
+```
+
+or, alternatively, by:
+
+```shell
+$ pip3 install snakemake
 ```
 
 To verify the installation, type the command
