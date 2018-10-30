@@ -68,6 +68,9 @@ We will use the following Python packages in the CodeRefinery exercises:
 - numpy
 - matplotlib
 - jupyter
+- jupyterlab
+- nodejs
+- ipywidgets
 - pandas
 - seaborn
 - sphinx
@@ -102,6 +105,11 @@ activate widgets in Jupyter:
 
 ```shell
 $ jupyter nbextension enable --py widgetsnbextension
+```
+
+To use widgets in JupyterLab, you also need to run the following command (which requires that `nodejs` is installed):
+```shell
+$ jupyter nbextension enable --py widgetsnbextension --system
 ```
 
 Python will be the main language used during the CodeRefinery workshop, but if
@@ -211,6 +219,11 @@ activate widgets in Jupyter:
 
 ```shell
 $ jupyter nbextension enable --py widgetsnbextension
+```
+
+To use widgets in JupyterLab, you also need to run the following command (which requires that `nodejs` is installed):
+```shell
+$ jupyter nbextension enable --py widgetsnbextension --system
 ```
 
 Python will be the main language used during the CodeRefinery workshop, but if
