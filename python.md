@@ -109,7 +109,7 @@ $ jupyter nbextension enable --py widgetsnbextension
 
 To use widgets in JupyterLab, you also need to run the following command (which requires that `nodejs` is installed):
 ```shell
-$ jupyter nbextension enable --py widgetsnbextension --system
+$ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
 Python will be the main language used during the CodeRefinery workshop, but if
@@ -223,7 +223,7 @@ $ jupyter nbextension enable --py widgetsnbextension
 
 To use widgets in JupyterLab, you also need to run the following command (which requires that `nodejs` is installed):
 ```shell
-$ jupyter nbextension enable --py widgetsnbextension --system
+$ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
 Python will be the main language used during the CodeRefinery workshop, but if
