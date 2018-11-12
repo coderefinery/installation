@@ -158,6 +158,13 @@ or, alternatively, by:
 $ pip3 install snakemake
 ```
 
+This may fail with an error message containing 
+`Failed building wheel for datrie`.  
+If this happens, it should work to install `datrie` first:
+```shell
+$ conda install datrie
+```
+
 To verify the installation, type the command
 
 ```shell
@@ -271,6 +278,13 @@ or, alternatively, by:
 
 ```shell
 $ pip3 install snakemake
+```
+
+This may fail with an error message containing 
+`Failed building wheel for datrie`.  
+If this happens, it should work to install `datrie` first:
+```shell
+$ conda install datrie
 ```
 
 To verify the installation, type the command
