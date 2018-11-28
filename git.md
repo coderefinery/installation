@@ -124,20 +124,6 @@ $ git config --global core.editor emacs
 ```
 You can replace emacs with vim, nano or any other editor of your choice.
 
-It is also useful to set the default push behavior.
-We recommend the following option:
-```shell
-$ git config --global push.default current
-```
-
-Colors make it easier to inspect diffs and the staging area:
-```shell
-$ git config --global color.diff auto
-$ git config --global color.status auto
-$ git config --global color.branch auto
-$ git config --global color.ui true
-```
-
 To see where this information is stored, use:
 ```shell
 $ git config --list --show-origin
