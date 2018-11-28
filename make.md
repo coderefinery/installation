@@ -27,7 +27,7 @@ $ sudo dnf install make
 For OS X, version 10.9 (Mavericks) or above, download the Command Line Tools by doing:
 
 ```
-xcode-select  --install
+$ xcode-select --install
 ```
 
 For more information, see the [OSX Daily blog](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
