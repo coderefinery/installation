@@ -24,7 +24,8 @@ account, you can instead use your favourite source code repository hosting
 platform. Most aspects of our material and exercises are transferable to all
 popular platforms.
 
-Follow the installation instructions below but do not forget to also configure Git (see below).
+Follow the installation instructions below but do not forget to also
+[configure Git](#configuring-git).
 
 
 ## Installation on Linux
