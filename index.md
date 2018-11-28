@@ -21,6 +21,7 @@ Please follow the instructions for your operating system.
 - [Terminal editors](/installation/editors/)
 - [Configuration problems and solutions](/installation/troubleshooting/)
 
+
 ## Accounts
 
 A couple of accounts are needed during the course. The motivation
@@ -31,11 +32,10 @@ We recommend that all participants who do not yet have user accounts on the foll
 platforms create new accounts before the workshop starts:
 
 - [GitHub](https://github.com/)
-- [Travis CI](https://travis-ci.org/)
-- [Coveralls](https://coveralls.io/)
 - [Read the Docs](https://readthedocs.org/)
 
 These accounts can later be removed, if desired, according to the instructions given below.
+
 
 ## Instructions for removing accounts
 
