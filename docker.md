@@ -50,6 +50,8 @@ Install the latest version of Docker CE. Any existing installation of Docker is 
 $ sudo apt-get install docker-ce
 ```
 
+Please also [verify your installation](#how-to-verify-the-installation).
+
 For more information on installation instructions, please visit the
 [docker install guide](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/).
 
@@ -74,6 +76,8 @@ Start Docker.
 ```shell
 $ sudo systemctl start docker
 ```
+
+Please also [verify your installation](#how-to-verify-the-installation).
 
 For more information on installation instructions, please visit the
 [docker install guide](https://docs.docker.com/engine/installation/linux/docker-ce/centos/).
@@ -114,6 +118,8 @@ Install the latest version of Docker CE. Any existing installation of Docker is 
 $ sudo apt-get install docker-ce
 ```
 
+Please also [verify your installation](#how-to-verify-the-installation).
+
 For more information on installation instructions, please visit the
 [docker install guide](https://docs.docker.com/engine/installation/linux/docker-ce/debian/).
 
@@ -141,6 +147,8 @@ Start Docker.
 ```shell
 $ sudo systemctl start docker
 ```
+
+Please also [verify your installation](#how-to-verify-the-installation).
 
 For more information on installation instructions, please visit the
 [docker install guide](https://docs.docker.com/engine/installation/linux/docker-ce/fedora/).
