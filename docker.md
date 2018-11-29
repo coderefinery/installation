@@ -50,7 +50,10 @@ Install the latest version of Docker CE. Any existing installation of Docker is 
 $ sudo apt-get install docker-ce
 ```
 
-For more information on installation instructions, please visit [docker install guide for ubuntu](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/)
+Please also [verify your installation](#how-to-verify-the-installation).
+
+For more information on installation instructions, please visit the
+[docker install guide](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/).
 
 
 ### CentOS
@@ -74,7 +77,10 @@ Start Docker.
 $ sudo systemctl start docker
 ```
 
-For more information on installation instructions, please visit [docker install guide for centos](https://docs.docker.com/engine/installation/linux/docker-ce/centos/)
+Please also [verify your installation](#how-to-verify-the-installation).
+
+For more information on installation instructions, please visit the
+[docker install guide](https://docs.docker.com/engine/installation/linux/docker-ce/centos/).
 
 
 ### Debian
@@ -112,9 +118,10 @@ Install the latest version of Docker CE. Any existing installation of Docker is 
 $ sudo apt-get install docker-ce
 ```
 
-For more information on installation instructions, please visit [docker install
-guide for
-Debian](https://docs.docker.com/engine/installation/linux/docker-ce/debian/)
+Please also [verify your installation](#how-to-verify-the-installation).
+
+For more information on installation instructions, please visit the
+[docker install guide](https://docs.docker.com/engine/installation/linux/docker-ce/debian/).
 
 
 ### Fedora
@@ -140,9 +147,11 @@ Start Docker.
 ```shell
 $ sudo systemctl start docker
 ```
-For more information on installation instructions, please visit [docker install
-guide for
-Fedora](https://docs.docker.com/engine/installation/linux/docker-ce/fedora/)
+
+Please also [verify your installation](#how-to-verify-the-installation).
+
+For more information on installation instructions, please visit the
+[docker install guide](https://docs.docker.com/engine/installation/linux/docker-ce/fedora/).
 
 
 ## Installation on macOS

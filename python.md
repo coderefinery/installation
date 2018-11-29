@@ -36,6 +36,13 @@ as [described here](https://conda.io/docs/user-guide/tasks/manage-python.html).
 After installing Anaconda/Miniconda you can install the required packages
 (listed below) via `conda install` (recommended) or `pip install`.
 
+Anaconda/Miniconda prepends your PATH with `$HOME/anaconda3/bin` (or
+`$HOME/miniconda3/bin`), assuming that `$HOME/anaconda3` is where you installed
+Anaconda3, by adding a line to your `.bash_profile` file.
+To verify your Anaconda/Miniconda installation, open a new terminal (or type
+`source .bash_profile` in the terminal session in which you installed
+Anaconda/Miniconda).
+
 If you for some reason prefer not to install Anaconda/Miniconda, an alternative
 is to use
 [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/). You
@@ -75,7 +82,7 @@ We will use the following Python packages in the CodeRefinery exercises:
 - seaborn
 - sphinx
 - pytest
-- pep8
+- pycodestyle
 
 If you have installed a new Python environment via Anaconda, you will already
 have all these packages installed on your system.
@@ -94,6 +101,8 @@ $HOME/venv/bin/activate`, your `pip` should be the one located in
 ```shell
 $ pip install <package-name>
 ```
+
+Please also [verify your installation](#how-to-verify-the-installation).
 
 
 ### Jupyter
@@ -133,13 +142,8 @@ See [this page](https://github.com/Calysto/octave_kernel) for further informatio
 
 To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
 
-To see whether JupyterLab is working as expected, type the command
+Please also [verify your installation](#how-to-verify-the-installation).
 
-```shell
-$ jupyter-lab
-```
-
-and see if it opens up a new tab in your browser showing the JupyterLab interface.
 
 ### Snakemake
 
@@ -165,43 +169,7 @@ If this happens, it should work to install `datrie` first:
 $ conda install datrie
 ```
 
-To verify the installation, type the command
-
-```shell
-$ snakemake --version
-```
-
-It should return something like 
-
-```shell
-5.3.0
-```
-
-### How to verify the Python installation
-
-Anaconda/Miniconda prepends your PATH with `$HOME/anaconda3/bin` (or
-`$HOME/miniconda3/bin`), assuming that `$HOME/anaconda3` is where you installed
-Anaconda3, by adding a line to your .bash_profile file. This means that you can
-test your Anaconda/Miniconda installation by opening a new terminal (or type
-`source .bash_profile` in the terminal session in which you installed
-Anaconda/Miniconda), and type:
-
-```shell
-$ python --version
-```
-If your installation was successful, this should return something like
-
-```shell
-Python 3.6.5 :: Continuum Analytics, Inc.
-```
-
-To check if you can successfully import a specific package, you can type
-
-```shell
-$ python -c "import <package-name>"
-```
-
-and verify that you do not get an ImportError.
+Please also [verify your installation](#how-to-verify-the-installation).
 
 
 ## Installation on Windows
@@ -255,13 +223,10 @@ See [this page](https://github.com/Calysto/octave_kernel) for further informatio
 To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
 
 The JupyterLab App can be launched by clicking on the JupyterLab
-icon in the Anaconda menu, or by running the following command from the Anaconda prompt:
+icon in the Anaconda menu, or by running `jupyter-lab` in the Anaconda prompt.
 
-```shell
-$ jupyter-lab
-```
+Please also [verify your installation](#how-to-verify-the-installation).
 
-Verify that it opens up a new tab in your browser showing the JupyterLab interface.
 
 ### Snakemake
 
@@ -287,36 +252,38 @@ If this happens, it should work to install `datrie` first:
 $ conda install datrie
 ```
 
-To verify the installation, type the command
+Please also [verify your installation](#how-to-verify-the-installation).
 
-```shell
-$ snakemake --version
-```
 
-It should return something like 
-
-```shell
-5.3.0
-```
-
-### How to verify the Python installation
+## How to verify the installation
 
 In the command prompt, type:
 
 ```shell
 $ python --version
 ```
-If your installation was successful, this should return something like
+If your installation was successful, you will see your Python version. It needs to start with a "3":
 
 ```shell
 Python 3.6.5 :: Continuum Analytics, Inc.
 ```
 
-To check if you can successfully import a specific package, you can type
+Check whether you can import `pytest` - this should not produce an error:
 
 ```shell
-$ python -c "import <package-name>"
+$ python -c "import pytest"
 ```
 
-and verify that you do not get an ImportError.
+Verify that Snakemake is installed - this should not produce an error:
 
+```shell
+$ snakemake --version
+```
+
+To see whether JupyterLab is working as expected, type the command
+
+```shell
+$ jupyter-lab
+```
+
+and see if it opens up a new tab in your browser showing the JupyterLab interface.

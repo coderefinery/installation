@@ -21,13 +21,15 @@ For Fedora:
 $ sudo dnf install make
 ```
 
+Please also [verify your installation](#how-to-verify-the-installation).
+
 
 ## Installation on macOS
 
 For OS X, version 10.9 (Mavericks) or above, download the Command Line Tools by doing:
 
 ```
-xcode-select  --install
+$ xcode-select --install
 ```
 
 For more information, see the [OSX Daily blog](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/).
@@ -50,6 +52,8 @@ Once XCode has installed:
 
 You will now be able to run make within your shell.
 
+Please also [verify your installation](#how-to-verify-the-installation).
+
 
 ## Installation on Windows
 
@@ -62,7 +66,7 @@ Add make to your user path variable:
 
 - In control panel, search for "env", click on "Edit environmental variables for your account". In box for user variables, click PATH, click Edit ..., and add <location-of-make.exe> (probably `C:\Program Files (x86)\GnuWin32\bin`) at the end of the variables value, separated from the previous entry by a semicolon.
 
-Restart computer.
+Restart the computer.
 
 
 ## How to verify the installation

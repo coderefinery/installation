@@ -24,6 +24,8 @@ For Fedora:
 $ sudo dnf install meld
 ```
 
+Please also [verify your installation](#how-to-verify-the-installation).
+
 
 ## Installation on macOS
 
@@ -33,6 +35,8 @@ installation instructions from [http://meldmerge.org](http://meldmerge.org).
 On macOS, there are other visual comparison tools. Please browse the net and
 install your favourite one. Make sure they cooperate with Git since this often
 makes comparison and conflict resolution easier.
+
+Please also [verify your installation](#how-to-verify-the-installation).
 
 
 ## Installation on Windows

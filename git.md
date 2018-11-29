@@ -24,7 +24,8 @@ account, you can instead use your favourite source code repository hosting
 platform. Most aspects of our material and exercises are transferable to all
 popular platforms.
 
-Follow the installation instructions below but do not forget to also configure Git (see below).
+Follow the installation instructions below but do not forget to also
+[configure Git](#configuring-git).
 
 
 ## Installation on Linux
@@ -44,24 +45,14 @@ Check the version after installing:
 $ git --version
 ```
 
-If the version you get is far behind the latest (https://git-scm.com/downloads), 
-then you would need the following additional steps to get the latest version.
-Please make sure the version you have and what is used in the lecture notes are
-the same.
-
-```shell
-$ sudo apt-get update
-$ sudo add-apt-repository ppa:git-core/ppa
-$ sudo apt-get install git
-$ git --version
-```
-
-
 For Fedora:
 
 ```shell
 $ sudo dnf install git
 ```
+
+Please also [verify your installation](#how-to-verify-the-installation)
+and [configure Git](#configuring-git).
 
 
 ## Installation on macOS
@@ -75,16 +66,25 @@ installer from
 After installing Git, there will not be anything in your `/Applications`
 folder, as Git is a command line program.
 
+Please also [verify your installation](#how-to-verify-the-installation)
+and [configure Git](#configuring-git).
+
 
 ### Older versions of OS X (10.5-10.8)
 
 Use the most recent available installer labelled "snow-leopard" available
 [here](http://sourceforge.net/projects/git-osx-installer/files/).
 
+Please also [verify your installation](#how-to-verify-the-installation)
+and [configure Git](#configuring-git).
+
 
 ## Installation on Windows
 
 Git should be installed on your computer as part of the Bash installation.
+
+Please also [verify your installation](#how-to-verify-the-installation)
+and [configure Git](#configuring-git).
 
 
 ## How to verify the installation
@@ -118,25 +118,10 @@ $ git config --global user.email yourname@example.com
 This is important since your Git commits use this information.
 The `--global` option ensures that you do not need to enter this information again on your machine.
 
-It is convenient to set also the default text editor to use with Git. This you
-do with:
+It is convenient to set also the default text editor to use with Git.
+You can replace emacs with vim, nano or any other editor of your choice:
 ```shell
 $ git config --global core.editor emacs
-```
-You can replace emacs with vim, nano or any other editor of your choice.
-
-It is also useful to set the default push behavior.
-We recommend the following option:
-```shell
-$ git config --global push.default current
-```
-
-Colors make it easier to inspect diffs and the staging area:
-```shell
-$ git config --global color.diff auto
-$ git config --global color.status auto
-$ git config --global color.branch auto
-$ git config --global color.ui true
 ```
 
 To see where this information is stored, use:

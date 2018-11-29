@@ -2,9 +2,9 @@
 layout: master
 ---
 
-# Configuring python and Anaconda scripts in Windows
+# Configuring Python and Anaconda scripts in Windows
 
-Follow the steps below to configure python and Anaconda scripts (sphinx-quickstart, jupyter, etc) in git bash.
+Follow the steps below to enable Python and Anaconda scripts in Git Bash:
 
 - Open windows command prompt
 - Type "where python” to check where python is installed
@@ -18,8 +18,11 @@ SETX PATH “%PATH%;C:\Users\<username>\Anaconda3\Scripts;C:\Users\<username>\An
 
 Check `python --version`
 
-If you open git bash, you will have python and anaconda scripts available to git bash.
+If you open Git Bash, you will have Python and Anaconda scripts available to Git Bash.
+
 
 # Other configuration problems
 
-Please follow the [troubleshooting guide](https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions) of software carpentry for fixing other configuration problems you might be having.
+Please follow the
+[Software Carpentry troubleshooting guide](https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions)
+for fixing other configuration problems you might be having.
