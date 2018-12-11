@@ -57,12 +57,6 @@ However, you can send an email to support@travis-ci.com and ask them to delete y
 will help you with the account deletion.
 
 
-#### Coveralls
-
-You can remove projects and delete your account. To achieve this,
-read section "CANCELING" on [https://coveralls.io/legal](https://coveralls.io/legal).
-
-
 #### Read the Docs
 
 - [Deleting a Read the Docs account](https://readthedocs.org/accounts/delete/)
