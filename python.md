@@ -4,9 +4,9 @@ layout: master
 
 # Python
 
-We recommend using Python version 3.5 or 3.6 for the exercises in the CodeRefinery
-workshop, but if you have a strong preference for version 2.7 that will work as
-well.
+We strongly recommend using Python version 3.5-3.7 for the exercises in the CodeRefinery
+workshop. If you have a strong preference for version 2.7 that will mostly work as
+well, except for the Snakemake package which requires Python3.
 
 
 ## Installation on Linux and macOS
@@ -31,14 +31,14 @@ in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 If you already have an Anaconda2 distribution installed but would like to switch to Python3
 for the CodeRefinery workshop, you don't need to install the full Anaconda3 distribution. 
 Instead, you can create a separate Python3 conda environment under your Anaconda2 installation, 
-as [described here](https://conda.io/docs/user-guide/tasks/manage-python.html).
+as [described here](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python).
 
 After installing Anaconda/Miniconda you can install the required packages
 (listed below) via `conda install` (recommended) or `pip install`.
 
 Anaconda/Miniconda prepends your PATH with `$HOME/anaconda3/bin` (or
 `$HOME/miniconda3/bin`), assuming that `$HOME/anaconda3` is where you installed
-Anaconda3, by adding a line to your `.bash_profile` file.
+Anaconda3, by adding lines to your `.bash_profile` file.
 To verify your Anaconda/Miniconda installation, open a new terminal (or type
 `source .bash_profile` in the terminal session in which you installed
 Anaconda/Miniconda).
@@ -76,7 +76,6 @@ We will use the following Python packages in the CodeRefinery exercises:
 - matplotlib
 - jupyter
 - jupyterlab
-- nodejs
 - ipywidgets
 - pandas
 - seaborn
@@ -105,111 +104,6 @@ $ pip install <package-name>
 Please also [verify your installation](#how-to-verify-the-installation).
 
 
-### Jupyter
-
-Jupyter and JupyterLab can be installed according to the instructions given above. 
-
-Please also [verify your installation](#how-to-verify-the-installation).
-
-Several extensions to Jupyter will be demonstrated during the workshop. You do 
-not need to install them, but if you wish to you can follow the instructions below.
-
-#### Widget extension
-
-If you did not install Python through Anaconda, and if you installed Jupyter 
-using `pip` and not `conda`, you will need to execute this command in a terminal in order to 
-activate widgets in Jupyter:
-
-```shell
-$ jupyter nbextension enable --py widgetsnbextension
-```
-
-To use widgets in JupyterLab, you also need to run the following command (which requires that `nodejs` is installed):
-```shell
-$ jupyter labextension install @jupyter-widgets/jupyterlab-manager
-```
-
-#### Git extension
-
-`jupyterlab-git` is a JupyterLab extension for version control using Git.  
-
-To install it, run these commands:
-```bash
-$ jupyter labextension install @jupyterlab/git
-$ pip install jupyterlab-git
-$ jupyter serverextension enable --py jupyterlab_git
-```
-
-#### GitHub extension
-
-`jupyterlab/github` is a JupyterLab extension for accessing GitHub repositories.
-
-To install it, run this command:
-```bash
-$ jupyter labextension install @jupyterlab/github
-```
-
-#### R
-
-Python will be the main language used during the CodeRefinery workshop, but if
-you use R and want to experiment with R in Jupyter, install the
-`r-essentials` package:
-
-```shell
-$ conda install -c r r-essentials
-```
-
-For further information on using R in Jupyter see [this page](https://www.continuum.io/blog/developer/jupyter-and-conda-r).
-
-#### Matlab/Octave
-
-Matlab and Octave can also be used as kernels to Jupyter. To install the Octave kernel, run
-
-```shell
-$ pip install octave_kernel
-$ python -m octave_kernel.install
-```
-
-See [this page](https://github.com/Calysto/octave_kernel) for further information.
-
-To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
-
-
-### Snakemake
-
-The Snakemake workflow management tool requires Python version 3.4 or higher.
-Detailed installation instructions can be found in 
-[the Snakemake documentation](https://snakemake.readthedocs.io/en/v5.1.4/getting_started/installation.html).
-
-In short, Snakemake can be installed either via the `snakemake` or 
-the smaller (but sufficient) `snakemake-minimal` package. 
-To install one of these 
-into a conda environment, type:
-
-```shell 
-$ conda install -c bioconda -c conda-forge snakemake
-# or
-$ conda install -c bioconda -c conda-forge snakemake-minimal
-```
-
-or, alternatively, by:
-
-```shell
-$ pip3 install snakemake
-# or
-$ pip3 install snakemake-minimal
-```
-
-This may fail with an error message containing 
-`Failed building wheel for datrie`.  
-If this happens, it should work to install `datrie` first:
-```shell
-$ conda install datrie
-```
-
-Please also [verify your installation](#how-to-verify-the-installation).
-
-
 ## Installation on Windows
 
 Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
@@ -222,113 +116,6 @@ Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
 
 Anaconda contains almost all the required Python packages which will be used during the CodeRefinery workshop.
 
-
-### Jupyter
-
-Jupyter and JupyterLab can be installed according to the instructions given above.
-
-The JupyterLab App can be launched by clicking on the JupyterLab icon in the Anaconda menu, or by running jupyter-lab in the Anaconda prompt.
-
-Please also [verify your installation](#how-to-verify-the-installation).
-
-Several extensions to Jupyter will be demonstrated during the workshop. You do 
-not need to install them, but if you wish to you can follow the instructions below.
-
-#### Widget extension
-
-If you did not install Python through Anaconda, and if you installed Jupyter 
-using `pip` and not `conda`, you will need to execute this command in a terminal in order to 
-activate widgets in Jupyter:
-
-```shell
-$ jupyter nbextension enable --py widgetsnbextension
-```
-
-To use widgets in JupyterLab, you also need to run the following command (which requires that `nodejs` is installed):
-```shell
-$ jupyter labextension install @jupyter-widgets/jupyterlab-manager
-```
-
-#### Git extension
-
-`jupyterlab-git` is a JupyterLab extension for version control using Git.  
-
-To install it, run these commands:
-```bash
-$ jupyter labextension install @jupyterlab/git
-$ pip install jupyterlab-git
-$ jupyter serverextension enable --py jupyterlab_git
-```
-
-#### GitHub extension
-
-`jupyterlab/github` is a JupyterLab extension for accessing GitHub repositories.
-
-To install it, run this command:
-```bash
-$ jupyter labextension install @jupyterlab/github
-```
-
-#### R
-
-Python will be the main language used during the CodeRefinery workshop, but if
-you use R and want to experiment with R in Jupyter, install the
-`r-essentials` package:
-
-```shell
-$ conda install -c r r-essentials
-```
-
-For further information on using R in Jupyter see [this page](https://www.continuum.io/blog/developer/jupyter-and-conda-r).
-
-#### Matlab/Octave
-
-Matlab and Octave can also be used as kernels to Jupyter. To install the Octave kernel, run
-
-```shell
-$ pip install octave_kernel
-$ python -m octave_kernel.install
-```
-
-See [this page](https://github.com/Calysto/octave_kernel) for further information.
-
-To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
-
-
-
-### Snakemake
-
-The Snakemake workflow management tool requires Python version 3.4 or higher.
-Detailed installation instructions can be found in 
-[the Snakemake documentation](https://snakemake.readthedocs.io/en/v5.1.4/getting_started/installation.html).
-
-In short, Snakemake can be installed either via the `snakemake` or 
-the smaller (but sufficient) `snakemake-minimal` package. 
-To install one of these 
-into a conda environment, type:
-
-```shell 
-$ conda install -c bioconda -c conda-forge snakemake
-# or
-$ conda install -c bioconda -c conda-forge snakemake-minimal
-```
-
-or, alternatively, by:
-
-```shell
-$ pip3 install snakemake
-# or
-$ pip3 install snakemake-minimal
-```
-
-This may fail with an error message containing 
-`Failed building wheel for datrie`.  
-If this happens, it should work to install `datrie` first:
-```shell
-$ conda install datrie
-```
-
-Please also [verify your installation](#how-to-verify-the-installation).
 
 
 ## How to verify the installation
@@ -350,16 +137,3 @@ Check whether you can import `pytest` - this should not produce an error:
 $ python -c "import pytest"
 ```
 
-Verify that Snakemake is installed - this should not produce an error:
-
-```shell
-$ snakemake --version
-```
-
-To see whether JupyterLab is working as expected, type the command
-
-```shell
-$ jupyter-lab
-```
-
-and see if it opens up a new tab in your browser showing the JupyterLab interface.
