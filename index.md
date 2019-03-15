@@ -11,6 +11,8 @@ Please follow the instructions for your operating system.
 - [Bash](/installation/bash/)
 - [Git](/installation/git/)
 - [Python](/installation/python/)
+- [Jupyter](/installation/jupyter/)
+- [Snakemake](/installation/snakemake/)
 - [Compilers](/installation/compilers/)
 - [Make](/installation/make/)
 - [CMake](/installation/cmake/)
