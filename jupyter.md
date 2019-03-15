@@ -37,6 +37,16 @@ To use widgets in JupyterLab, you also need to run the following command:
 $ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
+### Diffing/merging notebooks
+
+The `nbdime` packages provides tools for diffing and merging Jupyter notebooks 
+and is integrated with Git.
+
+It can be installed by:
+```bash
+$ pip install nbdime
+```
+
 ### Git extension
 
 `jupyterlab-git` is a JupyterLab extension for version control using Git.  
