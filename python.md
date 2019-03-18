@@ -5,9 +5,8 @@ layout: master
 # Python
 
 We strongly recommend using Python version 3.5-3.7 for the exercises in the CodeRefinery
-workshop. If you have a strong preference for version 2.7 that will mostly work as
-well, except for the Snakemake package which requires Python3.
-
+workshop. If you only have version 2.7 installed, the instructions below 
+describe how you can set up an isolated Python3 environment.
 
 ## Installation on Linux and macOS
 
@@ -28,8 +27,8 @@ folder, rather than in a system directory, and one should not `sudo` it. Also
 note that Python 2 and Python 3 versions of Anaconda are conventionally installed
 in folders anaconda2 and anaconda3, respectively (and similarly for Miniconda).
 
-If you already have an Anaconda2 distribution installed but would like to switch to Python3
-for the CodeRefinery workshop, you don't need to install the full Anaconda3 distribution. 
+If you already have an Anaconda2 distribution installed, 
+you don't need to install the full Anaconda3 distribution. 
 Instead, you can create a separate Python3 conda environment under your Anaconda2 installation, 
 as [described here](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#managing-python).
 
