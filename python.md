@@ -20,7 +20,7 @@ listed below and install them.
 Follow these links for download and installation instructions:
 
 - [Anaconda](https://docs.continuum.io/anaconda/install)
-- [Miniconda](http://conda.pydata.org/docs/install/quick.html)
+- [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
 Note that it is best to install Anaconda/Miniconda into a directory in the home
 folder, rather than in a system directory, and one should not `sudo` it. Also
@@ -79,6 +79,7 @@ We will use the following Python packages in the CodeRefinery exercises:
 - pandas
 - seaborn
 - sphinx
+- sphinx_rtd_theme
 - pytest
 - pycodestyle
 
