@@ -119,9 +119,9 @@ This is important since your Git commits use this information.
 The `--global` option ensures that you do not need to enter this information again on your machine.
 
 It is convenient to set also the default text editor to use with Git.
-You can replace emacs with vim, nano or any other editor of your choice:
+You can replace nano with vim, emacs or any other editor of your choice:
 ```shell
-$ git config --global core.editor emacs
+$ git config --global core.editor nano
 ```
 
 To see where this information is stored, use:
