@@ -24,18 +24,20 @@ $ conda install nodejs
 
 ### Widget extension
 
-If you did not install Python through Anaconda, and if you installed Jupyter 
-using `pip` and not `conda`, you will need to execute this command in a terminal in order to 
+To use widgets in JupyterLab, you also need to run the following
+command (even if you installed through conda):
+```shell
+$ jupyter labextension install @jupyter-widgets/jupyterlab-manager
+```
+
+For classic notebooks, *if you did not install Python through Anaconda*, and if you installed Jupyter
+using `pip` and not `conda`, you will need to execute this command in a terminal in order to
 activate widgets in Jupyter:
 
 ```shell
 $ jupyter nbextension enable --py widgetsnbextension
 ```
 
-To use widgets in JupyterLab, you also need to run the following command:
-```shell
-$ jupyter labextension install @jupyter-widgets/jupyterlab-manager
-```
 
 ### Diffing/merging notebooks
 
