@@ -35,7 +35,8 @@ using `pip` and not `conda`, you will need to execute this command in a terminal
 activate widgets in Jupyter:
 
 ```shell
-$ jupyter nbextension enable --py widgetsnbextension
+ $ conda install nodejs
+ $ jupyter nbextension enable --py widgetsnbextension
 ```
 
 
