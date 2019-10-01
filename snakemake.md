@@ -11,9 +11,9 @@ Detailed installation instructions can be found in
 ## Installation on Linux, macOS and Windows
 
 In short, Snakemake can be installed either via the `snakemake` or 
-the smaller (but sufficient) `snakemake-minimal` package. 
-To install one of these 
-into a conda environment, type:
+the smaller (but sufficient) `snakemake-minimal` package.  (On
+Windows, you *have* to use `snakemake-minimal`.)
+To install one of these into a conda environment, type:
 
 ```shell 
 $ conda install -c bioconda -c conda-forge snakemake
