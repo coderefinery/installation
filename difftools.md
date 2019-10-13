@@ -10,8 +10,9 @@ they can provide a nice alternative to command line output to show differences
 between file versions or branches.
 
 
-## Installation on Linux
+## Installation of meld on Linux
 
+On Linux we recommend the program [meld](https://meldmerge.org).
 Install meld via your distribution package manager. For Debian/Ubuntu run:
 
 ```shell
@@ -29,18 +30,13 @@ Please also [verify your installation](#how-to-verify-the-installation).
 
 ## Installation on macOS
 
-Meld is available for macOS but not officially supported yet, please follow
-installation instructions from [http://meldmerge.org](http://meldmerge.org).
-
-On macOS, there are other visual comparison tools. Please browse the net and
-install your favourite one. Make sure they cooperate with Git since this often
-makes comparison and conflict resolution easier.
-
+For macOS we recommend to use [Opendiff](https://borgs.cybrilla.com/tils/opendiff-as-difftool/).
 Please also [verify your installation](#how-to-verify-the-installation).
 
 
-## Installation on Windows
+## Installation of Meld on Windows
 
+On Linux we recommend the program [meld](https://meldmerge.org).
 Please follow installation instructions from [http://meldmerge.org](http://meldmerge.org).
 
 
