@@ -31,7 +31,7 @@ Follow the installation instructions below but do not forget to also
 ## Installation on Linux
 
 If Git is not already available on your machine you can try to install it via
-your distribution package manager. 
+your distribution package manager.
 
 For Debian/Ubuntu run:
 
@@ -104,6 +104,20 @@ You should see something like this:
 dd4472c we should not forget to enjoy
 2bb9bb4 add half an onion
 2d79e7e adding ingredients and instructions
+```
+
+Please also check that you can access Git and Python in the same environment by
+checking the versions of pytest and sphinx-build (not a problem if versions
+differ a bit):
+
+```shell
+$ pytest --version
+
+This is pytest version 5.2.1
+
+$ sphinx-build --version
+
+sphinx-build 2.2.0
 ```
 
 

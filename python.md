@@ -138,3 +138,23 @@ Check whether you can import `pytest` - this should not produce an error:
 $ python -c "import pytest"
 ```
 
+Now check that you can start pytest and sphinx-build directly from the command
+line (not a problem if versions differ a bit):
+
+```shell
+$ pytest --version
+
+This is pytest version 5.2.1
+
+$ sphinx-build --version
+
+sphinx-build 2.2.0
+```
+
+Finally verify that you can run both Git and Python commands in the same environment.
+This should not produce an error:
+
+```shell
+$ python --version
+$ git --version
+```
