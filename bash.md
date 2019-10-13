@@ -4,6 +4,13 @@ layout: master
 
 # Bash
 
+
+## If you are new to shell
+
+If you have never been in a terminal shell, consider watching
+[this shell tutorial video by Richard Darst](https://drive.google.com/file/d/1QlDmCIHggX533cJLiRnEfBbvENWz50v9/view).
+
+
 ## Installation on Linux
 
 The default shell is usually Bash, but if your machine is set up differently
