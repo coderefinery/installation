@@ -36,7 +36,7 @@ Please also [verify your installation](#how-to-verify-the-installation).
 
 ## Installation on macOS
 
-For macOS we recommend to use [Opendiff](https://borgs.cybrilla.com/tils/opendiff-as-difftool/).
+For macOS we recommend to use Opendiff. You can install it following [this blog post](https://borgs.cybrilla.com/tils/opendiff-as-difftool/).
 Please also [verify your installation](#how-to-verify-the-installation).
 
 
