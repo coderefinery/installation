@@ -28,10 +28,12 @@ this shortcuts involves pressing and holding down the control key (Ctrl) on
 your keyboard and pressing another key. The pressing down and holding the Ctrl
 key is represented by a hat "^".
 
+Tutorial: [https://www.tutorialspoint.com/articles/how-to-use-nano-text-editor](https://www.tutorialspoint.com/articles/how-to-use-nano-text-editor)
+
 #### To create or open a files called mytext.txt
 
 ```shell
- nano mytext.txt
+$ nano mytext.txt
 ```
 
 #### To save content
@@ -54,8 +56,6 @@ Navigate to where the text to be deleted located in the document using arrow key
 
 Ctrl + w then type the word to find and press enter (please note it is w not f as in most other editors)
 
-Tutorial :https://www.tutorialspoint.com/articles/how-to-use-nano-text-editor
-
 
 ## Vi/Vim
 
@@ -63,7 +63,7 @@ This editor takes some effort to get started. But has more functionality
 than Nano, especially if you write programming code. Syntax highlighting,
 clever copy-paste and better refactoring are some features.
 
-Interactive VIM tutorial : http://www.openvim.com
+Interactive VIM tutorial: [http://www.openvim.com](http://www.openvim.com)
 
 #### To create or open a files called mytext.txt
 
@@ -82,7 +82,7 @@ Like Vim, Emacs takes some effort and learning to get started and offers almost 
 functionality. It is possible to interact with version control, even compile and run code,
 send emails, etc. all from the editor itself.
 
-Emacs guided tour:https://www.gnu.org/software/emacs/tour/
+Emacs guided tour: [https://www.gnu.org/software/emacs/tour/](https://www.gnu.org/software/emacs/tour/)
 
 #### To create or open a files called mytext.txt
 
