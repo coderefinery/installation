@@ -8,21 +8,24 @@ permalink: /
 This page contains installation instructions for Linux, macOS, and Windows.
 Please follow the instructions for your operating system.
 
-- [Setting up and removing accounts](/installation/accounts/)
+Tools we use in a typical CodeRefinery workshop:
 - [Bash](/installation/bash/)
+- [Terminal editors](/installation/editors/)
 - [Git](/installation/git/)
 - [Python](/installation/python/)
+- [Visual diff tools](/installation/difftools/)
 - [Jupyter](/installation/jupyter/)
 - [Snakemake](/installation/snakemake/)
+- [Setting up and removing accounts](/installation/accounts/)
+- [Troubleshooting](/installation/troubleshooting/)
+
+Tools we use only in specialized workshops:
 - [Compilers](/installation/compilers/)
 - [Make](/installation/make/)
 - [CMake](/installation/cmake/)
 - [Visual Studio Code](/installation/vscode/)
 - [PyCharm](/installation/pycharm/)
-- [Visual diff tools](/installation/difftools/)
 - [Docker](/installation/docker/)
-- [Terminal editors](/installation/editors/)
-- [Troubleshooting](/installation/troubleshooting/)
 
 
 ## Why are we asking participants to install software?
