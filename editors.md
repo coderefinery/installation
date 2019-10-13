@@ -95,10 +95,19 @@ $ emacs mytext.txt
 Type Ctrl-x followed by Ctrl-c.
 
 
+## [Visual Studio Code](https://code.visualstudio.com)
+
+Visual Studio Code is a lightweight (around 200 MB) but powerful source code
+editor. It is **free and open source** and runs on your desktop and is
+available for Windows, macOS and Linux.  It has a rich ecosystem of extensions
+for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, Go
+
+Please visit the [download page](https://code.visualstudio.com/Download) for installation instructions.
+
+
 ## Other good alternatives, in particular for Windows
 
 It is a matter of taste. Experiment and find the one you like best:
 
-- [Visual Studio Code](https://code.visualstudio.com)
 - [Atom](https://atom.io)
 - [Notepad++](https://notepad-plus-plus.org)

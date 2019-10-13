@@ -23,7 +23,6 @@ Tools we use only in specialized workshops:
 - [Compilers](/installation/compilers/)
 - [Make](/installation/make/)
 - [CMake](/installation/cmake/)
-- [Visual Studio Code](/installation/vscode/)
 - [PyCharm](/installation/pycharm/)
 - [Docker](/installation/docker/)
 
