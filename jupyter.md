@@ -4,13 +4,14 @@ layout: master
 
 # Jupyter
 
-Jupyter/JupyterLab should be installed on your computer as part of the Python installation, 
+Jupyter/JupyterLab should be installed on your computer if you have installed Anaconda.
 but please also [verify your Jupyter installation](#how-to-verify-the-installation).
+
+
+## Installation of extensions on Linux, macOS, and Windows
 
 Here you will find how to install optional JupyterLab extensions which will be demonstrated
 during the workshop.
-
-## Installation on Linux, macOS and Windows
 
 You are not required to install these extensions, 
 but if you wish to you can follow the instructions below.
@@ -26,6 +27,7 @@ $ conda install nodejs
 
 To use widgets in JupyterLab, you also need to run the following
 command (even if you installed through conda):
+
 ```shell
 $ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
