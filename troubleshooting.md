@@ -21,6 +21,16 @@ Check `python --version`
 If you open Git Bash, you will have Python and Anaconda scripts available to Git Bash.
 
 
+# Git commands not available in Anaconda
+
+Instead of modifying the path as above, an easier solution might be to install Git through
+conda directly into the Anaconda environment:
+
+```shell
+$ conda install git
+```
+
+
 # Other configuration problems
 
 Please follow the
