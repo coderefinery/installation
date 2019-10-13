@@ -136,5 +136,9 @@ Using the SSH protocol, you can connect and authenticate to remote servers and
 services. With SSH keys, you can connect to GitHub without supplying your
 username or password at each visit.
 
-Follow [this guide](https://help.github.com/articles/connecting-to-github-with-ssh/) to connect
-to GitHub with SSH keys.
+If you are unsure about this, you can skip this part and authenticate with GitHub
+using your username and password every time you will push changes to GitHub.
+
+If you decide to set up SSH keys, follow [this
+guide](https://help.github.com/articles/connecting-to-github-with-ssh/) to
+connect to GitHub with SSH keys.
