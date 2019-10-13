@@ -4,10 +4,10 @@ layout: master
 
 # Visual diff tools
 
-Meld is a visual diff and merge tool targeted at developers. Meld helps you
-compare files, directories, and version controlled projects. It provides two-
-and three-way comparison of both files and directories, and has support for
-many popular version control systems.
+Visual diff tools allow to visualize differences between files side by side.
+They can be used independently of version control but when coupled with Git,
+they can provide a nice alternative to command line output to show differences
+between file versions or branches.
 
 
 ## Installation on Linux
