@@ -81,7 +81,27 @@ and [configure Git](#configuring-git).
 
 ## Installation on Windows
 
-Git should be installed on your computer as part of the Bash installation.
+### If you have installed Git Bash
+
+In this case Git should be installed on your computer as part of the Bash installation.
+
+Possible problem with this approach is that Git Bash does not see
+the Python and Anaconda scripts. See also [the troubleshooting page](/installation/troubleshooting/).
+
+Please also [verify your installation](#how-to-verify-the-installation)
+and [configure Git](#configuring-git).
+
+
+### Installation using Conda
+
+This assumes you have already installed Anaconda. Then you can install Git in one line:
+
+```shell
+$ conda install git
+```
+
+With this you are guaranteed that you can use both Git and Python and Anaconda scripts in the same
+(Anaconda) environment.
 
 Please also [verify your installation](#how-to-verify-the-installation)
 and [configure Git](#configuring-git).

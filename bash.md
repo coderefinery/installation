@@ -31,9 +31,17 @@ Watch the [tutorial for installing the Shell, Git, and Nano on a Mac for a Softw
 You may want to keep the terminal in your dock for this workshop.
 
 
-## Installation on Windows
+## Installation on Windows using Git Bash
 
-Watch the [video tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
+Possible problem with this approach is that Git Bash does not see
+the Python and Anaconda scripts. See also [the troubleshooting page](/installation/troubleshooting/).
+
+If you want to make sure that both Git and Python work in the same environment without modifying any
+path variables, you might want to skip this installation altogether and install
+Git using Conda ([see the Git installation instructions](/installation/git/#installation-on-windows)).
+
+If you decide to try Git Bash, you can
+watch the [video tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
 (copyright Software Carpentry).
 
 First download the [Git for Windows installer](https://git-for-windows.github.io).
@@ -59,4 +67,4 @@ If your "HOME" environment variable is not set (or you don't know what this is):
 - Press [Enter], you should see `SUCCESS: Specified value was saved.`
 - Quit command prompt by typing `exit` then pressing [Enter].
 
-This will provide you with both git and bash in the git bash program.
+This will provide you with both Git and Bash in the Git Bash program.
