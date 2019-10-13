@@ -2,11 +2,11 @@
 layout: master
 ---
 
-# Configuring Python and Anaconda scripts in Windows
+# Python and Anaconda scripts are not visible in Git Bash
 
 Follow the steps below to enable Python and Anaconda scripts in Git Bash:
 
-- Open windows command prompt
+- Open the windows command prompt
 - Type "where python” to check where python is installed
     - If you use Anaconda, usually it is : “C:\Users\<username>\Anaconda3\python.exe"
 - Add python and anaconda scripts to your path
