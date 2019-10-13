@@ -111,5 +111,7 @@ $ jupyter-lab
 
 and see if it opens up a new tab in your browser showing the JupyterLab interface.
 
+Please also verify which Python version JupyterLab sees. Ideally it can see Python 3.
+
 On Windows, the JupyterLab App can also be launched by clicking on the 
 JupyterLab icon in the Anaconda menu.
