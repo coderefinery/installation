@@ -14,7 +14,7 @@ Tools we use in a typical CodeRefinery workshop:
 - [Git](/installation/git/)
 - [Python](/installation/python/)
 - [Visual diff tools](/installation/difftools/)
-- [Jupyter](/installation/jupyter/)
+- [Jupyter and JupyterLab](/installation/jupyter/)
 - [Snakemake](/installation/snakemake/)
 - [Setting up and removing accounts](/installation/accounts/)
 - [Troubleshooting](/installation/troubleshooting/)
