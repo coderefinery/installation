@@ -30,6 +30,16 @@ conda directly into the Anaconda environment:
 $ conda install git
 ```
 
+# Pip install datrie fails with Python 3.7
+
+Install from GitHub is a workaround:
+
+```shell
+$ pip3 install git+https://github.com/pytries/datrie.git
+```
+
+See also [this issue](https://github.com/pytries/datrie/issues/52).
+
 
 # Other configuration problems
 
