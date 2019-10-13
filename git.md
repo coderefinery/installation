@@ -92,14 +92,18 @@ and [configure Git](#configuring-git).
 Typing:
 
 ```shell
-$ git --version
+$ git clone https://github.com/coderefinery/recipe.git testing-git-clone
+$ cd testing-git-clone
+$ git log --oneline
 ```
 
-Should give you a version (like here) and not an error (do not worry if the
-version is different on your system):
+You should see something like this:
 
 ```shell
-git version 2.10.2
+40fbb90 (HEAD -> master, origin/master, origin/HEAD) draft a readme
+dd4472c we should not forget to enjoy
+2bb9bb4 add half an onion
+2d79e7e adding ingredients and instructions
 ```
 
 
