@@ -25,6 +25,12 @@ For Fedora:
 $ sudo dnf install meld
 ```
 
+This is how you can configure Git to open Meld when doing `git difftool`:
+
+```shell
+$ git config --global diff.tool meld
+```
+
 Please also [verify your installation](#how-to-verify-the-installation).
 
 
@@ -38,6 +44,12 @@ Please also [verify your installation](#how-to-verify-the-installation).
 
 On Linux we recommend the program [meld](https://meldmerge.org).
 Please follow installation instructions from [http://meldmerge.org](http://meldmerge.org).
+
+This is how you can configure Git to open Meld when doing `git difftool`:
+
+```shell
+$ git config --global diff.tool meld
+```
 
 
 ## How to verify the installation
