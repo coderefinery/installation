@@ -22,7 +22,7 @@ Please follow the instructions for your operating system.
 - [Visual diff tools](/installation/difftools/)
 - [Docker](/installation/docker/)
 - [Terminal editors](/installation/editors/)
-- [Configuration problems and solutions](/installation/troubleshooting/)
+- [Troubleshooting](/installation/troubleshooting/)
 
 
 ## Why are we asking participants to install software?
