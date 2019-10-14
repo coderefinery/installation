@@ -94,7 +94,8 @@ and [configure Git](#configuring-git).
 
 ### Installation using Conda
 
-This assumes you have already installed Anaconda. Then you can install Git in one line:
+This assumes you have already installed Anaconda. Then you can install Git in one line
+in the Anaconda prompt:
 
 ```shell
 $ conda install git
