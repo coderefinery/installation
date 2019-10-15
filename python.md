@@ -4,9 +4,10 @@ layout: master
 
 # Python
 
-We strongly recommend using Python version 3.5-3.7 for the exercises in the CodeRefinery
+We strongly recommend using Python version 3.5 or higher for the exercises in the CodeRefinery
 workshop. If you only have version 2.7 installed, the instructions below 
-describe how you can set up an isolated Python3 environment.
+describe how you can set up an isolated Python 3 environment.
+
 
 ## Installation on Linux and macOS
 
@@ -137,3 +138,23 @@ Check whether you can import `pytest` - this should not produce an error:
 $ python -c "import pytest"
 ```
 
+Now check that you can start pytest and sphinx-build directly from the command
+line (not a problem if versions differ a bit):
+
+```shell
+$ pytest --version
+
+This is pytest version 5.2.1
+
+$ sphinx-build --version
+
+sphinx-build 2.2.0
+```
+
+Finally verify that you can run both Git and Python commands in the same environment.
+This should not produce an error:
+
+```shell
+$ python --version
+$ git --version
+```

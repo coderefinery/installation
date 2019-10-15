@@ -31,7 +31,7 @@ Follow the installation instructions below but do not forget to also
 ## Installation on Linux
 
 If Git is not already available on your machine you can try to install it via
-your distribution package manager. 
+your distribution package manager.
 
 For Debian/Ubuntu run:
 
@@ -81,7 +81,28 @@ and [configure Git](#configuring-git).
 
 ## Installation on Windows
 
-Git should be installed on your computer as part of the Bash installation.
+### If you have installed Git Bash
+
+In this case Git should be installed on your computer as part of the Bash installation.
+
+Possible problem with this approach is that Git Bash does not see
+the Python and Anaconda scripts. See also [the troubleshooting page](/installation/troubleshooting/).
+
+Please also [verify your installation](#how-to-verify-the-installation)
+and [configure Git](#configuring-git).
+
+
+### Installation using Conda
+
+This assumes you have already installed Anaconda. Then you can install Git in one line
+in the Anaconda prompt:
+
+```shell
+$ conda install git
+```
+
+With this you are guaranteed that you can use both Git and Python and Anaconda scripts in the same
+(Anaconda) environment.
 
 Please also [verify your installation](#how-to-verify-the-installation)
 and [configure Git](#configuring-git).
@@ -92,14 +113,32 @@ and [configure Git](#configuring-git).
 Typing:
 
 ```shell
-$ git --version
+$ git clone https://github.com/coderefinery/recipe.git testing-git-clone
+$ cd testing-git-clone
+$ git log --oneline
 ```
 
-Should give you a version (like here) and not an error (do not worry if the
-version is different on your system):
+You should see something like this:
 
 ```shell
-git version 2.10.2
+40fbb90 (HEAD -> master, origin/master, origin/HEAD) draft a readme
+dd4472c we should not forget to enjoy
+2bb9bb4 add half an onion
+2d79e7e adding ingredients and instructions
+```
+
+Please also check that you can access Git and Python in the same environment by
+checking the versions of pytest and sphinx-build (not a problem if versions
+differ a bit):
+
+```shell
+$ pytest --version
+
+This is pytest version 5.2.1
+
+$ sphinx-build --version
+
+sphinx-build 2.2.0
 ```
 
 
@@ -136,5 +175,9 @@ Using the SSH protocol, you can connect and authenticate to remote servers and
 services. With SSH keys, you can connect to GitHub without supplying your
 username or password at each visit.
 
-Follow [this guide](https://help.github.com/articles/connecting-to-github-with-ssh/) to connect
-to GitHub with SSH keys.
+If you are unsure about this, you can skip this part and authenticate with GitHub
+using your username and password every time you will push changes to GitHub.
+
+If you decide to set up SSH keys, follow [this
+guide](https://help.github.com/articles/connecting-to-github-with-ssh/) to
+connect to GitHub with SSH keys.
