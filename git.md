@@ -163,6 +163,12 @@ You can replace nano with vim, emacs or any other editor of your choice:
 $ git config --global core.editor nano
 ```
 
+If you are on Windows and want to use Notepad or Notepad++, you can configure this by providing the full path to the 
+executable and optionally set some options. For example (adjust the path if needed, and note the quotation):
+```shell
+$ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+```
+
 To see where this information is stored, use:
 ```shell
 $ git config --list --show-origin
