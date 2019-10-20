@@ -151,6 +151,18 @@ $ sphinx-build --version
 sphinx-build 2.2.0
 ```
 
+Please also verify that `sphinx_rtd_theme` (Sphinx Read the Docs theme) is installed:
+
+```shell
+$ python -c "import sphinx_rtd_theme"
+```
+
+If `sphinx_rtd_theme` is not part of your Anaconda installation, you can install it with:
+
+```shell
+$ conda install sphinx_rtd_theme
+```
+
 Finally verify that you can run both Git and Python commands in the same environment.
 This should not produce an error:
 
