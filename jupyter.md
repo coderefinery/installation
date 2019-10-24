@@ -51,6 +51,10 @@ It can be installed by:
 ```bash
 $ pip install nbdime
 ```
+and then activated by
+```bash
+$ nbdime extensions --enable
+```
 
 ### Git extension
 
