@@ -27,8 +27,27 @@ popular platforms.
 Follow the installation instructions below but do not forget to also
 [configure Git](#configuring-git).
 
+## Installation using Conda
 
-## Installation on Linux
+Conda can be used to install Git on Linux, macOS and Windows computers. To install
+Git without conda, please follow the instructions in the following sections.
+
+To install Git with conda, you need to have installed Anaconda or Miniconda. 
+Then you can install Git in one line in the Anaconda prompt (on Windows) 
+or in a terminal (macOS and Linux):
+
+```shell
+$ conda install git
+```
+
+On Windows, this will guarantee that you can use both Git and Python and Anaconda scripts in the same
+(conda) environment.
+
+Please also [verify your installation](#how-to-verify-the-installation)
+and [configure Git](#configuring-git).
+
+
+## Specific Linux installation instructions
 
 If Git is not already available on your machine you can try to install it via
 your distribution package manager.
@@ -55,7 +74,7 @@ Please also [verify your installation](#how-to-verify-the-installation)
 and [configure Git](#configuring-git).
 
 
-## Installation on macOS
+## Specific macOS installation instructions
 
 ### OS X 10.9 and higher
 
@@ -79,7 +98,7 @@ Please also [verify your installation](#how-to-verify-the-installation)
 and [configure Git](#configuring-git).
 
 
-## Installation on Windows
+## Specific Windows installation instructions
 
 ### If you have installed Git Bash
 
@@ -91,21 +110,6 @@ the Python and Anaconda scripts. See also [the troubleshooting page](/installati
 Please also [verify your installation](#how-to-verify-the-installation)
 and [configure Git](#configuring-git).
 
-
-### Installation using Conda
-
-This assumes you have already installed Anaconda. Then you can install Git in one line
-in the Anaconda prompt:
-
-```shell
-$ conda install git
-```
-
-With this you are guaranteed that you can use both Git and Python and Anaconda scripts in the same
-(Anaconda) environment.
-
-Please also [verify your installation](#how-to-verify-the-installation)
-and [configure Git](#configuring-git).
 
 
 ## How to verify the installation
