@@ -22,6 +22,10 @@ and to install the extensions you need to install the `nodejs` package:
 ```bash
 $ conda install nodejs
 ```
+If you get error: *CondaVerificationError* use:
+```bash
+$ conda install -c conda-forge nodejs
+```
 
 ### Widget extension
 
