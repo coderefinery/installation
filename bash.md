@@ -51,34 +51,34 @@ Then run the installer and follow these steps:
 ![step 1](/assets/img/git_install_step1.png)
 - Click on "Next".
 
-![step 2](/installation/assets/img/git_install_step2.png)
+![step 2](/assets/img/git_install_step2.png)
 - Click on "Next".
 
-![step 3](/installation/assets/img/git_install_step3.png)
+![step 3](/assets/img/git_install_step3.png)
 - Choose "Nano" as the editor (unless you know you prefer vi or notepad++)
 
-![step 4](/installation/assets/img/git_install_step4.png)
+![step 4](/assets/img/git_install_step4.png)
 - Keep the recommended "Git from the command lineand also from 3rd-party software"
   selected and click on "Next". If you forgot to do this programs that you need 
   for the workshop will not work properly. If this happens rerun the installer 
   and select the appropriate option.
   
-![step 5](/installation/assets/img/git_install_step5.png)
+![step 5](/assets/img/git_install_step5.png)
 - Click on "Next".
 
-![step 6](/installation/assets/img/git_install_step6.png)
+![step 6](/assets/img/git_install_step6.png)
 - Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
 
-![step 7](/installation/assets/img/git_install_step7.png)
+![step 7](/assets/img/git_install_step7.png)
 - Keep "Use Windows' default console window" selected and click on "Next".
 
-![step 8](/installation/assets/img/git_install_step8.png)
+![step 8](/assets/img/git_install_step8.png)
 - Click on "Install".
 
-![step 9](/installation/assets/img/git_install_step9.png)
+![step 9](/assets/img/git_install_step9.png)
 - Unselect "View Release Notes", select "Launch Git Bash"  and click on "Next".
 
-![step 10](/installation/assets/img/git_install_step10.png)
+![step 10](/assets/img/git_install_step10.png)
 - In the console which should open type `git --version` to verify the Git is installed.
 
 If your "HOME" environment variable is not set (or you don't know what this is):
