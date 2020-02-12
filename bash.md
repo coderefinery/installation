@@ -48,7 +48,7 @@ First download the [Git for Windows installer](https://git-for-windows.github.io
 
 Then run the installer and follow these steps:
 
-![step 1](/installation/assets/img/git_install_step1.png)
+![step 1](/assets/img/git_install_step1.png)
 - Click on "Next".
 
 ![step 2](/installation/assets/img/git_install_step2.png)
