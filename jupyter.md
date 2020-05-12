@@ -24,8 +24,8 @@ installation](#how-to-verify-the-installation).
 
 ## Installation of extensions on Linux, macOS, and Windows
 
-Here you will find how to install optional JupyterLab extensions which will be demonstrated
-during the workshop.
+Here you will find how to install optional JupyterLab extensions which
+will be demonstrated during the workshop.
 
 You are not required to install these extensions, 
 but if you wish to you can follow the instructions below.
@@ -41,86 +41,94 @@ If you get error: *CondaVerificationError* use:
 $ conda install -c conda-forge nodejs
 ```
 
-### Widget extension
+### JupyterLab extension manager
 
-To use widgets in JupyterLab, you also need to run the following
-command (even if you installed through conda):
+To manage JupyterLab extensions, it's easiest to use the in-build 
+extension manager. This is documented in the [JupyterLab
+documentation](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
+Some extensions require the installation of a Python package, while others
+only require you to install the extension via the extension manager.
 
-```shell
-$ jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
+#### Widgets
+
+The `@jupyter-widgets/jupyterlab-manager` extension allows users 
+to create interactive widgets in Jupyter notebooks.
+
+Install the `ipywidgets` package via:
+```bash
+$ conda install ipywidgets
+```
+or 
+```bash
+$ pip install ipywidgets
 ```
 
-For classic notebooks, *if you did not install Python through Anaconda*, and if you installed Jupyter
-using `pip` and not `conda`, you will need to execute this command in a terminal in order to
-activate widgets in Jupyter:
-
-```shell
- $ conda install nodejs
- $ jupyter nbextension enable --py widgetsnbextension
-```
+and then activate it by installing the
+`@jupyter-widgets/jupyterlab-manager` extension via the extension manager.
 
 
-### Diffing/merging notebooks
+#### Diffing/merging notebooks
 
 The `nbdime` packages provides tools for diffing and merging Jupyter notebooks 
 and is integrated with Git.
 
 It can be installed by:
 ```bash
+$ conda install -c conda-forge nbdime
+```
+
+or with `pip`:
+
+```bash
 $ pip install nbdime
 ```
-and then activated by
-```bash
-$ nbdime extensions --enable
-```
 
-### Git extension
+and then activated by going to the extension manager 
+and installing the `nbdime-jupyterlab` extension.
+
+
+#### Git extension
 
 `jupyterlab-git` is a JupyterLab extension for version control using Git.  
+Install it via:
 
-To install it, run these commands:
 ```bash
-$ jupyter labextension install @jupyterlab/git
+$ conda install -c conda-forge jupyterlab-git
+```
+
+or 
+
+```bash
 $ pip install jupyterlab-git
-$ jupyter serverextension enable --py jupyterlab_git
 ```
 
-### GitHub extension
+and then activate it by finding and installing `jupyterlab-git` 
+via the extension manager.
 
-`jupyterlab/github` is a JupyterLab extension for accessing GitHub repositories.
 
-To install it, run this command:
+#### GitHub extension
+
+`@jupyterlab/github` is a JupyterLab extension for accessing GitHub repositories.
+
+First install it by:
 ```bash
-$ jupyter labextension install @jupyterlab/github
+$ pip install jupyterlab_github
 ```
 
-### R
+and then activate it by finding and installing `@jupyterlab/github`
+via the extension manager.
+
+
+
+### Other languages
 
 Python will be the main language used during the CodeRefinery workshop, but if
-you use R and want to experiment with R in Jupyter, install the
-`r-essentials` package:
+you use other programming languages the chances are high that someone has written 
+a Jupyter kernel for that language!
 
-```shell
-$ conda install -c r r-essentials
-```
-
-### Matlab/Octave/Julia kernels
-
-Matlab, Octave and Julia can also be used as kernels to Jupyter, 
-although this will not be covered in the workshop.
-
-To install the Octave kernel, run
-
-```shell
-$ pip install octave_kernel
-$ python -m octave_kernel.install
-```
-
-See [this page](https://github.com/Calysto/octave_kernel) for further information.
-
-To enable Matlab in Jupyter, we refer to [this page](https://anneurai.net/2015/11/12/matlab-based-ipython-notebooks/) and [this page](https://w01f359.wordpress.com/2016/10/09/matlab-notebook/) which contain detailed instructions. 
-
-If you want to play around with IJulia, the Julia kernel for Jupyter, see instructions [here](https://github.com/JuliaLang/IJulia.jl).
+A full list of available Jupyter kernels can be [found here](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels). Find your favorite language in the list and click 
+the link for installation and usage instructions.
 
 
 ## How to verify the installation
