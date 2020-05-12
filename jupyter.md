@@ -7,6 +7,20 @@ layout: master
 Jupyter/JupyterLab should be installed on your computer if you have installed Anaconda.
 but please also [verify your Jupyter installation](#how-to-verify-the-installation).
 
+If you instead installed Miniconda, you can install JupyterLab by:
+
+```bash
+$ conda install -c conda-forge jupyterlab
+```
+
+If you are not using `conda`, you can install JupyterLab using `pip`:
+
+```bash
+pip install jupyterlab
+```
+
+Regardless of how you installed JupyterLab, [please also verify your
+installation](#how-to-verify-the-installation).
 
 ## Installation of extensions on Linux, macOS, and Windows
 
