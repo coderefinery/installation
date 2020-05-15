@@ -4,8 +4,14 @@ layout: master
 
 # Git
 
-**Warning: Just installing git is not enough: you have to configure
-it, too.  See below, otherwise you will start off behind!**
+<div class="alert alert-dismissible alert-danger">
+  <h4 class="alert-heading">Warning!</h4>
+  <p>
+    Just installing git is not enough: you have to configure it, too.
+    See <a href="#configuring-git">below</a>,
+    otherwise you will start off behind!
+  </p>
+</div>
 
 Git is a version control system that lets you track who made changes to what
 when and has options for easily updating a shared or public version of your
@@ -30,13 +36,14 @@ popular platforms.
 Follow the installation instructions below but do not forget to also
 [configure Git](#configuring-git).
 
+
 ## Installation using Conda
 
 Conda can be used to install Git on Linux, macOS and Windows computers. To install
 Git without conda, please follow the instructions in the following sections.
 
-To install Git with conda, you need to have installed Anaconda or Miniconda. 
-Then you can install Git in one line in the Anaconda prompt (on Windows) 
+To install Git with conda, you need to have installed Anaconda or Miniconda.
+Then you can install Git in one line in the Anaconda prompt (on Windows)
 or in a terminal (macOS and Linux):
 
 ```shell
@@ -114,46 +121,11 @@ Please also [verify your installation](#how-to-verify-the-installation)
 and [configure Git](#configuring-git).
 
 
-
-## How to verify the installation
-
-Typing:
-
-```shell
-$ git clone https://github.com/coderefinery/recipe.git testing-git-clone
-$ cd testing-git-clone
-$ git log --oneline
-```
-
-You should see something like this:
-
-```shell
-40fbb90 (HEAD -> master, origin/master, origin/HEAD) draft a readme
-dd4472c we should not forget to enjoy
-2bb9bb4 add half an onion
-2d79e7e adding ingredients and instructions
-```
-
-Please also check that you can access Git and Python in the same environment by
-checking the versions of pytest and sphinx-build (not a problem if versions
-differ a bit):
-
-```shell
-$ pytest --version
-
-This is pytest version 5.2.1
-
-$ sphinx-build --version
-
-sphinx-build 2.2.0
-```
-
-
 ## Configuring Git
 
-**[Watch this is video
-form](https://www.youtube.com/watch?v=WdDTp8NeHBs&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg)**.
-[If problems, watch this video about common problems](https://www.youtube.com/watch?v=B27pUBrWp5w&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg).
+**[Watch this video
+first](https://www.youtube.com/watch?v=WdDTp8NeHBs&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg)**.
+[If you experience problems, watch this troubleshooting video](https://www.youtube.com/watch?v=B27pUBrWp5w&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg).
 
 After signing up for a GitHub account
 and installing Git on your machine,
@@ -165,16 +137,25 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email yourname@example.com
 ```
 
+If you are unsure which email to use, use the one that you have registered at GitHub with.
+If you prefer to not use a real email address but still want to make sure that GitHub
+counts your contributions, you can use `yourusername@users.noreply.github.com`.
+
 This is important since your Git commits use this information.
 The `--global` option ensures that you do not need to enter this information again on your machine.
 
-It is convenient to set also the default text editor to use with Git.
+It is important to set also the default text editor to use with Git.
 You can replace nano with vim, emacs or any other editor of your choice:
 ```shell
 $ git config --global core.editor nano
 ```
 
-If you are on Windows and want to use Notepad or Notepad++, you can configure this by providing the full path to the 
+If you use Atom as editor, set:
+```shell
+$ git config --global core.editor "atom -nw"
+```
+
+If you are on Windows and want to use Notepad or Notepad++, you can configure this by providing the full path to the
 executable and optionally set some options. For example (adjust the path if needed, and note the quotation):
 ```shell
 $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
@@ -183,6 +164,46 @@ $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -m
 To see where this information is stored, use:
 ```shell
 $ git config --list --show-origin
+```
+
+
+## How to verify the installation
+
+[Video](https://www.youtube.com/watch?v=WdDTp8NeHBs&t=258s).
+
+Create a new example folder, step into it, then create a file `example.txt`:
+
+Initialize a repository and stage the new file:
+
+```shell
+$ git init
+$ git add example.txt
+```
+
+Commit the change, this should open the editor which
+you have configured, in there add an example commit message:
+
+```shell
+$ git commit example.txt
+```
+
+Finally try:
+
+```shell
+$ git log
+```
+
+If you see now something line this (different name, email, and commit message),
+your Git is configured for the workshop:
+
+```shell
+$ git log
+
+commit 12e4cb892140bd14a413895b3b36c27db198eb22 (HEAD -> master)
+Author: Radovan Bast <bast@users.noreply.github.com>
+Date:   Fri May 15 16:41:13 2020 +0200
+
+    making a test commit
 ```
 
 
