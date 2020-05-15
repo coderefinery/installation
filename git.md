@@ -5,7 +5,7 @@ layout: master
 # Git
 
 **Warning: Just installing git is not enough: you have to configure
-it, too.  See below, otherwise you will start off behind!**
+it, too.  [See below](#how-to-verify-the-installation), otherwise you will start off behind!**
 
 Git is a version control system that lets you track who made changes to what
 when and has options for easily updating a shared or public version of your
