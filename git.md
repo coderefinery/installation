@@ -4,6 +4,9 @@ layout: master
 
 # Git
 
+**Warning: Just installing git is not enough: you have to configure
+it, too.  See below, otherwise you will start off behind!**
+
 Git is a version control system that lets you track who made changes to what
 when and has options for easily updating a shared or public version of your
 code on source code repository hosting platforms such as
@@ -148,6 +151,10 @@ sphinx-build 2.2.0
 
 ## Configuring Git
 
+**[Watch this is video
+form](https://www.youtube.com/watch?v=WdDTp8NeHBs&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg)**.
+[If problems, watch this video about common problems](https://www.youtube.com/watch?v=B27pUBrWp5w&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg).
+
 After signing up for a GitHub account
 and installing Git on your machine,
 you should go through the following steps to configure Git.
@@ -180,6 +187,8 @@ $ git config --list --show-origin
 
 
 ## Setting up SSH keys
+
+[CodeRefinery video about ssh keys](https://www.youtube.com/watch?v=XCDg1mtaA5I&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg).
 
 Using the SSH protocol, you can connect and authenticate to remote servers and
 services. With SSH keys, you can connect to GitHub without supplying your
