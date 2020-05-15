@@ -169,6 +169,8 @@ $ git config --list --show-origin
 
 ## How to verify the installation
 
+[Video](https://www.youtube.com/watch?v=WdDTp8NeHBs&t=258s).
+
 Create a new example folder, step into it, then create a file `example.txt`:
 
 Initialize a repository and stage the new file:
