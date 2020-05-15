@@ -42,8 +42,8 @@ Follow the installation instructions below but do not forget to also
 Conda can be used to install Git on Linux, macOS and Windows computers. To install
 Git without conda, please follow the instructions in the following sections.
 
-To install Git with conda, you need to have installed Anaconda or Miniconda. 
-Then you can install Git in one line in the Anaconda prompt (on Windows) 
+To install Git with conda, you need to have installed Anaconda or Miniconda.
+Then you can install Git in one line in the Anaconda prompt (on Windows)
 or in a terminal (macOS and Linux):
 
 ```shell
@@ -155,7 +155,7 @@ If you use Atom as editor, set:
 $ git config --global core.editor "atom -nw"
 ```
 
-If you are on Windows and want to use Notepad or Notepad++, you can configure this by providing the full path to the 
+If you are on Windows and want to use Notepad or Notepad++, you can configure this by providing the full path to the
 executable and optionally set some options. For example (adjust the path if needed, and note the quotation):
 ```shell
 $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
@@ -169,35 +169,39 @@ $ git config --list --show-origin
 
 ## How to verify the installation
 
-Typing:
+Create a new example folder, step into it, then create a file `example.txt`:
+
+Initialize a repository and stage the new file:
 
 ```shell
-$ git clone https://github.com/coderefinery/recipe.git testing-git-clone
-$ cd testing-git-clone
-$ git log --oneline
+$ git init
+$ git add example.txt
 ```
 
-You should see something like this:
+Commit the change, this should open the editor which
+you have configured, in there add an example commit message:
 
 ```shell
-40fbb90 (HEAD -> master, origin/master, origin/HEAD) draft a readme
-dd4472c we should not forget to enjoy
-2bb9bb4 add half an onion
-2d79e7e adding ingredients and instructions
+$ git commit example.txt
 ```
 
-Please also check that you can access Git and Python in the same environment by
-checking the versions of pytest and sphinx-build (not a problem if versions
-differ a bit):
+Finally try:
 
 ```shell
-$ pytest --version
+$ git log
+```
 
-This is pytest version 5.2.1
+If you see now something line this (different name, email, and commit message),
+your Git is configured for the workshop:
 
-$ sphinx-build --version
+```shell
+$ git log
 
-sphinx-build 2.2.0
+commit 12e4cb892140bd14a413895b3b36c27db198eb22 (HEAD -> master)
+Author: Radovan Bast <bast@users.noreply.github.com>
+Date:   Fri May 15 16:41:13 2020 +0200
+
+    making a test commit
 ```
 
 
