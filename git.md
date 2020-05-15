@@ -123,9 +123,9 @@ and [configure Git](#configuring-git).
 
 ## Configuring Git
 
-**[Watch this is video
-form](https://www.youtube.com/watch?v=WdDTp8NeHBs&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg)**.
-[If problems, watch this video about common problems](https://www.youtube.com/watch?v=B27pUBrWp5w&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg).
+**[Watch this video
+first](https://www.youtube.com/watch?v=WdDTp8NeHBs&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg)**.
+[If you experience problems, watch this troubleshooting video](https://www.youtube.com/watch?v=B27pUBrWp5w&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg).
 
 After signing up for a GitHub account
 and installing Git on your machine,
