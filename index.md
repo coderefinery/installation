@@ -18,6 +18,7 @@ Tools we use in a typical CodeRefinery workshop:
 - [Snakemake](/installation/snakemake/)
 - [Setting up and removing accounts](/installation/accounts/)
 - [Troubleshooting](/installation/troubleshooting/)
+- [Zoom](/installation/zoom/) (Online workshops only)
 
 Tools we use only in specialized workshops:
 - [Compilers](/installation/compilers/)
