@@ -4,8 +4,14 @@ layout: master
 
 # Git
 
-**Warning: Just installing git is not enough: you have to configure
-it, too.  See below, otherwise you will start off behind!**
+<div class="alert alert-dismissible alert-danger">
+  <h4 class="alert-heading">Warning!</h4>
+  <p>
+    Just installing git is not enough: you have to configure it, too.
+    See <a href="#configuring-git">below</a>,
+    otherwise you will start off behind!
+  </p>
+</div>
 
 Git is a version control system that lets you track who made changes to what
 when and has options for easily updating a shared or public version of your
