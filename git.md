@@ -137,13 +137,22 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email yourname@example.com
 ```
 
+If you are unsure which email to use, use the one that you have registered at GitHub with.
+If you prefer to not use a real email address but still want to make sure that GitHub
+counts your contributions, you can use `yourusername@users.noreply.github.com`.
+
 This is important since your Git commits use this information.
 The `--global` option ensures that you do not need to enter this information again on your machine.
 
-It is convenient to set also the default text editor to use with Git.
+It is important to set also the default text editor to use with Git.
 You can replace nano with vim, emacs or any other editor of your choice:
 ```shell
 $ git config --global core.editor nano
+```
+
+If you use Atom as editor, set:
+```shell
+$ git config --global core.editor "atom -nw"
 ```
 
 If you are on Windows and want to use Notepad or Notepad++, you can configure this by providing the full path to the 
