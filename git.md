@@ -36,6 +36,7 @@ popular platforms.
 Follow the installation instructions below but do not forget to also
 [configure Git](#configuring-git).
 
+
 ## Installation using Conda
 
 Conda can be used to install Git on Linux, macOS and Windows computers. To install
@@ -120,41 +121,6 @@ Please also [verify your installation](#how-to-verify-the-installation)
 and [configure Git](#configuring-git).
 
 
-
-## How to verify the installation
-
-Typing:
-
-```shell
-$ git clone https://github.com/coderefinery/recipe.git testing-git-clone
-$ cd testing-git-clone
-$ git log --oneline
-```
-
-You should see something like this:
-
-```shell
-40fbb90 (HEAD -> master, origin/master, origin/HEAD) draft a readme
-dd4472c we should not forget to enjoy
-2bb9bb4 add half an onion
-2d79e7e adding ingredients and instructions
-```
-
-Please also check that you can access Git and Python in the same environment by
-checking the versions of pytest and sphinx-build (not a problem if versions
-differ a bit):
-
-```shell
-$ pytest --version
-
-This is pytest version 5.2.1
-
-$ sphinx-build --version
-
-sphinx-build 2.2.0
-```
-
-
 ## Configuring Git
 
 **[Watch this is video
@@ -189,6 +155,40 @@ $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -m
 To see where this information is stored, use:
 ```shell
 $ git config --list --show-origin
+```
+
+
+## How to verify the installation
+
+Typing:
+
+```shell
+$ git clone https://github.com/coderefinery/recipe.git testing-git-clone
+$ cd testing-git-clone
+$ git log --oneline
+```
+
+You should see something like this:
+
+```shell
+40fbb90 (HEAD -> master, origin/master, origin/HEAD) draft a readme
+dd4472c we should not forget to enjoy
+2bb9bb4 add half an onion
+2d79e7e adding ingredients and instructions
+```
+
+Please also check that you can access Git and Python in the same environment by
+checking the versions of pytest and sphinx-build (not a problem if versions
+differ a bit):
+
+```shell
+$ pytest --version
+
+This is pytest version 5.2.1
+
+$ sphinx-build --version
+
+sphinx-build 2.2.0
 ```
 
 
