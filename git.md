@@ -9,7 +9,9 @@ layout: master
   <p>
     Just installing git is not enough: you have to configure it, too.
     See <a href="#configuring-git">below</a>,
-    otherwise you will start off behind!
+    otherwise you will start off behind!  Then, <a
+    href="#how-to-verify-the-installation">verify it</a> (trust us on
+    this).
   </p>
 </div>
 

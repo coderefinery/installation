@@ -12,7 +12,7 @@ Tools we use in a typical CodeRefinery workshop:
 - [Bash](/installation/bash/)
 - [Terminal editors](/installation/editors/)
 - [Python](/installation/python/)
-- [Git](/installation/git/)
+- [Git](/installation/git/), including [configuration](/installation/git/#configuring-git) and [verification](/installation/git/#how-to-verify-the-installation)
 - [Visual diff tools](/installation/difftools/)
 - [Jupyter and JupyterLab](/installation/jupyter/)
 - [Snakemake](/installation/snakemake/)
