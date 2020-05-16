@@ -25,6 +25,14 @@ long session, the quality is likely to be higher with the application
 installed.  If you use a web browser, we have noticed that Safari and
 Firefox don't always work.  Chrome usually does.
 
+
 ## Verify installation
 
 Join one of the pre-workshop installation verification sessions.
+
+
+## Zoom signals
+
+We'll go over this in the workshop introduction, but you could get
+familiar with the [zoom signals we will
+use](https://github.com/coderefinery/manuals/blob/master/zoom-mechanics.md).
