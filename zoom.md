@@ -28,7 +28,8 @@ Firefox don't always work.  Chrome usually does.
 
 ## Verify installation
 
-Join one of the pre-workshop installation verification sessions.
+Join one of the pre-workshop installation verification sessions.  If
+Zoom works in any other event, it will probably work here, too.
 
 
 ## Zoom signals
