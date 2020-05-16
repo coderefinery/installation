@@ -13,7 +13,7 @@ To join workshops after 30.may, you must upgrade to a version after
 
 ## Installation
 
-We recommend that you install the Zoom client (https://zoom.us/download).
+We recommend that you install the Zoom client (<https://zoom.us/download>).
 
 You will be encouraged (but not forced) to use a webcam during the
 workshop, at least during the breakout sessions.  If you don't want
@@ -32,7 +32,8 @@ Firefox don't always work.  Chrome usually does.
 
 ## Verify installation
 
-Join one of the pre-workshop installation verification sessions.
+Join one of the pre-workshop installation verification sessions.  If
+Zoom works in any other event, it will probably work here, too.
 
 
 ## Zoom signals
