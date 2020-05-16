@@ -9,7 +9,7 @@ link/ID/password if you are registered.
 
 ## Installation
 
-We recommend that you install the Zoom client (https://zoom.us/download).
+We recommend that you install the Zoom client (<https://zoom.us/download>).
 
 You will be encouraged (but not forced) to use a webcam during the
 workshop, at least during the breakout sessions.  If you don't want
