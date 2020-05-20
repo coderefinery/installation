@@ -43,29 +43,42 @@ $ conda install -c conda-forge nodejs
 
 ### JupyterLab extension manager
 
-To manage JupyterLab extensions, it's easiest to use the in-build 
-extension manager. This is documented in the [JupyterLab
+To manage JupyterLab extensions, it's easiest to use the built-in
+extension manager.  Once it is installed, you can easily activate or
+deactivate other extensions.  Some extensions require the installation
+of a companion Python package, while others only require you to
+install the extension via the extension manager.
+
+This is documented in the [JupyterLab
 documentation](https://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
-Some extensions require the installation of a Python package, while others
-only require you to install the extension via the extension manager.
+
+You see the extension manager in the left sidebar.  If you use
+JupyterLab 2.1 or newer (released 7 april 2020), then it is already
+enabled.
+
+If you use jupyterlab less than 2.1, then you need to enable the
+extension manager.  It needs to be enabled from the Settings→Enable
+Extension Manager option.  (For even older versions, it might not be
+available by default, in this case, consider upgrading).
+
 
 
 #### Widgets
 
-The `@jupyter-widgets/jupyterlab-manager` extension allows users 
-to create interactive widgets in Jupyter notebooks.
-
-Install the `ipywidgets` package via:
+Install the `ipywidgets` package via conda:
 ```bash
 $ conda install ipywidgets
 ```
-or 
+or via pip (which needs an extra activation step):
 ```bash
 $ pip install ipywidgets
+$ jupyter nbextension enable --py widgetsnbextension
 ```
 
-and then activate it by installing the
-`@jupyter-widgets/jupyterlab-manager` extension via the extension manager.
+and then activate it in JupyterLab by installing the
+`@jupyter-widgets/jupyterlab-manager` extension via the extension
+manager.
+
 
 
 #### Diffing/merging notebooks
