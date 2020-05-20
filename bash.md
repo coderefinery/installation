@@ -7,7 +7,7 @@ layout: master
 
 ## If you are new to shell
 
-If you have never been in a terminal shell, please read this crash
+If you have never been in a terminal shell, please read this [crash
 course quickly](https://scicomp.aalto.fi/scicomp/shell.html). consider watching
 [this shell tutorial video by Richard Darst](https://youtu.be/56p6xX0aToI).
 
