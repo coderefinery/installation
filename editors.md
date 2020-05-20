@@ -28,7 +28,7 @@ this shortcuts involves pressing and holding down the control key (Ctrl) on
 your keyboard and pressing another key. The pressing down and holding the Ctrl
 key is represented by a hat "^".
 
-Tutorial: [https://www.tutorialspoint.com/articles/how-to-use-nano-text-editor](https://www.tutorialspoint.com/articles/how-to-use-nano-text-editor)
+Tutorial: [https://www.tutorialspoint.com/how-to-use-nano-text-editor](https://www.tutorialspoint.com/how-to-use-nano-text-editor)
 
 #### To create or open a files called mytext.txt
 
