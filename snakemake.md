@@ -29,8 +29,6 @@ or, alternatively, if you prefer `pip` over `conda`:
 
 ```shell
 $ pip3 install snakemake
-# or
-$ pip3 install snakemake-minimal
 ```
 
 This may fail with an error message containing 
