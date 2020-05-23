@@ -163,7 +163,7 @@ executable and optionally set some options. For example (adjust the path if need
 $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 ```
 
-To see where this information is stored, use:
+To see where this information is stored (`--show-origin` works on git version 2.8.0 or greater only), use:
 ```shell
 $ git config --list
 ```
