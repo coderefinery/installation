@@ -165,7 +165,7 @@ $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -m
 
 To see where this information is stored (`--show-origin` works on git version 2.8.0 or greater only), use:
 ```shell
-$ git config --list
+$ git config --list --show-origin
 ```
 
 
