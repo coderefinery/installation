@@ -29,6 +29,14 @@ long session, the quality is likely to be higher with the application
 installed.  If you use a web browser, we have noticed that Safari and
 Firefox don't always work.  Chrome usually does.
 
+**One computer for chat and one for doing the exercises?** You can use
+Zoom in a web browser (Chrome) on the exercise computer in order to
+share the screen, since screen sharing is *very* important for
+productivity.  Have the second one join like normal, with no audio,
+same name (you can put "(screen)" at the end to distinguish them, and
+if we don't notice ourselves, ask it to be put in the same breakout
+room.
+
 
 ## Verify installation
 
