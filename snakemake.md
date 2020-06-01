@@ -31,13 +31,29 @@ or, alternatively, if you prefer `pip` over `conda`:
 $ pip3 install snakemake
 ```
 
-This may fail with an error message containing 
+However, snakemake has non-python dependencies, so a pip-based
+installation has limited functionality unless these dependencies
+are manually installed.
+
+If your installation fails with:
 `Failed building wheel for datrie`.  
-If this happens, it should work to install `datrie` first:
+it should work to install `datrie` first:
 ```shell
 $ conda install datrie
 ```
 
+Conda may be slow to resolve the dependencies and sometimes fails 
+to select a recent release of snakemake. If installing snakemake with 
+conda is taking very long, or if it installs an old version (below 5.0),
+a solution can be to use `mamba`:
+```shell
+$ conda uninstall snakemake # to remove a pre-5.0 version of snakemake
+$ conda install -c conda-forge mamba
+$ mamba install -c conda-forge -c bioconda snakemake
+```
+
+For further details, see the latest 
+[installation instructions](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html).
 
 ## How to verify the installation
 
