@@ -80,27 +80,6 @@ and then activate it in JupyterLab by installing the
 manager.
 
 
-
-#### Diffing/merging notebooks
-
-The `nbdime` packages provides tools for diffing and merging Jupyter notebooks 
-and is integrated with Git.
-
-It can be installed by:
-```bash
-$ conda install -c conda-forge nbdime
-```
-
-or with `pip`:
-
-```bash
-$ pip install nbdime
-```
-
-and then activated by going to the extension manager 
-and installing the `nbdime-jupyterlab` extension.
-
-
 #### Git extension
 
 `jupyterlab-git` is a JupyterLab extension for version control using Git.  
@@ -119,6 +98,9 @@ $ pip install jupyterlab-git
 and then activate it by finding and installing `jupyterlab-git` 
 via the extension manager.
 
+`jupyterlab-git` will also install the `nbdime` package as one of its
+dependencies. `nbdime` provides tools for diffing and merging Jupyter
+notebooks.
 
 #### GitHub extension
 
