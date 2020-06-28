@@ -8,6 +8,12 @@ We strongly recommend using Python version 3.5 or higher for the exercises in th
 workshop. If you only have version 2.7 installed, the instructions below 
 describe how you can set up an isolated Python 3 environment.
 
+> (optional) Advanced: The [coderefinery software
+> repository](https://github.com/coderefinery/software) has Conda
+> environment.yml and requirements.txt files for most Python software.
+> Currently, this is only for learners who already know how these tools
+> work.
+
 
 ## Installation on Linux and macOS
 
