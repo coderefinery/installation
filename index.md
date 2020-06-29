@@ -27,6 +27,9 @@ Tools we use only in specialized workshops:
 - [PyCharm](/installation/pycharm/)
 - [Docker](/installation/docker/)
 
+- University-managed computer specific instructions:
+  - [Aalto University](https://scicomp.aalto.fi/news/coderefinery/)
+
 
 ## Why are we asking participants to install software?
 
