@@ -31,9 +31,8 @@ or, alternatively, if you prefer `pip` over `conda`:
 $ pip3 install snakemake
 ```
 
-However, snakemake has non-python dependencies, so a pip-based
-installation has limited functionality unless these dependencies
-are manually installed.
+Both installation routes provide the functionality that we need in our
+workshop.
 
 If your installation fails with:
 `Failed building wheel for datrie`.  
