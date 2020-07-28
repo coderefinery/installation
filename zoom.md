@@ -7,9 +7,6 @@ layout: master
 Zoom is need in online workshops.  You will receive the meeting
 link/ID/password if you are registered.
 
-**Warning: A new mandatory version of zoom was released on 27.april.
-To join workshops after 30.may, you must upgrade to a version after
-27.april.**
 
 ## Installation
 
