@@ -48,4 +48,4 @@ Zoom works in any other event, it will probably work here, too.
 
 We'll go over this in the workshop introduction, but you could get
 familiar with the [zoom signals we will
-use](https://github.com/coderefinery/manuals/blob/master/zoom-mechanics.md).
+use](https://coderefinery.github.io/manuals/zoom-mechanics/).
