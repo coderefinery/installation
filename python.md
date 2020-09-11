@@ -116,7 +116,7 @@ Please also [verify your installation](#how-to-verify-the-installation).
 Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
 (copyright Software Carpentry).
 
-- Open [http://continuum.io/downloads](http://continuum.io/downloads) with your web browser.
+- Open <https://www.anaconda.com/products/individual>.
 - Download the Python 3 installer for Windows.
 - Install Python 3 using all of the defaults for installation except make sure to check
   `Make Anaconda the default Python`.
