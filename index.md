@@ -28,7 +28,7 @@ Tools we use only in specialized workshops:
 - [Docker](/installation/docker/)
 
 - University-managed computer specific instructions:
-  - [Aalto University](https://scicomp.aalto.fi/news/coderefinery/)
+  - [Aalto University](https://scicomp.aalto.fi/aalto/coderefinery-setup/)
 
 
 ## Why are we asking participants to install software?
