@@ -49,6 +49,7 @@ This is how you can configure Git to open Meld when doing `git difftool`:
 
 ```shell
 $ git config --global diff.tool meld
+$ git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
 ```
 
 
@@ -62,3 +63,10 @@ $ meld file1 file2
 ```
 
 You should now see both versions side by side.
+
+To test launching Meld through Git, move into a folder that contains two or more files and instruct Git to compare files.
+For example, to see the difference between `file1.txt` and `file2.txt`:
+
+```shell
+$ git difftool --no-index file1.txt file2.txt
+```
