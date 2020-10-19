@@ -175,9 +175,13 @@ $ git config --list --show-origin
 
 Create a new example folder, step into it, then create a file `example.txt`:
 
-Initialize a repository and stage the new file:
+Make a new directory (here we call it `example`), change to it,
+initialize a repository, and stage
+the new file (don't `git init` in your home directory):
 
 ```shell
+$ mkdir example
+$ cd example
 $ git init
 $ git add example.txt
 ```
