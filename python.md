@@ -22,7 +22,8 @@ possible conflicts we recommend that you install a fresh Python environment
 through either a full Anaconda installation or a (much) more lightweight
 Miniconda installation. If you are very comfortable with Python and know how
 to install packages without root privileges, you can jump directly to the packages
-listed below and install them.
+listed below and install them.  (Also, the JupyterLab extensions are
+only easy with anaconda/miniconda, not with virtual environments.)
 
 Follow these links for download and installation instructions:
 

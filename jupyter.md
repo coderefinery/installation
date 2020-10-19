@@ -27,6 +27,14 @@ installation](#how-to-verify-the-installation).
 Here you will find how to install optional JupyterLab extensions which
 will be demonstrated during the workshop.
 
+**You don't have `nodejs`/`npm`?:** it is easy to
+install the extensions if installed Python through conda, but if you
+installed JupyterLab through a virtual environment, it is not easy to
+follow this section because `nodejs` or `npm` are non-Python programs
+that are easy to install through Conda, but not other ways.  In this
+case, it's OK to skip this section: you won't be able to do a few
+exercises, but you won't miss much else.
+
 You are not required to install these extensions, 
 but if you wish to you can follow the instructions below.
 
