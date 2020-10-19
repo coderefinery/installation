@@ -9,6 +9,10 @@ They can be used independently of version control but when coupled with Git,
 they can provide a nice alternative to command line output to show differences
 between file versions or branches.
 
+**If you can't get the visual diff tools to work, it's OK: it's only a
+demonstration in one exercise, and you won't be prevented from doing
+anything else.**
+
 
 ## Installation of meld on Linux
 
