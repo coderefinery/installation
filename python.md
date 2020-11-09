@@ -83,13 +83,13 @@ We will use the following Python packages in the CodeRefinery exercises:
 - matplotlib
 - jupyter
 - jupyterlab
-- ipywidgets
 - pandas
 - seaborn
 - sphinx
 - sphinx_rtd_theme
 - pytest
 - pycodestyle
+- (optional) ipywidgets
 
 If you have installed a new Python environment via Anaconda, you will already
 have all these packages installed on your system.

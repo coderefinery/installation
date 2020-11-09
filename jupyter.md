@@ -73,7 +73,10 @@ available by default, in this case, consider upgrading).
 
 #### Widgets
 
-Install the `ipywidgets` package via conda:
+**Installing widgets via the `ipywidgets` package is not required.**
+Widgets will be demonstrated by the instructor and typing along is optional.
+
+`ipywidgets` can be installed via conda:
 ```bash
 $ conda install ipywidgets
 ```
