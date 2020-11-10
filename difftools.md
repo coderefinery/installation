@@ -60,10 +60,19 @@ $ git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
 ## How to verify the installation
 
 To test it create two text files which are similar and then compare them
-with Meld or Diffuse:
+with Meld or Diffuse or Opendiff (or the tool which you have chosen above for visual
+differences):
 
 ```shell
 $ meld file1 file2
+```
+or:
+```shell
+$ diffuse file1 file2
+```
+or:
+```shell
+$ opendiff file1 file2
 ```
 
 You should now see both versions side by side.
