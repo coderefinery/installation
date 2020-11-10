@@ -12,7 +12,7 @@ Follow the steps below to enable Python and Anaconda scripts in Git Bash:
 - Add python and anaconda scripts to your path
 
 ```shell
-SETX PATH “%PATH%;C:\Users\<username>\Anaconda3\Scripts;C:\Users\<username>\Anaconda3”
+SETX PATH "%PATH%;C:\Users\<username>\Anaconda3\Scripts;C:\Users\<username>\Anaconda3"
 ```
 - Close the windows command prompt and open a new one.
 
