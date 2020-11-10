@@ -86,7 +86,7 @@ For installation missing packages, the easiest is to launch [Anaconda navigator]
 
 ## How to verify the installation
 
-For windows users, use git bash Terminal and for everyone type in the command prompt:
+Use git bash terminal (on Windows) or a regular terminal (MacOS and Linux) and type in the command prompt:
 
 ```shell
 $ python --version
