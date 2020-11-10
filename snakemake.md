@@ -8,13 +8,18 @@ The Snakemake workflow management tool requires Python version 3.4 or higher.
 Detailed installation instructions can be found in 
 [the Snakemake documentation](https://snakemake.readthedocs.io/en/v5.1.4/getting_started/installation.html).
 
+## Installation on Windows
 
-## Installation on Linux, macOS, and Windows
+
+- Launch [Anaconda navigator](https://docs.anaconda.com/anaconda/navigator/)
+- Add `bioconda` channel in the list of available channels as explained [here](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-channels/#adding-a-channel)
+- Install `snakemake-minimal` package following these [instructions](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-packages/).
+
+## Installation on Linux and macOS
 
 In short, Snakemake can be installed either via the `snakemake` or 
 the smaller (but sufficient) `snakemake-minimal` package.
 
-On Windows, you *have* to use `snakemake-minimal`. On Linux and macOS
 `snakemake-minimal` is enough unless you want to be able to plot dependency graphs.
 
 To install one of these into a conda environment, type:
@@ -24,15 +29,6 @@ $ conda install -c bioconda -c conda-forge snakemake
 # or
 $ conda install -c bioconda -c conda-forge snakemake-minimal
 ```
-
-or, alternatively, if you prefer `pip` over `conda`:
-
-```shell
-$ pip3 install snakemake
-```
-
-Both installation routes provide the functionality that we need in our
-workshop.
 
 If your installation fails with:
 `Failed building wheel for datrie`.  
