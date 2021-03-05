@@ -24,6 +24,7 @@ Tools we use only in specialized workshops:
 - [Compilers](/installation/compilers/)
 - [Make](/installation/make/)
 - [CMake](/installation/cmake/)
+- [Pytest](/installation/python-testing/)
 - [PyCharm](/installation/pycharm/)
 - [Docker](/installation/docker/)
 
