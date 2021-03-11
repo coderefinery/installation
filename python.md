@@ -5,7 +5,7 @@ layout: master
 # Python
 
 Although Python is likely already installed on your laptop, to avoid any
-possible conflicts we strongly recommend that you install a fresh Python version 3.5 or higher with a full Anaconda installation for the exercises in the CodeRefinery workshop. 
+possible conflicts we strongly recommend that you install a fresh Python version 3.5 or higher with a full Anaconda installation for the exercises in the CodeRefinery workshop.
 
 
 If you do not follow the instructions given below, we cannot guarantee that all the CodeRefinery exercises will work out of the box.
@@ -26,7 +26,7 @@ Follow these links for download and installation instructions:
 
 > ## Remark
 > You may have heard about [Miniconda](https://docs.conda.io/en/latest/miniconda.html) and may wonder why we recommend the full Anaconda installation instead. We will actually discuss this topic during the CodeRefinery workshop and the [Reproducible Research](https://coderefinery.github.io/reproducible-research/) lesson.
-> 
+>
 {: .discussion}
 
 Note that it is best to install Anaconda into a directory in the home
@@ -80,7 +80,7 @@ Watch the [video tutorial](https://www.youtube.com/watch?v=xxQ0mzZ8UvA)
 - Install Python 3 using all of the defaults for installation except make sure to check
   `Make Anaconda the default Python`.
 
-Anaconda contains almost all the required Python packages which will be used during the CodeRefinery workshop. 
+Anaconda contains almost all the required Python packages which will be used during the CodeRefinery workshop.
 
 For installation missing packages, the easiest is to launch [Anaconda navigator](https://docs.anaconda.com/anaconda/navigator/) and install packages through [it](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-packages/).
 

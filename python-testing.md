@@ -27,7 +27,7 @@ the home folder, rather than in a system directory, and one should not
 Anaconda (Miniconda) prepends your PATH with `$HOME/anaconda3/bin`
 (`$HOME/miniconda3/bin`), assuming that `$HOME/anaconda3`
 (`$HOME/miniconda3`) is where you installed it, by adding lines to
-your `.bash_profile` file.  
+your `.bash_profile` file.
 To verify your Anaconda/Miniconda
 installation, open a new terminal and run `python`. Above the Python
 prompt you should see "Anaconda" or "Miniconda". To exit Python press

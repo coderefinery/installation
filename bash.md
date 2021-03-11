@@ -60,10 +60,10 @@ Then run the installer and follow these steps:
 
 ![step 4](/assets/img/git_install_step4.png)
 - Keep the recommended "Git from the command lineand also from 3rd-party software"
-  selected and click on "Next". If you forgot to do this programs that you need 
-  for the workshop will not work properly. If this happens rerun the installer 
+  selected and click on "Next". If you forgot to do this programs that you need
+  for the workshop will not work properly. If this happens rerun the installer
   and select the appropriate option.
-  
+
 ![step 5](/assets/img/git_install_step5.png)
 - Click on "Next".
 

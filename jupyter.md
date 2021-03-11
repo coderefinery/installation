@@ -35,10 +35,10 @@ that are easy to install through Conda, but not other ways.  In this
 case, it's OK to skip this section: you won't be able to do a few
 exercises, but you won't miss much else.
 
-You are not required to install these extensions, 
+You are not required to install these extensions,
 but if you wish to you can follow the instructions below.
 
-JupyterLab extensions are npm packages (standard package format for Javascript), 
+JupyterLab extensions are npm packages (standard package format for Javascript),
 and to install the extensions you need to install the `nodejs` package:
 
 ```bash
@@ -93,20 +93,20 @@ manager.
 
 #### Git extension
 
-`jupyterlab-git` is a JupyterLab extension for version control using Git.  
+`jupyterlab-git` is a JupyterLab extension for version control using Git.
 Install it via:
 
 ```bash
 $ conda install -c conda-forge jupyterlab-git
 ```
 
-or 
+or
 
 ```bash
 $ pip install jupyterlab-git
 ```
 
-and then activate it by finding and installing `jupyterlab-git` 
+and then activate it by finding and installing `jupyterlab-git`
 via the extension manager.
 
 `jupyterlab-git` will also install the `nbdime` package as one of its
@@ -130,10 +130,10 @@ via the extension manager.
 ### Other languages
 
 Python will be the main language used during the CodeRefinery workshop, but if
-you use other programming languages the chances are high that someone has written 
+you use other programming languages the chances are high that someone has written
 a Jupyter kernel for that language!
 
-A full list of available Jupyter kernels can be [found here](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels). Find your favorite language in the list and click 
+A full list of available Jupyter kernels can be [found here](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels). Find your favorite language in the list and click
 the link for installation and usage instructions.
 
 
@@ -149,5 +149,5 @@ and see if it opens up a new tab in your browser showing the JupyterLab interfac
 
 Please also verify which Python version JupyterLab sees. Ideally it can see Python 3.
 
-On Windows, the JupyterLab App can also be launched by clicking on the 
+On Windows, the JupyterLab App can also be launched by clicking on the
 JupyterLab icon in the Anaconda menu.

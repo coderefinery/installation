@@ -19,7 +19,7 @@ during the session.
 Please visit the [download and installation guide](https://www.jetbrains.com/pycharm/download/#section) and install the
 "Community" version of the software.
 
-If you already have the PyCharm professional edition, no need to install the community edition. 
+If you already have the PyCharm professional edition, no need to install the community edition.
 
 ## How to verify the installation
 
