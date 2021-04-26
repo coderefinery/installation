@@ -169,3 +169,30 @@ Date:   Fri May 15 16:41:13 2020 +0200
 
     making a test commit
 ```
+
+
+## Troubleshooting
+
+### On Windows `git log`, `git diff`, `git branch` or other git commands show no output at all
+
+It seems this can be fixed by these configuration settings:
+```
+$ git config --global pager.log off
+$ git config --global pager.diff off
+$ git config --global pager.show off
+$ git config --global pager.config off
+$ git config --global pager.stash off
+$ git config --global pager.help off
+$ git config --global pager.blame off
+$ git config --global pager.branch off
+$ git config --global pager.annotate off
+```
+
+Following other manuals and documentation, we believe that all the above can be set with the following
+(however we are unsure whether `cat` is always available on Windows):
+```
+$ git config --global core.pager cat
+```
+
+Can you please let us know if you experienced this problem but the above did
+not fix it?
