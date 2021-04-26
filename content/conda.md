@@ -48,6 +48,7 @@ run a couple of conda-installed tools and libraries.
 ```{prereq}
 - You have Bash and relatively new version of Conda installed in your computer.
 - You get an error message like `conda command not found` whey you type `conda --version` in your shell terminal.
+- After opening a new terminal and typing `conda --help` you still get `conda command not found`.
 ```
 
 `````{tabs}
