@@ -10,9 +10,6 @@ template website](https://swcarpentry.github.io/workshop-template/)
 as well as copied and adapted
 most of their [license text](http://software-carpentry.org/license/).
 
-We have copied instructions for installing Make from [this Software Carpentry
-workshop website](http://hpcarcher.github.io/2014-12-03-edinburgh/).
-
 
 ## Instructional Material
 

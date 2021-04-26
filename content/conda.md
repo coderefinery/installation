@@ -2,6 +2,10 @@
 
 # Miniconda or Anaconda
 
+Anaconda (or miniconda) is a complete Python distribution that lets
+you create isolated **environments** that don't affect anything else.
+**conda** is the tool that manages these environments.
+
 We have tried to collect all tools and libraries which we will use and
 demonstrate during a CodeRefinery workshop into an `environment.yml` file so
 that you can create a new and independent environment with all the necessary
@@ -10,6 +14,11 @@ projects. This comes at the last step ({ref}`conda-environment`).
 
 To enable creating the environment mentioned above, we need you to have a
 relatively new version of Conda.
+
+1. First you need to install Anaconda or Miniconda.
+2. Then, in the {ref}`next page <conda-environment>`, you set up the
+   CodeRefinery environment.
+
 
 
 ## Installing Miniconda
@@ -94,7 +103,7 @@ run a couple of conda-installed tools and libraries.
   $ echo 'eval "$($HOME/miniconda3/bin/conda shell.bash hook)"' >> ~/.bashrc
   ```
 
-  If you prefer not to edit your `.bashrc`, you can also run this command after opening your terminal
+  If you prefer not to edit your `.bashrc`, you can also run this command after opening your terminal (each time you open one)
   and it will bring all `conda` commands "into view":
   ```shell
   $ eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
