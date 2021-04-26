@@ -86,7 +86,18 @@ run a couple of conda-installed tools and libraries.
 
   ````{tab} Linux
 
-  Work in progress ...
+  1. Open a terminal window.
+  2. Run this command which will append to your `.bashrc` file (adapt the path if Miniconda has been installed
+     to a different place):
+  ```shell
+  $ echo 'eval "$($HOME/miniconda3/bin/conda shell.bash hook)"' >> ~/.bashrc
+  ```
+
+  If you prefer not to edit your `.bashrc`, you can also run this command after opening your terminal
+  and it will bring all `conda` commands "into view":
+  ```shell
+  $ eval "$($HOME/miniconda3/bin/conda shell.bash hook)"
+  ```
   ````
 `````
 
