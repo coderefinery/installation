@@ -21,20 +21,20 @@ available in the computer that you will use during the workshop.
    *I have ...*
 
    - Shell terminal (Bash or Zsh) and Git configured (user name, email, and editor) and verified
-     (:ref:`instructions <shell-and-git>`)
+     (:ref:`instructions <shell-and-git>`, estimate: 15 minutes)
    - Relatively new version of Miniconda3 or Anaconda3 (less than 3 year old)
-     (:ref:`instructions <conda>`)
+     (:ref:`instructions <conda>`, estimate: 15 minutes)
    - Terminal shell (Git Bash on Windows, Bash or Zsh on macOS and Linux) from
-     which I can use `conda` (try typing `conda --version`). Note that the
+     which I can use ``conda`` (try typing ``conda --version``). Note that the
      Anaconda terminal is not enough since it does not provide the "Nano" editor
      and some commands may be different
-     (:ref:`instructions <setting-conda-path>`)
+     (:ref:`instructions <setting-conda-path>`, estimate: 10 minutes)
    - GitHub account, best with 2-factor authentication (2FA) activated. 2FA is not
      strictly needed for the course but highly recommended to keep your account
      secure
-     (:ref:`instructions <github>`)
+     (:ref:`instructions <github>`, estimate: 10 minutes)
    - SSH connection to GitHub established and verified
-     (:ref:`instructions <ssh>`)
+     (:ref:`instructions <ssh>` estimate: 10 minutes)
 
 
 Create a Conda environment for CodeRefinery workshop
