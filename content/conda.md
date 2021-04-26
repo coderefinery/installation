@@ -34,7 +34,7 @@ relatively new version of Conda.
   instruction below and upgrade Conda. Please replace `anaconda` with `conda`
   in the instruction for Windows and macOS:
     - [Windows](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/windows.html#updating-conda)
-    - [Mac OS](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html#updating-anaconda-or-miniconda)
+    - [macOS](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html#updating-anaconda-or-miniconda)
     - [Linux](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html#updating-anaconda-or-miniconda)
 
 
