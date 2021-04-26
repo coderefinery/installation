@@ -100,6 +100,9 @@ some options. For example (adjust the path if needed, and note the quotation):
 $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 ```
 
+[This page](https://swcarpentry.github.io/git-novice/02-setup/index.html)
+contains a nice summary on how to configure Git with many other editors.
+
 
 ## Verification
 
