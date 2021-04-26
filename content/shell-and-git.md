@@ -188,11 +188,8 @@ $ git config --global pager.branch off
 $ git config --global pager.annotate off
 ```
 
-Following other manuals and documentation, we believe that all the above can be set with the following
-(however we are unsure whether `cat` is always available on Windows):
+Following other manuals and documentation, it seems that all the above can be set with the following
+(`cat` should be available within Git Bash but also PowerShell):
 ```
 $ git config --global core.pager cat
 ```
-
-Can you please let us know if you experienced this problem but the above did
-not fix it?
