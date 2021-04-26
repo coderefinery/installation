@@ -93,4 +93,8 @@ run a couple of conda-installed tools and libraries.
 
 ## How to uninstall/remove Conda
 
-We need to document this ...
+If you wish to remove Conda again after the workshop, here is how:
+
+- [Windows](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/windows.html#uninstalling-conda)
+- [macOS](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html#uninstalling-anaconda-or-miniconda)
+- [Linux](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html#uninstalling-anaconda-or-miniconda)
