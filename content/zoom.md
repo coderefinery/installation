@@ -1,7 +1,3 @@
----
-layout: master
----
-
 # Zoom
 
 Zoom is need in online workshops.  You will receive the meeting
