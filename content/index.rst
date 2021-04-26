@@ -22,7 +22,7 @@ available in the computer that you will use during the workshop.
 
    - Shell terminal (Bash or Zsh) and Git configured (user name, email, and editor) and verified
      (:ref:`instructions <shell-and-git>`)
-   - Relatively new version of Miniconda3 or Anaconda3 (less than 3 year old)
+   - Relatively new version of Miniconda3 or Anaconda3 (less than 3 years old)
      (:ref:`instructions <conda>`)
    - Terminal shell (Git Bash on Windows, Bash or Zsh on macOS and Linux) from
      which I can use `conda` (try typing `conda --version`). Note that the
