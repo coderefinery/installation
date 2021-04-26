@@ -1,17 +1,3 @@
----
-layout: master
----
-
-# Bash
-
-
-## If you are new to shell
-
-If you have never been in a terminal shell, please read this [crash
-course quickly](https://scicomp.aalto.fi/scicomp/shell.html). consider watching
-[this shell tutorial video by Richard Darst](https://youtu.be/56p6xX0aToI).
-
-
 ## Installation on Linux
 
 The default shell is usually Bash, but if your machine is set up differently

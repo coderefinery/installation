@@ -1,8 +1,4 @@
----
-layout: master
----
-
-## Credit
+# Credit and license
 
 These installation instructions are inspired by and derived from
 work by [Software Carpentry](http://software-carpentry.org) which is licensed under the

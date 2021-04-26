@@ -1,4 +1,4 @@
-_drafts/
-_site/
+.jupyter_cache/
+_build/
+venv/
 *~
-.sass-cache
