@@ -30,3 +30,19 @@ hosting services but this is a process.
 2. At the right-top corner, you will find your icon in a circle. Click the down arrow and select "settings".
 3. From the menu on the left side, select "Account security".
 4. Enable "Two-factor authentication" by a method of your choice.
+
+
+## Avoiding Github
+
+If you don't make the Github account, you can still follow along with
+the lessons.  We highly recommend the Github account if you are in a
+interactive workshop, because without it you won't be able to follow
+along with some exercises (If you are following CodeRefinery at your
+own pace, you will have time to work these out).
+
+- Anything can be done with other web repositories, but we don't say
+  how.  You will need to adjust this yourself.
+- Most Collaborative Git lesson exercises won't work out of the
+  box/will need adapting.
+- The continuous integration (CI) lessons such as software testing
+  won't work without adapting.
