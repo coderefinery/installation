@@ -22,14 +22,106 @@ on source code repository hosting platforms such as
 [GitHub](https://github.com) or [GitLab](https://gitlab.com) or
 [Bitbucket](https://bitbucket.org/).
 
-Follow the installation, configuration and verification instructions below.
+Please follow the installation, configuration and verification instructions below.
 
 
 ## Installation
 
-Please refer to [the Carpentries set up
-page](https://carpentries.github.io/workshop-template/#shell) about **The Bash
-Shell** and then **Git** for your OS.
+`````{tabs}
+  ````{tab} Windows
+
+  You can follow the steps below by watching the
+  [Carpentries video tutorial](https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0).
+
+  - Download the [Git for Windows installer](https://gitforwindows.org/).
+  - Run the installer and follow the steps below:
+    1.  Click on "Next" four times (two times if you've previously
+        installed Git).  You don't need to change anything
+        in the Information, location, components, and start menu screens.
+    2.  **From the dropdown menu select "Use the Nano editor by default"
+        (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".**
+    3.  On the page that says "Adjusting the name of the initial branch in new repositories", ensure that
+        "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+    4.  Ensure that "Git from the command line and also from 3rd-party software" is selected and
+        click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
+        remove the Git Bash installation, re-run the installer and to select the "Git from the
+        command line and also from 3rd-party software" option.)
+    5.  Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+    6.  Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
+    7.  **Ensure that "Use Windows' default console window" is selected and click on "Next".**
+    8.  Ensure that "Default (fast-forward or merge) is selected and click "Next"
+    9.  Ensure that "Git Credential Manager <strong>Core</strong>" is selected and click on "Next".
+    10. Ensure that "Enable file system caching" is selected and click on "Next".
+    11. Click on "Install".
+    12. Click on "Finish" or "Next".
+  - If your "HOME" environment variable is not set (or you don't know what this is):
+    1.  Open command prompt (Open Start Menu then type `cmd` and press enter)
+    2.  Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
+    3.  Press enter, you should see `SUCCESS: Specified value was saved.`
+    4.  Quit command prompt by typing `exit` then pressing enter.
+
+  This will provide you with both Git and Bash in the Git Bash program.
+
+  *Text copied and adapted from: [the Carpentries set up page](https://carpentries.github.io/workshop-template/#shell)*
+  ````
+
+  ````{tab} macOS
+
+  The default shell in some versions of macOS is Bash, and
+  Bash is available in all versions, so **no need to install a shell**.
+
+  You access Bash from the terminal (found in `/Applications/Utilities`.
+  See the Git installation [Carpentries video tutorial](https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial)
+  for an example on how to open the terminal.
+  You may want to keep the terminal in your dock for this workshop.
+
+  To see if your default shell is Bash type `echo $SHELL`
+  in the terminal and press the return key. If the message
+  printed does not end with '/bash' then your default is something
+  else and you can run Bash by typing `bash`. But also `zsh` will work
+  fine for our workshop if this is your default shell.
+
+  If you want to change your default shell, see [this Apple Support article](https://support.apple.com/en-au/HT208050)
+  and follow the instructions on "How to change your default shell".
+
+  **Install Git** for Mac
+  by downloading and running the most recent "mavericks" installer from
+  [this list](http://sourceforge.net/projects/git-osx-installer/files/).
+  Because this installer is not signed by the developer, you may have to
+  right click (control click) on the .pkg file, click Open, and click
+  Open on the pop up window.
+  After installing Git, there will not be anything in your `/Applications` folder,
+  as Git is a command line program.
+  See also the Git installation
+  [Carpentries video tutorial](https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial).
+
+  For older versions of OS X (10.5-10.8), use the
+  most recent available installer labelled "snow-leopard"
+  [available here](http://sourceforge.net/projects/git-osx-installer/files/).
+
+  *Text copied and adapted from: [the Carpentries set up page](https://carpentries.github.io/workshop-template/#shell)*
+  ````
+
+  ````{tab} Linux
+
+  On a Linux system you already have a shell and the default shell is usually
+  Bash and there is **no need to install a shell**. But you may **need to install Git**.
+  If Git is not already available on your machine you can try to install it via
+  your distribution package manager.
+
+  For Debian/Ubuntu run:
+  ```shell
+  $ sudo apt-get install git
+  ```
+
+  For Fedora:
+  ```shell
+  $ sudo dnf install git
+  ```
+
+  *Reference: [the Carpentries set up page](https://carpentries.github.io/workshop-template/#shell)*
+  ````
+`````
 
 
 ## Configuration

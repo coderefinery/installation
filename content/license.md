@@ -6,7 +6,7 @@ work by [Software Carpentry](http://software-carpentry.org) which is licensed un
 
 In particular, we have copied a number of instructions from the [workshop
 template website](https://swcarpentry.github.io/workshop-template/)
-(instructions to install Bash, Python on Windows, and Git on Windows),
+(instructions to install Bash and Git),
 as well as copied and adapted
 most of their [license text](http://software-carpentry.org/license/).
 
