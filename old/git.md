@@ -1,30 +1,3 @@
-## Specific Linux installation instructions
-
-If Git is not already available on your machine you can try to install it via
-your distribution package manager.
-
-For Debian/Ubuntu run:
-
-```shell
-$ sudo apt-get install git
-```
-
-Check the version after installing:
-
-```shell
-$ git --version
-```
-
-For Fedora:
-
-```shell
-$ sudo dnf install git
-```
-
-Please also [verify your installation](#how-to-verify-the-installation)
-and [configure Git](#configuring-git).
-
-
 ## Specific macOS installation instructions
 
 ### OS X 10.9 and higher
