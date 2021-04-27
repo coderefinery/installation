@@ -3,15 +3,16 @@
 # Shell and Git
 
 ```{note}
-Installing Git without also configuring it and verifying configuration is not
-enough, otherwise you will start off behind! Please trust us that this is
+Installing Git is not enough, you must also configure it and verif the
+configuration,
+otherwise you will start off behind! Please trust us that this is
 better verified before than during the workshop which we then cannot simply
 pause.
 ```
 
 In CodeRefinery workshops, we use Bash (Unix Shell). If you have never been in
 a terminal shell, please briefly read this [crash
-course](https://scicomp.aalto.fi/scicomp/shell.html), and consider watching
+course](https://scicomp.aalto.fi/scicomp/shell/), and consider watching
 [this shell tutorial video by Richard Darst](https://youtu.be/56p6xX0aToI) (20
 min).
 
@@ -64,13 +65,14 @@ $ git config --global user.email yourname@example.com
 If you are unsure which email to use, use the one that you have registered at
 GitHub with.
 
-If you prefer to not use a real email address but still want to make sure that
+**This name and email will be public on Github when you make
+contributions, including in this course.**  If you prefer to not use a real email address but still want to make sure that
 GitHub counts your contributions, you can use
 `yourusername@users.noreply.github.com`.
 
 This is important since your Git commits use this information.  The `--global`
-option ensures that you do not need to enter this information again on your
-machine.
+option uses this information for every repository for this user on
+this computer.
 
 
 ### Step 2: Setting an editor
@@ -88,7 +90,7 @@ $ git config --global core.editor "atom -nw"
 ```
 
 To see where this information is stored (`--show-origin` works on git version
-2.8.0 or greater only), use:
+2.8.0 (from 2016) or greater only), use:
 ```shell
 $ git config --list --show-origin
 ```

@@ -9,6 +9,7 @@ available in the computer that you will use during the workshop.
 .. note::
 
    If you are using a university-managed computer from the following universities, please follow specific instructions:
+
    - `Aalto University <https://scicomp.aalto.fi/aalto/coderefinery-setup/>`__
 
 
@@ -25,7 +26,7 @@ available in the computer that you will use during the workshop.
    - Relatively new version of Miniconda3 or Anaconda3 (less than 3 years old)
      (:ref:`instructions <conda>`)
    - Terminal shell (Git Bash on Windows, Bash or Zsh on macOS and Linux) from
-     which I can use `conda` (try typing `conda --version`). Note that the
+     which I can use ``conda`` (try typing ``conda --version``). Note that the
      Anaconda terminal is not enough since it does not provide the "Nano" editor
      and some commands may be different
      (:ref:`instructions <setting-conda-path>`)
@@ -41,7 +42,7 @@ Create a Conda environment for CodeRefinery workshop
 ----------------------------------------------------
 
 **All participants** need to create a Conda environment using the provided
-`environment.yml` (:ref:`instructions <conda-environment>`).
+``environment.yml`` (:ref:`instructions <conda-environment>`).
 This environment will provide all dependencies that we will need during the
 workshop.
 
@@ -49,11 +50,19 @@ workshop.
 If you encounter any problems
 -----------------------------
 
+- Ask a friend/colleague/local IT support.  These are standard tools
+  which many people can help with (and don't be afraid to ask - it's
+  an unfortunate fact that software installation and configuration is
+  hard).
+
 - We will have 2 drop-in installation-help sessions. Please try by yourself
   first, but if you cannot solve problems, join in the sessions. Schedule is
   shown in the workshop website.
-- You can also send an email to support@coderefinery.org to ask questions.
-  Please describe the problem concretely as well as your operating system.
+- Ask in the ``#help`` stream on the CodeRefinery Zulipchat,
+  https://coderefinery.zulipchat.com (:doc:`info
+  <https://coderefinery.github.io/manuals/chat/>`).  You can also send
+  an email to support@coderefinery.org to ask questions.  Please
+  describe the problem concretely as well as your operating system.
 
 
 .. toctree::

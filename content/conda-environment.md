@@ -10,7 +10,8 @@
    repository](https://github.com/coderefinery/software/blob/main/environment.yml)
    or make an `environment.yml` with the same contents inside the newly made
    folder.
-3. In Bash, navigate to the folder where you put the `environment.yml`.
+3. In Bash, navigate to the folder where you put the `environment.yml`
+   (the file names the environment `coderefinery` automatically).
 4. Run the following command: `conda env create -f environment.yml`
 5. Make sure that you have "coderefinery" folder in Miniconda3/envs/. If you
    use Anaconda3, then it should be in Anaconda3/envs/.
