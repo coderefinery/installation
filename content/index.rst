@@ -19,11 +19,12 @@ your answer is "no", then follow the guideline shown in a linked page for each.
 If your answers are all "yes", then go to :ref:`conda-environment`.
 
 .. keypoints:: Checklist
+  
   *I have ...*
 
   - Shell terminal (Bash or Zsh) and Git configured (user name, email, and editor) and verified
     (:ref:`instructions <shell-and-git>`)
-  - Relatively new version of Miniconda3 or Anaconda3 (less than 3 years old)
+  - Relatively new version of Miniconda3 (less than 3 years old)
     (:ref:`instructions <conda>`)
   - Terminal shell (Git Bash on Windows, Bash or Zsh on macOS and Linux) from
     which I can use ``conda`` (try typing ``conda --version``). Note that the
