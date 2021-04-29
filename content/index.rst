@@ -58,9 +58,8 @@ If you encounter any problems
 - We will have 2 drop-in installation-help sessions. Please try by yourself
   first, but if you cannot solve problems, join in the sessions. Schedule is
   shown in the workshop website.
-- Ask in the ``#help`` stream on the CodeRefinery Zulipchat,
-  https://coderefinery.zulipchat.com (:doc:`info
-  <https://coderefinery.github.io/manuals/chat/>`).  You can also send
+- Ask in the ``#help`` stream on the `CodeRefinery Zulipchat <https://coderefinery.zulipchat.com>`__.
+  You can also send
   an email to support@coderefinery.org to ask questions.  Please
   describe the problem concretely as well as your operating system.
 
