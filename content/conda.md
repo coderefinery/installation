@@ -2,7 +2,7 @@
 
 # Miniconda
 
-Miniconda (and Anaconda, too) is a complete Python distribution that lets
+Miniconda (and Anaconda, too) comes with a complete Python distribution that lets
 you create isolated **environments** that don't affect anything else.
 **conda** is the tool that manages these environments.
 
