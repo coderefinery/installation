@@ -1,8 +1,8 @@
 (conda)=
 
-# Miniconda or Anaconda
+# Miniconda
 
-Anaconda (or miniconda) is a complete Python distribution that lets
+Miniconda (and Anaconda, too) is a complete Python distribution that lets
 you create isolated **environments** that don't affect anything else.
 **conda** is the tool that manages these environments.
 
@@ -15,7 +15,7 @@ projects. This comes at the last step ({ref}`conda-environment`).
 To enable creating the environment mentioned above, we need you to have a
 relatively new version of Conda.
 
-1. First you need to install Anaconda or Miniconda.
+1. First you need to install Miniconda.
 2. Then, in the {ref}`next page <conda-environment>`, you set up the
    CodeRefinery environment.
 
