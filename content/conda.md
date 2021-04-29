@@ -19,7 +19,11 @@ relatively new version of Conda.
 2. Then, in the {ref}`next page <conda-environment>`, you set up the
    CodeRefinery environment.
 
+```{note}
+*Why not Anaconda?*
 
+Anaconda is more convenient at the beginning since it provides most packages out of the box. However, in the long term we recommend to have a minimal base system and install packages into project-specific environments and for this, Miniconda is a better choice. For our workshops we therefore recommend Miniconda to prepare you for the long term and to start with good practices right from the start. Another benefit is the smaller install size and time.
+```
 
 ## Installing Miniconda
 
