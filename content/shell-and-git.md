@@ -197,6 +197,12 @@ $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -m
 [This page](https://swcarpentry.github.io/git-novice/02-setup/index.html)
 contains a nice summary on how to configure Git with many other editors.
 
+### Step 3: ssh keys for Github
+
+This is handled two steps from now, in {doc}`ssh`, after you make a
+Github account.
+
+
 
 ## Verification
 
