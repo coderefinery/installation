@@ -9,7 +9,7 @@ link/ID/password if you are registered.
 We recommend that you install the Zoom client (<https://zoom.us/download>).
 
 You will be encouraged (but not forced) to use a webcam during the
-workshop, at least during the breakout sessions.  If you don't want
+workshop during the breakout sessions.  If you don't want
 the physical room you're in to be visible on the webcam, Zoom allows
 users to [set up a virtual
 background](https://support.zoom.us/hc/en-us/articles/210707503-Virtual-Background)
