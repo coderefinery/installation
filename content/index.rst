@@ -70,10 +70,10 @@ If you encounter any problems
   :caption: Instructions
 
   shell-and-git
-  conda
-  conda-environment
   github
   ssh
+  conda
+  conda-environment
   zoom
   editors
   difftools
