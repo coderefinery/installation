@@ -12,8 +12,10 @@
    folder.
 3. In Bash, navigate to the folder where you put the `environment.yml`
    (the file names the environment `coderefinery` automatically).
-4. (If you have not, activate `conda` in Miniconda first, and) Run the following command: `conda env create -f environment.yml`
-5. Make sure that you have "coderefinery" folder in Miniconda3/envs/. If you
+4. If you have not, activate `conda` in Miniconda first using `conda activate` and if this does not
+   work, please first follow {ref}`setting-conda-path`.
+5. Run the following command: `conda env create -f environment.yml`
+6. Make sure that you have "coderefinery" folder in Miniconda3/envs/. If you
    use Anaconda3, then it should be in Anaconda3/envs/.
 
 
