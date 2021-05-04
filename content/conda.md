@@ -89,10 +89,10 @@ run a couple of conda-installed tools and libraries.
   ````{tab} macOS
 
   1. Open a terminal window.
-  2. Find the .zshrc file which should be located in your home directory
+  2. Find the `.zshrc` file which should be located in your home directory
      (/User/your-user-name)
-  3. Navigate to the directory where .zshrc is located.
-  4. Add the following in .zshrc file:
+  3. Navigate to the directory where `.zshrc` is located.
+  4. Add the following in `.zshrc` file:
   ```shell
   export PATH="$HOME/miniconda3/bin:$PATH"
   ```
