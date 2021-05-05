@@ -82,6 +82,15 @@ run a couple of conda-installed tools and libraries.
   5. Close Git Bash and reopen it.
   6. Verify that now Git Bash can "see" conda by running `conda --version`
 
+  After step 5 you may see this warning but this is nothing to worry about and will
+  not show up the next time you open Git Bash:
+  ```
+  WARNING: Found ~/.bashrc but no ~/.bash_profile, ~/.bash_login or ~/.profile.
+
+  This looks like an incorrect setup.
+  A ~/.bash_profile that loads ~/.bashrc will be created for you.
+  ```
+
   *Reference: ["Setting Up Conda in Git Bash", Sep 2020, at Codecademy
   Forums](https://discuss.codecademy.com/t/setting-up-conda-in-git-bash/534473)*
   ````
