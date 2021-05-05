@@ -43,7 +43,7 @@ sphinx-build --version
 snakemake --version
 ```
 
-You should see an output like this and not see errors:
+You should see an output like this and not see errors (exact version numbers are not too important):
 ```text
 3.0.14
 pytest 6.2.3
