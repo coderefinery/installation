@@ -32,6 +32,26 @@ $ source activate ~/Miniconda3/envs/coderefinery
 ```
 
 
+## How to verify the environment
+
+Once activated, try the following 5 commands:
+```shell
+python -c 'import sys; assert sys.version_info.major>=3'
+jupyter-lab --version
+pytest --version
+sphinx-build --version
+snakemake --version
+```
+
+You should see an output like this and not see errors:
+```text
+3.0.14
+pytest 6.2.3
+sphinx-build 3.5.4
+6.2.1
+```
+
+
 ## Deactivating the `coderefinery` environment
 
 ```shell
