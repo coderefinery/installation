@@ -11,15 +11,19 @@ this first to understand what is going in.
 ```
 
 Using the SSH protocol, you can connect and authenticate to remote servers and
-services. With SSH keys, you can connect to GitHub without supplying your
+services. With Git, it allows you to connect to remote servers to push
+and pull code.  With SSH keys, you can connect to GitHub without supplying your
 username or password at each visit.
 
 This step was optional in the past but will be necessary because soon it will
 not be possible to publish (git push) changes to GitHub with username and
 password alone.
 
+
+## Instructions
+
 For the instructions, please follow [this
-guide](https://help.github.com/articles/connecting-to-github-with-ssh/) to
+guide from Github](https://help.github.com/articles/connecting-to-github-with-ssh/) to
 connect to GitHub with SSH keys.  These same instructions work
 with services other than Github as well (except the adding the key to
 Github part).
