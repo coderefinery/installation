@@ -23,12 +23,12 @@
 
 In the workshop, we will ask you to activate this environment like this:
 ```shell
-$ source activate coderefinery
+source activate coderefinery
 ```
 
 If this does not work, the `coderefinery` part should be replaced with the whole path, for example:
 ```shell
-$ source activate ~/Miniconda3/envs/coderefinery
+source activate ~/Miniconda3/envs/coderefinery
 ```
 
 
@@ -55,7 +55,7 @@ sphinx-build 3.5.4
 ## Deactivating the `coderefinery` environment
 
 ```shell
-$ conda deactivate
+conda deactivate
 ```
 
 
@@ -64,7 +64,7 @@ $ conda deactivate
 If you don't need the `coderefinery` environment anymore, it is best to delete
 it. The following command will delete the whole environment:
 ```shell
-$ conda remove --name coderefinery --all
+conda remove --name coderefinery --all
 ```
 
 In case you have both Anaconda3 and Miniconda3, check from which base
