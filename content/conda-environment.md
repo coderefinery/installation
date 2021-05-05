@@ -4,7 +4,8 @@
 
 1. Open your terminal shell (e.g. Bash)
 2. If you have not, activate `conda` in Miniconda first using `conda activate` and if this does not
-   work, please first follow {ref}`setting-conda-path`.
+   work, please first follow {ref}`setting-conda-path`.  You probably
+   need to restart your shell terminal.
 3. Run the following command:
    ```
    conda env create -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
