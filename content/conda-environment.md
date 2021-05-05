@@ -10,8 +10,10 @@
    ```
    conda env create -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
    ```
-4. Make sure that you have "coderefinery" folder in Miniconda3/envs/. If you
-   use Anaconda3, then it should be in Anaconda3/envs/.
+4. Make sure that you see "coderefinery" in the output when you ask for a list of all available environments:
+   ```
+   conda env list
+   ```
 
 
 ## Activating the `coderefinery` environment
