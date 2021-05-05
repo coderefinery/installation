@@ -76,9 +76,9 @@ run a couple of conda-installed tools and libraries.
      to see the path to this folder in the Git Bash (something like
      ~/Miniconda3/etc/profile.d).
   4. Run the following command (type the following and enter):
-  ```shell
-  $ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
-  ```
+     ```shell
+     $ echo ". '${PWD}'/conda.sh" >> ~/.bashrc
+     ```
   5. Close Git Bash and reopen it.
   6. Verify that now Git Bash can "see" conda by running `conda --version`
 
