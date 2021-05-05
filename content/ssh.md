@@ -39,4 +39,4 @@ Hi yourusername! You've successfully authenticated, but GitHub does not provide 
 Connection to github.com closed.
 ```
 
-So although the result says "request failed", the important part is "You've successfully authenticated".
+So although the result says "request failed", the important part is **"yourusername" and "You've successfully authenticated"**.
