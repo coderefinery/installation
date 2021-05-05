@@ -12,6 +12,7 @@ available in the computer that you will use during the workshop.
 
    - `Aalto University <https://scicomp.aalto.fi/aalto/coderefinery-setup/>`__
 
+
 Step 1: Go through the checklist and make sure all items are ready
 ------------------------------------------------------------------
 First, go through all the items in the check list below. If you are in doubt or
@@ -19,7 +20,7 @@ your answer is "no", then follow the guideline shown in a linked page for each.
 If your answers are all "yes", then go to :ref:`conda-environment`.
 
 .. keypoints:: Checklist
-  
+
   *I have ...*
 
   - Shell terminal (Bash or Zsh) and Git configured (user name, email, and editor) and verified
@@ -40,7 +41,7 @@ If your answers are all "yes", then go to :ref:`conda-environment`.
 
 
 Step 2: Create a Conda environment for CodeRefinery workshop
-----------------------------------------------------
+------------------------------------------------------------
 
 **All participants** need to create a Conda environment using the provided
 ``environment.yml`` (:ref:`instructions <conda-environment>`).
