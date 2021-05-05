@@ -3,9 +3,9 @@
 # Creating a Conda environment for CodeRefinery workshops
 
 1. Open your terminal shell (e.g. Bash)
-2. If you have not, activate `conda` in Miniconda first using `conda activate` and if this does not
-   work, please first follow {ref}`setting-conda-path`.  You probably
-   need to restart your shell terminal.
+2. If you have not, activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither 
+   works, please first follow {ref}`setting-conda-path`. You probably
+   need to restart your shell terminal. Then try `conda activate` or `source ~/miniconda3/bin/activate` again.
 3. Run the following command:
    ```
    conda env create -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
@@ -18,7 +18,10 @@
 
 ## Activating the `coderefinery` environment
 
-In the workshop, we will ask you to activate this environment like this:
+In the workshop, we will ask you to activate this environment. 
+
+First, follow the steps 1 and 2 in {ref}`the above section <conda-environment>` (i.e. open your terminal shell and activate `conda`).
+Then run the following:
 ```shell
 source activate coderefinery
 ```
