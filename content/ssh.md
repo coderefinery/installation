@@ -23,3 +23,20 @@ guide](https://help.github.com/articles/connecting-to-github-with-ssh/) to
 connect to GitHub with SSH keys.  These same instructions work
 with services other than Github as well (except the adding the key to
 Github part).
+
+
+## How to verify that it worked
+
+Try this in your terminal shell:
+```
+ssh git@github.com
+```
+
+If you set up ssh keys correctly, you will see:
+```
+PTY allocation request failed on channel 0
+Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.
+Connection to github.com closed.
+```
+
+So although the result says "request failed", the important part is "You've successfully authenticated".
