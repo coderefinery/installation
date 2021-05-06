@@ -20,6 +20,12 @@ anything else.
   $ git config --global diff.tool meld
   $ git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
   ```
+  For meld version 3.20.3, because of reasons discussed [here](https://gitlab.gnome.org/GNOME/meld/-/issues/559), you can have multiple "Could not create key" errors that you can get around by clicking 'Ignore'.
+  Then, to open Meld when doing `git difftool`:
+  ```shell
+  $ git config --global diff.tool meld
+  $ git config --global mergetool.meld.path "$LOCALAPPDATA\Meld\Meld.exe"
+  ```
   ````
 
   ````{tab} macOS
