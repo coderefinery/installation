@@ -234,7 +234,7 @@ Make a new file with some content:
 ```shell
 $ nano example.txt
 ```
-Write some text in the `example.txt`, save (`ctrl+O`) and exit (`ctrl+X`).
+Write some text in the `example.txt`, save (`ctrl+O` then `ENTER`) and exit (`ctrl+X`).
 
 
 ### Step 3: Stage the change
