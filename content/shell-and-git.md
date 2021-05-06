@@ -170,8 +170,8 @@ this computer.
 ### Step 2: Setting an editor
 
 It is important to set also the default text editor to use with Git.  **We
-recommend to use nano**, but you can replace nano with vim, emacs or any other
-editor of your choice:
+recommend to use nano if you do not have any other preferences**, but
+you can replace nano with vim, emacs or any other editor of your choice:
 ```shell
 $ git config --global core.editor nano
 ```
@@ -248,10 +248,12 @@ $ git add example.txt
 
 ### Step 4: Commit the change with a message
 
-The following command will commit the change. This should open the editor which
-you have configured. There add an example commit message:
+The following command will commit the change. It should open the editor which
+you have configured.  Then, add a commit message such as `initial
+commit` at the very top.  Then save an exit (if you use
+the default `nano` editor, `ctrl+O` `ENTER` then `ctrl+X`):
 ```shell
-$ git commit example.txt
+$ git commit
 ```
 
 ### Step 5: See the change log
