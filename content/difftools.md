@@ -24,7 +24,7 @@ anything else.
   Then, to open Meld when doing `git difftool`:
   ```shell
   $ git config --global diff.tool meld
-  $ git config --global mergetool.meld.path "$LOCALAPPDATA\Meld\Meld.exe"
+  $ git config --global mergetool.meld.path "$LOCALAPPDATA\Programs\Meld\Meld.exe"
   ```
   ````
 
