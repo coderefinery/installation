@@ -7,7 +7,7 @@
 [This CodeRefinery video about ssh keys (7
 min)](https://www.youtube.com/watch?v=XCDg1mtaA5I&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg)
 shows how to set up SSH connection to GitHub.  We recommend you watch
-this first to understand what is going in.
+this first to understand what is going on.
 ```
 
 Using the SSH protocol, you can connect and authenticate to remote servers and
@@ -43,5 +43,5 @@ Hi yourusername! You've successfully authenticated, but GitHub does not provide 
 Connection to github.com closed.
 ```
 
-If it says **"yourusername" and "You've successfully authenticated"**
+If it says **"Hi yourusername" and "You've successfully authenticated"**
 then it works.  **Any other error messages do not matter.**
