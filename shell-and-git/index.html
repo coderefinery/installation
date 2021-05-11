@@ -1,0 +1,521 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Shell and Git &mdash; CodeRefinery workshop software installation instructions  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/mystnb.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_lesson.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_rtd_theme_ext_color_contrast.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/coderefinery.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/togglebutton.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/minipres.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="GitHub account" href="../github/" />
+    <link rel="prev" title="CodeRefinery workshop software installation instructions" href="../" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../" class="icon icon-home"> CodeRefinery workshop software installation instructions
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Instructions</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Shell and Git</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#video-instruction">Video instruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-setting-user-name-and-email">Step 1: Setting user name and email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-setting-an-editor">Step 2: Setting an editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-ssh-keys-for-github">Step 3: ssh keys for Github</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verification">Verification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-git-init-a-new-folder">Step 1: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> a new folder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-make-a-new-file">Step 2: Make a new file.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-stage-the-change">Step 3: Stage the change</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-commit-the-change-with-a-message">Step 4: Commit the change with a message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-5-see-the-change-log">Step 5: See the change log</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all">On Windows <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code> or other git commands show no output at all</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ssh/">SSH connection to GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda/">Miniconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda-environment/">Creating a Conda environment for CodeRefinery workshops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zoom/">Zoom</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/">Terminal editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../difftools/">Visual diff tools (optional)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motivation/">Why are we asking participants to install software?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../removing-accounts/">Instructions for removing accounts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../license/">Credit and license</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery workshop software installation instructions</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Shell and Git</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/coderefinery/installation/blob/main/content/shell-and-git.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="shell-and-git">
+<span id="id1"></span><h1>Shell and Git<a class="headerlink" href="#shell-and-git" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Installing Git is not enough, you must also configure it and verif the
+configuration,
+otherwise you will start off behind! Please trust us that this is
+better verified before than during the workshop which we then cannot simply
+pause.</p>
+</div>
+<p>In CodeRefinery workshops, we use Bash (Unix Shell). If you have never been in
+a terminal shell, please briefly read this <a class="reference external" href="https://scicomp.aalto.fi/scicomp/shell/">crash
+course</a>, and consider watching
+<a class="reference external" href="https://youtu.be/56p6xX0aToI">this shell tutorial video by Richard Darst</a> (20
+min).</p>
+<p>Git is a version control system that lets you track who made changes to what
+and when, and has options for updating a shared or public version of your code
+on source code repository hosting platforms such as
+<a class="reference external" href="https://github.com">GitHub</a> or <a class="reference external" href="https://gitlab.com">GitLab</a> or
+<a class="reference external" href="https://bitbucket.org/">Bitbucket</a>.</p>
+<p>Please follow the installation, configuration and verification instructions below.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>You can follow the steps below by watching the
+<a class="reference external" href="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&amp;playsinline=1&amp;iv_load_policy=3&amp;rel=0">Carpentries video tutorial</a>.</p>
+<ul class="simple">
+<li><p>Download the <a class="reference external" href="https://gitforwindows.org/">Git for Windows installer</a>.</p></li>
+<li><p>Run the installer and follow the steps below:</p>
+<ol class="simple">
+<li><p>Click on “Next” four times (two times if you’ve previously
+installed Git).  You don’t need to change anything
+in the Information, location, components, and start menu screens.</p></li>
+<li><p><strong>From the dropdown menu select “Use the Nano editor by default”
+(NOTE: you will need to scroll <emph>up</emph> to find it) and click on “Next”.</strong></p></li>
+<li><p>On the page that says “Adjusting the name of the initial branch in new repositories”, ensure that
+“Let Git decide” is selected. This will ensure the highest level of compatibility for our lessons.</p></li>
+<li><p>Ensure that “Git from the command line and also from 3rd-party software” is selected and
+click on “Next”. (If you don’t do this Git Bash will not work properly, requiring you to
+remove the Git Bash installation, re-run the installer and to select the “Git from the
+command line and also from 3rd-party software” option.)</p></li>
+<li><p>Ensure that “Use the native Windows Secure Channel Library” is selected and click on “Next”.</p></li>
+<li><p>Ensure that “Checkout Windows-style, commit Unix-style line endings” is selected and click on “Next”.</p></li>
+<li><p><strong>Ensure that “Use Windows’ default console window” is selected and click on “Next”.</strong></p></li>
+<li><p>Ensure that “Default (fast-forward or merge) is selected and click “Next”</p></li>
+<li><p>Ensure that “Git Credential Manager <strong>Core</strong>” is selected and click on “Next”.</p></li>
+<li><p>Ensure that “Enable file system caching” is selected and click on “Next”.</p></li>
+<li><p>Click on “Install”.</p></li>
+<li><p>Click on “Finish” or “Next”.</p></li>
+</ol>
+</li>
+<li><p>If your “HOME” environment variable is not set (or you don’t know what this is):</p>
+<ol class="simple">
+<li><p>Open command prompt (Open Start Menu then type <code class="docutils literal notranslate"><span class="pre">cmd</span></code> and press enter)</p></li>
+<li><p>Type the following line into the command prompt window exactly as shown: <code class="docutils literal notranslate"><span class="pre">setx</span> <span class="pre">HOME</span> <span class="pre">&quot;%USERPROFILE%&quot;</span></code></p></li>
+<li><p>Press enter, you should see <code class="docutils literal notranslate"><span class="pre">SUCCESS:</span> <span class="pre">Specified</span> <span class="pre">value</span> <span class="pre">was</span> <span class="pre">saved.</span></code></p></li>
+<li><p>Quit command prompt by typing <code class="docutils literal notranslate"><span class="pre">exit</span></code> then pressing enter.</p></li>
+</ol>
+</li>
+</ul>
+<p>This will provide you with both Git and Bash in the Git Bash program.</p>
+<p><em>Text copied and adapted from: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>The default shell in some versions of macOS is Bash, and
+Bash is available in all versions, so <strong>no need to install a shell</strong>.</p>
+<p>You access Bash from the terminal (found in <code class="docutils literal notranslate"><span class="pre">/Applications/Utilities</span></code>.
+See the Git installation <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial">Carpentries video tutorial</a>
+for an example on how to open the terminal.
+You may want to keep the terminal in your dock for this workshop.</p>
+<p>To see if your default shell is Bash type <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$SHELL</span></code>
+in the terminal and press the return key. If the message
+printed does not end with ‘/bash’ then your default is something
+else and you can run Bash by typing <code class="docutils literal notranslate"><span class="pre">bash</span></code>. But also <code class="docutils literal notranslate"><span class="pre">zsh</span></code> will work
+fine for our workshop if this is your default shell.</p>
+<p>If you want to change your default shell, see <a class="reference external" href="https://support.apple.com/en-au/HT208050">this Apple Support article</a>
+and follow the instructions on “How to change your default shell”.</p>
+<p><strong>Install Git</strong> for Mac
+by downloading and running the most recent “mavericks” installer from
+<a class="reference external" href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+Because this installer is not signed by the developer, you may have to
+right click (control click) on the .pkg file, click Open, and click
+Open on the pop up window.
+After installing Git, there will not be anything in your <code class="docutils literal notranslate"><span class="pre">/Applications</span></code> folder,
+as Git is a command line program.
+See also the Git installation
+<a class="reference external" href="https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial">Carpentries video tutorial</a>.</p>
+<p>For older versions of OS X (10.5-10.8), use the
+most recent available installer labelled “snow-leopard”
+<a class="reference external" href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.</p>
+<p><em>Text copied and adapted from: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>On a Linux system you already have a shell and the default shell is usually
+Bash and there is <strong>no need to install a shell</strong>. But you may <strong>need to install Git</strong>.
+If Git is not already available on your machine you can try to install it via
+your distribution package manager.</p>
+<p>For Debian/Ubuntu run:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install git
+</pre></div>
+</div>
+<p>For Fedora:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo dnf install git
+</pre></div>
+</div>
+<p><em>Reference: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div></div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-prerequisites prereq admonition">
+<p class="admonition-title">Prerequisites</p>
+<p>We assume that you have:</p>
+<ul class="simple">
+<li><p>Signed up for a GitHub account</p></li>
+<li><p>Bash (or Zsh on macOS) shell terminal on your machine</p></li>
+<li><p>Git installed on your machine</p></li>
+<li><p>Nano editor available (unless you prefer a different terminal editor)</p></li>
+</ul>
+</div>
+<div class="section" id="video-instruction">
+<h3>Video instruction<a class="headerlink" href="#video-instruction" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=WdDTp8NeHBs&amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">This video (9
+min)</a>
+shows how to configure git, so first watch this.  If you experience problems,
+watch <a class="reference external" href="https://www.youtube.com/watch?v=B27pUBrWp5w&amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">this troubleshooting
+video</a>.</p>
+<p>The following shows the same steps that are shown in the video above.</p>
+</div>
+<div class="section" id="step-1-setting-user-name-and-email">
+<h3>Step 1: Setting user name and email<a class="headerlink" href="#step-1-setting-user-name-and-email" title="Permalink to this headline">¶</a></h3>
+<p>First, the following commands will set your user name and email address:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git config --global user.name <span class="s2">&quot;Your Name&quot;</span>
+$ git config --global user.email yourname@example.com
+</pre></div>
+</div>
+<p>If you are unsure which email to use, use the one that you have registered at
+GitHub with.</p>
+<p><strong>This name and email will be public on Github when you make
+contributions, including in this course.</strong>  If you prefer to not use a real email address but still want to make sure that
+GitHub counts your contributions, you can use
+<code class="docutils literal notranslate"><span class="pre">yourusername&#64;users.noreply.github.com</span></code>.</p>
+<p>This is important since your Git commits use this information.  The <code class="docutils literal notranslate"><span class="pre">--global</span></code>
+option uses this information for every repository for this user on
+this computer.</p>
+</div>
+<div class="section" id="step-2-setting-an-editor">
+<h3>Step 2: Setting an editor<a class="headerlink" href="#step-2-setting-an-editor" title="Permalink to this headline">¶</a></h3>
+<p>It is important to set also the default text editor to use with Git.  <strong>We
+recommend to use nano if you do not have any other preferences</strong>, but
+you can replace nano with vim, emacs or any other editor of your choice:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git config --global core.editor nano
+</pre></div>
+</div>
+<p>If you use Atom as editor, set:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git config --global core.editor <span class="s2">&quot;atom -nw&quot;</span>
+</pre></div>
+</div>
+<p>To see where this information is stored (<code class="docutils literal notranslate"><span class="pre">--show-origin</span></code> works on git version
+2.8.0 (from 2016) or greater only), use:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git config --list --show-origin
+</pre></div>
+</div>
+<p>(Optional) If you are on Windows and want to use Notepad or Notepad++, you can
+configure this by providing the full path to the executable and optionally set
+some options. For example (adjust the path if needed, and note the quotation):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git config --global core.editor <span class="s2">&quot;&#39;C:/Program Files/Notepad++/notepad++.exe&#39; -multiInst -notabbar -nosession -noPlugin&quot;</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup/index.html">This page</a>
+contains a nice summary on how to configure Git with many other editors.</p>
+</div>
+<div class="section" id="step-3-ssh-keys-for-github">
+<h3>Step 3: ssh keys for Github<a class="headerlink" href="#step-3-ssh-keys-for-github" title="Permalink to this headline">¶</a></h3>
+<p>This is handled two steps from now, in <a class="reference internal" href="../ssh/"><span class="doc">SSH connection to GitHub</span></a>, after you make a
+Github account.</p>
+</div>
+</div>
+<div class="section" id="verification">
+<h2>Verification<a class="headerlink" href="#verification" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-prerequisites prereq admonition">
+<p class="admonition-title">Prerequisites</p>
+<p>We assume that you have:</p>
+<ul class="simple">
+<li><p>Bash (or Zsh on macOS) shell terminal on your machine</p></li>
+<li><p>Git installed and configured, with <code class="docutils literal notranslate"><span class="pre">nano</span></code> as its editor on your machine
+(unless you prefer a different terminal text editor)</p></li>
+</ul>
+</div>
+<p>The following shows the same steps that are shown in the video above.  You can
+see verification part in <a class="reference external" href="https://www.youtube.com/watch?v=WdDTp8NeHBs&amp;t=350s">the same video for configuration at
+5:50</a>.</p>
+<div class="section" id="step-1-git-init-a-new-folder">
+<h3>Step 1: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> a new folder<a class="headerlink" href="#step-1-git-init-a-new-folder" title="Permalink to this headline">¶</a></h3>
+<p>Create a new example folder, step into it, and initialize a repository <strong>(don’t
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> in your home directory)</strong>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ mkdir example
+$ <span class="nb">cd</span> example
+$ git init
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-2-make-a-new-file">
+<h3>Step 2: Make a new file.<a class="headerlink" href="#step-2-make-a-new-file" title="Permalink to this headline">¶</a></h3>
+<p>Make a new file with some content:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ nano example.txt
+</pre></div>
+</div>
+<p>Write some text in the <code class="docutils literal notranslate"><span class="pre">example.txt</span></code>, save (<code class="docutils literal notranslate"><span class="pre">ctrl+O</span></code> then <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>) and exit (<code class="docutils literal notranslate"><span class="pre">ctrl+X</span></code>).</p>
+</div>
+<div class="section" id="step-3-stage-the-change">
+<h3>Step 3: Stage the change<a class="headerlink" href="#step-3-stage-the-change" title="Permalink to this headline">¶</a></h3>
+<p>Stage a newly made file <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> before committing the change and record in
+Git:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git add example.txt
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-4-commit-the-change-with-a-message">
+<h3>Step 4: Commit the change with a message<a class="headerlink" href="#step-4-commit-the-change-with-a-message" title="Permalink to this headline">¶</a></h3>
+<p>The following command will commit the change. It should open the editor which
+you have configured.  Then, add a commit message such as <code class="docutils literal notranslate"><span class="pre">initial</span> <span class="pre">commit</span></code> at the very top.  Then save an exit (if you use
+the default <code class="docutils literal notranslate"><span class="pre">nano</span></code> editor, <code class="docutils literal notranslate"><span class="pre">ctrl+O</span></code> <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> then <code class="docutils literal notranslate"><span class="pre">ctrl+X</span></code>):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git commit
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-5-see-the-change-log">
+<h3>Step 5: See the change log<a class="headerlink" href="#step-5-see-the-change-log" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ git log
+</pre></div>
+</div>
+<p>If you see now something line this (different name, email, and commit message),
+your Git is configured for the workshop:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>commit 12e4cb892140bd14a413895b3b36c27db198eb22 (HEAD -&gt; master)
+Author: Radovan Bast &lt;bast@users.noreply.github.com&gt;
+Date:   Fri May 15 16:41:13 2020 +0200
+
+    making a test commit
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all">
+<h3>On Windows <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code> or other git commands show no output at all<a class="headerlink" href="#on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all" title="Permalink to this headline">¶</a></h3>
+<p>It seems this can be fixed by these configuration settings:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git config --global pager.log off
+$ git config --global pager.diff off
+$ git config --global pager.show off
+$ git config --global pager.config off
+$ git config --global pager.stash off
+$ git config --global pager.help off
+$ git config --global pager.blame off
+$ git config --global pager.branch off
+$ git config --global pager.annotate off
+</pre></div>
+</div>
+<p>Following other manuals and documentation, it seems that all the above can be set with the following
+(<code class="docutils literal notranslate"><span class="pre">cat</span></code> should be available within Git Bash but also PowerShell):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git config --global core.pager cat
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../github/" class="btn btn-neutral float-right" title="GitHub account" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../" class="btn btn-neutral float-left" title="CodeRefinery workshop software installation instructions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CodeRefinery team.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

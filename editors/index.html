@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Terminal editors &mdash; CodeRefinery workshop software installation instructions  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/mystnb.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_lesson.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_rtd_theme_ext_color_contrast.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/style.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/coderefinery.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/togglebutton.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/minipres.js"></script>
+        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Visual diff tools (optional)" href="../difftools/" />
+    <link rel="prev" title="Zoom" href="../zoom/" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../" class="icon icon-home"> CodeRefinery workshop software installation instructions
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Instructions</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../shell-and-git/">Shell and Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ssh/">SSH connection to GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda/">Miniconda</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda-environment/">Creating a Conda environment for CodeRefinery workshops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../zoom/">Zoom</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Terminal editors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nano">Nano</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vi-vim">Vi/Vim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emacs">Emacs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#visual-studio-code">Visual Studio Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-good-alternatives-in-particular-for-windows">Other good alternatives, in particular for Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../difftools/">Visual diff tools (optional)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motivation/">Why are we asking participants to install software?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../removing-accounts/">Instructions for removing accounts</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../license/">Credit and license</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery workshop software installation instructions</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Terminal editors</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/coderefinery/installation/blob/main/content/editors.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="terminal-editors">
+<h1>Terminal editors<a class="headerlink" href="#terminal-editors" title="Permalink to this headline">¶</a></h1>
+<p>There are text editors with a graphical user interface and text editors that
+allow you to edit text in the terminal. Some allow both modes of operation.</p>
+<p>Choosing the right editor is a matter of taste and preferences. Since we often
+spend significant portions of our days editing text and source code, it can be
+valuable to invest time into learning your favourite editor really well. Below
+we list few common options and give some pros/cons.</p>
+<div class="section" id="nano">
+<h2>Nano<a class="headerlink" href="#nano" title="Permalink to this headline">¶</a></h2>
+<p>Easy to start but with minimal functionality. This comes installed as default
+on most Linux distributions.  If you do not already have a favorite editor, we
+recommend this to be used with this during the course. Later you can grow into a more
+advanced editor such as Emacs or Vim.</p>
+<p>The keyboard shortcuts are displayed at the bottom of the editor window. Using
+this shortcuts involves pressing and holding down the control key (Ctrl) on
+your keyboard and pressing another key. The pressing down and holding the Ctrl
+key is represented by a hat “^”.</p>
+<p>Tutorial: <a class="reference external" href="https://www.tutorialspoint.com/how-to-use-nano-text-editor">https://www.tutorialspoint.com/how-to-use-nano-text-editor</a></p>
+<p><strong>To create or open a file</strong> called mytext.txt:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ nano mytext.txt
+</pre></div>
+</div>
+<p><strong>To save content:</strong>
+Ctrl + o (hold the Ctrl key and press the o)</p>
+<p><strong>To close a file:</strong>
+Ctrl + x (hold the Ctrl key and press the x)</p>
+<p><strong>To move up, down, left or right with the document:</strong>
+Use the arrow keys and Page-up, Page-down keys</p>
+<p><strong>Deleting text:</strong>
+Navigate to where the text to be deleted located in the document using arrow
+keys. Use the Delete or Backspace keys to delete text.</p>
+<p><strong>To find:</strong></p>
+<p>Ctrl + w then type the word to find and press enter (please note it is w not f as in most other editors)</p>
+</div>
+<div class="section" id="vi-vim">
+<h2>Vi/Vim<a class="headerlink" href="#vi-vim" title="Permalink to this headline">¶</a></h2>
+<p>This editor takes some effort to get started. But has more functionality
+than Nano, especially if you write programming code. Syntax highlighting,
+clever copy-paste and better refactoring are some features.</p>
+<p>Interactive VIM tutorial: <a class="reference external" href="http://www.openvim.com">http://www.openvim.com</a></p>
+<p><strong>To create or open a file</strong> called mytext.txt:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ vi mytext.txt
+</pre></div>
+</div>
+<p><strong>To close a file:</strong>
+Hit Escape, then type <code class="docutils literal notranslate"><span class="pre">:wq</span></code> and hit Enter.</p>
+</div>
+<div class="section" id="emacs">
+<h2>Emacs<a class="headerlink" href="#emacs" title="Permalink to this headline">¶</a></h2>
+<p>Like Vim, Emacs takes some effort and learning to get started and offers almost unlimited
+functionality. It is possible to interact with version control, even compile and run code,
+send emails, etc. all from the editor itself.</p>
+<p>Emacs guided tour: <a class="reference external" href="https://www.gnu.org/software/emacs/tour/">https://www.gnu.org/software/emacs/tour/</a></p>
+<p><strong>To create or open a file</strong> called mytext.txt:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ emacs mytext.txt
+</pre></div>
+</div>
+<p><strong>To close a file:</strong>
+Type Ctrl-x followed by Ctrl-c.</p>
+</div>
+<div class="section" id="visual-studio-code">
+<h2>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://code.visualstudio.com">Visual Studio Code</a>
+is a lightweight (around 200 MB) but powerful source code
+editor. It is <strong>free and open source</strong> and runs on your desktop and is
+available for Windows, macOS and Linux.  It has a rich ecosystem of extensions
+for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, Go</p>
+<p>Please visit the <a class="reference external" href="https://code.visualstudio.com/Download">download page</a> for installation instructions.</p>
+</div>
+<div class="section" id="other-good-alternatives-in-particular-for-windows">
+<h2>Other good alternatives, in particular for Windows<a class="headerlink" href="#other-good-alternatives-in-particular-for-windows" title="Permalink to this headline">¶</a></h2>
+<p>It is a matter of taste. Experiment and find the one you like best:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://atom.io">Atom</a></p></li>
+<li><p><a class="reference external" href="https://notepad-plus-plus.org">Notepad++</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../difftools/" class="btn btn-neutral float-right" title="Visual diff tools (optional)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../zoom/" class="btn btn-neutral float-left" title="Zoom" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, CodeRefinery team.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
