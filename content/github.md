@@ -38,10 +38,10 @@ August 2021.
 ```
 
 
-## Avoiding Github
+## Avoiding GitHub
 
-If you don't make the Github account, you can still follow along with
-the lessons.  We highly recommend the Github account if you are in a
+If you prefer not to create a GitHub account, you can still follow along with
+the lessons.  We highly recommend the GitHub account if you are in a
 interactive workshop, because without it you won't be able to follow
 along with some exercises (If you are following CodeRefinery at your
 own pace, you will have time to work these out).
