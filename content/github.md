@@ -32,8 +32,7 @@ hosting services but this is a process.
 4. Enable "Two-factor authentication" by a method of your choice.
 
 ```{warning}
-If you enable 2-factor authentication, you will have to {doc}`set up
-SSH keys <ssh>, which we go over on the next page`.  Either way, ssh
+If you enable 2-factor authentication, you will have to {ref}`set up SSH keys <ssh>`, which we go over on the next page.  Either way, ssh
 keys for connecting to Github will be required for Github after in
 August 2021.
 ```
