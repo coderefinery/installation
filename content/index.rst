@@ -81,6 +81,13 @@ If you encounter any problems
   motivation
   removing-accounts
 
+.. toctree::
+  :maxdepth: 1
+  :caption: Optional
+
+  docker
+  make
+  
 
 .. toctree::
    :maxdepth: 1
