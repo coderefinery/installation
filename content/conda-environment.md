@@ -43,7 +43,7 @@ source activate ~/Miniconda3/envs/coderefinery
 
 Once activated, try the following 5 commands:
 ```shell
-python -c 'import sys; assert sys.version_info.major>=3'
+python -c "import sys; assert sys.version_info.major>=3"
 jupyter-lab --version
 pytest --version
 sphinx-build --version
