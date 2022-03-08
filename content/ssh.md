@@ -32,16 +32,33 @@ Github part).
 ## How to verify that it worked
 
 Try this in your terminal shell:
-```
-ssh git@github.com
+```console
+$ ssh -T git@github.com
 ```
 
 If you set up ssh keys correctly, you will see:
 ```
-PTY allocation request failed on channel 0
 Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.
-Connection to github.com closed.
 ```
 
-If it says **"Hi yourusername" and "You've successfully authenticated"**
-then it works.  **Any other error messages do not matter.**
+If it says **"You've successfully authenticated"**
+then it works and your SSH keys are properly set up with GitHub.
+
+You possibly see this warning (the IP and the fingerprint may look differently):
+```console
+$ ssh -T git@github.com
+
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Before typing "yes", verify that the fingerprint is [one of
+these](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints).
+
+What this means: SSH is a secure protocol to send data between two computers
+but the very first time you ever connect to the remote host, SSH asks if this
+is really the host/server we meant to talk to and to verify that nobody is
+trying to impersonate the other host.  Once we validate the connection, SSH
+will remember that we trust that host and not ask this question again.
