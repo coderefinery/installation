@@ -32,8 +32,8 @@ Github part).
 ## How to verify that it worked
 
 Try this in your terminal shell:
-```text
-ssh -T git@github.com
+```console
+$ ssh -T git@github.com
 ```
 
 If you set up ssh keys correctly, you will see:
@@ -41,8 +41,8 @@ If you set up ssh keys correctly, you will see:
 Hi yourusername! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-If it says **"Hi yourusername" and "You've successfully authenticated"**
-then it works.
+If it says **"You've successfully authenticated"**
+then it works and your SSH keys are properly set up with GitHub.
 
 You possibly see this warning (the IP and the fingerprint may look differently):
 ```console
