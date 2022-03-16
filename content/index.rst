@@ -23,7 +23,7 @@ If your answers are all "yes", then go to :ref:`conda-environment`.
 
   *I have ...*
 
-  - Shell terminal (Bash or Zsh) and Git configured (user name, email, and editor) and verified
+  - Shell terminal (Bash or Zsh or Git Bash) and Git configured (user name, email, and editor) and verified
     (:ref:`instructions <shell-and-git>`)
   - Relatively new version of Miniconda3 (less than 3 years old)
     (:ref:`instructions <conda>`)
