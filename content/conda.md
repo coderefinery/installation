@@ -27,7 +27,7 @@ Anaconda is more convenient at the beginning since it provides most packages out
 
 ## Installing Miniconda
 
-### If you don't have Miniconda3 or Anaconda3 at all
+### If you don't have Miniconda or Anaconda at all
 
 - From the [Miniconda installer page](https://docs.conda.io/en/latest/miniconda.html),
   download Miniconda3 installer with the latest Python version.
@@ -49,6 +49,19 @@ Anaconda is more convenient at the beginning since it provides most packages out
     - [Windows](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/windows.html#updating-conda)
     - [macOS](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html#updating-anaconda-or-miniconda)
     - [Linux](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html#updating-anaconda-or-miniconda)
+
+
+### If you have Anaconda and you are using it regularly
+
+You can use your existing Anaconda install and create the Coderefinery
+environment as the {ref}`next page <conda-environment>` says.
+
+Or, you can probably go through most of the workshop and most of the
+packages that we will need already are part of Anaconda. If some package is
+missing, you can then fetch it with the Anaconda Navigator. One disadvantage of
+using Anaconda is however, that you are more likely to install everything into
+the base environment whereas the Miniconda approach suggests to use more
+isolated environments without modifying your base environment.
 
 
 (setting-conda-path)=
