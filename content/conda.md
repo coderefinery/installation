@@ -53,7 +53,10 @@ Anaconda is more convenient at the beginning since it provides most packages out
 
 ### If you have Anaconda and you are using it regularly
 
-In this case you can probably go through most of the workshop and most of the
+You can use your existing Anaconda install and create the Coderefinery
+environment as the {ref}`next page <conda-environment>` says.
+
+Or, you can probably go through most of the workshop and most of the
 packages that we will need already are part of Anaconda. If some package is
 missing, you can then fetch it with the Anaconda Navigator. One disadvantage of
 using Anaconda is however, that you are more likely to install everything into
