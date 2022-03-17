@@ -60,7 +60,7 @@ Please follow the installation, configuration and verification instructions belo
     3.  Press enter, you should see `SUCCESS: Specified value was saved.`
     4.  Quit command prompt by typing `exit` then pressing enter.
 
-  This will provide you with both Git and Bash in the Git Bash program.
+  This will provide you with both Git and Bash in the Git Bash program. You can then start it by searching for "Git Bash" in your Start menu.
 
   *Text copied and adapted from: [the Carpentries set up page](https://carpentries.github.io/workshop-template/#shell)*
   ````
