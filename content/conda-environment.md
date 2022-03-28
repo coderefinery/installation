@@ -66,10 +66,10 @@ snakemake --version
 
 You should see an output like this and not see errors (exact version numbers are not too important):
 ```text
-3.0.14
-pytest 6.2.3
-sphinx-build 3.5.4
-6.2.1
+3.9.10
+pytest 7.0.1
+sphinx-build 4.4.0
+7.1.1
 ```
 
 
