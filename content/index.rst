@@ -48,6 +48,10 @@ Step 2: Create a Conda environment for CodeRefinery workshop
 This environment will provide all dependencies that we will need during the
 workshop.
 
+.. admonition:: Great!
+
+   Now you are ready for the workshop!
+
 
 If you encounter any problems
 -----------------------------
