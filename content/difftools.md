@@ -16,13 +16,13 @@ anything else.
   Please follow installation instructions from [http://meldmerge.org](http://meldmerge.org).
 
   This is how you can configure Git to open Meld when doing `git difftool`:
-  ```shell
+  ```console
   $ git config --global diff.tool meld
   $ git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe"
   ```
   For meld version 3.20.3, because of reasons discussed [here](https://gitlab.gnome.org/GNOME/meld/-/issues/559), you can have multiple "Could not create key" errors that you can get around by clicking 'Ignore'.
   Then, to open Meld when doing `git difftool`:
-  ```shell
+  ```console
   $ git config --global diff.tool meld
   $ git config --global mergetool.meld.path "$LOCALAPPDATA\Programs\Meld\Meld.exe"
   ```
@@ -38,17 +38,17 @@ anything else.
 
   On Linux we recommend the program [meld](https://meldmerge.org).
   Install meld via your distribution package manager. For Debian/Ubuntu run:
-  ```shell
+  ```console
   $ sudo apt-get install meld
   ```
 
   For Fedora:
-  ```shell
+  ```console
   $ sudo dnf install meld
   ```
 
   This is how you can configure Git to open Meld when doing `git difftool`:
-  ```shell
+  ```console
   $ git config --global diff.tool meld
   ```
   ````
@@ -60,15 +60,15 @@ anything else.
 To test it create two text files which are similar and then compare them
 with Meld or Diffuse or Opendiff (or the tool which you have chosen above for visual
 differences):
-```shell
+```console
 $ meld file1 file2
 ```
 or:
-```shell
+```console
 $ diffuse file1 file2
 ```
 or:
-```shell
+```console
 $ opendiff file1 file2
 ```
 
@@ -76,6 +76,6 @@ You should now see both versions side by side.
 
 To test launching Meld through Git, move into a folder that contains two or more files and instruct Git to compare files.
 For example, to see the difference between `file1.txt` and `file2.txt`:
-```shell
+```console
 $ git difftool --no-index file1.txt file2.txt
 ```

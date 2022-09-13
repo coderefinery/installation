@@ -43,7 +43,7 @@ Docker app via Stable Channel.
 
 The following command should give you the docker version and not throw errors:
 
-```shell
+```console
 $ docker --version
 ```
 
