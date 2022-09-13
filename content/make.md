@@ -7,13 +7,13 @@ Make is a standard tool on Linux systems and should already be available.
 If not, install make using your default distribution package manager.
 For Debian/Ubuntu run:
 
-```shell
+```console
 $ sudo apt-get install build-essential
 ```
 
 For Fedora:
 
-```shell
+```console
 $ sudo dnf install make
 ```
 
@@ -24,7 +24,7 @@ Please also [verify your installation](#how-to-verify-the-installation).
 
 For OS X, version 10.9 (Mavericks) or above, download the Command Line Tools by doing:
 
-```
+```console
 $ xcode-select --install
 ```
 
@@ -69,6 +69,6 @@ Restart the computer.
 
 This command should give you the version of the Make tool and not throw errors:
 
-```shell
+```console
 $ make --version
 ```

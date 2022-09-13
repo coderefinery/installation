@@ -110,12 +110,12 @@ Please follow the installation, configuration and verification instructions belo
   your distribution package manager.
 
   For Debian/Ubuntu run:
-  ```shell
+  ```console
   $ sudo apt-get install git
   ```
 
   For Fedora:
-  ```shell
+  ```console
   $ sudo dnf install git
   ```
 
@@ -149,7 +149,7 @@ The following shows the same steps that are shown in the video above.
 ### Step 1: Setting user name and email
 
 First, the following commands will set your user name and email address:
-```shell
+```console
 $ git config --global user.name "Your Name"
 $ git config --global user.email yourname@example.com
 ```
@@ -172,25 +172,25 @@ this computer.
 It is important to set also the default text editor to use with Git.  **We
 recommend to use nano if you do not have any other preferences**, but
 you can replace nano with vim, emacs or any other editor of your choice:
-```shell
+```console
 $ git config --global core.editor nano
 ```
 
 If you use Atom as editor, set:
-```shell
+```console
 $ git config --global core.editor "atom -nw"
 ```
 
 To see where this information is stored (`--show-origin` works on git version
 2.8.0 (from 2016) or greater only), use:
-```shell
+```console
 $ git config --list --show-origin
 ```
 
 (Optional) If you are on Windows and want to use Notepad or Notepad++, you can
 configure this by providing the full path to the executable and optionally set
 some options. For example (adjust the path if needed, and note the quotation):
-```shell
+```console
 $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 ```
 
@@ -222,7 +222,7 @@ see verification part in [the same video for configuration at
 
 Create a new example folder, step into it, and initialize a repository **(don't
 `git init` in your home directory)**:
-```shell
+```console
 $ mkdir example
 $ cd example
 $ git init
@@ -231,7 +231,7 @@ $ git init
 ### Step 2: Make a new file.
 
 Make a new file with some content:
-```shell
+```console
 $ nano example.txt
 ```
 Write some text in the `example.txt`, save (`ctrl+O` then `ENTER`) and exit (`ctrl+X`).
@@ -241,7 +241,7 @@ Write some text in the `example.txt`, save (`ctrl+O` then `ENTER`) and exit (`ct
 
 Stage a newly made file `example.txt` before committing the change and record in
 Git:
-```shell
+```console
 $ git add example.txt
 ```
 
@@ -252,13 +252,13 @@ The following command will commit the change. It should open the editor which
 you have configured.  Then, add a commit message such as `initial
 commit` at the very top.  Then save an exit (if you use
 the default `nano` editor, `ctrl+O` `ENTER` then `ctrl+X`):
-```shell
+```console
 $ git commit
 ```
 
 ### Step 5: See the change log
 
-```shell
+```console
 $ git log
 ```
 
@@ -278,7 +278,7 @@ Date:   Fri May 15 16:41:13 2020 +0200
 ### On Windows `git log`, `git diff`, `git branch` or other git commands show no output at all
 
 It seems this can be fixed by these configuration settings:
-```
+```console
 $ git config --global pager.log off
 $ git config --global pager.diff off
 $ git config --global pager.show off
@@ -292,6 +292,6 @@ $ git config --global pager.annotate off
 
 Following other manuals and documentation, it seems that all the above can be set with the following
 (`cat` should be available within Git Bash but also PowerShell):
-```
+```console
 $ git config --global core.pager cat
 ```

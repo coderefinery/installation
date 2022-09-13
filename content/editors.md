@@ -25,7 +25,7 @@ Tutorial: [https://www.tutorialspoint.com/how-to-use-nano-text-editor](https://w
 
 
 **To create or open a file** called mytext.txt:
-```shell
+```console
 $ nano mytext.txt
 ```
 
@@ -61,7 +61,7 @@ Interactive VIM tutorial: [http://www.openvim.com](http://www.openvim.com)
 
 
 **To create or open a file** called mytext.txt:
-```shell
+```console
 $ vi mytext.txt
 ```
 
@@ -78,7 +78,7 @@ send emails, etc. all from the editor itself.
 Emacs guided tour: [https://www.gnu.org/software/emacs/tour/](https://www.gnu.org/software/emacs/tour/)
 
 **To create or open a file** called mytext.txt:
-```shell
+```console
 $ emacs mytext.txt
 ```
 
