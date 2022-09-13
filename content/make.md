@@ -17,7 +17,7 @@ For Fedora:
 $ sudo dnf install make
 ```
 
-Please also [verify your installation](#how-to-verify-the-installation).
+Please also verify your installation (below).
 
 
 ## Installation on macOS
@@ -48,7 +48,7 @@ Once XCode has installed:
 
 You will now be able to run make within your shell.
 
-Please also [verify your installation](#how-to-verify-the-installation).
+Please also verify your installation (below).
 
 
 ## Installation on Windows
