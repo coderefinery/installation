@@ -72,6 +72,7 @@ If you encounter any problems
 
 .. toctree::
   :maxdepth: 1
+  :hidden:
   :caption: Instructions
 
   shell-and-git
@@ -87,11 +88,12 @@ If you encounter any problems
 
 .. toctree::
   :maxdepth: 1
+  :hidden:
   :caption: Optional
 
   docker
   make
-  
+
 
 .. toctree::
    :maxdepth: 1
