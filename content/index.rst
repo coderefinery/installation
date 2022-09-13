@@ -19,7 +19,7 @@ First, go through all the items in the check list below. If you are in doubt or
 your answer is "no", then follow the guideline shown in a linked page for each.
 If your answers are all "yes", then go to :ref:`conda-environment`.
 
-.. keypoints:: Checklist
+.. admonition:: Checklist
 
   *I have ...*
 
