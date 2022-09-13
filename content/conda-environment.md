@@ -6,7 +6,7 @@
 2. If you have not, activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither 
    works, please first follow {ref}`setting-conda-path`. You probably
    need to restart your shell terminal. Then try `conda activate` or `source ~/miniconda3/bin/activate` again.
-3. Run the following command (for Apple M1, please see the box below "Conda environment for Apple M1"):
+3. Run the following command:
    ```
    conda env create -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
    ```
@@ -14,20 +14,6 @@
    ```
    conda env list
    ```
-
-````{prereq} Conda environment for Apple M1
-
-The environment provided above does not resolve versions on Apple M1 at the time of writing.
-
-A workaround is to run this command instead:
-```
-conda env create -f https://raw.githubusercontent.com/coderefinery/software/main/environment-m1.yml
-```
-
-The difference to the environment above is that the version for Snakemake is
-not pinned. For Apple M1 it will then install an older version of Snakemake
-which is still enough for the workshop.
-````
 
 
 ## Activating the `coderefinery` environment
