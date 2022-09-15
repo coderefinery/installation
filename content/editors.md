@@ -16,6 +16,27 @@ on most Linux distributions.  If you do not already have a favorite editor, we
 recommend this to be used with this during the course. Later you can grow into a more
 advanced editor such as Emacs or Vim.
 
+`````{tabs}
+  ````{tab} Windows
+
+  Nano is installed as part of the Git for Windows installer and no
+  extra installation is needed.  It is available from the git-bash
+  shell.
+  ````
+
+  ````{tab} macOS
+
+  Nano is available by default.
+  ````
+
+  ````{tab} Linux
+
+  Nano is available by default in most operating systems.  If not, you
+  can install it via your software center.
+  ````
+`````
+
+
 The keyboard shortcuts are displayed at the bottom of the editor window. Using
 this shortcuts involves pressing and holding down the control key (Ctrl) on
 your keyboard and pressing another key. The pressing down and holding the Ctrl
