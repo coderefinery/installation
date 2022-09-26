@@ -2,6 +2,8 @@
 
 # Creating a Conda environment for CodeRefinery workshops
 
+Prerequisite: installing conda from the {doc}`conda` page.
+
 1. Open your terminal shell (e.g. Bash)
 2. If you have not, activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither 
    works, please first follow {ref}`setting-conda-path`. You probably
