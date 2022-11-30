@@ -1,6 +1,6 @@
 (conda-environment)=
 
-# Creating a Conda environment for CodeRefinery workshops
+# Creating the Conda environment for CodeRefinery workshops
 
 Prerequisite: installing conda from the {doc}`conda` page.
 
