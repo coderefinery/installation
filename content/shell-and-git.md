@@ -176,11 +176,6 @@ you can replace nano with vim, emacs or any other editor of your choice:
 $ git config --global core.editor nano
 ```
 
-If you use Atom as editor, set:
-```console
-$ git config --global core.editor "atom -nw"
-```
-
 To see where this information is stored (`--show-origin` works on git version
 2.8.0 (from 2016) or greater only), use:
 ```console
