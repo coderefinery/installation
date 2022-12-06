@@ -122,5 +122,4 @@ Please visit the [download page](https://code.visualstudio.com/Download) for ins
 
 It is a matter of taste. Experiment and find the one you like best:
 
-- [Atom](https://atom.io)
 - [Notepad++](https://notepad-plus-plus.org)
