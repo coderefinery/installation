@@ -3,7 +3,7 @@
 # Shell and Git
 
 ```{note}
-Installing Git is not enough, you must also configure it and verif the
+Installing Git is not enough, you must also configure it and verify the
 configuration,
 otherwise you will start off behind! Please trust us that this is
 better verified before than during the workshop which we then cannot simply
@@ -70,12 +70,12 @@ Please follow the installation, configuration and verification instructions belo
   The default shell in some versions of macOS is Bash, and
   Bash is available in all versions, so **no need to install a shell**.
 
-  You access Bash from the terminal (found in `/Applications/Utilities`.
+  You access Bash from the terminal (found in `/Applications/Utilities`).
   See the Git installation [Carpentries video tutorial](https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial)
   for an example on how to open the terminal.
   You may want to keep the terminal in your dock for this workshop.
 
-  To see if your default shell is Bash type `echo $SHELL`
+  To see if your default shell is Bash, type `echo $SHELL`
   in the terminal and press the return key. If the message
   printed does not end with '/bash' then your default is something
   else and you can run Bash by typing `bash`. But also `zsh` will work
@@ -160,7 +160,7 @@ GitHub with.
 **This name and email will be public on Github when you make
 contributions, including in this course.**  If you prefer to not use a real email address but still want to make sure that
 GitHub counts your contributions, you can use
-`yourusername@users.noreply.github.com`.
+`yourusername@users.noreply.github.com` (replace `yourusername`).
 
 This is important since your Git commits use this information.  The `--global`
 option uses this information for every repository for this user on
@@ -177,7 +177,7 @@ $ git config --global core.editor nano
 ```
 
 To see where this information is stored (`--show-origin` works on git version
-2.8.0 (from 2016) or greater only), use:
+2.8.0 or greater only), use:
 ```console
 $ git config --list --show-origin
 ```
