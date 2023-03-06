@@ -4,7 +4,7 @@
 
 Miniconda (and Anaconda, too) comes with a complete Python distribution that lets
 you create isolated **environments** that don't affect anything else.
-**conda** is the tool that manages these environments.
+`conda` is the tool that manages these environments.
 
 We have tried to collect all tools and libraries which we will use and
 demonstrate during a CodeRefinery workshop into an `environment.yml` file so
@@ -19,8 +19,7 @@ relatively new version of Conda.
 2. Then, in the {ref}`next page <conda-environment>`, you set up the
    CodeRefinery environment.
 
-```{note}
-*Why not Anaconda?*
+```{admonition} Why not Anaconda?
 
 Anaconda is more convenient at the beginning since it provides most packages out of the box. However, in the long term we recommend to have a minimal base system and install packages into project-specific environments and for this, Miniconda is a better choice. For our workshops we therefore recommend Miniconda to prepare you for the long term and to start with good practices right from the start. Another benefit is the smaller install size and time.
 ```
@@ -32,7 +31,7 @@ Anaconda is more convenient at the beginning since it provides most packages out
 - From the [Miniconda installer page](https://docs.conda.io/en/latest/miniconda.html),
   download Miniconda3 installer with the latest Python version.
 - Follow [regular installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
-  of your operating system.
+  for your operating system.
 - Make sure selecting:
     - installing just for you
     - "Add miniconda3 to my PATH environment variable"
