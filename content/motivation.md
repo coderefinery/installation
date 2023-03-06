@@ -11,8 +11,8 @@ environment of their choice.
 
 We are aware that this choice comes at a price: it is very difficult for us to
 provide installation instructions that work “everywhere” and it requires from
-participants to do some work before they arrive at a workshop.  *Yes,
-installing software is harder than you might expect.*  Don't be afraid
+participants to do some work before they arrive at a workshop. **Yes,
+installing software is harder than you might expect.** Don't be afraid
 to ask for help in setting it up: this is also a good skill to have.
 
 We are also aware that not everybody is comfortable with creating new accounts
