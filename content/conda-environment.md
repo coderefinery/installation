@@ -43,21 +43,32 @@ $ source activate ~/Miniconda3/envs/coderefinery
 
 ## How to verify the environment
 
-Once activated, try the following 5 commands:
+Once activated, try the following 5 commands.
+You should see versions printed and not see errors (exact version numbers are not too important):
 ```console
-$ python -c "import sys; assert sys.version_info.major>=3"
-$ jupyter-lab --version
-$ pytest --version
-$ sphinx-build --version
-$ snakemake --version
-```
+$ python --version
 
-You should see an output like this and not see errors (exact version numbers are not too important):
-```text
-3.9.10
-pytest 7.0.1
-sphinx-build 4.4.0
-7.1.1
+Python 3.11.0
+```
+```console
+$ jupyter-lab --version
+
+3.6.1
+```
+```console
+$ pytest --version
+
+7.2.1
+```
+```console
+$ sphinx-build --version
+
+sphinx-build 5.3.0
+```
+```console
+$ snakemake --version
+
+7.22.0
 ```
 
 
