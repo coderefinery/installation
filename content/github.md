@@ -2,8 +2,8 @@
 
 # GitHub account
 
-In CodeRefinery workshop, we use the public github.com service and you need an
-account at github.com. To use github.com, you will need a [supported web
+In CodeRefinery workshop, we use the public GitHub service and you need an
+account at [github.com](https://github.com). To use GitHub, you will need a [supported web
 browser](https://help.github.com/articles/supported-browsers/). Basic GitHub
 accounts are free.
 
@@ -13,7 +13,7 @@ instructions](https://help.github.com/articles/keeping-your-email-address-privat
 for keeping your email address private provided at GitHub.
 
 We are trying to make it possible to follow this course also with other Git
-hosting services but this is a process.
+hosting services but this is work in progress.
 
 
 ## Create a GitHub account
@@ -31,14 +31,8 @@ hosting services but this is a process.
 3. From the menu on the left side, select "Account security".
 4. Enable "Two-factor authentication" by a method of your choice.
 
-```{warning}
-If you enable 2-factor authentication, you will have to {ref}`set up SSH keys <ssh>`, which we go over on the next page.  Either way, ssh
-keys for connecting to Github will be required for Github after in
-August 2021.
-```
 
-
-## Avoiding GitHub
+## If you prefer not using GitHub
 
 If you prefer not to create a GitHub account, you can still follow along with
 the lessons.  We highly recommend the GitHub account if you are in a
