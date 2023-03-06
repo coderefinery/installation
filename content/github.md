@@ -24,14 +24,6 @@ hosting services but this is work in progress.
 4. Follow further instruction and verify your account.
 
 
-## Activate 2-factor authentication
-
-1. Sign into GitHub with your newly created account.
-2. At the right-top corner, you will find your icon in a circle. Click the down arrow and select "settings".
-3. From the menu on the left side, select "Account security".
-4. Enable "Two-factor authentication" by a method of your choice.
-
-
 ## If you prefer not using GitHub
 
 If you prefer not to create a GitHub account, you can still follow along with
