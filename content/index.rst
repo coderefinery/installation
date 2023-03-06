@@ -91,7 +91,6 @@ If you encounter any problems
   :hidden:
   :caption: Optional
 
-  docker
   make
 
 
