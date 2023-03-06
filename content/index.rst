@@ -88,17 +88,9 @@ If you encounter any problems
 
 .. toctree::
   :maxdepth: 1
-  :hidden:
-  :caption: Optional
+  :caption: Reference
 
-  make
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Reference
-
-   license
+  license
 
 
 How to contribute improvements/suggestions
