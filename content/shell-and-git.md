@@ -157,7 +157,7 @@ $ git config --global user.email yourname@example.com
 If you are unsure which email to use, use the one that you have registered at
 GitHub with.
 
-**This name and email will be public on Github when you make
+**This name and email will be public on GitHub when you make
 contributions, including in this course.**  If you prefer to not use a real email address but still want to make sure that
 GitHub counts your contributions, you can use
 `yourusername@users.noreply.github.com` (replace `yourusername`).
@@ -192,10 +192,10 @@ $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -m
 [This page](https://swcarpentry.github.io/git-novice/02-setup/index.html)
 contains a nice summary on how to configure Git with many other editors.
 
-### Step 3: SSH keys for Github
+### Step 3: SSH keys for GitHub
 
 This is handled two steps from now, in {doc}`ssh`, after you make a
-Github account.
+GitHub account.
 
 
 

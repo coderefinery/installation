@@ -23,10 +23,10 @@ password alone.
 ## Instructions
 
 For the instructions, please follow [this
-guide from Github](https://help.github.com/articles/connecting-to-github-with-ssh/) to
+guide from GitHub](https://help.github.com/articles/connecting-to-github-with-ssh/) to
 connect to GitHub with SSH keys.  These same instructions work
-with services other than Github as well (except the adding the key to
-Github part).
+with services other than GitHub as well (except the adding the key to
+GitHub part).
 
 
 ## How to verify that it worked
