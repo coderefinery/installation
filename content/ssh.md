@@ -15,9 +15,8 @@ services. With Git, it allows you to connect to remote servers to push
 and pull code.  With SSH keys, you can connect to GitHub without supplying your
 username or password at each visit.
 
-This step was optional in the past but will be necessary because soon it will
-not be possible to publish (git push) changes to GitHub with username and
-password alone.
+This step was optional in the past but is required now.  The GitHub username
+and password is not enough anymore to publish (git push) changes to GitHub.
 
 
 ## Instructions
