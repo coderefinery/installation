@@ -78,6 +78,7 @@ If you encounter any problems
   ssh
   conda
   conda-environment
+  zoom
   editors
   difftools
   motivation
