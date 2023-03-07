@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "CodeRefinery workshop software installation instructions"
-copyright = "2021, CodeRefinery team"
+copyright = "CodeRefinery team"
 author = "CodeRefinery team"
 github_user = "coderefinery"
 github_repo_name = "installation"  # auto-detected from dirname if blank
