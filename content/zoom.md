@@ -1,3 +1,8 @@
+---
+orphan: true
+---
+
+
 # Zoom
 
 Some online workshops use Zoom - the workshop organizers will say if
