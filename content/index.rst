@@ -32,9 +32,7 @@ If your answers are all "yes", then go to :ref:`conda-environment`.
     Anaconda terminal is not enough since it does not provide the "Nano" editor
     and some commands may be different
     (:ref:`instructions <setting-conda-path>`)
-  - GitHub account, best with 2-factor authentication (2FA) activated. 2FA is not
-    strictly needed for the course but highly recommended to keep your account
-    secure
+  - GitHub account
     (:ref:`instructions <github>`)
   - SSH connection to GitHub established and verified
     (:ref:`instructions <ssh>`)
