@@ -5,6 +5,7 @@ if which git 2>/dev/null >/dev/null; then
    echo "$(git --version) found, good to go"
  else
    echo "git NOT found, please follow https://coderefinery.github.io/installation/shell-and-git/#installation and then try again"
+   exit
 fi
 
 #check if conda is installed and with which version
@@ -12,6 +13,7 @@ if which conda 2>/dev/null >/dev/null; then
     echo "$(conda --version) found, good to go" 
   else
     echo "conda NOT found, please follow https://coderefinery.github.io/installation/conda/#conda and then try again"
+    exit
 fi
 
 #check if coderefinery conda environment exists, also under different name
@@ -24,6 +26,7 @@ if conda env list | grep "coderefinery" 2>/dev/null >/dev/null; then
       echo "coderefinery environment found with name $envname , good to go"
     else
       echo "coderefinery conda environment NOT found, please follow https://coderefinery.github.io/installation/conda-environment/#conda-environment and then try again"
+      exit
     fi
 fi
 
