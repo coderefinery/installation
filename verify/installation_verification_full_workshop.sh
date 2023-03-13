@@ -1,4 +1,6 @@
-o "#######################################"
+#! /bin/bash
+
+echo "#######################################"
 echo "### For week one of the Coderefinery workshop you will need git installed and your ssh keys set up correctly:"
 
 # check if git is installed and with which version
