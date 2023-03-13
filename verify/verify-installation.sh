@@ -13,7 +13,9 @@ fi
 
 
 # check whether the response to ssh -T git@github.com contains "successfully"
-if ssh -T git@github.com 2>&1 | grep -q 'successfully'; then
+# the "echo | ssh" part is needed to make sure the script does not stop when running through cat or curl
+# https://superuser.com/questions/1194343/why-do-bash-behave-differently-for-script-from-stdin
+if echo | ssh -T git@github.com 2>&1 | grep -q 'successfully'; then
     echo "  - [x] SSH keys seem to be setup correctly, good to go"
 else
     echo "  - [ ] something seems to have gone wrong with your SSH keys for GitHub"
