@@ -40,6 +40,7 @@ If this does not work, the `coderefinery` part should be replaced with the whole
 $ source activate ~/Miniconda3/envs/coderefinery
 ```
 
+(conda-environment-verification)=
 
 ## How to verify the environment
 

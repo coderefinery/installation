@@ -13,40 +13,64 @@ available in the computer that you will use during the workshop.
    - `Aalto University <https://scicomp.aalto.fi/aalto/coderefinery-setup/>`__
 
 
-Step 1: Go through the checklist and make sure all items are ready
-------------------------------------------------------------------
+Requirements table
+------------------
 
 First, go through all the items in the check list below. If you are in doubt or
 your answer is "no", then follow the guideline shown in a linked page for each.
-If your answers are all "yes", then go to :ref:`conda-environment`.
 
-.. admonition:: Checklist
+.. list-table::
+   :header-rows: 1
 
-  *I have ...*
+   * * What?
+     * Importance?
+     * Week?
+     * Verification
+   * * :ref:`Terminal and git <shell-and-git>` installed
+     * **required**
+     * 1
+     * ↓ same
+   * * :ref:`git basic configuration <git-configuration>` (name,
+       email, basic editor)
+     * **required**
+     * 1
+     * :ref:`link <shell-and-git-verification>`
+   * * :ref:`GitHub account <github>`
+     * **required** (or :ref:`alternative <github-alternative>`)
+     * 1
+     * :ref:`link <github-verification>`
+   * * :ref:`SSH connection to Github <ssh>`
+     * **required**
+     * 1
+     * :ref:`link <ssh-verification>`
+   * * :ref:`Other editor of your choice <editors>`
+     * optional (at least nano required, covered under "shell and git")
+     * 1
+     * ↓ same
+   * * Terminal editor working with git from command line (see
+       previous line)
+     * optional
+     * 1
+     * :ref:`link <editors-verification>`
+   * * :ref:`Visual diff tools <visual-diff-tools>`
+     * extra
+     * 1
+     * :ref:`link <visual-diff-tools-verification>`
+   * * :ref:`Python (we suggest via miniconda) <conda>`, less than 3
+       years old
+     * required (can use existing)
+     * 2
+     * ↓ same
+   * * :ref:`CodeRefinery conda environment <conda-environment>` with
+       our environment.yml
+     * **required (for exercises to work)**
+     * 2
+     * :ref:`link <conda-environment-verification>`
+   * * :ref:`Terminal + conda work together <setting-conda-path>`
+     * required
+     * 2
+     * :ref:`link <setting-conda-path-verification>`
 
-  - Shell terminal (Bash or Zsh or Git Bash) and Git configured (user name, email, and editor) and verified
-    (:ref:`instructions <shell-and-git>`)
-  - Relatively new version of Miniconda3 (less than 3 years old)
-    (:ref:`instructions <conda>`)
-  - Terminal shell (Git Bash on Windows, Bash or Zsh on macOS and Linux) from
-    which I can use ``conda`` (try typing ``conda --version``). Note that the
-    Anaconda terminal is not enough since it does not provide the "Nano" editor
-    and some commands may be different
-    (:ref:`instructions <setting-conda-path>`)
-  - GitHub account
-    (:ref:`instructions <github>`)
-  - SSH connection to GitHub established and verified
-    (:ref:`instructions <ssh>`)
-
-
-
-Step 2: Create a Conda environment for CodeRefinery workshop
-------------------------------------------------------------
-
-**All participants** need to create a Conda environment using the provided
-``environment.yml`` (:ref:`instructions <conda-environment>`).
-This environment will provide all dependencies that we will need during the
-workshop.
 
 .. admonition:: Great!
 
@@ -63,22 +87,32 @@ Please **activate the Conda environment** with ``conda activate
 coderefinery`` (or however you do it on your computer, see
 :doc:`conda-environment`) before running the verification script.
 
-If you have the command ``curl`` available, you can run the following command:
+Try whichever of these works on your computer:
 
-.. code-block:: console
+.. tabs::
 
-   $ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh | bash
+   .. tab:: ``curl`` method
 
-If you have the command ``wget`` available, you can run the following command:
+      If you have the command ``curl`` available, you can run the following command:
 
-.. code-block:: console
+      .. code-block:: console
 
-   $ wget -qO- https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh | bash
+	 $ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh | bash
 
-You can also run it without ``wget`` or ``curl`` by `downloading the script
-<https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh>`__
-(right click and "Save as...") and then running it with ``bash
-verify-installation.sh`` inside your terminal.
+   .. tab:: ``wget`` method
+
+      If you have the command ``wget`` available, you can run the following command:
+
+      .. code-block:: console
+
+	 $ wget -qO- https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh | bash
+
+   .. tab:: manual download
+
+      You can also run it without ``wget`` or ``curl`` by `downloading the script
+      <https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh>`__
+      (right click and "Save as...") and then running it with ``bash
+      verify-installation.sh`` inside your terminal.
 
 Running the script will print a summary of what you have installed:
 
@@ -130,6 +164,12 @@ If you encounter any problems
   conda-environment
   editors
   difftools
+
+.. toctree::
+  :maxdepth: 1
+  :hidden:
+  :caption: Notes
+
   motivation
   removing-accounts
 

@@ -27,6 +27,7 @@ connect to GitHub with SSH keys.  These same instructions work
 with services other than GitHub as well (except the adding the key to
 GitHub part).
 
+(ssh-verification)=
 
 ## How to verify that it worked
 
