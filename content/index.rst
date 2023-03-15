@@ -43,7 +43,7 @@ If your answers are all "yes", then go to :ref:`conda-environment`.
 
    Alternatively, we also provide a verification script that you can run to
    check that you have everything set up correctly.
-   Please **activate the Conda environment** with ``conda activate coderefinery``
+   Please **activate the Conda environment** with ``conda activate``
    before running the verification script.
 
    If you have the command ``curl`` available, you can run the following command:
