@@ -89,7 +89,7 @@ html_context = {
 }
 
 import os
-if os.environ.get('GITHUB_REF', '') == 'refs/heads/main':
+if os.environ.get('GITHUB_REF', '') == 'refs/heads/'+github_version:
     html_js_files = [
         ('https://plausible.cs.aalto.fi/js/script.js', {"data-domain": "coderefinery.github.io", "defer": "defer"}),
     ]
