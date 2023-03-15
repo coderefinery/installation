@@ -39,49 +39,6 @@ If your answers are all "yes", then go to :ref:`conda-environment`.
     (:ref:`instructions <ssh>`)
 
 
-.. admonition:: Verification script
-
-   Alternatively, we also provide a verification script that you can run to
-   check that you have everything set up correctly.
-   Please **activate the Conda environment** with ``conda activate``
-   before running the verification script.
-
-   If you have the command ``curl`` available, you can run the following command:
-
-   .. code-block:: console
-
-      $ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh | bash
-
-   If you have the command ``wget`` available, you can run the following command:
-
-   .. code-block:: console
-
-      $ wget -qO- https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh | bash
-
-   You can also run it without ``wget`` or ``curl`` by `downloading the script
-   <https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh>`__
-   (right click and "Save as...") and then running it with ``bash
-   verify-installation.sh`` inside your terminal.
-
-   Running the script will print a summary of what you have installed:
-
-   .. code-block:: console
-
-      $ bash verify-installation.sh
-
-      --------------------------------------------------------------------------------------------------
-      For week one of the CodeRefinery workshop you will need Git installed and your SSH keys configured
-      Checking Git and SSH keys:
-        - [x] git version 2.38.3 found, good to go
-        - [x] SSH keys seem to be setup correctly, good to go
-
-      ---------------------------------------------------------------------------------------------------
-      For week two of the CodeRefinery workshop you will need a relatively new version of conda installed
-      as well as a coderefinery conda environment:
-        - [x] $(conda --version) found"
-              if your conda version is rather old (~ version 4.8.0 and older), please consider updating to avoid possible issues
-        - [x] coderefinery conda environment found, good to go"
-
 
 Step 2: Create a Conda environment for CodeRefinery workshop
 ------------------------------------------------------------
@@ -94,6 +51,54 @@ workshop.
 .. admonition:: Great!
 
    Now you are ready for the workshop!
+
+
+
+Overall verification
+--------------------
+
+We also provide a verification script that you can run to
+check that you have everything set up correctly.
+Please **activate the Conda environment** with ``conda activate
+coderefinery`` (or however you do it on your computer, see
+:doc:`conda-environment`) before running the verification script.
+
+If you have the command ``curl`` available, you can run the following command:
+
+.. code-block:: console
+
+   $ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh | bash
+
+If you have the command ``wget`` available, you can run the following command:
+
+.. code-block:: console
+
+   $ wget -qO- https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh | bash
+
+You can also run it without ``wget`` or ``curl`` by `downloading the script
+<https://raw.githubusercontent.com/coderefinery/installation/main/verify/verify-installation.sh>`__
+(right click and "Save as...") and then running it with ``bash
+verify-installation.sh`` inside your terminal.
+
+Running the script will print a summary of what you have installed:
+
+.. code-block:: console
+
+   $ bash verify-installation.sh
+
+   --------------------------------------------------------------------------------------------------
+   For week one of the CodeRefinery workshop you will need Git installed and your SSH keys configured
+   Checking Git and SSH keys:
+     - [x] git version 2.38.3 found, good to go
+     - [x] SSH keys seem to be setup correctly, good to go
+
+   ---------------------------------------------------------------------------------------------------
+   For week two of the CodeRefinery workshop you will need a relatively new version of conda installed
+   as well as a coderefinery conda environment:
+     - [x] $(conda --version) found"
+           if your conda version is rather old (~ version 4.8.0 and older), please consider updating to avoid possible issues
+     - [x] coderefinery conda environment found, good to go"
+
 
 
 If you encounter any problems
