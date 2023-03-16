@@ -83,8 +83,8 @@ Overall verification
 
 We also provide a verification script that you can run to
 check that you have everything set up correctly.
-Please **activate the Conda environment** with ``conda activate
-coderefinery`` (or however you do it on your computer, see
+Please **activate the Conda environment** with ``conda activate``
+(or however you do it on your computer, see
 :doc:`conda-environment`) before running the verification script.
 
 Try whichever of these works on your computer:
