@@ -138,6 +138,18 @@ run a couple of conda-installed tools and libraries.
 `````
 
 
+(setting-conda-path-verification)=
+
+## Conda path verification
+
+The following command should return something in the terminal you plan
+on using.
+
+```console
+$ conda --version
+```
+
+
 ## How to uninstall/remove Conda
 
 If you wish to remove Conda again after the workshop, here is how:

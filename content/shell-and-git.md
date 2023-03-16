@@ -1,5 +1,4 @@
 (shell-and-git)=
-
 # Shell and Git
 
 ```{note}
@@ -23,6 +22,12 @@ on source code repository hosting platforms such as
 [Bitbucket](https://bitbucket.org/).
 
 Please follow the installation, configuration and verification instructions below.
+
+
+## What you need
+
+Git installed and working from the command line, and configured.
+
 
 
 ## Installation
@@ -123,6 +128,7 @@ Please follow the installation, configuration and verification instructions belo
   ````
 `````
 
+(git-configuration)=
 
 ## Configuration
 
@@ -146,6 +152,7 @@ video](https://www.youtube.com/watch?v=B27pUBrWp5w&list=PLpLblYHCzJACyKCfHnPwRru
 The following shows the same steps that are shown in the video above.
 
 
+
 ### Step 1: Setting user name and email
 
 First, the following commands will set your user name and email address:
@@ -167,30 +174,24 @@ option uses this information for every repository for this user on
 this computer.
 
 
+
 ### Step 2: Setting an editor
 
 It is important to set also the default text editor to use with Git.  **We
-recommend to use nano if you do not have any other preferences**, but
-you can replace nano with vim, emacs or any other editor of your choice:
+recommend to use nano if you do not have any other preferences** (it
+is included and simple for demonstrations).  But
+you can and should configure your preferred editor (VScode, vim, emacs or
+any other editor of your choice, see {doc}`editors` for more instructions):
+
+This sets the editor to Nano:
+
 ```console
 $ git config --global core.editor nano
 ```
 
-To see where this information is stored (`--show-origin` works on git version
-2.8.0 or greater only), use:
-```console
-$ git config --list --show-origin
-```
+To set other editors, see {doc}`editors`
 
-(Optional) If you are on Windows and want to use Notepad or Notepad++, you can
-configure this by providing the full path to the executable and optionally set
-some options. For example (adjust the path if needed, and note the quotation):
-```console
-$ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
-```
 
-[This page](https://swcarpentry.github.io/git-novice/02-setup/index.html)
-contains a nice summary on how to configure Git with many other editors.
 
 ### Step 3: SSH keys for GitHub
 
@@ -199,6 +200,7 @@ GitHub account.
 
 
 
+(shell-and-git-verification)=
 ## Verification
 
 ```{prereq}
@@ -269,6 +271,15 @@ Date:   Fri May 15 16:41:13 2020 +0200
 
 
 ## Troubleshooting
+
+### Where is this configuration stored?
+
+To see where this information is stored (`--show-origin` works on git version
+2.8.0 or greater only), use:
+```console
+$ git config --list --show-origin
+```
+
 
 ### On Windows `git log`, `git diff`, `git branch` or other git commands show no output at all
 

@@ -23,18 +23,34 @@ hosting services but this is work in progress.
 3. Enter your username of your choice (if it is already used, you will get some suggestions), email address, and password.
 4. Follow further instruction and verify your account.
 
+(github-verification)=
+
+## Verification
+
+You can log in to <https://github.com>.
+
+
+(github-alternative)=
 
 ## If you prefer not using GitHub
 
 If you prefer not to create a GitHub account, you can still follow along with
 the lessons.  We highly recommend the GitHub account if you are in a
-interactive workshop, because without it you won't be able to follow
-along with some exercises (If you are following CodeRefinery at your
-own pace, you will have time to work these out).
+interactive workshop, because we can't support other platforms and a
+few exercises don't work (If you are following CodeRefinery at your
+own pace, you will have time to work these out).  But we do support
+you avoiding Github.
+
+GitLab is a good alternative - <https://gitlab.com> or a local
+version.
 
 - Anything can be done with other web repositories, but we don't say
-  how.  You will need to adjust this yourself.
+  how.  You will need to figure out where to click yourself.
 - Most Collaborative Git lesson exercises won't work out of the
-  box/will need adapting.
-- The continuous integration (CI) lessons such as software testing
-  won't work without adapting.
+  box/will need adapting (but in principle the same idea exists with
+  GitLab).
+- The continuous integration (CI) lessons such as documentation and
+  software testing won't work without adapting.  With GitLab you need
+  to provide your own [CI runners](https://docs.gitlab.com/runner/),
+  which is probably beyond the scope of what you would do just for
+  this workshop.

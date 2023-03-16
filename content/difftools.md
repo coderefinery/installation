@@ -1,3 +1,5 @@
+(visual-diff-tools)=
+
 # Visual diff tools (optional)
 
 Visual diff tools allow to visualize differences between files side by side.
@@ -54,6 +56,8 @@ anything else.
   ````
 
 ``````
+
+(visual-diff-tools-verification)=
 
 ## How to verify the installation
 
