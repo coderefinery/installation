@@ -37,17 +37,18 @@ your answer is "no", then follow the guideline shown in a linked page for each.
      * :ref:`link <shell-and-git-verification>`
    * * :ref:`GitHub account <github>`
      * **required** (or :ref:`alternative <github-alternative>`)
-     * 1
+     * 1 (day-3)
      * :ref:`link <github-verification>`
    * * :ref:`SSH connection to Github <ssh>`
      * **required**
-     * 1
+     * 1 (day-3)
      * :ref:`link <ssh-verification>`
    * * :ref:`Other editor of your choice <editors>`
-     * optional (at least nano required, covered under "shell and git")
+     * optional (:ref:`at least Nano required, which is covered under
+       "Terminal and git <nano-configuration>`")
      * 1
      * ↓ same
-   * * Terminal editor working with git from command line (see
+   * * Other editor working with git from command line (see
        previous line)
      * optional
      * 1

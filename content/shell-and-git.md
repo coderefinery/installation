@@ -174,6 +174,7 @@ option uses this information for every repository for this user on
 this computer.
 
 
+(nano-configuration)=
 
 ### Step 2: Setting an editor
 
@@ -225,7 +226,7 @@ $ cd example
 $ git init
 ```
 
-### Step 2: Make a new file.
+### Step 2: Make a new file
 
 Make a new file with some content:
 ```console
