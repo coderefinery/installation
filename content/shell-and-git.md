@@ -124,6 +124,12 @@ Git installed and working from the command line, and configured.
   $ sudo dnf install git
   ```
 
+  If `git --version` reports less than 2.28, some things won't work,
+  but it's OK - everything else will but you'll need small adaptions.
+  If it reports less than 2.23, then something else won't work, and
+  it's a slightly bigger issue.  The lessons will walk you through
+  what to do.
+
   *Reference: [the Carpentries set up page](https://carpentries.github.io/workshop-template/#shell)*
   ````
 `````
@@ -214,6 +220,18 @@ We assume that you have:
 The following shows the same steps that are shown in the video above.  You can
 see verification part in [the same video for configuration at
 5:50](https://www.youtube.com/watch?v=WdDTp8NeHBs&t=350s).
+
+### Step 1: check at least version 2.28
+
+Check your git version:
+```console
+$ git --version
+git version 2.39.2
+```
+
+You need at least 2.28 for our instructions to work as written.  As
+long as you are above 2.0, you can go on and the lesson will explain
+what the differences are.
 
 
 ### Step 1: `git init` a new folder
