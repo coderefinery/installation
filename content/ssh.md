@@ -6,17 +6,16 @@
 
 [This CodeRefinery video about ssh keys (7
 min)](https://www.youtube.com/watch?v=XCDg1mtaA5I&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg)
-shows how to set up SSH connection to GitHub.  We recommend you watch
+shows how to set up SSH connection to GitHub.
+If you are new to SSH keys, We recommend you watch
 this first to understand what is going on.
 ```
 
 Using the SSH protocol, you can connect and authenticate to remote servers and
-services. With Git, it allows you to connect to remote servers to push
-and pull code.  With SSH keys, you can connect to GitHub without supplying your
-username or password at each visit.
-
-This step was optional in the past but is required now.  The GitHub username
-and password is not enough anymore to publish (git push) changes to GitHub.
+services. With Git, it allows you to connect to remote servers to push and pull
+code. This step was optional in the past but is required now. The GitHub
+username and password is not enough anymore to publish (git push) changes to
+GitHub.
 
 
 ## Instructions
@@ -26,6 +25,7 @@ guide from GitHub](https://help.github.com/articles/connecting-to-github-with-ss
 connect to GitHub with SSH keys.  These same instructions work
 with services other than GitHub as well (except the adding the key to
 GitHub part).
+
 
 (ssh-verification)=
 
