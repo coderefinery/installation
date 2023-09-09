@@ -1,6 +1,6 @@
 (editors)=
 
-# Text editors for Git
+# Text editor for Git
 
 A **text editor** edits plain text, and is important for almost any type of
 computer work.

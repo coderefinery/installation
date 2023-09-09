@@ -17,61 +17,32 @@ Requirements table
 ------------------
 
 First, go through all the items in the check list below. If you are in doubt or
-your answer is "no", then follow the guideline shown in a linked page for each.
+your answer is "no", then follow the linked guidelines for each.
 
 .. list-table::
    :header-rows: 1
 
-   * * What?
-     * Importance?
-     * Week?
+   * * Tool (combination)
+     * Workshop days that need this
      * Verification
-   * * :ref:`Terminal and git <shell-and-git>` installed
-     * **required**
-     * 1
-     * ↓ same
-   * * :ref:`git basic configuration <git-configuration>` (name,
-       email, basic editor)
-     * **required**
-     * 1
+   * * :ref:`shell-and-git`
+     * 1-6
+     * :ref:`link <shell-and-git-verification>`
+   * * :ref:`editors`
+     * 1-6
      * :ref:`link <shell-and-git-verification>`
    * * :ref:`GitHub account <github>`
-     * **required** (or :ref:`alternative <github-alternative>`)
-     * 1 (day-3)
+     * 2, **3**, 5, 6
      * :ref:`link <github-verification>`
-   * * :ref:`SSH connection to Github <ssh>`
-     * **required**
-     * 1 (day-3)
+   * * :ref:`ssh`
+     * 2, **3**, 5, 6
      * :ref:`link <ssh-verification>`
-   * * :ref:`Other editor of your choice <editors>`
-     * optional (:ref:`at least Nano required, which is covered under
-       "Terminal and git <nano-configuration>`")
-     * 1
-     * ↓ same
-   * * :ref:`Visual diff tools <visual-diff-tools>`
-     * extra
-     * 1
-     * :ref:`link <visual-diff-tools-verification>`
-   * * :ref:`Python (we suggest via miniconda) <conda>`, less than 3
-       years old
-     * required (can use existing)
-     * 2
-     * ↓ same
-   * * :ref:`CodeRefinery conda environment <conda-environment>` with
-       our environment.yml
-     * **required (for exercises to work)**
-     * 2
+   * * :ref:`conda-environment`
+     * 4-6
      * :ref:`link <conda-environment-verification>`
    * * :ref:`Terminal + conda work together <setting-conda-path>`
-     * required
-     * 2
+     * 4-6
      * :ref:`link <setting-conda-path-verification>`
-
-
-.. admonition:: Great!
-
-   Now you are ready for the workshop!
-
 
 
 Overall verification
@@ -83,7 +54,8 @@ Please **activate the Conda environment** with ``conda activate``
 (or however you do it on your computer, see
 :doc:`conda-environment`) before running the verification script.
 
-Try whichever of these works on your computer:
+Try whichever of these works on your computer to download the verification
+script:
 
 .. tabs::
 
@@ -138,11 +110,10 @@ If you encounter any problems
   which many people can help with (and don't be afraid to ask - it's
   an unfortunate fact that software installation and configuration is
   hard).
-
-- We will have 2 drop-in installation-help sessions. Please try by yourself
+- Before a workshop we offer 2 drop-in installation-help sessions. Please try by yourself
   first, but if you cannot solve problems, join in the sessions. Schedule is
   shown in the workshop website.
-- Ask in the ``#help`` stream on the `CodeRefinery Zulipchat <https://coderefinery.zulipchat.com>`__.
+- Ask in the ``#help`` stream on the `CodeRefinery chat <https://coderefinery.zulipchat.com>`__.
   You can also send
   an email to support@coderefinery.org to ask questions.  Please
   describe the problem concretely as well as your operating system.
@@ -161,6 +132,7 @@ If you encounter any problems
   editors
   difftools
 
+
 .. toctree::
   :maxdepth: 1
   :hidden:
@@ -168,6 +140,7 @@ If you encounter any problems
 
   motivation
   removing-accounts
+
 
 .. toctree::
   :maxdepth: 1

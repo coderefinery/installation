@@ -1,6 +1,6 @@
 (conda-environment)=
 
-# Creating the Conda environment for CodeRefinery workshops
+# Conda environment from our environment.yml
 
 ```{prereq}
 - You have Miniconda or Anaconda installed.
