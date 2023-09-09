@@ -3,25 +3,24 @@
 # Miniconda
 
 Miniconda (and Anaconda, too) comes with a complete Python distribution that lets
-you create isolated **environments** that don't affect anything else.
+you create **isolated environments** that don't affect anything else and
 `conda` is the tool that manages these environments.
 
 We have tried to collect all tools and libraries which we will use and
 demonstrate during a CodeRefinery workshop into an `environment.yml` file so
 that you can create a new and independent environment with all the necessary
 packages so that it will not affect what you use for your daily programming or
-projects. This comes at the last step ({ref}`conda-environment`).
+projects. This is described as separate step: {ref}`conda-environment`.
 
-To enable creating the environment mentioned above, we need you to have a
-relatively new version of Conda.
+```{admonition} Is Anaconda also OK?
 
-1. First you need to install Miniconda.
-2. Then, in the {ref}`next page <conda-environment>`, you set up the
-   CodeRefinery environment.
-
-```{admonition} Why not Anaconda?
-
-Anaconda is more convenient at the beginning since it provides most packages out of the box. However, in the long term we recommend to have a minimal base system and install packages into project-specific environments and for this, Miniconda is a better choice. For our workshops we therefore recommend Miniconda to prepare you for the long term and to start with good practices right from the start. Another benefit is the smaller install size and time.
+Anaconda is more convenient at the beginning since it provides most packages
+out of the box. However, in the long term we recommend to have a minimal base
+system and install packages into project-specific environments, and for this,
+Miniconda is a better choice. For our workshops we therefore recommend
+Miniconda to prepare you for the long term and to start with good practices
+right from the start. Another benefit is the smaller install size and time.
+Buf if you have Anaconda already, this will also work.
 ```
 
 ## Installing Miniconda
@@ -33,15 +32,14 @@ Anaconda is more convenient at the beginning since it provides most packages out
 - Follow [regular installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
   for your operating system.
 - Make sure selecting:
-    - installing just for you
+    - "Installing just for you"
     - "Add miniconda3 to my PATH environment variable"
     - "Register Miniconda3 as my default Python 3.9"
 
 
 ### If you have Anaconda and you are using it regularly
 
-You can use your existing Anaconda install and create the Coderefinery
-environment as the {ref}`next page <conda-environment>` says.
+You can use your existing Anaconda installation and inside follow: {ref}`conda-environment`.
 
 Or, you can probably go through most of the workshop and most of the
 packages that we will need already are part of Anaconda. If some package is
@@ -59,7 +57,7 @@ In CodeRefinery workshops, we need the Bash/Zsh shell terminal to be able to "se
 run a couple of conda-installed tools and libraries.
 
 ```{prereq}
-- You have Bash and relatively new version of Conda installed in your computer.
+- You have Bash/Zsh and relatively new version of Conda installed in your computer.
 - You get an error message like `conda command not found` whey you type `conda --version` in your shell terminal.
 - After opening a new terminal and typing `conda --help` you still get `conda command not found`.
 ```
@@ -130,7 +128,7 @@ run a couple of conda-installed tools and libraries.
 
 ## Conda path verification
 
-The following command should return something in the terminal you plan
+The following command should return a version number in the terminal you plan
 on using.
 
 ```console
