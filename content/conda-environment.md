@@ -2,12 +2,14 @@
 
 # Creating the Conda environment for CodeRefinery workshops
 
-Prerequisite: installing conda from the {doc}`conda` page.
+```{prereq}
+- You have Miniconda or Anaconda installed.
+```
 
-1. Open your terminal shell (e.g. Bash)
-2. If you have not, activate `conda` in Miniconda first using `conda activate` or `source ~/miniconda3/bin/activate`. If neither 
+1. Open your terminal shell (e.g. Bash or Zsh).
+2. Activate `conda` using `conda activate` or `source ~/miniconda3/bin/activate`. If neither 
    works, please first follow {ref}`setting-conda-path`. You probably
-   need to restart your shell terminal. Then try `conda activate` or `source ~/miniconda3/bin/activate` again.
+   need to restart your shell terminal. Then try to activate `conda` again.
 3. Run the following command:
    ```console
    $ conda env create -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
@@ -27,18 +29,19 @@ Then run the following:
 ```console
 $ conda activate coderefinery
 ```
-Or you can use
 
+Alternatively you can use:
 ```console
 $ source activate coderefinery
 ```
-as well. Please note however that `conda activate` is preferred command since conda ver. 4.4
-*Reference: conda Release notes, 4.4.0 (2017-12-20), [New feature highlights, "conda activate"](https://docs.conda.io/projects/conda/en/latest/release-notes.html#id226)*
+Please note however that `conda activate` is preferred command [since Conda v4.4](https://docs.conda.io/projects/conda/en/latest/release-notes.html#id330).
 
 If this does not work, the `coderefinery` part should be replaced with the whole path, for example:
 ```console
 $ source activate ~/Miniconda3/envs/coderefinery
 ```
+
+---
 
 (conda-environment-verification)=
 
@@ -54,12 +57,12 @@ Python 3.11.0
 ```console
 $ jupyter-lab --version
 
-3.6.1
+3.6.3
 ```
 ```console
 $ pytest --version
 
-7.2.1
+7.4.0
 ```
 ```console
 $ sphinx-build --version
