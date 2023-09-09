@@ -94,3 +94,8 @@ $ conda remove --name coderefinery --all
 In case you have both Anaconda3 and Miniconda3, check from which base
 environment the `coderefinery` environment was created, and first activate the
 corresponding base environment for the above command to work.
+
+
+## If you have an old `coderefinery` environment from a previous workshop
+
+In this case it is safest to delete the old environment and recreate it.
