@@ -66,22 +66,16 @@ Please follow the installation, configuration, and verification instructions bel
 
   ````{tab} macOS
 
-  The default shell in some versions of macOS is Bash, and
-  Bash is available in all versions, so **no need to install a shell**.
+  Starting with macOS Catalina, macOS uses zsh as the default login shell and
+  interactive shell.  Bash is the default shell in macOS Mojave and earlier.
 
-  You access Bash from the terminal (found in `/Applications/Utilities`).
-  See the Git installation [Carpentries video tutorial](https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial)
-  for an example on how to open the terminal.
-  You may want to keep the terminal in your dock for this workshop.
+  **The workshop will work fine with either zsh or bash**.  If you experience
+  that any of our exercises do not work with zsh, you can switch to bash by
+  typing `bash` followed by Enter in your terminal.
 
-  To see if your default shell is Bash, type `echo $SHELL`
-  in the terminal and press the return key. If the message
-  printed does not end with '/bash' then your default is something
-  else and you can run Bash by typing `bash`. But also `zsh` will work
-  fine for our workshop if this is your default shell.
-
-  If you want to change your default shell, see [this Apple Support article](https://support.apple.com/en-au/HT208050)
-  and follow the instructions on "How to change your default shell".
+  If you want to change your default shell, see [this Apple Support
+  article](https://support.apple.com/en-au/HT208050) and follow the
+  instructions on "How to change your default shell".
 
   **Install Git** for Mac
   by downloading and running the most recent "mavericks" installer from
