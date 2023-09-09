@@ -104,7 +104,7 @@ installed:
    as well as a coderefinery conda environment:
      - [x] conda 22.11.1 found
            if your conda version is rather old (~ version 4.8.0 and older), please consider updating to avoid possible issues
-     - [x] coderefinery conda environment found, good to go"
+     - [x] coderefinery conda environment found, good to go
 
 
 
