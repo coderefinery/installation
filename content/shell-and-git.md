@@ -193,14 +193,6 @@ $ git config --global core.editor nano
 To set other editors, see {doc}`editors`
 
 
-
-### Step 3: SSH keys for GitHub
-
-This is handled two steps from now, in {doc}`ssh`, after you make a
-GitHub account.
-
-
-
 (shell-and-git-verification)=
 ## Verification
 
