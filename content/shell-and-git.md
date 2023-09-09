@@ -21,13 +21,7 @@ on source code repository hosting platforms such as
 [GitHub](https://github.com) or [GitLab](https://gitlab.com) or
 [Bitbucket](https://bitbucket.org/).
 
-Please follow the installation, configuration and verification instructions below.
-
-
-## What you need
-
-Git installed and working from the command line, and configured.
-
+Please follow the installation, configuration, and verification instructions below.
 
 
 ## Installation
@@ -220,6 +214,7 @@ We assume that you have:
 The following shows the same steps that are shown in the video above.  You can
 see verification part in [the same video for configuration at
 5:50](https://www.youtube.com/watch?v=WdDTp8NeHBs&t=350s).
+
 
 ### Step 1: check at least version 2.28
 
