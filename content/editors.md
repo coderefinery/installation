@@ -5,6 +5,11 @@
 A **text editor** edits plain text, and is important for almost any type of
 computer work.
 
+```{admonition} If you are new to text editors
+If you are new to text editors, we recommend that you practice a bit:
+try to create a file, edit it, save it, re-open it.
+```
+
 There are text editors with a graphical user interface and text
 editors that allow you to edit text in the terminal, for example on a
 remote cluster (and some allow both modes of operation).  This page
