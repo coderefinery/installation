@@ -124,7 +124,6 @@ Please follow the installation, configuration, and verification instructions bel
 
 ```{prereq}
 We assume that you have:
-- Signed up for a GitHub account
 - Bash (or Zsh on macOS) shell terminal on your machine
 - Git installed on your machine
 - Nano editor available (unless you prefer a different terminal editor)
@@ -135,12 +134,9 @@ We assume that you have:
 
 [This video (9
 min)](https://www.youtube.com/watch?v=WdDTp8NeHBs&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg)
-shows how to configure git, so first watch this.  If you experience problems,
+shows how to configure Git. If you experience problems,
 watch [this troubleshooting
 video](https://www.youtube.com/watch?v=B27pUBrWp5w&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg).
-
-The following shows the same steps that are shown in the video above.
-
 
 
 ### Step 1: Setting user name and email
@@ -171,7 +167,7 @@ this computer.
 It is important to set also the default text editor to use with Git.  **We
 recommend to use nano if you do not have any other preferences** (it
 is included and simple for demonstrations).  But
-you can and should configure your preferred editor (VScode, vim, emacs or
+you can instead use your preferred editor (VScode, vim, emacs or
 any other editor of your choice, see {doc}`editors` for more instructions):
 
 This sets the editor to Nano:
@@ -180,7 +176,7 @@ This sets the editor to Nano:
 $ git config --global core.editor nano
 ```
 
-To set other editors, see {doc}`editors`
+To set other editors, see {doc}`editors`.
 
 
 
@@ -192,10 +188,9 @@ To set other editors, see {doc}`editors`
 
 ### Step 4: Two more settings for Windows only
 
-We have found that these two settings prevent
-warnings and/or seeing no output in some commands on Windows.
-At the bottom of this page we motivate in more detail
-what these two do:
+We have found that these two settings prevent warnings and/or seeing no output
+in some commands on Windows (no need to run these on macOS or Linux).  At the
+bottom of this page we motivate in more detail what these two do:
 
 ```console
 $ git config --global core.autocrlf false
@@ -219,33 +214,29 @@ see verification part in [the same video for configuration at
 5:50](https://www.youtube.com/watch?v=WdDTp8NeHBs&t=350s).
 
 
-### Step 1: check at least version 2.28
+### Step 1: Check your Git version
 
 Check your git version:
 ```console
 $ git --version
+
 git version 2.39.2
 ```
 
-You need at least 2.28 for our instructions to work as written.  As
-long as you are above 2.0, you can go on and the lesson will explain
-what the differences are.
-
-If `git --version` reports less than 2.28, some things won't work,
-but it's OK - everything else will but you'll need small adaptions.
-If it reports less than 2.23, then something else won't work, and
-it's a slightly bigger issue.  The lessons will walk you through
-what to do.
+- We recommend at least 2.23.
+- Ideal is 2.28 and newer.
+- But the lesson and workshop will still work even with Git 2.0
+  and we will add instructions/workarounds for Git below 2.28 or 2.23.
 
 
-### Step 2: `git init` a new folder
+### Step 2: `git init -b main` inside a new folder
 
-Create a new example folder, step into it, and initialize a repository **(don't
-`git init` in your home directory)**:
+Create a new example folder, step into it, and initialize a repository. Do **not**
+`git init -b main` in your home directory:
 ```console
 $ mkdir example
 $ cd example
-$ git init
+$ git init -b main
 ```
 
 
@@ -284,8 +275,9 @@ $ git commit
 $ git log
 ```
 
-If you see now something line this (different name, email, and commit message),
-your Git is configured for the workshop:
+If you see now something line this your Git is configured for the workshop (the
+name, email, commit message and also the "12e4cb8..." part will be different in
+your case):
 ```text
 commit 12e4cb892140bd14a413895b3b36c27db198eb22 (HEAD -> main)
 Author: Radovan Bast <bast@users.noreply.github.com>
@@ -294,6 +286,7 @@ Date:   Fri May 15 16:41:13 2020 +0200
     making a test commit
 ```
 
+---
 
 ## Troubleshooting
 
