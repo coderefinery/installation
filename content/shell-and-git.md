@@ -116,6 +116,8 @@ Please follow the installation, configuration, and verification instructions bel
   ````
 `````
 
+---
+
 (git-configuration)=
 
 ## Configuration
@@ -181,6 +183,27 @@ $ git config --global core.editor nano
 To set other editors, see {doc}`editors`
 
 
+
+### Step 3: Set default branch
+
+(to be written)
+
+
+
+### Step 4: Two more settings for Windows only
+
+We have found that these two settings prevent
+warnings and/or seeing no output in some commands on Windows.
+At the bottom of this page we motivate in more detail
+what these two do:
+
+```console
+$ git config --global core.autocrlf false
+$ git config --global core.pager cat
+```
+
+---
+
 (shell-and-git-verification)=
 ## Verification
 
@@ -215,7 +238,7 @@ it's a slightly bigger issue.  The lessons will walk you through
 what to do.
 
 
-### Step 1: `git init` a new folder
+### Step 2: `git init` a new folder
 
 Create a new example folder, step into it, and initialize a repository **(don't
 `git init` in your home directory)**:
@@ -225,7 +248,8 @@ $ cd example
 $ git init
 ```
 
-### Step 2: Make a new file
+
+### Step 3: Make a new file
 
 Make a new file with some content:
 ```console
@@ -234,7 +258,7 @@ $ nano example.txt
 Write some text in the `example.txt`, save (`ctrl+O` then `ENTER`) and exit (`ctrl+X`).
 
 
-### Step 3: Stage the change
+### Step 4: Stage the change
 
 Stage a newly made file `example.txt` before committing the change and record in
 Git:
@@ -243,7 +267,7 @@ $ git add example.txt
 ```
 
 
-### Step 4: Commit the change with a message
+### Step 5: Commit the change with a message
 
 The following command will commit the change. It should open the editor which
 you have configured.  Then, add a commit message such as `initial
@@ -253,7 +277,8 @@ the default `nano` editor, `ctrl+O` `ENTER` then `ctrl+X`):
 $ git commit
 ```
 
-### Step 5: See the change log
+
+### Step 6: See the change log
 
 ```console
 $ git log
@@ -262,7 +287,7 @@ $ git log
 If you see now something line this (different name, email, and commit message),
 your Git is configured for the workshop:
 ```text
-commit 12e4cb892140bd14a413895b3b36c27db198eb22 (HEAD -> master)
+commit 12e4cb892140bd14a413895b3b36c27db198eb22 (HEAD -> main)
 Author: Radovan Bast <bast@users.noreply.github.com>
 Date:   Fri May 15 16:41:13 2020 +0200
 
@@ -275,7 +300,7 @@ Date:   Fri May 15 16:41:13 2020 +0200
 ### Where is this configuration stored?
 
 To see where this information is stored (`--show-origin` works on git version
-2.8.0 or greater only), use:
+2.8 or greater only), use:
 ```console
 $ git config --list --show-origin
 ```
@@ -300,4 +325,12 @@ Following other manuals and documentation, it seems that all the above can be se
 (`cat` should be available within Git Bash but also PowerShell):
 ```console
 $ git config --global core.pager cat
+```
+
+
+### On Windows you see the warning "LF will be replaced by CRLF the next time Git touches it"
+
+Solution is to set this:
+```console
+$ git config --global core.autocrlf false
 ```
