@@ -82,7 +82,8 @@ script:
       (right click and "Save as...") and then running it with ``bash
       verify-installation.sh`` inside your terminal.
 
-Running the script will print a summary of what you have installed:
+Running the script in your terminal will print a summary of what you have
+installed:
 
 .. code-block:: console
 
@@ -90,14 +91,18 @@ Running the script will print a summary of what you have installed:
 
    --------------------------------------------------------------------------------------------------
    For week one of the CodeRefinery workshop you will need Git installed and your SSH keys configured
-   Checking Git and SSH keys:
-     - [x] git version 2.38.3 found, good to go
+   Checking Git configuration and SSH keys:
+     - [x] git version 2.40.1 found, good to go
      - [x] SSH keys seem to be setup correctly, good to go
+     - [x] Git user name is set to Jane Doe, good to go
+     - [x] Git user email is set to myuser@users.noreply.github.com, good to go
+     - [x] Git editor is set to vim, good to go
+     - [x] Git default branch is set to main, good to go
 
    ---------------------------------------------------------------------------------------------------
    For week two of the CodeRefinery workshop you will need a relatively new version of conda installed
    as well as a coderefinery conda environment:
-     - [x] $(conda --version) found"
+     - [x] conda 22.11.1 found
            if your conda version is rather old (~ version 4.8.0 and older), please consider updating to avoid possible issues
      - [x] coderefinery conda environment found, good to go"
 
