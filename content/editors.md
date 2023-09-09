@@ -11,7 +11,7 @@ remote cluster (and some allow both modes of operation).  This page
 tells you how to connect different editors to git, so that command
 line git will open them.
 
-```{figure} img/git-invoke-editor.mkv
+```{figure} img/git-invoke-editor.png
 :alt: Screen recording of "git commit" from a command line which starts graphical vscode.  After saving and closing, it goes back to the terminal.
 
 Demonstration.  Command line git starting the VScode graphical editor
