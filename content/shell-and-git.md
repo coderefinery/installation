@@ -182,8 +182,17 @@ To set other editors, see {doc}`editors`.
 
 ### Step 3: Set default branch
 
-(to be written)
+The default branch on GitHub and GitLab is `main` but it used to be `master`.
+In our workshop we will use `main` as the default branch also in the terminal
+to be consistent with GitHub and GitLab:
 
+```console
+$ git config --global init.defaultbranch main
+```
+
+This configuration will unfortunately have no effect on Git older than 2.28.
+**But this is not a problem**. During the lesson we will have a workaround for
+this.
 
 
 ### Step 4: Two more settings for Windows only
