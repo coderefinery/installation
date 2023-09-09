@@ -1,8 +1,8 @@
 (editors)=
 
-# Text editors for git
+# Text editors for Git
 
-A **text editor** edits plain text, and is important to any type of
+A **text editor** edits plain text, and is important for almost any type of
 computer work.
 
 There are text editors with a graphical user interface and text
@@ -20,7 +20,7 @@ cover this in the CodeRefinery workshop).  Picture should be
 animated.
 ```
 
-Choosing the right editor is a matter of taste and preferences. Since we often
+Choosing the right editor is a matter of preferences. Since we often
 spend significant portions of our days editing text and source code, it can be
 valuable to invest time into learning your favourite editor really well. Below
 we list few common options and give some pros/cons.
@@ -29,21 +29,11 @@ Search below for what you use.  We will demonstrate with Nano, and
 that is reasonable to start with for this workshop.
 
 
-
-## What you need
-
-The Nano editor is the minimum and already covered under {ref}`git
-configurtation <git-configuration>`, so you don't have to do anything
-more.  Below is more information on how common editors work and are
-configured to work with git.
-
-
 ## Nano (terminal)
 
-Easy to start and comes with git but with minimal functionality (thus
-we use it for demos). This comes installed as default
-on most Linux distributions.  If you do not already have a favorite editor, we
-recommend this to be used with this during the course.
+Easy to start but comes with minimal functionality (thus we use it for demos).
+If you do not already have a favorite editor, we recommend this to be used with
+this during the course.
 
 `````{tabs}
   ````{tab} Windows
@@ -65,7 +55,7 @@ recommend this to be used with this during the course.
   ````
 `````
 
-To set it as the git editor:
+To set it as the default editor for Git:
 
 ```console
 $ git config --global core.editor nano
@@ -111,7 +101,7 @@ Ctrl + w then type the word to find and press enter (please note it is w not f a
 [Visual Studio Code](https://code.visualstudio.com)
 is a lightweight (around 200 MB) but powerful source code
 editor. It is **free and open source** and runs on your desktop and is
-available for Windows, macOS and Linux.  It has a rich ecosystem of extensions
+available for Windows, macOS, and Linux.  It has a rich ecosystem of extensions
 for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
 
 Please visit the [download page](https://code.visualstudio.com/Download) for installation instructions.
@@ -121,7 +111,6 @@ To configure git to use VScode from the command line:
 ```console
 $ git config --global core.editor "code --wait"
 ```
-
 
 
 ## Notepad++ (graphical)
@@ -134,15 +123,13 @@ $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -m
 ```
 
 
-
-## Vi/Vim (terminal/both)
+## Vi/Vim
 
 This editor takes some effort to get started. But has more functionality
 than Nano, especially if you write programming code. Syntax highlighting,
 clever copy-paste and better refactoring are some features.
 
 Interactive Vim tutorial: [http://www.openvim.com](http://www.openvim.com)
-
 
 **To create or open a file** called mytext.txt:
 ```console
@@ -153,8 +140,7 @@ $ vi mytext.txt
 Hit Escape, then type `:wq` and hit Enter.
 
 
-
-## Emacs (both)
+## Emacs
 
 Like Vim, Emacs takes some effort and learning to get started and offers almost unlimited
 functionality. It is possible to interact with version control, even compile and run code,
@@ -172,20 +158,7 @@ Type Ctrl-x followed by Ctrl-c.
 
 
 
-## Not listed above
+## Other editors
 
 [This page](https://swcarpentry.github.io/git-novice/02-setup/index.html)
 contains a nice summary on how to configure Git with many other editors.
-
-
-
-(editors-verification)=
-## Verification of editor working with command-line git.
-
-The following command should open your preferred editor with a Git
-config file.  Close it without changing anything and verify that the
-git command then finishes.
-
-```console
-$ git config --global --edit
-```

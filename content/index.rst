@@ -48,11 +48,6 @@ your answer is "no", then follow the guideline shown in a linked page for each.
        "Terminal and git <nano-configuration>`")
      * 1
      * ↓ same
-   * * Other editor working with git from command line (see
-       previous line)
-     * optional
-     * 1
-     * :ref:`link <editors-verification>`
    * * :ref:`Visual diff tools <visual-diff-tools>`
      * extra
      * 1
