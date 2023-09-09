@@ -38,18 +38,6 @@ Anaconda is more convenient at the beginning since it provides most packages out
     - "Register Miniconda3 as my default Python 3.9"
 
 
-### If you have Miniconda or Anaconda but you have not used it for a long time
-
-- If you have only old Anaconda, but not Miniconda, then install Miniconda3
-  following the instruction above.
-- If you have old Miniconda (no matter if you have Anaconda or not), follow the
-  instruction below and upgrade Conda. Please replace `anaconda` with `conda`
-  in the instruction for Windows and macOS:
-    - [Windows](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/windows.html#updating-conda)
-    - [macOS](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html#updating-anaconda-or-miniconda)
-    - [Linux](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html#updating-anaconda-or-miniconda)
-
-
 ### If you have Anaconda and you are using it regularly
 
 You can use your existing Anaconda install and create the Coderefinery
@@ -148,12 +136,3 @@ on using.
 ```console
 $ conda --version
 ```
-
-
-## How to uninstall/remove Conda
-
-If you wish to remove Conda again after the workshop, here is how:
-
-- [Windows](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/windows.html#uninstalling-conda)
-- [macOS](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/macos.html#uninstalling-anaconda-or-miniconda)
-- [Linux](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/linux.html#uninstalling-anaconda-or-miniconda)
