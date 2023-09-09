@@ -176,6 +176,7 @@ If you encounter any problems
 
 .. toctree::
   :maxdepth: 1
+  :hidden:
   :caption: Reference
 
   license
