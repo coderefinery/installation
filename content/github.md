@@ -23,6 +23,12 @@ hosting services but this is work in progress.
 3. Enter your username of your choice (if it is already used, you will get some suggestions), email address, and password.
 4. Follow further instruction and verify your account.
 
+GitHub may require you to enable multi-factor authentication
+(MFA). This is generally a good thing, but may take some time to set
+up. Luckily, you probably don't have to do this immediately. If you
+are prompted to enable MFA before the end of CodeRefinery, follow
+GitHub's instructions since they are usually pretty good.
+
 
 (github-verification)=
 
