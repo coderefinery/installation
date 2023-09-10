@@ -37,6 +37,9 @@ your answer is "no", then follow the linked guidelines for each.
    * * :ref:`ssh`
      * 2, **3**, 5, 6
      * :ref:`link <ssh-verification>`
+   * * :ref:`conda`
+     * 4-6
+     * :ref:`link <setting-conda-path-verification>`
    * * :ref:`conda-environment`
      * 4-6
      * :ref:`link <conda-environment-verification>`
