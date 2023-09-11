@@ -38,20 +38,31 @@ Please follow the installation, configuration, and verification instructions bel
         installed Git).  You don't need to change anything
         in the Information, location, components, and start menu screens.
     2.  **From the dropdown menu select "Use the Nano editor by default"
-        (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".**
-    3.  On the page that says "Adjusting the name of the initial branch in new repositories", choose
+        (NOTE: you will need to scroll <emph>up</emph> to find it) and
+        click on "Next".**  If are comfortable with another editor and know it is
+        installed, you can select it - but Nano is the safest if you
+        don't know what to choose.  This replaces the "selecting an
+        editor" step below.
+    3.  **On the page that says "Adjusting the name of the initial branch in new repositories", choose
         "Override the default branch name for new repositories" and choose `main`. This will ensure
-        the highest level of compatibility for our lessons.
+        the highest level of compatibility for our lessons.**
     4.  Ensure that "Git from the command line and also from 3rd-party software" is selected and
         click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
         remove the Git Bash installation, re-run the installer and to select the "Git from the
         command line and also from 3rd-party software" option.)
-    5.  Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+    4.  Choosing the OpenSSH executable: "Use bundled OpenSSH" and
+        click "Next".
+    5.  **Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".**
     6.  Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
     7.  **Ensure that "Use Windows' default console window" is selected and click on "Next".**
     8.  Ensure that "Default (fast-forward or merge) is selected and click "Next"
-    9.  Ensure that "Git Credential Manager <strong>Core</strong>" is selected and click on "Next".
+    9.  Ensure that "Git Credential Manager" is selected and click on
+        "Next". (if "Core" is an option, pick that)
+
     10. Ensure that "Enable file system caching" is selected and click on "Next".
+    11. Configuring experimental options: don't select either and
+        click "Next".
+
     11. Click on "Install".
     12. Click on "Finish" or "Next".
   - If your "HOME" environment variable is not set (or you don't know what this is):
