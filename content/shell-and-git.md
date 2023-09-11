@@ -39,8 +39,9 @@ Please follow the installation, configuration, and verification instructions bel
         in the Information, location, components, and start menu screens.
     2.  **From the dropdown menu select "Use the Nano editor by default"
         (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".**
-    3.  On the page that says "Adjusting the name of the initial branch in new repositories", ensure that
-        "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+    3.  On the page that says "Adjusting the name of the initial branch in new repositories", choose
+        "Override the default branch name for new repositories" and choose `main`. This will ensure
+        the highest level of compatibility for our lessons.
     4.  Ensure that "Git from the command line and also from 3rd-party software" is selected and
         click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
         remove the Git Bash installation, re-run the installer and to select the "Git from the
