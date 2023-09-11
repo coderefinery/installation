@@ -89,6 +89,14 @@ Please follow the installation, configuration, and verification instructions bel
   article](https://support.apple.com/en-au/HT208050) and follow the
   instructions on "How to change your default shell".
 
+  **Check if git is already installed.**  Xcode may have already
+  installed it.  If the command `which git` from a terminal returns
+  something such as `/usr/bin/git` (it doesn't matter exactly what it
+  says), then git is probably already installed.  If so, run `git
+  --version` and if it reports 2.28 or higher, then you are good -
+  proceed to configuration.
+
+
   **Install Git** for Mac
   by downloading and running the most recent "mavericks" installer from
   [this list](http://sourceforge.net/projects/git-osx-installer/files/).
