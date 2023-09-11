@@ -26,6 +26,20 @@ connect to GitHub with SSH keys.  These same instructions work
 with services other than GitHub as well (except the adding the key to
 GitHub part).
 
+* If you think you might already have SSH keys, start with [Checking
+  for existing SSH
+  keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+* Then start with [Generating a new SSH key and adding it to the
+  ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+* Then [Adding a new SSH key to your GitHub
+  account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+* Then [Testing your SSH
+  connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+  (note that this is the same as the verification steps below)
+* If on Windows, [Working with SSH key
+  passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases)
+  is optional but can save you from retyping the passphrase so many times.
+
 
 (ssh-verification)=
 
