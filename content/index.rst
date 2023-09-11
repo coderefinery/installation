@@ -46,6 +46,9 @@ your answer is "no", then follow the linked guidelines for each.
    * * :ref:`Terminal + conda work together <setting-conda-path>`
      * 4-6
      * :ref:`link <setting-conda-path-verification>`
+   * * `Print this cheatsheet <https://aaltoscicomp.github.io/cheatsheets/git-the-way-you-need-it-cheatsheet.pdf>`__
+     * 1-6 (optional but helpful)
+     *
 
 
 Overall verification
