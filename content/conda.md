@@ -101,9 +101,10 @@ run a couple of conda-installed tools and libraries.
      (/User/your-user-name)
   3. Navigate to the directory where `.zshrc` is located (or `.bash_profile` if your shell is Bash).
   4. Add the following in `.zshrc` file (or `.bash_profile`):
-  ```console
-  $ export PATH="$HOME/miniconda3/bin:$PATH"
-  ```
+     ```console
+     $ export PATH="$HOME/miniconda3/bin:$PATH"
+     ```
+  5. Restart the terminal to take configuration into use.
   ````
 
   ````{tab} Linux
@@ -111,9 +112,10 @@ run a couple of conda-installed tools and libraries.
   1. Open a terminal window.
   2. Run this command which will append to your `.bashrc` file (adapt the path if Miniconda has been installed
      to a different place):
-  ```console
-  $ echo 'source $HOME/miniconda3/bin/activate' >> ~/.bashrc
-  ```
+     ```console
+     $ echo 'source $HOME/miniconda3/bin/activate' >> ~/.bashrc
+     ```
+  3. Restart the terminal to take the configuration into use.
 
   If you prefer not to edit your `.bashrc`, you can also run this command after opening your terminal (each time you open one)
   and it will bring all `conda` commands "into view":
