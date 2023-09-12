@@ -74,7 +74,9 @@ Please follow the installation, configuration, and verification instructions bel
     pointing to a network disk (a storage location that is not physically in your laptop, usually starting with
     "Z:\"). This should not be an issue per se, but it has caused problems to some participants in the past.
     If you are experiencing issues with Git Bash, you can try setting HOME to a location on the physical disk,
-    for example "C:\Users\$USERNAME".  
+    for example "C:\Users\$USERNAME". Please note that, depending on the settings of your organisation, automatic
+    backups might not cover the newly set home folder. Follow instructions from your local ITs on how to make sure
+    that also those folders are backed up.   
 
   This will provide you with both Git and Bash in the Git Bash program. You can then start it by searching for "Git Bash" in your Start menu.
 
