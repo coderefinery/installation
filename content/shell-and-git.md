@@ -70,6 +70,11 @@ Please follow the installation, configuration, and verification instructions bel
     2.  Type the following line into the command prompt window exactly as shown: `setx HOME "%USERPROFILE%"`
     3.  Press enter, you should see `SUCCESS: Specified value was saved.`
     4.  Quit command prompt by typing `exit` then pressing enter.
+  - If you are using a Windows laptop managed by your organization, it might be that your "HOME" variable is
+    pointing to a network disk (a storage location that is not physically in your laptop, usually starting with
+    "Z:\"). This should not be an issue per se, but it has caused problems to some participants in the past.
+    If you are experiencing issues with Git Bash, you can try setting HOME to a location on the physical disk,
+    for example "C:\Users\$USERNAME".  
 
   This will provide you with both Git and Bash in the Git Bash program. You can then start it by searching for "Git Bash" in your Start menu.
 
