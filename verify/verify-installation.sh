@@ -55,7 +55,7 @@ echo "For week two of the CodeRefinery workshop you will need a relatively new v
 echo "as well as a "coderefinery" conda environment:"
 
 # check for conda
-if which conda 2>/dev/null >/dev/null; then
+if type conda 2>/dev/null >/dev/null; then
     echo "  - [x] $(conda --version) found"
     echo "        if your conda version is rather old (~ version 4.8.0 and older), please consider updating to avoid possible issues"
 else
