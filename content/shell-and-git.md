@@ -165,6 +165,22 @@ shows how to configure Git. If you experience problems,
 watch [this troubleshooting
 video](https://www.youtube.com/watch?v=B27pUBrWp5w&list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg).
 
+### Step 0: Start your terminal that has git
+`````{tabs}
+  ````{tab} Windows
+  Start the application Git Bash.
+  ````
+  ````{tab} macOS
+  Start the application Terminal.
+  ````
+  ````{tab} Linux
+  Start the application Terminal.
+  ````
+`````
+
+This is the command line interface.  Did you read/watch the crash
+course above?
+
 
 ### Step 1: Setting user name and email
 
