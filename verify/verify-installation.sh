@@ -17,8 +17,17 @@ fi
 if echo | ssh -T git@github.com 2>&1 | grep -q 'successfully'; then
     echo "  - [x] SSH keys seem to be setup correctly, good to go"
 else
-    echo "  - [ ] something seems to have gone wrong with your SSH keys for GitHub"
-    echo "        please follow https://coderefinery.github.io/installation/ssh/#ssh and then try again"
+    # windows, this seems to be only `manager`.  Linux is `git-credential-manager`
+    if git config --get credential.helper | grep 'manager$' >/dev/null ; then
+        echo "  - [x] HTTPS with git-credential-manager seems to be configured."
+        echo "        You still should do the HTTPS verification here, since we"
+        echo "        can't automate it:"
+        echo "        https://coderefinery.github.io/ssh/#how-to-verify-that-it-worked"
+    else
+        echo "  - [ ] We can't tell if you have SSH keys or Git Credential Manager set"
+        echo "        up.  Check this page and set up either the HTTPS or SSH option:"
+        echo "        https://coderefinery.github.io/installation/ssh/ and then try again"
+    fi
 fi
 
 # check whether Git name is set
