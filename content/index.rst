@@ -12,42 +12,86 @@ available in the computer that you will use during the workshop.
 
    - `Aalto University <https://scicomp.aalto.fi/aalto/coderefinery-setup/>`__
 
+.. admonition:: Important: don't start installing yet for the 2024-03 workshop
+   :class: warning
+
+   We are still revising our instructions to make the whole workshop
+   easier.  **We recommend you wait until the week before to start
+   following this page.**
+
 
 Requirements table
 ------------------
 
 First, go through all the items in the check list below. If you are in doubt or
 your answer is "no", then follow the linked guidelines for each.
+First, ask how you want to do the exercises:
+
+* **web** uses only the Github web interface.  This is simple, but not
+  very practical for day to day work. *Recommended if you are trying
+  it out, but not doing development yourself yet*
+* **VSCode** uses the popular VSCode editor.  It makes things easier,
+  but is propriety and sends data to Microsoft.  `Codium
+  <https://vscodium.com/>`__ is the same software without Microsoft
+  tracking.  *Recommended if you want to be most similar to what most
+  people use day-to-day, and good balance of usability and power.*
+* **cli** (command line interface) is the "raw" git, good for power
+  people but hard if you haven't used command lines before.  See the
+  `command line crash course
+  <https://scicomp.aalto.fi/scicomp/shell/>`__ (`video
+  <https://www.youtube.com/watch?v=56p6xX0aToI>`__).  *Recommended if
+  you know what the command line is and* already *want to get better at it*
 
 .. list-table::
    :header-rows: 1
 
    * * Tool (combination)
-     * Workshop days that need this
+     * Days?
+     * Needed for git interface
      * Verification
-   * * :ref:`shell-and-git`
-     * 1-6
-     * :ref:`link <shell-and-git-verification>`
-   * * :ref:`editors`
-     * 1-6
-     * :ref:`link <shell-and-git-verification>`
    * * :ref:`GitHub account <github>`
      * 2, **3**, 5, 6
+     * web, cli, vscode
      * :ref:`link <github-verification>`
+   * * `Print this cheatsheet <https://aaltoscicomp.github.io/cheatsheets/git-the-way-you-need-it-cheatsheet.pdf>`__
+     * 1-6 (optional but helpful)
+     * cli, web, vscode
+     * —
+   * * :ref:`shell-and-git`
+     * 1-6
+     * cli
+     * :ref:`link <shell-and-git-verification>`
    * * :ref:`ssh`
      * 2, **3**, 5, 6
+     * cli
      * :ref:`link <ssh-verification>`
+   * * VSCode
+     * 1-6
+     * vscode
+     *
+   * * :ref:`editors`
+     * 1-6
+     * cli
+     * :ref:`link <shell-and-git-verification>`
+   * * **Week 2 needs (optional and advanced: most people watch as a demo only):**
+     *
+     *
+     *
    * * :ref:`conda`
      * 4-6
+     * cli, vscode
      * :ref:`link <setting-conda-path-verification>`
    * * :ref:`conda-environment`
      * 4-6
+     * cli, vscode
      * :ref:`link <conda-environment-verification>`
    * * :ref:`Terminal + conda work together <setting-conda-path>`
      * 4-6
+     * cli, (no vscode?)
      * :ref:`link <setting-conda-path-verification>`
-   * * `Print this cheatsheet <https://aaltoscicomp.github.io/cheatsheets/git-the-way-you-need-it-cheatsheet.pdf>`__
-     * 1-6 (optional but helpful)
+   * * Conda environment from VSCode
+     * 4-6
+     * vscode
      *
 
 
@@ -133,14 +177,28 @@ If you encounter any problems
 .. toctree::
   :maxdepth: 1
   :hidden:
-  :caption: Instructions
+  :caption: Week 1
 
-  shell-and-git
   github
+  shell-and-git
   ssh
+  editors
+
+
+.. toctree::
+  :maxdepth: 1
+  :hidden:
+  :caption: Week 2
+
   conda
   conda-environment
-  editors
+
+
+.. toctree::
+  :maxdepth: 1
+  :hidden:
+  :caption: Extra (optional)
+
   difftools
 
 
