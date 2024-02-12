@@ -30,7 +30,8 @@ First, ask how you want to do the exercises:
 * **web** uses only the Github web interface.  This is simple, but not
   very practical for day to day work. *Recommended if you are trying
   it out, but not doing development yourself yet*
-* **VSCode** uses the popular VSCode editor.  It makes things easier,
+* (We are considering adding this, it is not decided or written yet):
+  **VSCode** uses the popular VSCode editor.  It makes things easier,
   but is propriety and sends data to Microsoft.  `Codium
   <https://vscodium.com/>`__ is the same software without Microsoft
   tracking.  *Recommended if you want to be most similar to what most
