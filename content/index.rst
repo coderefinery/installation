@@ -16,7 +16,7 @@ available in the computer that you will use during the workshop.
    :class: warning
 
    We are still revising our instructions to make the whole workshop
-   easier.  **We recommend you wait until the week before to start
+   easier.  **We recommend you wait until the week before the workshop to start
    following this page.**
 
 
