@@ -1,6 +1,12 @@
 (conda-environment)=
 
-# Conda environment from our environment.yml
+# Conda environment in the terminal
+
+```{danger}
+The text below assumes that we run `conda` in the terminal.  We need to update
+the instructions below for the situation where we interact with `conda` in
+{ref}`vscode`.
+```
 
 ```{prereq}
 - You have Miniconda or Anaconda installed.
@@ -42,8 +48,6 @@ $ source activate ~/Miniconda3/envs/coderefinery
 ```
 
 ---
-
-(conda-environment-verification)=
 
 ## How to verify the environment
 

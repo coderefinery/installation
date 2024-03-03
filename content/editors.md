@@ -1,6 +1,6 @@
 (editors)=
 
-# Text editor for Git
+# Text editors
 
 A **text editor** edits plain text, and is important for almost any type of
 computer work.
@@ -30,15 +30,16 @@ spend significant portions of our days editing text and source code, it can be
 valuable to invest time into learning your favourite editor really well. Below
 we list few common options and give some pros/cons.
 
-Search below for what you use.  We will demonstrate with Nano, and
-that is reasonable to start with for this workshop.
+
+## Visual Studio Code (graphical)
+
+**If you are new to text editors, we recommend to start with this one**.
+We have an extra page for it: {ref}`vscode`.
 
 
 ## Nano (terminal)
 
-Easy to start but comes with minimal functionality (thus we use it for demos).
-If you do not already have a favorite editor, we recommend this to be used with
-this during the course.
+Easy to start but comes with minimal functionality.
 
 `````{tabs}
   ````{tab} Windows
@@ -65,7 +66,6 @@ To set it as the default editor for Git:
 ```console
 $ git config --global core.editor nano
 ```
-
 
 The keyboard shortcuts are displayed at the bottom of the editor window. Using
 this shortcuts involves pressing and holding down the control key (Ctrl) on
@@ -99,23 +99,6 @@ keys. Use the Delete or Backspace keys to delete text.
 
 **To find:**
 Ctrl + w then type the word to find and press enter (please note it is w not f as in most other editors).
-
-
-## Visual Studio Code (graphical)
-
-[Visual Studio Code](https://code.visualstudio.com)
-is a lightweight (around 200 MB) but powerful source code
-editor. It is **free and open source** and runs on your desktop and is
-available for Windows, macOS, and Linux.  It has a rich ecosystem of extensions
-for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
-
-Please visit the [download page](https://code.visualstudio.com/Download) for installation instructions.
-
-To configure git to use VScode from the command line:
-
-```console
-$ git config --global core.editor "code --wait"
-```
 
 
 ## Notepad++ (graphical)
@@ -160,10 +143,3 @@ $ emacs mytext.txt
 
 **To close a file:**
 Type Ctrl-x followed by Ctrl-c.
-
-
-
-## Other editors
-
-[This page](https://swcarpentry.github.io/git-novice/02-setup/index.html)
-contains a nice summary on how to configure Git with many other editors.

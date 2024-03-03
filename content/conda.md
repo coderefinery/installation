@@ -1,43 +1,32 @@
 (conda)=
 
-# Miniconda
+# Miniconda or Anaconda
 
-Miniconda (and Anaconda, too) comes with a complete Python distribution that lets
+Miniconda and Anaconda come comes with a complete Python distribution that lets
 you create **isolated environments** that don't affect anything else and
 `conda` is the tool that manages these environments.
 
 We have tried to collect all tools and libraries which we will use and
-demonstrate during a CodeRefinery workshop into an `environment.yml` file so
+demonstrate during a CodeRefinery workshop into a {ref}`conda-environment`, so
 that you can create a new and independent environment with all the necessary
 packages so that it will not affect what you use for your daily programming or
-projects. This is described as separate step: {ref}`conda-environment`.
+projects.
 
-```{admonition} Is Anaconda also OK?
+```{admonition} Should I install Miniconda or Anaconda?
 
-Anaconda is more convenient at the beginning since it provides most packages
-out of the box. However, in the long term we recommend to have a minimal base
-system and install packages into project-specific environments, and for this,
-Miniconda is a better choice. For our workshops we therefore recommend
-Miniconda to prepare you for the long term and to start with good practices
-right from the start. Another benefit is the smaller install size and time.
-Buf if you have Anaconda already, this will also work.
+**Anaconda is more convenient at the beginning** since it provides most packages
+out of the box.
+
+However, in the long term we recommend to have a minimal base system and
+install packages into project-specific environments, and for this, Miniconda is
+a better choice. For our workshops we therefore recommend Miniconda to prepare
+you for the long term and to start with good practices right from the start.
+Another benefit is the smaller install size and time.  Buf if you have Anaconda
+already, this will also work.
 ```
 
-## Installing Miniconda
 
-### If you don't have Miniconda or Anaconda at all
-
-- From the [Miniconda installer page](https://docs.conda.io/en/latest/miniconda.html),
-  download Miniconda3 installer with the latest Python version.
-- Follow [regular installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
-  for your operating system.
-- Make sure selecting:
-    - "Installing just for you"
-    - "Add miniconda3 to my PATH environment variable"
-    - "Register Miniconda3 as my default Python 3.9"
-
-
-### If you have Anaconda and you are using it regularly
+## If you have Anaconda and you are using it regularly
 
 You can use your existing Anaconda installation and inside follow: {ref}`conda-environment`.
 
@@ -49,12 +38,24 @@ the base environment whereas the Miniconda approach suggests to use more
 isolated environments without modifying your base environment.
 
 
+## If you don't have Miniconda or Anaconda at all
+
+- From the [Miniconda installer page](https://docs.conda.io/en/latest/miniconda.html),
+  download Miniconda3 installer with the latest Python version.
+- Follow [regular installation instructions](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
+  for your operating system.
+- Make sure selecting:
+    - "Installing just for you"
+    - "Add miniconda3 to my PATH environment variable"
+    - "Register Miniconda3 as my default Python 3.9"
+
+
 (setting-conda-path)=
 
 ## Setting path to Conda from your terminal shell
 
-In CodeRefinery workshops, we need the Bash/Zsh shell terminal to be able to "see" and
-run a couple of conda-installed tools and libraries.
+This is only needed if you want to use a terminal and make sure the terminal
+can "see" and run a couple of conda-installed tools and libraries.
 
 ```{prereq}
 - You have Bash/Zsh and relatively new version of Conda installed in your computer.
@@ -125,8 +126,6 @@ run a couple of conda-installed tools and libraries.
   ````
 `````
 
-
-(setting-conda-path-verification)=
 
 ## Conda path verification
 

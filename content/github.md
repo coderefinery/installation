@@ -3,7 +3,7 @@
 # GitHub account
 
 In CodeRefinery workshop, we use the public GitHub service and you need an
-account at <https://github.com>. To use GitHub, you will need a [supported web
+account at <https://github.com> and a [supported web
 browser](https://help.github.com/articles/supported-browsers/). Basic GitHub
 accounts are free.
 
@@ -30,14 +30,13 @@ are prompted to enable MFA before the end of CodeRefinery, follow
 GitHub's instructions since they are usually pretty good.
 
 
-(github-verification)=
+## How to verify that this worked
 
-## Verification
+If you can log in to <https://github.com>, you should be good to go.
 
-You can log in to <https://github.com>.
+If you want to try a bit more, then try to create a new repository
+and then remove the repository again.
 
-
-(github-alternative)=
 
 ## If you prefer not using GitHub
 
@@ -47,7 +46,7 @@ interactive workshop, because we can't support other platforms and a
 few exercises don't work. If you are following CodeRefinery at your
 own pace, you will have time to work these out.
 
-GitLab is a good alternative - <https://gitlab.com> or a local
+GitLab is a good alternative: <https://gitlab.com> or a local
 version.
 
 - Anything can be done with other web repositories, but we don't say

@@ -1,41 +1,42 @@
 (ssh)=
 
-# SSH or HTTPS connection to GitHub
+# SSH or HTTPS connection to GitHub from terminal
 
 ## Why are we doing this?
 
-We need to connect to Github (or whatever other repository we may be
+We need to connect to GitHub (or whatever other repository we may be
 using), and for that to work, we have to be able to identify
-ourselves.  This is actually a pretty hard thing to do, and there are
-two main options we have.
+ourselves. This is actually a pretty hard thing to do, and there are
+two main options **when authenticating from a terminal**.
+
+You do not need to configure the below if you are using {ref}`vscode`.
 
 
 ## What are the options?
 
 `````{tabs}
 ````{group-tab} SSH
-**This is recommend if you are on Linux or macOS (HTTPS also is
-recommended on macOS)**.  (It does work on Windows, but since the
+**This is recommend if you are on Linux or macOS**
+(it does work on Windows, but since the
 HTTPS method is included by default, you may as well use that
-instead.)
+instead).
 
-[Secure SHell](https://en.wikipedia.org/wiki/Secure_Shell) is the
+[Secure Shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell) is the
 standard program for connecting to remote servers.  It's well worth
 learning anyway.
 
 These days, every major operating system has it built in, but it
-requires more set up using "SSH keys" to use it for Github.  It's
+requires more set up using "SSH keys" to use it for GitHub.  It's
 really useful to set this up and get to know it well, even for things
 other than git.
 ````
 
 ````{group-tab} HTTPS
-**This is recommend if you are on Windows or macOS (SSH also is
-recommended on macOS)**.
+**This is recommend if you are on Windows or macOS**.
 
 Web browsers use HTTPS (secure hypertext transfer protocol) to
-communicate with web sites.  The thing is, it's less secure if only a
-password is used, so Github doesn't allow normal passwords anymore.
+communicate with web sites. It's less secure if only a
+password is used, so GitHub doesn't allow normal passwords anymore.
 With an extra tool, it becomes easy and secure, though.
 ````
 `````
@@ -106,15 +107,13 @@ so natural on Linux you may as well do that.
 `````
 
 
-(ssh-verification)=
-
 ## How to verify that it worked
 
 ``````{tabs}
 `````{group-tab} SSH
 
 Try this in your terminal shell:
-````console
+```console
 $ ssh -T git@github.com
 ```
 
@@ -184,7 +183,7 @@ fatal: repository 'https://github.com/rkdarst/private-example.git/' not found
 ````
 
 (If it asks you for a username and password in the terminal, then the
-verification failed - this won't work with Github.)
+verification failed - this won't work with GitHub.)
 
 Git Credential Manager will remember your login the first time you use
 it on a repository you have access to.

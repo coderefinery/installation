@@ -1,15 +1,10 @@
-(shell-and-git)=
-# Shell and Git
+(git-in-terminal)=
 
-```{note}
-Installing Git is not enough, you must also configure it and verify the
-configuration,
-otherwise you will start off behind! Please trust us that this is
-better verified before than during the workshop which we then cannot simply
-pause.
-```
+# Git in the terminal
 
-In CodeRefinery workshops, we use Bash (Unix Shell). If you have never been in
+This page is for setting up Git **if you want to use it in a terminal**.
+
+If you have never been in
 a terminal shell, please briefly read this [crash
 course](https://scicomp.aalto.fi/scicomp/shell/), and consider watching
 [this shell tutorial video by Richard Darst](https://youtu.be/56p6xX0aToI) (20
@@ -203,8 +198,6 @@ option uses this information for every repository for this user on
 this computer.
 
 
-(nano-configuration)=
-
 ### Step 2: Setting an editor
 
 It is important to set also the default text editor to use with Git.  **We
@@ -251,7 +244,6 @@ $ git config --global core.pager cat
 
 ---
 
-(shell-and-git-verification)=
 ## Verification
 
 ```{prereq}
