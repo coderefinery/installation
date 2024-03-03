@@ -1,10 +1,12 @@
 # CodeRefinery workshop software installation instructions
 
-In CodeRefinery workshops, we will use and show a number of tools.  We give you
-several options on how to participate (below).  If you are using a
-university-managed computer from the Aalto University, please follow [specific
-instructions](https://scicomp.aalto.fi/aalto/coderefinery-setup/).
-
+In CodeRefinery workshops, we will use and show a number of tools. We give you
+several options on how to participate (below).
+- If you are using a
+  university-managed computer from the Aalto University, please follow
+  [specific
+  instructions](https://scicomp.aalto.fi/aalto/coderefinery-setup/).
+- We recommend to ask a colleague/helper/team leader to go over the checklist with you.
 
 ````{grid} 2
 :gutter: 1
