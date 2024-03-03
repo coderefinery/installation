@@ -16,5 +16,5 @@ installing software is harder than you might expect.** Don't be afraid
 to ask for help in setting it up: this is also a good skill to have.
 
 We are also aware that not everybody is comfortable with creating new accounts
-for this workshop. And therefore we provide {ref}`removing-accounts`
-again if you wish to do so.
+for this workshop. And therefore we provide {ref}`removing-accounts`,
+if you wish to do so.
