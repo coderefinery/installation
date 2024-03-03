@@ -195,7 +195,7 @@ conda-environment
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Extra (optional)
+:caption: Extra tools we might mention
 
 difftools
 ```
