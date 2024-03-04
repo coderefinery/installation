@@ -11,7 +11,8 @@ for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
 - Please visit the [download page](https://code.visualstudio.com/Download) for
   installation instructions.  But please note that Visual Studio Code sends data
   to Microsoft.
-- Please also browse the page about [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
+- Please also browse the page about
+  [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
 - [VSCodium](https://vscodium.com/) is the same software without Microsoft
   tracking.
 
