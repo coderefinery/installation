@@ -36,6 +36,11 @@ we list few common options and give some pros/cons.
 **If you are new to text editors, we recommend to start with this one**.
 We have an extra page for it: {ref}`vscode`.
 
+```{admonition} If you choose a different editor
+If you choose a different editor, make sure to browse its documentation
+on how to conntect it to Git.
+```
+
 
 ## Nano (terminal)
 
