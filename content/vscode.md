@@ -8,9 +8,16 @@ available for Windows, macOS, and Linux.  It has a rich ecosystem of extensions
 for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
 **If you are new to text editors, we recommend to start with this one**.
 
-Please visit the [download page](https://code.visualstudio.com/Download) for
-installation instructions.  But please note that Visual Studio Code sends data
-to Microsoft.
+- Please visit the [download page](https://code.visualstudio.com/Download) for
+  installation instructions.  But please note that Visual Studio Code sends data
+  to Microsoft.
+- Please also browse the page about [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview)
+- [VSCodium](https://vscodium.com/) is the same software without Microsoft
+  tracking.
 
-[VSCodium](https://vscodium.com/) is the same software without Microsoft
-tracking.
+```{figure} img/vscode.png
+:alt: Screenshot of configuration options when setting up Visual Studio Code
+
+When installing Visual Studio Code, I have selected the options
+"Built-in terminal" and "Track your code with Git".
+```
