@@ -15,6 +15,8 @@ for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
   [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview).
 - [VSCodium](https://vscodium.com/) is the same software without Microsoft
   tracking.
+- Windows (and any operating system that has the option): when
+  installing, select the option "Add to PATH" (this is default).
 
 ```{figure} img/vscode.png
 :alt: Screenshot of configuration options when setting up Visual Studio Code
