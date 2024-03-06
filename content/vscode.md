@@ -24,3 +24,14 @@ for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
 When installing Visual Studio Code, I have selected the options
 "Built-in terminal" and "Track your code with Git".
 ```
+
+## Using vscode as a git editor
+
+This will set VScode as the editor that Git starts.  It will start a
+new tab, and Git will wait until you save and close that tab.  Git for
+Windows on Windows may automatically set this if you select it as an
+editor:
+
+```console
+$ git config --global core.editor "code --wait"
+```

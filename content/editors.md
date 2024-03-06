@@ -41,6 +41,16 @@ If you choose a different editor, make sure to browse its documentation
 on how to conntect it to Git.
 ```
 
+This command will configure git to start VSCode as its editor.  (This
+will happen automatically if you select the VSCode option when
+installing Git for Windows.)
+
+```console
+$ git config --global core.editor "code --wait"
+```
+
+
+
 
 ## Nano (terminal)
 
