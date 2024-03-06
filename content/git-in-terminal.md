@@ -32,12 +32,19 @@ Please follow the installation, configuration, and verification instructions bel
     1.  Click on "Next" four times (two times if you've previously
         installed Git).  You don't need to change anything
         in the Information, location, components, and start menu screens.
-    2.  **From the dropdown menu select "Use the Nano editor by default"
-        (NOTE: you will need to scroll <emph>up</emph> to find it) and
-        click on "Next".**  If are comfortable with another editor and know it is
-        installed, you can select it - but Nano is the safest if you
-        don't know what to choose.  This replaces the "selecting an
-        editor" step below.
+    2.  **From the dropdown menu select an editor**:
+	    - If you use VSCode: Select that from the list.  You must have
+          VSCode installed already.
+	    - If you don't know what else to do: "Use the Nano editor by default"
+          (NOTE: you will need to scroll <emph>up</emph> to find it) and
+          click on "Next".**
+	    - If are comfortable with another editor and know it is
+          installed, you can select it - but Nano is the safest if you
+          don't know what to choose.
+
+        After this, you don't have to do step 2 "selecting an editor"
+        step below (but that step lets you change your choice).
+
     3.  **On the page that says "Adjusting the name of the initial branch in new repositories", choose
         "Override the default branch name for new repositories" and choose `main`. This will ensure
         the highest level of compatibility for our lessons.**

@@ -35,6 +35,7 @@ several options on how to participate (below).
   In this case we recommend two things:
   - {ref}`github`
   - [Visual Studio Code](https://code.visualstudio.com/download) (or if you prefer, other {ref}`editors`)
+  - {ref}`git-in-terminal`
 ```
 
 ```{grid-item-card} I want to use Git from a terminal, not from an editor
