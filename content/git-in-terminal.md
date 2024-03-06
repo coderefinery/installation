@@ -197,6 +197,19 @@ This is important since your Git commits use this information.  The `--global`
 option uses this information for every repository for this user on
 this computer.
 
+```{admonition} Different name/emails for different repositories
+:class: dropdown
+
+If you need different name/email for different
+repositories see [this StackOverflow question
+for configuring based on
+directory](https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig)
+and [the raw configuration
+options](https://git-scm.com/docs/git-config#_includes), including
+something that works based on remote URLs (but it needs a newer
+git version).
+```
+
 
 ### Step 2: Setting an editor
 
