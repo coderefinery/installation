@@ -25,9 +25,9 @@ When installing Visual Studio Code, I have selected the options
 "Built-in terminal" and "Track your code with Git".
 ```
 
-## Using vscode as a git editor
+## Using VS Code as a git editor
 
-This will set VScode as the editor that Git starts.  It will start a
+This will set VS Code as the editor that Git starts.  It will start a
 new tab, and Git will wait until you save and close that tab.  Git for
 Windows on Windows may automatically set this if you select it as an
 editor:

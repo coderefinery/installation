@@ -33,8 +33,8 @@ Please follow the installation, configuration, and verification instructions bel
         installed Git).  You don't need to change anything
         in the Information, location, components, and start menu screens.
     2.  **From the dropdown menu select an editor**:
-	    - If you use VSCode: Select that from the list.  You must have
-          VSCode installed already.
+	    - If you use VS Code: Select that from the list.  You must have
+          VS Code installed already.
 	    - If you don't know what else to do: "Use the Nano editor by default"
           (NOTE: you will need to scroll <emph>up</emph> to find it) and
           click on "Next".**
@@ -223,7 +223,7 @@ git version).
 It is important to set also the default text editor to use with Git.  **We
 recommend to use nano if you do not have any other preferences** (it
 is included and simple for demonstrations).  But
-you can instead use your preferred editor (VScode, vim, emacs or
+you can instead use your preferred editor (VS Code, vim, emacs or
 any other editor of your choice, see {doc}`editors` for more instructions):
 
 This sets the editor to Nano:

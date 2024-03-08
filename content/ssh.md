@@ -40,10 +40,10 @@ password is used, so GitHub doesn't allow normal passwords anymore.
 With an extra tool, it becomes easy and secure, though.
 ````
 
-````{group-tab} VSCode
-**If you use VSCode**.
+````{group-tab} VS Code
+**If you use VS Code**.
 
-If you use VSCode, authentication to Github happens automatically via
+If you use VS Code, authentication to GitHub happens automatically via
 if you use **HTTPS**.
 ````
 
@@ -113,9 +113,9 @@ has more options like connecting remotely to it to do work).  SSH is
 so natural on Linux you may as well do that.
 ````
 
-````{group-tab} VSCode
+````{group-tab} VS Code
 
-No further setup is needed.  VSCode prompts you to automatically
+No further setup is needed.  VS Code prompts you to automatically
 handles the authentication when needed.
 ````
 
@@ -219,7 +219,7 @@ Select option 1 and do what it says.
 ````
 
 `````
-`````{group-tab} VSCode
+`````{group-tab} VS Code
 No further checking is needed (we hope).
 `````
 ``````

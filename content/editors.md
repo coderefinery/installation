@@ -17,9 +17,9 @@ tells you how to connect different editors to git, so that command
 line git will open them.
 
 ```{figure} img/git-invoke-editor.png
-:alt: Screen recording of "git commit" from a command line which starts graphical vscode.  After saving and closing, it goes back to the terminal.
+:alt: Screen recording of "git commit" from a command line which starts graphical VS Code.  After saving and closing, it goes back to the terminal.
 
-Demonstration.  Command line git starting the VScode graphical editor
+Demonstration.  Command line git starting the VS Code graphical editor
 to write a commit message (don't worry about what the command does, we
 cover this in the CodeRefinery workshop).  Picture should be
 animated.
@@ -41,8 +41,8 @@ If you choose a different editor, make sure to browse its documentation
 on how to conntect it to Git.
 ```
 
-This command will configure git to start VSCode as its editor.  (This
-will happen automatically if you select the VSCode option when
+This command will configure git to start VS Code as its editor.  (This
+will happen automatically if you select the VS Code option when
 installing Git for Windows.)
 
 ```console
