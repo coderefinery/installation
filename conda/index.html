@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miniconda or Anaconda &mdash; CodeRefinery workshop software installation instructions  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=949a1ff5" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=0c089442" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=ac373136" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+
+  
+    <link rel="shortcut icon" href="../_static/coderefinery.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=187304be"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=582ca9e2"></script>
+        <script src="../_static/minipres.js?v=a0d29692"></script>
+        <script src="../_static/tabs.js?v=3030b3cb"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../_static/design-tabs.js?v=36754332"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script data-domain="coderefinery.github.io" defer="defer" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Conda environment in the terminal" href="../conda-environment/" />
+    <link rel="prev" title="SSH or HTTPS connection to GitHub from terminal" href="../ssh/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            CodeRefinery workshop software installation instructions
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Week 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode/">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/">Text editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-in-terminal/">Git in the terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ssh/">SSH or HTTPS connection to GitHub from terminal</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 2 (optional)</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Miniconda or Anaconda</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#if-you-have-anaconda-and-you-are-using-it-regularly">If you have Anaconda and you are using it regularly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#if-you-don-t-have-miniconda-or-anaconda-at-all">If you don’t have Miniconda or Anaconda at all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-path-to-conda-from-your-terminal-shell">Setting path to Conda from your terminal shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conda-path-verification">Conda path verification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../conda-environment/">Conda environment in the terminal</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../problems/">If you encounter any problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/coderefinery/installation/issues">Suggestions/improvements/issues?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extra tools we might mention</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../difftools/">Visual diff tools (optional)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../motivation/">Why are we asking participants to install software?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../removing-accounts/">Instructions for removing a GitHub repository or account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/">Credit and license</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery workshop software installation instructions</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Miniconda or Anaconda</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/installation/blob/main/content/conda.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="miniconda-or-anaconda">
+<span id="conda"></span><h1>Miniconda or Anaconda<a class="headerlink" href="#miniconda-or-anaconda" title="Link to this heading"></a></h1>
+<p>Miniconda and Anaconda come comes with a complete Python distribution that lets
+you create <strong>isolated environments</strong> that don’t affect anything else and
+<code class="docutils literal notranslate"><span class="pre">conda</span></code> is the tool that manages these environments.</p>
+<p>We have tried to collect all tools and libraries which we will use and
+demonstrate during a CodeRefinery workshop into a <a class="reference internal" href="../conda-environment/#conda-environment"><span class="std std-ref">Conda environment in the terminal</span></a>, so
+that you can create a new and independent environment with all the necessary
+packages so that it will not affect what you use for your daily programming or
+projects.</p>
+<div class="admonition-should-i-install-miniconda-or-anaconda admonition">
+<p class="admonition-title">Should I install Miniconda or Anaconda?</p>
+<p><strong>Anaconda is more convenient at the beginning</strong> since it provides most packages
+out of the box.</p>
+<p>However, in the long term we recommend to have a minimal base system and
+install packages into project-specific environments, and for this, Miniconda is
+a better choice. For our workshops we therefore recommend Miniconda to prepare
+you for the long term and to start with good practices right from the start.
+Another benefit is the smaller install size and time.  Buf if you have Anaconda
+already, this will also work.</p>
+</div>
+<section id="if-you-have-anaconda-and-you-are-using-it-regularly">
+<h2>If you have Anaconda and you are using it regularly<a class="headerlink" href="#if-you-have-anaconda-and-you-are-using-it-regularly" title="Link to this heading"></a></h2>
+<p>You can use your existing Anaconda installation and inside follow: <a class="reference internal" href="../conda-environment/#conda-environment"><span class="std std-ref">Conda environment in the terminal</span></a>.</p>
+<p>Or, you can probably go through most of the workshop and most of the
+packages that we will need already are part of Anaconda. If some package is
+missing, you can then fetch it with the Anaconda Navigator. One disadvantage of
+using Anaconda is however, that you are more likely to install everything into
+the base environment whereas the Miniconda approach suggests to use more
+isolated environments without modifying your base environment.</p>
+</section>
+<section id="if-you-don-t-have-miniconda-or-anaconda-at-all">
+<h2>If you don’t have Miniconda or Anaconda at all<a class="headerlink" href="#if-you-don-t-have-miniconda-or-anaconda-at-all" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>From the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda installer page</a>,
+download Miniconda3 installer with the latest Python version.</p></li>
+<li><p>Follow <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation">regular installation instructions</a>
+for your operating system.</p></li>
+<li><p>Make sure selecting:</p>
+<ul>
+<li><p>“Installing just for you”</p></li>
+<li><p>“Add miniconda3 to my PATH environment variable”</p></li>
+<li><p>“Register Miniconda3 as my default Python 3.9”</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="setting-path-to-conda-from-your-terminal-shell">
+<span id="setting-conda-path"></span><h2>Setting path to Conda from your terminal shell<a class="headerlink" href="#setting-path-to-conda-from-your-terminal-shell" title="Link to this heading"></a></h2>
+<p>This is only needed if you want to use a terminal and make sure the terminal
+can “see” and run a couple of conda-installed tools and libraries.</p>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<ul class="simple">
+<li><p>You have Bash/Zsh and relatively new version of Conda installed in your computer.</p></li>
+<li><p>You get an error message like <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found</span></code> whey you type <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">--version</span></code> in your shell terminal.</p></li>
+<li><p>After opening a new terminal and typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">--help</span></code> you still get <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found</span></code>.</p></li>
+</ul>
+</div>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><ol class="arabic">
+<li><p>Go to the Miniconda3 (or if you have a relatively new Anaconda, then
+Anaconda3) folder. You can find it by serching from File Explorer search
+bar.</p></li>
+<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">etc</span></code> folder, and then to <code class="docutils literal notranslate"><span class="pre">profile.d</span></code> folder. You will find
+the <code class="docutils literal notranslate"><span class="pre">conda.sh</span></code> file.</p></li>
+<li><p>In the folder, right click and choose “Git Bash Here”. You should be able
+to see the path to this folder in the Git Bash (something like
+~/Miniconda3/etc/profile.d).</p></li>
+<li><p>Run the following command (type the following and enter):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;. &#39;</span><span class="si">${</span><span class="nv">PWD</span><span class="si">}</span><span class="s2">&#39;/conda.sh&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+</pre></div>
+</div>
+</li>
+<li><p>Close Git Bash and reopen it.</p></li>
+<li><p>Verify that now Git Bash can “see” conda by running <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">--version</span></code></p></li>
+</ol>
+<p>After step 5 you may see this warning but this is nothing to worry about and will
+not show up the next time you open Git Bash:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">WARNING</span><span class="p">:</span> <span class="n">Found</span> <span class="o">~/.</span><span class="n">bashrc</span> <span class="n">but</span> <span class="n">no</span> <span class="o">~/.</span><span class="n">bash_profile</span><span class="p">,</span> <span class="o">~/.</span><span class="n">bash_login</span> <span class="ow">or</span> <span class="o">~/.</span><span class="n">profile</span><span class="o">.</span>
+
+<span class="n">This</span> <span class="n">looks</span> <span class="n">like</span> <span class="n">an</span> <span class="n">incorrect</span> <span class="n">setup</span><span class="o">.</span>
+<span class="n">A</span> <span class="o">~/.</span><span class="n">bash_profile</span> <span class="n">that</span> <span class="n">loads</span> <span class="o">~/.</span><span class="n">bashrc</span> <span class="n">will</span> <span class="n">be</span> <span class="n">created</span> <span class="k">for</span> <span class="n">you</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><em>Reference: <a class="reference external" href="https://discuss.codecademy.com/t/setting-up-conda-in-git-bash/534473">“Setting Up Conda in Git Bash”, Sep 2020, at Codecademy
+Forums</a></em></p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><ol class="arabic">
+<li><p>Open a terminal window.</p></li>
+<li><p>Find the <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code> file (or <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> if your shell is Bash)
+which should be located in your home directory
+(/User/your-user-name)</p></li>
+<li><p>Navigate to the directory where <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code> is located (or <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code> if your shell is Bash).</p></li>
+<li><p>Add the following in <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code> file (or <code class="docutils literal notranslate"><span class="pre">.bash_profile</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/miniconda3/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Restart the terminal to take configuration into use.</p></li>
+</ol>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><ol class="arabic">
+<li><p>Open a terminal window.</p></li>
+<li><p>Run this command which will append to your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file (adapt the path if Miniconda has been installed
+to a different place):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;source $HOME/miniconda3/bin/activate&#39;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+</pre></div>
+</div>
+</li>
+<li><p>Restart the terminal to take the configuration into use.</p></li>
+</ol>
+<p>If you prefer not to edit your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code>, you can also run this command after opening your terminal (each time you open one)
+and it will bring all <code class="docutils literal notranslate"><span class="pre">conda</span></code> commands “into view”:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/miniconda3/bin/activate
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="conda-path-verification">
+<h2>Conda path verification<a class="headerlink" href="#conda-path-verification" title="Link to this heading"></a></h2>
+<p>The following command should return a version number in the terminal you plan
+on using.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>--version
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../ssh/" class="btn btn-neutral float-left" title="SSH or HTTPS connection to GitHub from terminal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../conda-environment/" class="btn btn-neutral float-right" title="Conda environment in the terminal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

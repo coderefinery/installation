@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conda environment in the terminal &mdash; CodeRefinery workshop software installation instructions  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=949a1ff5" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=0c089442" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=ac373136" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+
+  
+    <link rel="shortcut icon" href="../_static/coderefinery.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=187304be"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=582ca9e2"></script>
+        <script src="../_static/minipres.js?v=a0d29692"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script src="../_static/design-tabs.js?v=36754332"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script data-domain="coderefinery.github.io" defer="defer" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="If you encounter any problems" href="../problems/" />
+    <link rel="prev" title="Miniconda or Anaconda" href="../conda/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            CodeRefinery workshop software installation instructions
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Week 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode/">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/">Text editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-in-terminal/">Git in the terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ssh/">SSH or HTTPS connection to GitHub from terminal</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 2 (optional)</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../conda/">Miniconda or Anaconda</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conda environment in the terminal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#activating-the-coderefinery-environment">Activating the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-verify-the-environment">How to verify the environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deactivating-the-coderefinery-environment">Deactivating the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting-the-coderefinery-environment">Deleting the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#if-you-have-an-old-coderefinery-environment-from-a-previous-workshop">If you have an old <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment from a previous workshop</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../problems/">If you encounter any problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/coderefinery/installation/issues">Suggestions/improvements/issues?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extra tools we might mention</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../difftools/">Visual diff tools (optional)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../motivation/">Why are we asking participants to install software?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../removing-accounts/">Instructions for removing a GitHub repository or account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/">Credit and license</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery workshop software installation instructions</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Conda environment in the terminal</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/installation/blob/main/content/conda-environment.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="conda-environment-in-the-terminal">
+<span id="conda-environment"></span><h1>Conda environment in the terminal<a class="headerlink" href="#conda-environment-in-the-terminal" title="Link to this heading"></a></h1>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>The text below assumes that we run <code class="docutils literal notranslate"><span class="pre">conda</span></code> in the terminal.  We need to update
+the instructions below for the situation where we interact with <code class="docutils literal notranslate"><span class="pre">conda</span></code> in
+<a class="reference internal" href="../vscode/#vscode"><span class="std std-ref">Visual Studio Code</span></a>.</p>
+</div>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<ul class="simple">
+<li><p>You have Miniconda or Anaconda installed.</p></li>
+</ul>
+</div>
+<ol class="arabic">
+<li><p>Open your terminal shell (e.g. Bash or Zsh).</p></li>
+<li><p>Activate <code class="docutils literal notranslate"><span class="pre">conda</span></code> using <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> or <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">~/miniconda3/bin/activate</span></code>. If neither
+works, please first follow <a class="reference internal" href="../conda/#setting-conda-path"><span class="std std-ref">Setting path to Conda from your terminal shell</span></a>. You probably
+need to restart your shell terminal. Then try to activate <code class="docutils literal notranslate"><span class="pre">conda</span></code> again.</p></li>
+<li><p>Run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-f<span class="w"> </span>https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
+</pre></div>
+</div>
+</li>
+<li><p>Make sure that you see “coderefinery” in the output when you ask for a list of all available environments:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+</pre></div>
+</div>
+</li>
+</ol>
+<section id="activating-the-coderefinery-environment">
+<h2>Activating the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment<a class="headerlink" href="#activating-the-coderefinery-environment" title="Link to this heading"></a></h2>
+<p>In the workshop, we will ask you to activate this environment.</p>
+<p>First, follow the steps 1 and 2 in <a class="reference internal" href="#conda-environment"><span class="std std-ref">the above section</span></a> (i.e. open your terminal shell and activate <code class="docutils literal notranslate"><span class="pre">conda</span></code>).
+Then run the following:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>activate<span class="w"> </span>coderefinery
+</pre></div>
+</div>
+<p>Alternatively you can use:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>coderefinery
+</pre></div>
+</div>
+<p>Please note however that <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code> is preferred command <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/release-notes.html#id330">since Conda v4.4</a>.</p>
+<p>If this does not work, the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> part should be replaced with the whole path, for example:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>~/Miniconda3/envs/coderefinery
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="how-to-verify-the-environment">
+<h2>How to verify the environment<a class="headerlink" href="#how-to-verify-the-environment" title="Link to this heading"></a></h2>
+<p>Once activated, try the following 5 commands.
+You should see versions printed and not see errors (exact version numbers are not too important):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python<span class="w"> </span>--version
+
+<span class="go">Python 3.11.0</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>jupyter-lab<span class="w"> </span>--version
+
+<span class="go">3.6.3</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pytest<span class="w"> </span>--version
+
+<span class="go">7.4.0</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sphinx-build<span class="w"> </span>--version
+
+<span class="go">sphinx-build 5.3.0</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>snakemake<span class="w"> </span>--version
+
+<span class="go">7.22.0</span>
+</pre></div>
+</div>
+</section>
+<section id="deactivating-the-coderefinery-environment">
+<h2>Deactivating the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment<a class="headerlink" href="#deactivating-the-coderefinery-environment" title="Link to this heading"></a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>deactivate
+</pre></div>
+</div>
+</section>
+<section id="deleting-the-coderefinery-environment">
+<h2>Deleting the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment<a class="headerlink" href="#deleting-the-coderefinery-environment" title="Link to this heading"></a></h2>
+<p>If you don’t need the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment anymore, it is best to delete
+it. The following command will delete the whole environment:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>remove<span class="w"> </span>--name<span class="w"> </span>coderefinery<span class="w"> </span>--all
+</pre></div>
+</div>
+<p>In case you have both Anaconda3 and Miniconda3, check from which base
+environment the <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment was created, and first activate the
+corresponding base environment for the above command to work.</p>
+</section>
+<section id="if-you-have-an-old-coderefinery-environment-from-a-previous-workshop">
+<h2>If you have an old <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code> environment from a previous workshop<a class="headerlink" href="#if-you-have-an-old-coderefinery-environment-from-a-previous-workshop" title="Link to this heading"></a></h2>
+<p>In this case it is safest to delete the old environment and recreate it.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../conda/" class="btn btn-neutral float-left" title="Miniconda or Anaconda" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../problems/" class="btn btn-neutral float-right" title="If you encounter any problems" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
