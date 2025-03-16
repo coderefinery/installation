@@ -7,7 +7,7 @@ This page is for setting up Git **if you want to use it in a terminal**.
 If you have never been in
 a terminal shell, please briefly read this [crash
 course](https://scicomp.aalto.fi/scicomp/shell/), and consider watching
-[this shell tutorial video by Richard Darst](https://youtu.be/56p6xX0aToI) (20
+[this shell tutorial video by Richard Darst](https://youtu.be/xbTTDLA3txI) (20
 min).
 
 Git is a version control system that lets you track who made changes to what
