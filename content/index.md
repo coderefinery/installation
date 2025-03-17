@@ -51,7 +51,7 @@ several options on how to participate (below).
   - {ref}`ssh`
   - See the [command line crash
     course](https://scicomp.aalto.fi/scicomp/shell/)
-    ([video](https://www.youtube.com/watch?v=56p6xX0aToI))
+    ([video](https://youtu.be/xbTTDLA3txI))
 ```
 
 ```{grid-item-card} In workshop week 2, I want to be able to run the exercises on my computer and have all tools available
@@ -111,8 +111,9 @@ difftools
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Notes
+:caption: Reference
 
+Shell crash course <https://youtu.be/xbTTDLA3txI>
 motivation
 removing-accounts
 license
