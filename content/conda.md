@@ -71,8 +71,7 @@ lot of jargon.  Here is a crash course:
 - **conda-forge** is another channel of distributing packages that
   is maintained by the community, and thus can be used by anyone.
   (Anaconda's parent company also hosts conda-forge packages)
-- **Miniforge** is a distribution of conda pre-configured for
-  conda-forge.  It operates via the command line.
+- **Miniforge** is the installer recommended by the conda-forge community. It operates via the command line.
 - **Miniconda** is a distribution of conda pre-configured to use
   the Anaconda channels.
 :::
