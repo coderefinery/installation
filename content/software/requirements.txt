@@ -1,0 +1,17 @@
+click==8.1.7
+ipywidgets==8.1.2
+jupyterlab==4.1.2
+jupyterlab-git==0.50.0
+matplotlib==3.8.3
+myst-parser==2.0.0
+nbdime==4.0.1
+numpy==1.26.4
+pandas==2.2.1
+pytest==8.0.2
+pytest-cov==4.1.0
+seaborn==0.13.2
+snakemake==8.5.3
+pulp<2.8.0
+sphinx==7.2.6
+sphinx-autobuild==2024.2.4
+sphinx_rtd_theme==2.0.0
