@@ -64,7 +64,7 @@ several options on how to participate (below).
   2:
   - {ref}`github`
   - [Visual Studio Code](https://code.visualstudio.com/download) (or if you prefer, other {ref}`editors`)
-  - {ref}`conda-environment`
+  - {doc}`conda`
 ```
 
 ````
@@ -88,7 +88,6 @@ ssh
 :caption: Week 2 (optional)
 
 conda
-conda-environment
 ```
 
 ```{toctree}
