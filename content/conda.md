@@ -133,7 +133,8 @@ We will call the environment `coderefinery`.
   Then type
   (without the `$`):
   ```console
-  $ mamba env create -n coderefinery -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
+  $ curl "https://raw.githubusercontent.com/coderefinery/software/main/environment.yml" -o environment.yml 
+  $ mamba env create -n coderefinery -f environment.yml
   ```
   :::
 
@@ -152,9 +153,10 @@ We will call the environment `coderefinery`.
   automatically initialize conda?", but then it will always be
   active).
 
-  In the second step, we will install the software environment:
+  In the second step, we will install the software environment by first copying the definition file:
   ```console
-  $ mamba env create -n coderefinery -f https://raw.githubusercontent.com/coderefinery/software/main/environment.yml
+  $ curl "https://raw.githubusercontent.com/coderefinery/software/main/environment.yml" -o environment.yml 
+  $ mamba env create -n coderefinery -f environment.yml
   ```
   :::
 ::::
