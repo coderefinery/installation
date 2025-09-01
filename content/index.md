@@ -16,11 +16,11 @@ several options on how to participate (below).
 
   {octicon}`stopwatch;2em;sd-text-info` 10 minutes
 
-  The bare minimum to participate in exercises for workshop week 1 and to only
-  follow week 2 lectures/demonstrations:
+  The bare minimum to participate in exercises for workshop part 1 (week 1: git and GitHub ) and to only
+  follow part 2 lectures/demonstrations:
   - {ref}`github`
   
-  You will be able to participate in almost all exercises of week 1 using the web
+  You will be able to participate in almost all exercises of part 1 (week 1) using the web
   interface of GitHub. This will hopefully give you a good understanding of the
   basics of Git and GitHub. For your own work after the workshop, you will
   probably want to use a local editor and Git on your computer.
@@ -54,13 +54,12 @@ several options on how to participate (below).
     ([video](https://youtu.be/xbTTDLA3txI))
 ```
 
-```{grid-item-card} In workshop week 2, I want to be able to run the exercises on my computer and have all tools available
+```{grid-item-card} In workshop part 2, I want to be able to run the exercises on my computer and have all tools available
   :class-card: sd-border-1 sd-animate-grow100
 
   {octicon}`stopwatch;2em;sd-text-info` 30-90 minutes
 
-  This is only needed if you want to try it out on your own computer, in your
-  own time. We will not ask you to run the exercises during the workshop week
+  If part 2 happens over multiple days, we will do the exercises together. If part 2 is kept short within one week (week 2), we will not ask you to run the exercises during the workshop
   2:
   - {ref}`github`
   - [Visual Studio Code](https://code.visualstudio.com/download) (or if you prefer, other {ref}`editors`)
@@ -73,7 +72,7 @@ several options on how to participate (below).
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Week 1
+:caption: Part 1
 
 github
 vscode
@@ -85,7 +84,7 @@ ssh
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Week 2 (optional)
+:caption: Part 2
 
 conda
 ```
