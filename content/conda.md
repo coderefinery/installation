@@ -89,6 +89,10 @@ Unsure what to download and what to do with it?
 ::::{tabs}
   :::{group-tab} Windows
   You want to download and run `Miniforge3-Windows-x86_64.exe`.
+  
+  When viewing the "Advanced installation options" step of the installer,
+  leave the "Create shortcuts (supported packages only)." option **checked**,
+  otherwise it will be difficult to launch the Miniforge prompt later.
   :::
 
   :::{group-tab} MacOS
