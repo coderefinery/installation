@@ -19,10 +19,9 @@ for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
   installing, select the option "Add to PATH" (this is default).
 
 ```{figure} img/vscode.png
-:alt: Screenshot of configuration options when setting up Visual Studio Code
+:alt: Screenshot of the VS Code "Learn the Fundamentals" page highlighting features such as the built-in terminal and Git integration.
 
-When installing Visual Studio Code, I have selected the options
-"Built-in terminal" and "Track your code with Git".
+Visual Studio Code “Learn the Fundamentals” page highlighting features, including the built-in terminal and Git support (“Track your code with Git”).
 ```
 
 ## Using VS Code as a git editor
