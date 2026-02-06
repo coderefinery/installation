@@ -87,41 +87,82 @@ Please follow the installation, configuration, and verification instructions bel
 
   ````{tab} macOS
 
-  Starting with macOS Catalina, macOS uses zsh as the default login shell and
-  interactive shell.  Bash is the default shell in macOS Mojave and earlier.
+  ### Default shell on macOS (zsh vs bash)
 
-  **The workshop will work fine with either zsh or bash**.  If you experience
-  that any of our exercises do not work with zsh, you can switch to bash by
-  typing `bash` followed by Enter in your terminal.
+  Modern versions of macOS use **zsh** as the default login and interactive shell.  
+  Older versions (macOS Mojave and earlier) used **bash** by default.
+
+  **This workshop works with either zsh or bash.**
+
+  If an exercise does not work as expected in zsh, you can temporarily switch to bash by typing:
+
+  ```bash
+  bash
+  ```
+  and pressing Enter.
+
+  To check which shell you are currently using:
+  ```bash
+  echo $SHELL
+  ```
 
   If you want to change your default shell, see [this Apple Support
   article](https://support.apple.com/en-au/HT208050) and follow the
   instructions on "How to change your default shell".
 
-  **Check if git is already installed.**  Xcode may have already
-  installed it.  If the command `which git` from a terminal returns
-  something such as `/usr/bin/git` (it doesn't matter exactly what it
-  says), then git is probably already installed.  If so, run `git
-  --version` and if it reports 2.28 or higher, then you are good -
-  proceed to configuration.
+  ### 1. Check whether git is already installed
+
+  Open Terminal application (found under `/Applications/Utilities/Terminal`) and run:
+  ```bash
+  git --version
+  ```
+
+  If Git is installed, you’ll see something like:
+  ```bash
+  git version 2.42.0
+  ```
+  
+  If the version is 2.28 or higher, you’re good to go -- proceed to configuration.
+
+  If you see a message such as “command not found”, Git is not installed.
+  If Git is not installed or the version is too old, follow the steps below.
+
+  ### 2. Install Git (recommended: Xcode Command Line Tools)  
+
+  The simplest and most reliable way to install Git on modern macOS is via Apple’s Command Line Tools.  
+
+  In Terminal, run:
+  ```bash
+  xcode-select --install
+  ```
+  A dialog box will appear. Click Install and follow the prompts (the download may take 10 minutes or more).
+
+  After the installation completes, verify:
+  ```bash
+  git --version
+  ```
+
+  ### 3. Alternative: Install Git via Homebrew (optional)
+
+  If you use Homebrew, install the latest Git with:
+  ```bash
+  brew install git
+  ```
+  If you don’t have Homebrew installed, see: [https://brew.sh](https://brew.sh)
+
+  Then verify:
+  ```bash
+  git --version
+  ```
 
 
-  **Install Git** for Mac
-  by downloading and running the most recent "mavericks" installer from
-  [this list](http://sourceforge.net/projects/git-osx-installer/files/).
-  Because this installer is not signed by the developer, you may have to
-  right click (control click) on the .pkg file, click Open, and click
-  Open on the pop up window.
-  After installing Git, there will not be anything in your `/Applications` folder,
-  as Git is a command line program.
-  See also the Git installation
-  [Carpentries video tutorial](https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial).
+  ### Comments:
 
-  For older versions of OS X (10.5-10.8), use the
-  most recent available installer labelled "snow-leopard"
-  [available here](http://sourceforge.net/projects/git-osx-installer/files/).
+  - Git is a command-line tool, so it will not appear in your `/Applications` folder.
+  - macOS may already include Git, but installing via Homebrew provides the most up-to-date version.
 
-  *Text copied and adapted from: [the Carpentries set up page](https://carpentries.github.io/workshop-template/#shell)*
+  This setup guide is adapted in part from materials developed by
+  [The Carpentries](https://carpentries.github.io/workshop-template/#shell).
   ````
 
   ````{tab} Linux
