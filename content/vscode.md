@@ -24,6 +24,7 @@ for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
 Visual Studio Code “Learn the Fundamentals” page highlighting features, including the built-in terminal and Git support (“Track your code with Git”).
 ```
 
+(using-vscode-as-git-editor)=
 ## Using VS Code as a git editor
 
 By default, Git uses your system’s configured editor. You can configure it to use Visual Studio Code instead.
