@@ -1,0 +1,397 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conda environment &mdash; CodeRefinery workshop software installation instructions  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=949a1ff5" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=ac373136" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+    <link rel="shortcut icon" href="../_static/coderefinery.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=582ca9e2"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="If you encounter any problems" href="../problems/" />
+    <link rel="prev" title="SSH or HTTPS connection to GitHub from terminal" href="../ssh/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            CodeRefinery workshop software installation instructions
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Part 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode/">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/">Text editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-in-terminal/">Git in the terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-in-vscode/">Git in VSCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ssh/">SSH or HTTPS connection to GitHub from terminal</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Part 2</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conda environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#choosing-an-installation-method">Choosing an installation method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-miniforge">Installing Miniforge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-the-software-environment">Installing the software environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#activating-the-software-environment">Activating the software environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-verify-the-environment">How to verify the environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#removing-the-software-environment">Removing the software environment</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../problems/">If you encounter any problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/coderefinery/installation/issues">Suggestions/improvements/issues?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extra tools we might mention</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../difftools/">Visual diff tools (optional)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://youtu.be/xbTTDLA3txI">Shell crash course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motivation/">Why are we asking participants to install software?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../removing-accounts/">Instructions for removing a GitHub repository or account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/">Credit and license</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery workshop software installation instructions</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Conda environment</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/installation/blob/main/content/conda.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="conda-environment">
+<h1>Conda environment<a class="headerlink" href="#conda-environment" title="Link to this heading"></a></h1>
+<p>[this page is adapted from <a class="reference external" href="https://aaltoscicomp.github.io/python-for-scicomp/installation/">https://aaltoscicomp.github.io/python-for-scicomp/installation/</a>]</p>
+<p>You only need this if you wish to go through examples and exercises during the
+second workshop week on your own computer.</p>
+<section id="choosing-an-installation-method">
+<h2>Choosing an installation method<a class="headerlink" href="#choosing-an-installation-method" title="Link to this heading"></a></h2>
+<p>For this course we will install an <strong>isolated environment</strong>
+with following dependencies:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">environment.yml</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">requirements.txt</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">coderefinery</span>
+<span class="nt">channels</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bioconda</span>
+<span class="nt">dependencies</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python&gt;=3.10,&lt;3.14</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">click=8.1.7</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ipywidgets=8.1.5</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jupyterlab=4.4.0</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jupyterlab-git=0.51.1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">matplotlib=3.10.1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myst-parser=4.0.1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nbdime=4.0.2</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">numpy=2.2.4</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pandas=2.2.3</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pytest=8.3.5</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pytest-cov=6.0.0</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">seaborn=0.13.2</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snakemake-minimal=9.1.7</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx=8.2.3</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx-autobuild=2024.10.3</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx_rtd_theme=3.0.1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx-autodoc2=0.5.0</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">click</span><span class="o">==</span><span class="mf">8.1.7</span>
+<span class="n">ipywidgets</span><span class="o">==</span><span class="mf">8.1.5</span>
+<span class="n">jupyterlab</span><span class="o">==</span><span class="mf">4.4.0</span>
+<span class="n">jupyterlab</span><span class="o">-</span><span class="n">git</span><span class="o">==</span><span class="mf">0.51.1</span>
+<span class="n">matplotlib</span><span class="o">==</span><span class="mf">3.10.1</span>
+<span class="n">myst</span><span class="o">-</span><span class="n">parser</span><span class="o">==</span><span class="mf">4.0.1</span>
+<span class="n">nbdime</span><span class="o">==</span><span class="mf">4.0.2</span>
+<span class="n">numpy</span><span class="o">==</span><span class="mf">2.2.4</span>
+<span class="n">pandas</span><span class="o">==</span><span class="mf">2.2.3</span>
+<span class="n">pytest</span><span class="o">==</span><span class="mf">8.3.5</span>
+<span class="n">pytest</span><span class="o">-</span><span class="n">cov</span><span class="o">==</span><span class="mf">6.0.0</span>
+<span class="n">seaborn</span><span class="o">==</span><span class="mf">0.13.2</span>
+<span class="n">snakemake</span><span class="o">==</span><span class="mf">9.1.7</span>
+<span class="n">sphinx</span><span class="o">==</span><span class="mf">8.2.3</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">autobuild</span><span class="o">==</span><span class="mf">2024.10.3</span>
+<span class="n">sphinx_rtd_theme</span><span class="o">==</span><span class="mf">3.0.1</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">autodoc2</span><span class="o">==</span><span class="mf">0.5.0</span>
+</pre></div>
+</div>
+</div></div>
+<div class="admonition-if-you-have-a-tool-method-that-works-for-you-keep-using-it admonition">
+<p class="admonition-title">If you have a tool/method that works for you, keep using it</p>
+<p>If you are used to installing Conda packages and know what to do with the
+above files, please follow your own preferred installation
+method.</p>
+<p><strong>If you are new to Conda or unsure</strong> how to create isolated environments from
+files above, please follow the instructions below where we do this with the help
+of Miniforge.</p>
+<p>If you already use <strong>Anaconda</strong> to manage your software environments, please
+continue using it. In this case you can skip <a class="reference internal" href="#miniforge"><span class="std std-ref">Installing Miniforge</span></a> and go directly to
+<a class="reference internal" href="#id1"><span class="std std-ref">Installing the software environment</span></a>.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Why do we recommend Miniforge and how does it relate to Conda?</p>
+<p>There are many choices and we try to suggest a good compromise
+There are very many ways to install packages with pros and cons and
+in addition there are several operating systems with their own quirks. This
+can be a huge challenge for beginners to navigate. It can also difficult for
+instructors to give recommendations for something which will work everywhere
+and which everybody will like.</p>
+<p>Below we will recommend <strong>Miniforge</strong> since it is free, open source, general,
+available on all operating systems, and provides a good basis for reproducible
+environments. However, it does not provide a graphical user interface during
+installation.</p>
+<p>But Miniforge is only one option. Unfortunately there are many options and a
+lot of jargon.  Here is a crash course:</p>
+<ul class="simple">
+<li><p><strong>Conda</strong> is a package manager: it allows distributing and
+installing packages, and is designed for complex scientific
+code.</p></li>
+<li><p><strong>Mamba</strong> is a re-implementation of Conda to be much faster with
+resolving dependencies and installing things.</p></li>
+<li><p>An <strong>environment</strong> is a self-contained collections of packages
+which can be installed separately from others.  They are used so
+each project can install what it needs without affecting others.</p></li>
+<li><p><strong>Anaconda</strong> is a commercial distribution of Python+Conda+many
+packages that all work together.  It used to be freely usable for
+research, but since ~2023-2024 it’s more limited.  Thus, we don’t
+recommend it (even though it has a nice graphical user interface).</p></li>
+<li><p><strong>conda-forge</strong> is another channel of distributing packages that
+is maintained by the community, and thus can be used by anyone.
+(Anaconda’s parent company also hosts conda-forge packages)</p></li>
+<li><p><strong>Miniforge</strong> is the installer recommended by the conda-forge community. It operates via the command line.</p></li>
+<li><p><strong>Miniconda</strong> is a distribution of conda pre-configured to use
+the Anaconda channels.</p></li>
+</ul>
+</div>
+</section>
+<section id="installing-miniforge">
+<span id="miniforge"></span><h2>Installing Miniforge<a class="headerlink" href="#installing-miniforge" title="Link to this heading"></a></h2>
+<p>Download the latest release from the <a class="reference external" href="https://conda-forge.org/download/">Miniforge download
+overview</a>.  This installs the base, and from
+here other packages can be installed.</p>
+<p>Unsure what to download and what to do with it?</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-1-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button><button aria-controls="panel-1-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>You want to download and run <code class="docutils literal notranslate"><span class="pre">Miniforge3-Windows-x86_64.exe</span></code>.</p>
+</div><div aria-labelledby="tab-1-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>You probably want to download the <code class="docutils literal notranslate"><span class="pre">Miniforge3-MacOSX-arm64.sh</span></code> file (unless
+you don’t have an Arm processor) and then run it in the terminal with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>bash<span class="w"> </span>Miniforge3-MacOSX-arm64.sh
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>You probably want to download the <code class="docutils literal notranslate"><span class="pre">Miniforge3-Linux-x86_64.sh</span></code> file (unless
+you don’t have an x86_64 processor) and then run it in the terminal with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>bash<span class="w"> </span>Miniforge3-Linux-x86_64.sh
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="installing-the-software-environment">
+<span id="id1"></span><h2>Installing the software environment<a class="headerlink" href="#installing-the-software-environment" title="Link to this heading"></a></h2>
+<p>First we will start a command line environment in a way that activates
+conda/mamba.  Then we will install the software environment from <a class="reference external" href="https://raw.githubusercontent.com/coderefinery/software/main/environment.yml">this
+environment.yml
+file</a>
+(this is the same file as on top of this page).</p>
+<p>An <strong>environment</strong> is a self-contained set of extra libraries - different
+projects can use different environments to not interfere with each other.  This
+environment will have all of the software needed for this particular course.</p>
+<p>We will call the environment <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-2-TGludXggLyBNYWNPUw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tab" tabindex="-1">Linux / MacOS</button></div><div aria-labelledby="tab-2-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-2-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Use the “Miniforge Prompt” to start Miniforge.  This
+will set up everything so that <code class="docutils literal notranslate"><span class="pre">conda</span></code> and <code class="docutils literal notranslate"><span class="pre">mamba</span></code> are
+available.
+Then type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl<span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/coderefinery/software/main/environment.yml&quot;</span><span class="w"> </span>-o<span class="w"> </span>environment.yml<span class="w"> </span>
+<span class="gp">$ </span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>coderefinery<span class="w"> </span>-f<span class="w"> </span>environment.yml
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-TGludXggLyBNYWNPUw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tabpanel" tabindex="0"><p>Each time you start a new command line terminal,
+you can activate Miniforge by running
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>~/miniforge3/bin/activate
+</pre></div>
+</div>
+<p>This is needed so that
+Miniforge is usable wherever you need, but doesn’t affect any
+other software on your computer (this is not needed if you
+choose “Do you wish to update your shell profile to
+automatically initialize conda?”, but then it will always be
+active).</p>
+<p>In the second step, we will install the software environment by first copying the definition file:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl<span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/coderefinery/software/main/environment.yml&quot;</span><span class="w"> </span>-o<span class="w"> </span>environment.yml<span class="w"> </span>
+<span class="gp">$ </span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>coderefinery<span class="w"> </span>-f<span class="w"> </span>environment.yml
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="activating-the-software-environment">
+<span id="activating-environment"></span><h2>Activating the software environment<a class="headerlink" href="#activating-the-software-environment" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-3-TGludXggLyBNYWNPUw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tab" tabindex="-1">Linux / MacOS</button></div><div aria-labelledby="tab-3-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-3-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Start the Miniforge Prompt. Then type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>activate<span class="w"> </span>coderefinery
+<span class="gp">$ </span>jupyter-lab
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-TGludXggLyBNYWNPUw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tabpanel" tabindex="0"><p>Start the terminal and in the terminal, type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>~/miniforge3/bin/activate
+<span class="gp">$ </span>conda<span class="w"> </span>activate<span class="w"> </span>coderefinery
+<span class="gp">$ </span>jupyter-lab
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="how-to-verify-the-environment">
+<h2>How to verify the environment<a class="headerlink" href="#how-to-verify-the-environment" title="Link to this heading"></a></h2>
+<p>Make sure you are in the Miniforge prompt (Windows) or in a terminal (Linux/MacOS).</p>
+<p>The following command should return a version number and not an error message:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Is the coderefinery environment installed?</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+</pre></div>
+</div>
+<p>Make sure it’s activated (<a class="reference internal" href="#activating-environment"><span class="std std-ref">Activating the software environment</span></a>).
+Once activated, try the following commands.</p>
+<p>You should see versions printed and not see errors (exact version numbers are not too important):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>jupyter-lab<span class="w"> </span>--version
+
+<span class="go">4.1.2</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pytest<span class="w"> </span>--version
+
+<span class="go">8.0.2</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sphinx-build<span class="w"> </span>--version
+
+<span class="go">sphinx-build 7.2.6</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>snakemake<span class="w"> </span>--version
+
+<span class="go">8.5.3</span>
+</pre></div>
+</div>
+</section>
+<section id="removing-the-software-environment">
+<h2>Removing the software environment<a class="headerlink" href="#removing-the-software-environment" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-4-TGludXggLyBNYWNPUw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tab" tabindex="-1">Linux / MacOS</button></div><div aria-labelledby="tab-4-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-4-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>In the Miniforge Prompt, type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>--name<span class="w"> </span>coderefinery
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-TGludXggLyBNYWNPUw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-4-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tabpanel" tabindex="0"><p>In the terminal, type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>~/miniforge3/bin/activate
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>--name<span class="w"> </span>coderefinery
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+</pre></div>
+</div>
+</div></div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../ssh/" class="btn btn-neutral float-left" title="SSH or HTTPS connection to GitHub from terminal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../problems/" class="btn btn-neutral float-right" title="If you encounter any problems" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
