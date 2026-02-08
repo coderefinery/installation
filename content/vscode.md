@@ -19,19 +19,60 @@ for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
   installing, select the option "Add to PATH" (this is default).
 
 ```{figure} img/vscode.png
-:alt: Screenshot of configuration options when setting up Visual Studio Code
+:alt: Screenshot of the VS Code "Learn the Fundamentals" page highlighting features such as the built-in terminal and Git integration.
 
-When installing Visual Studio Code, I have selected the options
-"Built-in terminal" and "Track your code with Git".
+Visual Studio Code “Learn the Fundamentals” page highlighting features, including the built-in terminal and Git support (“Track your code with Git”).
 ```
 
+(using-vscode-as-git-editor)=
 ## Using VS Code as a git editor
 
-This will set VS Code as the editor that Git starts.  It will start a
-new tab, and Git will wait until you save and close that tab.  Git for
-Windows on Windows may automatically set this if you select it as an
-editor:
+By default, Git uses your system’s configured editor. You can configure it to use Visual Studio Code instead.
+
+
+Before configuring Git to use VS Code, make sure the `code` command is available in your system `PATH`.
+
+`````{tabs}
+  ````{tab} Windows
+
+    If you selected VS Code during Git for Windows installation, it may already be configured. Otherwise, ensure the `code` command is available in `PATH` before running the command above.
+
+  ````
+
+  ````{tab} macOS
+
+    In VS Code, open the Command Palette and run:
+
+    - Shell Command: Install 'code' command in PATH
+
+    You can verify by running:
+    ```console
+    $ code --version
+    ```
+
+  ````
+
+  ````{tab} Linux
+
+    If you installed VS Code via:
+    
+    - deb/rpm package -> `code` is usually added automatically
+    - Snap -> use `code` (already available)
+    - Manual install (tarball) -> you may need to manually add it to `PATH`
+
+    You can verify by running:
+    ```console
+    $ code --version
+    ```
+  ````
+
+`````
+
+To configure VS Code as the editor that Git starts, run:
 
 ```console
 $ git config --global core.editor "code --wait"
 ```
+
+The `--wait` option ensures that Git pauses while the file (for example, a commit message) is open in VS Code. Git resumes only after you close the editor.
+

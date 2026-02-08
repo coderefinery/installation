@@ -38,12 +38,15 @@ We have an extra page for it: {ref}`vscode`.
 
 ```{admonition} If you choose a different editor
 If you choose a different editor, make sure to browse its documentation
-on how to conntect it to Git.
+on how to connect it to Git.
 ```
 
 This command will configure git to start VS Code as its editor.  (This
 will happen automatically if you select the VS Code option when
 installing Git for Windows.)
+
+This command configures Git to start VS Code as its editor when Git launches an editor (for example, to edit a commit message). See {ref}`using-vscode-as-git-editor` for details on prerequisites and the `--wait` option.
+
 
 ```console
 $ git config --global core.editor "code --wait"
