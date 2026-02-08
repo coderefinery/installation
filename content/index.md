@@ -34,8 +34,11 @@ several options on how to participate (below).
   We believe that **most learners will choose this option**.
   In this case we recommend two things:
   - {ref}`github`
-  - [Visual Studio Code](https://code.visualstudio.com/download) (or if you prefer, other {ref}`editors`)
-  - {ref}`git-in-terminal`
+  - [Visual Studio Code](https://code.visualstudio.com/download)
+  - {ref}`git-in-vscode`
+
+  If you prefer you can use {ref}`editors`. Most of these do not come with Git integration,
+  so you would need to use Git from the terminal.
 ```
 
 ```{grid-item-card} I want to use Git from a terminal, not from an editor
@@ -63,6 +66,7 @@ several options on how to participate (below).
   2:
   - {ref}`github`
   - [Visual Studio Code](https://code.visualstudio.com/download) (or if you prefer, other {ref}`editors`)
+  - {ref}`git-in-vscode`
   - {doc}`conda`
 ```
 
@@ -78,6 +82,7 @@ github
 vscode
 editors
 git-in-terminal
+git-in-vscode
 ssh
 ```
 
