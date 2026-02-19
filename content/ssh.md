@@ -47,9 +47,16 @@ If you use VS Code, authentication to GitHub happens automatically via
 if you use **HTTPS**.
 ````
 
+````{group-tab} RStudio
+**If you use RStudio**
+
+If you use RStudio, authentication can happen either via HTTPS or SSH. Here, the RStudio instructions cover using **HTTPS**.
+
+````
+
 `````
 
-You should remember your choce for the lessons.
+You should remember your choice for the lessons.
 
 
 
@@ -117,6 +124,53 @@ so natural on Linux you may as well do that.
 
 No further setup is needed.  VS Code prompts you to automatically
 handles the authentication when needed.
+````
+
+````{group-tab} RStudio
+
+First, install the R package `usethis` if it isn't already installed:
+
+```r
+install.packages("usethis")
+```
+
+Next, we set a user name and email to be used with Git by running this command in R:
+
+```r
+usethis::use_git_config(user.name = "Firstname Lastname", user.email = "name@organization.org")
+```
+
+If you are unsure which email to use, use the one that you have registered at
+GitHub with.
+
+**This name and email will be public on GitHub when you make
+contributions, including in this course.**  If you prefer to not use a real email address but still want to make sure that
+GitHub counts your contributions, you can use
+`yourusername@users.noreply.github.com` (replace `yourusername`). This is important since your Git commits use this information.
+
+
+Then, let's create a Github token for HTTPS:
+
+```r
+usethis::create_github_token()
+```
+
+This will open a Github web page. Give the token a name, for example related to the project you are working on,
+and set the expiration date as you wish. In the section for scopes, the defaults are OK in most cases. 
+Generate the token. **Important: save the generated token on the clipboard or in a file, or keep the web page open.** The token can't be retrieved later and will be needed in the next step.
+
+To give the token to RStudio, run in R:
+
+```r
+gitcreds::gitcreds_set()
+```
+
+Paste the token when prompted. Now you are ready to use Git with RStudio.
+
+If the token expires or gets lost, create a new one the same way.
+
+*Reference and more details on connecting RStudio, Git and Github: [Happy Git and Github for the useR](https://happygitwithr.com/)*
+
 ````
 
 `````
@@ -208,7 +262,7 @@ it on a repository you have access to.
 class: dropdown
 ---
 If you are on a remote server and Git can't automatically start a web
-browwser, you might get this prompt:
+browser, you might get this prompt:
 
   ```
   Select an authentication method for 'https://github.com/':
@@ -221,5 +275,47 @@ Select option 1 and do what it says.
 `````
 `````{group-tab} VS Code
 No further checking is needed (we hope).
+`````
+
+`````{group-tab} RStudio
+
+In the RStudio console panel, click the Terminal tab.
+
+Run the following command:
+
+````console
+$ git clone https://github.com/rkdarst/private-example.git
+````
+
+This is private so **it will say the repository is not found, but
+that's OK.** This is what the output looks like if **the
+authentication was successful:**
+
+````{code-block} console
+---
+emphasize-lines: 3
+---
+
+$ git clone https://github.com/rkdarst/private-example.git
+Cloning into 'private-example'...
+remote: Repository not found.
+fatal: repository 'https://github.com/rkdarst/private-example.git/' not found
+````
+
+If authentification was not successful, you will see this:
+
+````{code-block} console
+---
+emphasize-lines: 3
+---
+git clone https://github.com/rkdarst/private-example.git
+Cloning into 'private-example'...
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/rkdarst/private-example.git/'
+````
+
+In this case, go back to the previous step and make sure you have created a token and 
+passed it to RStudio.
+
 `````
 ``````
