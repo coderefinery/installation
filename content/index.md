@@ -76,6 +76,7 @@ several options on how to participate (below).
 
 github
 vscode
+rstudio
 editors
 git-in-terminal
 ssh
