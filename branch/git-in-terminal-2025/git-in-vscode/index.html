@@ -1,0 +1,449 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git in VSCode &mdash; CodeRefinery workshop software installation instructions  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=949a1ff5" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=ac373136" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+    <link rel="shortcut icon" href="../_static/coderefinery.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=582ca9e2"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="SSH or HTTPS connection to GitHub from terminal" href="../ssh/" />
+    <link rel="prev" title="Git in the terminal" href="../git-in-terminal/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            CodeRefinery workshop software installation instructions
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Part 1</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode/">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/">Text editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-in-terminal/">Git in the terminal</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git in VSCode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#video-instruction">Video instruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-0-start-your-terminal-that-has-git">Step 0: Start your terminal that has git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-setting-user-name-and-email">Step 1: Setting user name and email</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-setting-an-editor">Step 2: Setting an editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-set-default-branch">Step 3: Set default branch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-two-more-settings-for-windows-only">Step 4: Two more settings for Windows only</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verification">Verification</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#step-1-check-your-git-version">Step 1: Check your Git version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-2-git-init-b-main-inside-a-new-folder">Step 2: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span> <span class="pre">-b</span> <span class="pre">main</span></code> inside a new folder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-3-make-a-new-file">Step 3: Make a new file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-4-stage-the-change">Step 4: Stage the change</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-5-commit-the-change-with-a-message">Step 5: Commit the change with a message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#step-6-see-the-change-history">Step 6: See the change history</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#where-is-this-configuration-stored">Where is this configuration stored?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all">On Windows <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code> or other git commands show no output at all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#on-windows-you-see-the-warning-lf-will-be-replaced-by-crlf-the-next-time-git-touches-it">On Windows you see the warning “LF will be replaced by CRLF the next time Git touches it”</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ssh/">SSH or HTTPS connection to GitHub from terminal</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Part 2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../conda/">Conda environment</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../problems/">If you encounter any problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/coderefinery/installation/issues">Suggestions/improvements/issues?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extra tools we might mention</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../difftools/">Visual diff tools (optional)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://youtu.be/xbTTDLA3txI">Shell crash course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motivation/">Why are we asking participants to install software?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../removing-accounts/">Instructions for removing a GitHub repository or account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/">Credit and license</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery workshop software installation instructions</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Git in VSCode</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/installation/blob/main/content/git-in-vscode.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="git-in-vscode">
+<span id="id1"></span><h1>Git in VSCode<a class="headerlink" href="#git-in-vscode" title="Link to this heading"></a></h1>
+<p>This page is for setting up Git for VSCode. If you use a different IDE, try following
+these instructions. If you are comfortable with the terminal, see <a class="reference internal" href="../git-in-terminal/#git-in-terminal"><span class="std std-ref">Git in the terminal</span></a>.</p>
+<p>Git is a version control system that lets you track who made changes to what
+and when, and has options for updating a shared or public version of your code
+on source code repository hosting platforms such as
+<a class="reference external" href="https://github.com">GitHub</a> or <a class="reference external" href="https://gitlab.com">GitLab</a> or
+<a class="reference external" href="https://bitbucket.org/">Bitbucket</a>.</p>
+<p>Please follow the installation, configuration, and verification instructions below.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>You can follow the steps below by watching the
+<a class="reference external" href="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&amp;amp;playsinline=1&amp;amp;iv_load_policy=3&amp;amp;rel=0">Carpentries video tutorial</a>.</p>
+<ul>
+<li><p>Download the <a class="reference external" href="https://gitforwindows.org/">Git for Windows installer</a>.</p></li>
+<li><p>Run the installer and follow the steps below:</p>
+<ol class="arabic">
+<li><p>Click on “Next” four times (two times if you’ve previously
+installed Git).  You don’t need to change anything
+in the Information, location, components, and start menu screens.</p></li>
+<li><p><strong>From the dropdown menu select an editor</strong>:</p>
+<ul class="simple">
+<li><p>Select VSCode from the list.  You must have
+VS Code installed already.</p></li>
+</ul>
+<p>After this, you don’t have to do step 2 “selecting an editor”
+step below (but that step lets you change your choice).</p>
+<ul class="simple">
+<li><p>If you use a different different IDE, select that one if available.
+Otherwise follow step 2 “selecting an editor” step below.</p></li>
+</ul>
+</li>
+<li><p><strong>On the page that says “Adjusting the name of the initial branch in new repositories”, choose
+“Override the default branch name for new repositories” and choose <code class="docutils literal notranslate"><span class="pre">main</span></code>. This will ensure
+the highest level of compatibility for our lessons.</strong></p></li>
+<li><p>Ensure that “Git from the command line and also from 3rd-party software” is selected and
+click on “Next”. This ensures compatibility if with different text editors and the terminal.</p></li>
+<li><p>Choosing the OpenSSH executable: “Use bundled OpenSSH” and
+click “Next”.</p></li>
+<li><p><strong>Ensure that “Use the native Windows Secure Channel Library” is selected and click on “Next”.</strong></p></li>
+<li><p>Ensure that “Checkout Windows-style, commit Unix-style line endings” is selected and click on “Next”.</p></li>
+<li><p><strong>Ensure that “Use Windows’ default console window” is selected and click on “Next”.</strong></p></li>
+<li><p>Ensure that “Default (fast-forward or merge) is selected and click “Next”</p></li>
+<li><p>Ensure that “Git Credential Manager” is selected and click on
+“Next”. (if “Core” is an option, pick that)</p></li>
+<li><p>Ensure that “Enable file system caching” is selected and click on “Next”.</p></li>
+<li><p>Configuring experimental options: don’t select either and
+click “Next”.</p></li>
+<li><p>Click on “Install”.</p></li>
+<li><p>Click on “Finish” or “Next”.</p></li>
+</ol>
+</li>
+</ul>
+<p><em>Text copied and adapted from: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p><strong>Install Git</strong> for Mac
+by downloading and running the most recent “mavericks” installer from
+<a class="reference external" href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+Because this installer is not signed by the developer, you may have to
+right click (control click) on the .pkg file, click Open, and click
+Open on the pop up window.
+After installing Git, there will not be anything in your <code class="docutils literal notranslate"><span class="pre">/Applications</span></code> folder,
+as Git is a command line program.
+See also the Git installation
+<a class="reference external" href="https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial">Carpentries video tutorial</a>.</p>
+<p>For older versions of OS X (10.5-10.8), use the
+most recent available installer labelled “snow-leopard”
+<a class="reference external" href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.</p>
+<p><em>Text copied and adapted from: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>If Git is not already available on your machine you can try to install it via
+your distribution package manager.</p>
+<p>Open VSCode. In the toolbar open the “Terminal” menu and select “New Terminal”.</p>
+<p>For Debian/Ubuntu run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+<p>For Fedora:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+<p><em>Reference: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div></div>
+<hr class="docutils" />
+</section>
+<section id="configuration">
+<span id="git-configuration"></span><h2>Configuration<a class="headerlink" href="#configuration" title="Link to this heading"></a></h2>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<p>We assume that you have:</p>
+<ul class="simple">
+<li><p>VSCode installed on your machine</p></li>
+<li><p>Git installed on your machine</p></li>
+</ul>
+</div>
+<section id="video-instruction">
+<h3>Video instruction<a class="headerlink" href="#video-instruction" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=WdDTp8NeHBs&amp;amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">This video (9
+min)</a>
+shows how to configure Git. If you experience problems,
+watch <a class="reference external" href="https://www.youtube.com/watch?v=B27pUBrWp5w&amp;amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">this troubleshooting
+video</a>.</p>
+</section>
+<section id="step-0-start-your-terminal-that-has-git">
+<h3>Step 0: Start your terminal that has git<a class="headerlink" href="#step-0-start-your-terminal-that-has-git" title="Link to this heading"></a></h3>
+<p>Start Visual Studio Code. In the toolbar open the “Terminal” menu and select “New Terminal”.</p>
+<p>This is a command line interface.  You need to run a few commands to set up git. To run
+a command, write it into the terminal and press Enter.</p>
+</section>
+<section id="step-1-setting-user-name-and-email">
+<h3>Step 1: Setting user name and email<a class="headerlink" href="#step-1-setting-user-name-and-email" title="Link to this heading"></a></h3>
+<p>First, the following commands will set your user name and email address:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>yourname@example.com
+</pre></div>
+</div>
+<p>If you are unsure which email to use, use the one that you have registered at
+GitHub with.</p>
+<p><strong>This name and email will be public on GitHub when you make
+contributions, including in this course.</strong>  If you prefer to not use a real email address but still want to make sure that
+GitHub counts your contributions, you can use
+<code class="docutils literal notranslate"><span class="pre">yourusername&#64;users.noreply.github.com</span></code> (replace <code class="docutils literal notranslate"><span class="pre">yourusername</span></code>).</p>
+<p>This is important since your Git commits use this information.  The <code class="docutils literal notranslate"><span class="pre">--global</span></code>
+option uses this information for every repository for this user on
+this computer.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Different name/emails for different repositories</p>
+<p>If you need different name/email for different
+repositories see <a class="reference external" href="https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig">this StackOverflow question
+for configuring based on
+directory</a>
+and <a class="reference external" href="https://git-scm.com/docs/git-config#_includes">the raw configuration
+options</a>, including
+something that works based on remote URLs (but it needs a newer
+git version).</p>
+</div>
+</section>
+<section id="step-2-setting-an-editor">
+<h3>Step 2: Setting an editor<a class="headerlink" href="#step-2-setting-an-editor" title="Link to this heading"></a></h3>
+<p>You can skip this step if you already set it when installing git for Windows.</p>
+<p>This sets the text editor to git will use when called from the outside.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>code
+</pre></div>
+</div>
+<p>To set other editors, see <a class="reference internal" href="../editors/"><span class="doc">Text editors</span></a>.</p>
+</section>
+<section id="step-3-set-default-branch">
+<h3>Step 3: Set default branch<a class="headerlink" href="#step-3-set-default-branch" title="Link to this heading"></a></h3>
+<p>You can skip this step if you already set it when installing git for Windows.</p>
+<p>The default branch on GitHub and GitLab is <code class="docutils literal notranslate"><span class="pre">main</span></code> but it used to be <code class="docutils literal notranslate"><span class="pre">master</span></code>.
+In our workshop we will use <code class="docutils literal notranslate"><span class="pre">main</span></code> as the default branch also in the terminal
+to be consistent with GitHub and GitLab:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultbranch<span class="w"> </span>main
+</pre></div>
+</div>
+<p>This configuration will unfortunately have no effect on Git older than 2.28.
+<strong>But this is not a problem</strong>. During the lesson we will have a workaround for
+this.</p>
+</section>
+<section id="step-4-two-more-settings-for-windows-only">
+<h3>Step 4: Two more settings for Windows only<a class="headerlink" href="#step-4-two-more-settings-for-windows-only" title="Link to this heading"></a></h3>
+<p>You can skip this step if you already set it when installing git for Windows.</p>
+<p>We have found that these two settings prevent warnings and/or seeing no output
+in some commands on Windows (no need to run these on macOS or Linux).  At the
+bottom of this page we motivate in more detail what these two do:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span><span class="nb">false</span>
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.pager<span class="w"> </span>cat
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="verification">
+<h2>Verification<a class="headerlink" href="#verification" title="Link to this heading"></a></h2>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-1">
+<p class="admonition-title">Prerequisites</p>
+<p>We assume that you have:</p>
+<ul class="simple">
+<li><p>VSCode installed on your machine</p></li>
+<li><p>Git installed on your machine</p></li>
+</ul>
+</div>
+<p>Before verifying, restart Visual Studio Code.</p>
+<p>The following shows the same steps that are shown in the video above.  You can
+see verification part in <a class="reference external" href="https://www.youtube.com/watch?v=WdDTp8NeHBs&amp;amp;t=350s">the same video for configuration at
+5:50</a>.</p>
+<section id="step-1-check-your-git-version">
+<h3>Step 1: Check your Git version<a class="headerlink" href="#step-1-check-your-git-version" title="Link to this heading"></a></h3>
+<p>Check your git version:</p>
+<p>Start Visual Studio Code. In the toolbar open the “Terminal” menu and select “New Terminal”.
+In the new terminal, run</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>--version
+
+<span class="go">git version 2.39.2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>We recommend at least 2.23.</p></li>
+<li><p>Ideal is 2.28 and newer.</p></li>
+<li><p>But the lesson and workshop will still work even with Git 2.0
+and we will add instructions/workarounds for Git below 2.28 or 2.23.</p></li>
+</ul>
+</section>
+<section id="step-2-git-init-b-main-inside-a-new-folder">
+<h3>Step 2: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span> <span class="pre">-b</span> <span class="pre">main</span></code> inside a new folder<a class="headerlink" href="#step-2-git-init-b-main-inside-a-new-folder" title="Link to this heading"></a></h3>
+<p>Create a new example folder and open it. Select the git interface on the left side panel
+and click “Initialize Repository”.</p>
+</section>
+<section id="step-3-make-a-new-file">
+<h3>Step 3: Make a new file<a class="headerlink" href="#step-3-make-a-new-file" title="Link to this heading"></a></h3>
+<p>Create a new file called <code class="docutils literal notranslate"><span class="pre">example.txt</span></code>. Write some content into the file.</p>
+</section>
+<section id="step-4-stage-the-change">
+<h3>Step 4: Stage the change<a class="headerlink" href="#step-4-stage-the-change" title="Link to this heading"></a></h3>
+<p>Stage a newly made file <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> before committing the change. Open the git section
+in the side panel, find the file and click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> button next to it. If the button is not
+there, it will appear when you hover the mouse pointer over the filename.</p>
+</section>
+<section id="step-5-commit-the-change-with-a-message">
+<h3>Step 5: Commit the change with a message<a class="headerlink" href="#step-5-commit-the-change-with-a-message" title="Link to this heading"></a></h3>
+<p>Write a commit message such as “initial commit” in the text box above the file list.
+Then click “Commit”.</p>
+</section>
+<section id="step-6-see-the-change-history">
+<h3>Step 6: See the change history<a class="headerlink" href="#step-6-see-the-change-history" title="Link to this heading"></a></h3>
+<p>Open the file view in the left side panel. Select <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> and click on “Timeline”
+below the file list. You should see you commit in the timeline. Click on the commit to see
+the changes you made.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h2>
+<section id="where-is-this-configuration-stored">
+<h3>Where is this configuration stored?<a class="headerlink" href="#where-is-this-configuration-stored" title="Link to this heading"></a></h3>
+<p>To see where this information is stored (<code class="docutils literal notranslate"><span class="pre">--show-origin</span></code> works on git version
+2.8 or greater only), use:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--list<span class="w"> </span>--show-origin
+</pre></div>
+</div>
+</section>
+<section id="on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all">
+<h3>On Windows <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code> or other git commands show no output at all<a class="headerlink" href="#on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all" title="Link to this heading"></a></h3>
+<p>It seems this can be fixed by these configuration settings:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.log<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.diff<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.show<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.config<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.stash<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.help<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.blame<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.branch<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.annotate<span class="w"> </span>off
+</pre></div>
+</div>
+<p>Following other manuals and documentation, it seems that all the above can be set with the following
+(<code class="docutils literal notranslate"><span class="pre">cat</span></code> should be available within Git Bash but also PowerShell):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.pager<span class="w"> </span>cat
+</pre></div>
+</div>
+</section>
+<section id="on-windows-you-see-the-warning-lf-will-be-replaced-by-crlf-the-next-time-git-touches-it">
+<h3>On Windows you see the warning “LF will be replaced by CRLF the next time Git touches it”<a class="headerlink" href="#on-windows-you-see-the-warning-lf-will-be-replaced-by-crlf-the-next-time-git-touches-it" title="Link to this heading"></a></h3>
+<p>Solution is to set this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span><span class="nb">false</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../git-in-terminal/" class="btn btn-neutral float-left" title="Git in the terminal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../ssh/" class="btn btn-neutral float-right" title="SSH or HTTPS connection to GitHub from terminal" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
