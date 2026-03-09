@@ -4,6 +4,7 @@ jupyterlab==4.5.3
 jupyterlab-git==0.51.4
 matplotlib==3.10.8
 myst-parser==5.0.0
+myst-nb==1.4.0
 nbdime==4.0.2
 numpy==2.4.1
 pandas==3.0.0
