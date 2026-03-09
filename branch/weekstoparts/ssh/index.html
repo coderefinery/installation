@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSH or HTTPS connection to GitHub from terminal &mdash; CodeRefinery workshop software installation instructions  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=949a1ff5" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+      <link rel="stylesheet" type="text/css" href="../_static/style.css?v=ac373136" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+    <link rel="shortcut icon" href="../_static/coderefinery.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=582ca9e2"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Conda environment" href="../conda/" />
+    <link rel="prev" title="Git in the terminal" href="../git-in-terminal/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            CodeRefinery workshop software installation instructions
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Part 1</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../github/">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vscode/">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/">Text editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-in-terminal/">Git in the terminal</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SSH or HTTPS connection to GitHub from terminal</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-are-we-doing-this">Why are we doing this?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-are-the-options">What are the options?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instructions">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-verify-that-it-worked">How to verify that it worked</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Part 2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../conda/">Conda environment</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../problems/">If you encounter any problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/coderefinery/installation/issues">Suggestions/improvements/issues?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extra tools we might mention</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../difftools/">Visual diff tools (optional)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://youtu.be/xbTTDLA3txI">Shell crash course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motivation/">Why are we asking participants to install software?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../removing-accounts/">Instructions for removing a GitHub repository or account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license/">Credit and license</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery workshop software installation instructions</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SSH or HTTPS connection to GitHub from terminal</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/installation/blob/main/content/ssh.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ssh-or-https-connection-to-github-from-terminal">
+<span id="ssh"></span><h1>SSH or HTTPS connection to GitHub from terminal<a class="headerlink" href="#ssh-or-https-connection-to-github-from-terminal" title="Link to this heading"></a></h1>
+<section id="why-are-we-doing-this">
+<h2>Why are we doing this?<a class="headerlink" href="#why-are-we-doing-this" title="Link to this heading"></a></h2>
+<p>We need to connect to GitHub (or whatever other repository we may be
+using), and for that to work, we have to be able to identify
+ourselves. This is actually a pretty hard thing to do, and there are
+two main options <strong>when authenticating from a terminal</strong>.</p>
+<p>You do not need to configure the below if you are using <a class="reference internal" href="../vscode/#vscode"><span class="std std-ref">Visual Studio Code</span></a>.</p>
+</section>
+<section id="what-are-the-options">
+<h2>What are the options?<a class="headerlink" href="#what-are-the-options" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-U1NI" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-U1NI" name="U1NI" role="tab" tabindex="0">SSH</button><button aria-controls="panel-0-SFRUUFM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SFRUUFM=" name="SFRUUFM=" role="tab" tabindex="-1">HTTPS</button><button aria-controls="panel-0-VlMgQ29kZQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tab" tabindex="-1">VS Code</button></div><div aria-labelledby="tab-0-U1NI" class="sphinx-tabs-panel group-tab" id="panel-0-U1NI" name="U1NI" role="tabpanel" tabindex="0"><p><strong>This is recommend if you are on Linux or macOS</strong>
+(it does work on Windows, but since the
+HTTPS method is included by default, you may as well use that
+instead).</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Secure_Shell">Secure Shell (SSH)</a> is the
+standard program for connecting to remote servers.  It’s well worth
+learning anyway.</p>
+<p>These days, every major operating system has it built in, but it
+requires more set up using “SSH keys” to use it for GitHub.  It’s
+really useful to set this up and get to know it well, even for things
+other than git.</p>
+</div><div aria-labelledby="tab-0-SFRUUFM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SFRUUFM=" name="SFRUUFM=" role="tabpanel" tabindex="0"><p><strong>This is recommend if you are on Windows or macOS</strong>.</p>
+<p>Web browsers use HTTPS (secure hypertext transfer protocol) to
+communicate with web sites. It’s less secure if only a
+password is used, so GitHub doesn’t allow normal passwords anymore.
+With an extra tool, it becomes easy and secure, though.</p>
+</div><div aria-labelledby="tab-0-VlMgQ29kZQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tabpanel" tabindex="0"><p><strong>If you use VS Code</strong>.</p>
+<p>If you use VS Code, authentication to GitHub happens automatically via
+if you use <strong>HTTPS</strong>.</p>
+</div></div>
+<p>You should remember your choce for the lessons.</p>
+</section>
+<section id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Link to this heading"></a></h2>
+<p>Based on your decision above, try to set it up.  You can try the other
+one if your first choice doesn’t work.  There’s nothing wrong with
+doing both of them.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-U1NI" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-U1NI" name="U1NI" role="tab" tabindex="0">SSH</button><button aria-controls="panel-1-SFRUUFM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-SFRUUFM=" name="SFRUUFM=" role="tab" tabindex="-1">HTTPS</button><button aria-controls="panel-1-VlMgQ29kZQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tab" tabindex="-1">VS Code</button></div><div aria-labelledby="tab-1-U1NI" class="sphinx-tabs-panel group-tab" id="panel-1-U1NI" name="U1NI" role="tabpanel" tabindex="0"><div class="admonition-watch-this-in-video-form admonition">
+<p class="admonition-title">Watch this in video form</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=XCDg1mtaA5I&amp;amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">This CodeRefinery video about ssh keys (7
+min)</a>
+shows how to set up SSH connection to GitHub.
+If you are new to SSH keys, We recommend you watch
+this first to understand what is going on.</p>
+</div>
+<p>For the instructions, please follow <a class="reference external" href="https://help.github.com/articles/connecting-to-github-with-ssh/">this
+guide from GitHub</a> to
+connect to GitHub with SSH keys.  These same instructions work
+with services other than GitHub as well (except the adding the key to
+GitHub part).</p>
+<ul class="simple">
+<li><p>If you think you might already have SSH keys, start with <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys">Checking
+for existing SSH
+keys</a></p></li>
+<li><p>Then start with <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Generating a new SSH key and adding it to the
+ssh-agent</a></p></li>
+<li><p>Then <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">Adding a new SSH key to your GitHub
+account</a></p></li>
+<li><p>Then <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection">Testing your SSH
+connection</a>
+(note that this is the same as the verification steps below)</p></li>
+<li><p>If on Windows, <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases">Working with SSH key
+passphrases</a>
+is optional but can save you from retyping the passphrase so many times.</p></li>
+</ul>
+</div><div aria-labelledby="tab-1-SFRUUFM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-SFRUUFM=" name="SFRUUFM=" role="tabpanel" tabindex="0"><p>We use <a class="reference external" href="https://github.com/git-ecosystem/git-credential-manager">Git Credential
+Manager</a> to
+make HTTPS easy.</p>
+<p><strong>Windows</strong>: Git Credential Manager should have been installed as part
+of Git for Windows installation.  If not, go back to the git
+installation and make sure it is selected.</p>
+<p><strong>macOS</strong>: Follow the <a class="reference external" href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#macos">macOS installation
+instructions</a>
+for Git Credential Manager.</p>
+<p><strong>Linux</strong>: The <a class="reference external" href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#linux">Linux install
+instructions</a>
+for Git Credential Manager work, but have to make one extra
+configuration step compared to other operating systems (since Linux
+has more options like connecting remotely to it to do work).  SSH is
+so natural on Linux you may as well do that.</p>
+</div><div aria-labelledby="tab-1-VlMgQ29kZQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tabpanel" tabindex="0"><p>No further setup is needed.  VS Code prompts you to automatically
+handles the authentication when needed.</p>
+</div></div>
+</section>
+<section id="how-to-verify-that-it-worked">
+<h2>How to verify that it worked<a class="headerlink" href="#how-to-verify-that-it-worked" title="Link to this heading"></a></h2>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-U1NI" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-U1NI" name="U1NI" role="tab" tabindex="0">SSH</button><button aria-controls="panel-2-SFRUUFM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-SFRUUFM=" name="SFRUUFM=" role="tab" tabindex="-1">HTTPS</button><button aria-controls="panel-2-VlMgQ29kZQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tab" tabindex="-1">VS Code</button></div><div aria-labelledby="tab-2-U1NI" class="sphinx-tabs-panel group-tab" id="panel-2-U1NI" name="U1NI" role="tabpanel" tabindex="0"><p>Try this in your terminal shell:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
+</pre></div>
+</div>
+<p>If you set up ssh keys correctly, you will see:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hi yourusername! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</pre></div>
+</div>
+<p>If it says <strong>“You’ve successfully authenticated”</strong>
+then it works and your SSH keys are properly set up with GitHub.</p>
+<p>You possibly see this warning (the IP and the fingerprint may look differently):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
+
+<span class="go">The authenticity of host &#39;github.com (140.82.121.4)&#39; can&#39;t be established.</span>
+<span class="go">ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</span>
+<span class="go">This key is not known by any other names</span>
+<span class="go">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span>
+</pre></div>
+</div>
+<p>Before typing “yes”, verify that the fingerprint is <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints">one of
+these</a>.</p>
+<p>What this means: SSH is a secure protocol to send data between two computers
+but the very first time you ever connect to the remote host, SSH asks if this
+is really the host/server we meant to talk to and to verify that nobody is
+trying to impersonate the other host.  Once we validate the connection, SSH
+will remember that we trust that host and not ask this question again.</p>
+</div><div aria-labelledby="tab-2-SFRUUFM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-SFRUUFM=" name="SFRUUFM=" role="tabpanel" tabindex="0"><p>It’s hard to test this, but here is what we recommend:</p>
+<p><strong>Linux/macOS</strong>: Start your terminal application (wherever you have
+Git).</p>
+<p><strong>Windows</strong>: start Git Bash.</p>
+<p>Run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rkdarst/private-example.git
+</pre></div>
+</div>
+<p>It should open a web browser window and ask “Authorize Git Credential
+Manager”?  This means that the program running on your computer will
+have access to GitHub as you.  <strong>Click “Authorize git-ecosystem”</strong> and
+close the tab when it asks you to.</p>
+<p>This is private so <strong>it will say the repository is not found, but
+that’s OK.</strong> If it sent you to your web browser, that means the
+authentication worked! This is what it looks like if <strong>the
+verification was successful:</strong></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rkdarst/private-example.git
+<span class="go">Cloning into &#39;private-example&#39;...</span>
+<span class="hll"><span class="go">info: please complete authentication in your browser...</span>
+</span><span class="go">remote: Repository not found.</span>
+<span class="go">fatal: repository &#39;https://github.com/rkdarst/private-example.git/&#39; not found</span>
+</pre></div>
+</div>
+<p>(If it asks you for a username and password in the terminal, then the
+verification failed - this won’t work with GitHub.)</p>
+<p>Git Credential Manager will remember your login the first time you use
+it on a repository you have access to.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Running on a remote server?</p>
+<p>If you are on a remote server and Git can’t automatically start a web
+browwser, you might get this prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Select</span> <span class="n">an</span> <span class="n">authentication</span> <span class="n">method</span> <span class="k">for</span> <span class="s1">&#39;https://github.com/&#39;</span><span class="p">:</span>
+<span class="mf">1.</span> <span class="n">Device</span> <span class="n">code</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
+<span class="mf">2.</span> <span class="n">Personal</span> <span class="n">access</span> <span class="n">token</span>
+</pre></div>
+</div>
+<p>Select option 1 and do what it says.</p>
+</div>
+</div><div aria-labelledby="tab-2-VlMgQ29kZQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tabpanel" tabindex="0"><p>No further checking is needed (we hope).</p>
+</div></div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../git-in-terminal/" class="btn btn-neutral float-left" title="Git in the terminal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../conda/" class="btn btn-neutral float-right" title="Conda environment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
