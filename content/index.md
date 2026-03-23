@@ -59,8 +59,7 @@ several options on how to participate (below).
 
   {octicon}`stopwatch;2em;sd-text-info` 30-90 minutes
 
-  If part 2 happens over multiple days, we will do the exercises together. If part 2 is kept short within one week (week 2), we will not ask you to run the exercises during the workshop
-  2:
+  If you would like to try out exercises in week 2 (during or after the workshop), these are tools you need:
   - {ref}`github`
   - [Visual Studio Code](https://code.visualstudio.com/download) (or if you prefer, other {ref}`editors`)
   - {doc}`conda`
