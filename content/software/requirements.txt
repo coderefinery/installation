@@ -8,7 +8,7 @@ myst-nb==1.4.0
 nbdime==4.0.2
 numpy==2.4.1
 pandas==3.0.0
-pytest==9.0.2
+pytest==9.0.3
 pytest-cov==7.0.0
 seaborn==0.13.2
 snakemake==9.14.8
