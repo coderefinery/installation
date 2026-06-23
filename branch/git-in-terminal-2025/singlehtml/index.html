@@ -1,0 +1,1623 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeRefinery workshop software installation instructions documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx_lesson.css" />
+      <link rel="stylesheet" type="text/css" href="_static/term_role_formatting.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx_rtd_theme_ext_color_contrast.css" />
+      <link rel="stylesheet" type="text/css" href="_static/style.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css" />
+      <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+
+  
+    <link rel="shortcut icon" href="_static/coderefinery.ico"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js"></script>
+      <script src="_static/doctools.js"></script>
+      <script src="_static/sphinx_highlight.js"></script>
+      <script src="_static/clipboard.min.js"></script>
+      <script src="_static/copybutton.js"></script>
+      <script src="_static/minipres.js"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="_static/togglebutton.js"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="_static/design-tabs.js"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script src="_static/tabs.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            CodeRefinery workshop software installation instructions
+          </a>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Part 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-github">GitHub account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-vscode">Visual Studio Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-editors">Text editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-git-in-terminal">Git in the terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-git-in-vscode">Git in VSCode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-ssh">SSH or HTTPS connection to GitHub from terminal</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Part 2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-conda">Conda environment</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Help!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-problems">If you encounter any problems</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/coderefinery/installation/issues">Suggestions/improvements/issues?</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Extra tools we might mention</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-difftools">Visual diff tools (optional)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://youtu.be/xbTTDLA3txI">Shell crash course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-motivation">Why are we asking participants to install software?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-removing-accounts">Instructions for removing a GitHub repository or account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-license">Credit and license</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">CodeRefinery workshop software installation instructions</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CodeRefinery workshop software installation instructions  documentation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/installation/blob/main/content/index" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="coderefinery-workshop-software-installation-instructions">
+<h1>CodeRefinery workshop software installation instructions<a class="headerlink" href="#coderefinery-workshop-software-installation-instructions" title="Link to this heading"></a></h1>
+<p>In CodeRefinery workshops, we will use and show a number of tools. We give you
+several options on how to participate (below).</p>
+<ul class="simple">
+<li><p>If you are using a
+university-managed computer from the Aalto University, please follow
+<a class="reference external" href="https://scicomp.aalto.fi/aalto/coderefinery-setup/">specific
+instructions</a>.</p></li>
+<li><p>We recommend to ask a colleague/helper/team leader to go over the checklist with you.</p></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-border-1 sd-animate-grow100 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+What is the minimum of software/accounts I can get away with?</div>
+<p class="sd-card-text"><svg version="1.1" width="2.0em" height="2.0em" class="sd-octicon sd-octicon-stopwatch sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.25 0h3.5a.75.75 0 0 1 0 1.5h-1v1.278a9.954 9.954 0 0 1 5.636 2.276L19.72 3.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.315 1.316A9.959 9.959 0 0 1 22 12.75c0 5.523-4.477 10-10 10s-10-4.477-10-10a9.959 9.959 0 0 1 2.535-6.654L3.22 4.78a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.335 1.334a9.958 9.958 0 0 1 5.635-2.276V1.5h-1a.75.75 0 0 1 0-1.5ZM12 21.25a8.5 8.5 0 1 0-.001-17.001A8.5 8.5 0 0 0 12 21.25Zm4.03-12.53a.75.75 0 0 1 0 1.06l-2.381 2.382a1.75 1.75 0 1 1-1.06-1.06l2.38-2.382a.75.75 0 0 1 1.061 0Z"></path></svg> 10 minutes</p>
+<p class="sd-card-text">The bare minimum to participate in exercises for workshop part 1 (week 1: git and GitHub ) and to only
+follow part 2 lectures/demonstrations:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="index.html#github"><span class="std std-ref">GitHub account</span></a></p></li>
+</ul>
+<p class="sd-card-text">You will be able to participate in almost all exercises of part 1 (week 1) using the web
+interface of GitHub. This will hopefully give you a good understanding of the
+basics of Git and GitHub. For your own work after the workshop, you will
+probably want to use a local editor and Git on your computer.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-border-5 sd-animate-grow100 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+I want to be able to do the exercises on my computer in an editor</div>
+<p class="sd-card-text"><svg version="1.1" width="2.0em" height="2.0em" class="sd-octicon sd-octicon-stopwatch sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.25 0h3.5a.75.75 0 0 1 0 1.5h-1v1.278a9.954 9.954 0 0 1 5.636 2.276L19.72 3.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.315 1.316A9.959 9.959 0 0 1 22 12.75c0 5.523-4.477 10-10 10s-10-4.477-10-10a9.959 9.959 0 0 1 2.535-6.654L3.22 4.78a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.335 1.334a9.958 9.958 0 0 1 5.635-2.276V1.5h-1a.75.75 0 0 1 0-1.5ZM12 21.25a8.5 8.5 0 1 0-.001-17.001A8.5 8.5 0 0 0 12 21.25Zm4.03-12.53a.75.75 0 0 1 0 1.06l-2.381 2.382a1.75 1.75 0 1 1-1.06-1.06l2.38-2.382a.75.75 0 0 1 1.061 0Z"></path></svg> 20 minutes</p>
+<p class="sd-card-text">We believe that <strong>most learners will choose this option</strong>.
+In this case we recommend two things:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="index.html#github"><span class="std std-ref">GitHub account</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://code.visualstudio.com/download">Visual Studio Code</a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="index.html#git-in-vscode"><span class="std std-ref">Git in VSCode</span></a></p></li>
+</ul>
+<p class="sd-card-text">If you prefer you can use <a class="reference internal" href="index.html#editors"><span class="std std-ref">Text editors</span></a>. Most of these do not come with Git integration,
+so you would need to use Git from the terminal.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-border-1 sd-animate-grow100 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+I want to use Git from a terminal, not from an editor</div>
+<p class="sd-card-text"><svg version="1.1" width="2.0em" height="2.0em" class="sd-octicon sd-octicon-stopwatch sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.25 0h3.5a.75.75 0 0 1 0 1.5h-1v1.278a9.954 9.954 0 0 1 5.636 2.276L19.72 3.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.315 1.316A9.959 9.959 0 0 1 22 12.75c0 5.523-4.477 10-10 10s-10-4.477-10-10a9.959 9.959 0 0 1 2.535-6.654L3.22 4.78a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.335 1.334a9.958 9.958 0 0 1 5.635-2.276V1.5h-1a.75.75 0 0 1 0-1.5ZM12 21.25a8.5 8.5 0 1 0-.001-17.001A8.5 8.5 0 0 0 12 21.25Zm4.03-12.53a.75.75 0 0 1 0 1.06l-2.381 2.382a1.75 1.75 0 1 1-1.06-1.06l2.38-2.382a.75.75 0 0 1 1.061 0Z"></path></svg> 15-60 minutes</p>
+<p class="sd-card-text">In this case you want to use the command line interface for Git.
+This is good for power users but hard if you haven’t used
+command lines before:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="index.html#github"><span class="std std-ref">GitHub account</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="index.html#git-in-terminal"><span class="std std-ref">Git in the terminal</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="index.html#ssh"><span class="std std-ref">SSH or HTTPS connection to GitHub from terminal</span></a></p></li>
+<li><p class="sd-card-text">See the <a class="reference external" href="https://scicomp.aalto.fi/scicomp/shell/">command line crash
+course</a>
+(<a class="reference external" href="https://youtu.be/xbTTDLA3txI">video</a>)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-border-1 sd-animate-grow100 docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In workshop part 2, I want to be able to run the exercises on my computer and have all tools available</div>
+<p class="sd-card-text"><svg version="1.1" width="2.0em" height="2.0em" class="sd-octicon sd-octicon-stopwatch sd-text-info" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.25 0h3.5a.75.75 0 0 1 0 1.5h-1v1.278a9.954 9.954 0 0 1 5.636 2.276L19.72 3.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.315 1.316A9.959 9.959 0 0 1 22 12.75c0 5.523-4.477 10-10 10s-10-4.477-10-10a9.959 9.959 0 0 1 2.535-6.654L3.22 4.78a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l1.335 1.334a9.958 9.958 0 0 1 5.635-2.276V1.5h-1a.75.75 0 0 1 0-1.5ZM12 21.25a8.5 8.5 0 1 0-.001-17.001A8.5 8.5 0 0 0 12 21.25Zm4.03-12.53a.75.75 0 0 1 0 1.06l-2.381 2.382a1.75 1.75 0 1 1-1.06-1.06l2.38-2.382a.75.75 0 0 1 1.061 0Z"></path></svg> 30-90 minutes</p>
+<p class="sd-card-text">If part 2 happens over multiple days, we will do the exercises together. If part 2 is kept short within one week (week 2), we will not ask you to run the exercises during the workshop
+2:</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="index.html#github"><span class="std std-ref">GitHub account</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://code.visualstudio.com/download">Visual Studio Code</a> (or if you prefer, other <a class="reference internal" href="index.html#editors"><span class="std std-ref">Text editors</span></a>)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="index.html#git-in-vscode"><span class="std std-ref">Git in VSCode</span></a></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#document-conda"><span class="doc">Conda environment</span></a></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-github"></span><section id="github-account">
+<span id="github"></span><h2>GitHub account<a class="headerlink" href="#github-account" title="Link to this heading"></a></h2>
+<p>In CodeRefinery workshop, we use the public GitHub service and you need an
+account at <a class="reference external" href="https://github.com">https://github.com</a> and a <a class="reference external" href="https://help.github.com/articles/supported-browsers/">supported web
+browser</a>. Basic GitHub
+accounts are free.</p>
+<p>If you are concerned about the personal information to reveal to GitHub, for
+example how to keep your email address private, please review <a class="reference external" href="https://help.github.com/articles/keeping-your-email-address-private/">these
+instructions</a>
+for keeping your email address private provided at GitHub.</p>
+<p>We are trying to make it possible to follow this course also with other Git
+hosting services but this is work in progress.</p>
+<section id="create-a-github-account">
+<h3>Create a GitHub account<a class="headerlink" href="#create-a-github-account" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://github.com">https://github.com</a>.</p></li>
+<li><p>Click on the “Sign up” at the right-top corner.</p></li>
+<li><p>Enter your username of your choice (if it is already used, you will get some suggestions), email address, and password.</p></li>
+<li><p>Follow further instruction and verify your account.</p></li>
+</ol>
+<p>GitHub may require you to enable multi-factor authentication
+(MFA). This is generally a good thing, but may take some time to set
+up. Luckily, you probably don’t have to do this immediately. If you
+are prompted to enable MFA before the end of CodeRefinery, follow
+GitHub’s instructions since they are usually pretty good.</p>
+</section>
+<section id="how-to-verify-that-this-worked">
+<h3>How to verify that this worked<a class="headerlink" href="#how-to-verify-that-this-worked" title="Link to this heading"></a></h3>
+<p>If you can log in to <a class="reference external" href="https://github.com">https://github.com</a>, you should be good to go.</p>
+<p>If you want to try a bit more, then try to create a new repository
+and then remove the repository again.</p>
+</section>
+<section id="if-you-prefer-not-using-github">
+<h3>If you prefer not using GitHub<a class="headerlink" href="#if-you-prefer-not-using-github" title="Link to this heading"></a></h3>
+<p>If you prefer not to create a GitHub account, you can still follow along with
+the lessons.  We highly recommend the GitHub account if you are in a
+interactive workshop, because we can’t support other platforms and a
+few exercises don’t work. If you are following CodeRefinery at your
+own pace, you will have time to work these out.</p>
+<p>GitLab is a good alternative: <a class="reference external" href="https://gitlab.com">https://gitlab.com</a> or a local
+version.</p>
+<ul class="simple">
+<li><p>Anything can be done with other web repositories, but we don’t say
+how.  You will need to figure out where to click yourself.</p></li>
+<li><p>Most Collaborative Git lesson exercises won’t work out of the
+box/will need adapting (but in principle the same idea exists with
+GitLab).</p></li>
+<li><p>The continuous integration (CI) lessons such as documentation and
+software testing won’t work without adapting. With GitLab you need
+to provide your own <a class="reference external" href="https://docs.gitlab.com/runner/">CI runners</a>,
+which is probably beyond the scope of what you would do just for
+this workshop.</p></li>
+</ul>
+</section>
+</section>
+<span id="document-vscode"></span><section id="visual-studio-code">
+<span id="vscode"></span><h2>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://code.visualstudio.com">Visual Studio Code</a> is a popular source code
+editor. It is <strong>free and open source</strong> and runs on your desktop and is
+available for Windows, macOS, and Linux.  It has a rich ecosystem of extensions
+for languages such as C++, Fortran, R, C#, Matlab, Java, Python, PHP, and Go.
+<strong>If you are new to text editors, we recommend to start with this one</strong>.</p>
+<ul class="simple">
+<li><p>Please visit the <a class="reference external" href="https://code.visualstudio.com/Download">download page</a> for
+installation instructions.  But please note that Visual Studio Code sends data
+to Microsoft.</p></li>
+<li><p>Please also browse the page about
+<a class="reference external" href="https://code.visualstudio.com/docs/sourcecontrol/overview">Using Git source control in VS Code</a>.</p></li>
+<li><p><a class="reference external" href="https://vscodium.com/">VSCodium</a> is the same software without Microsoft
+tracking.</p></li>
+<li><p>Windows (and any operating system that has the option): when
+installing, select the option “Add to PATH” (this is default).</p></li>
+</ul>
+<figure class="align-default" id="id1">
+<img alt="Screenshot of configuration options when setting up Visual Studio Code" src="_images/vscode.png" />
+<figcaption>
+<p><span class="caption-text">When installing Visual Studio Code, I have selected the options
+“Built-in terminal” and “Track your code with Git”.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="using-vs-code-as-a-git-editor">
+<h3>Using VS Code as a git editor<a class="headerlink" href="#using-vs-code-as-a-git-editor" title="Link to this heading"></a></h3>
+<p>This will set VS Code as the editor that Git starts.  It will start a
+new tab, and Git will wait until you save and close that tab.  Git for
+Windows on Windows may automatically set this if you select it as an
+editor:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;code --wait&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<span id="document-editors"></span><section id="text-editors">
+<span id="editors"></span><h2>Text editors<a class="headerlink" href="#text-editors" title="Link to this heading"></a></h2>
+<p>A <strong>text editor</strong> edits plain text, and is important for almost any type of
+computer work.</p>
+<div class="admonition-if-you-are-new-to-text-editors admonition">
+<p class="admonition-title">If you are new to text editors</p>
+<p>If you are new to text editors, we recommend that you practice a bit:
+try to create a file, edit it, save it, re-open it.</p>
+</div>
+<p>There are text editors with a graphical user interface and text
+editors that allow you to edit text in the terminal, for example on a
+remote cluster (and some allow both modes of operation).  This page
+tells you how to connect different editors to git, so that command
+line git will open them.</p>
+<figure class="align-default" id="id1">
+<img alt="Screen recording of &quot;git commit&quot; from a command line which starts graphical VS Code.  After saving and closing, it goes back to the terminal." src="_images/git-invoke-editor.png" />
+<figcaption>
+<p><span class="caption-text">Demonstration.  Command line git starting the VS Code graphical editor
+to write a commit message (don’t worry about what the command does, we
+cover this in the CodeRefinery workshop).  Picture should be
+animated.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Choosing the right editor is a matter of preferences. Since we often
+spend significant portions of our days editing text and source code, it can be
+valuable to invest time into learning your favourite editor really well. Below
+we list few common options and give some pros/cons.</p>
+<section id="visual-studio-code-graphical">
+<h3>Visual Studio Code (graphical)<a class="headerlink" href="#visual-studio-code-graphical" title="Link to this heading"></a></h3>
+<p><strong>If you are new to text editors, we recommend to start with this one</strong>.
+We have an extra page for it: <a class="reference internal" href="index.html#vscode"><span class="std std-ref">Visual Studio Code</span></a>.</p>
+<div class="admonition-if-you-choose-a-different-editor admonition">
+<p class="admonition-title">If you choose a different editor</p>
+<p>If you choose a different editor, make sure to browse its documentation
+on how to conntect it to Git.</p>
+</div>
+<p>This command will configure git to start VS Code as its editor.  (This
+will happen automatically if you select the VS Code option when
+installing Git for Windows.)</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;code --wait&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="nano-terminal">
+<h3>Nano (terminal)<a class="headerlink" href="#nano-terminal" title="Link to this heading"></a></h3>
+<p>Easy to start but comes with minimal functionality.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>Nano is installed as part of the Git for Windows installer and no
+extra installation is needed.  It is available from the git-bash
+shell.</p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>Nano is available by default.</p>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>Nano is available by default in most operating systems.  If not, you
+can install it via your software center.</p>
+</div></div>
+<p>To set it as the default editor for Git:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>nano
+</pre></div>
+</div>
+<p>The keyboard shortcuts are displayed at the bottom of the editor window. Using
+this shortcuts involves pressing and holding down the control key (Ctrl) on
+your keyboard and pressing another key. The pressing down and holding the Ctrl
+key is represented by a hat “^”.</p>
+<p>Tutorial: <a class="reference external" href="https://www.tutorialspoint.com/how-to-use-nano-text-editor">https://www.tutorialspoint.com/how-to-use-nano-text-editor</a></p>
+<p><strong>To create or open a file</strong> called mytext.txt:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nano<span class="w"> </span>mytext.txt
+</pre></div>
+</div>
+<p><strong>To save content:</strong>
+Ctrl + o (hold the Ctrl key and press the o)</p>
+<p><strong>To close a file:</strong>
+Ctrl + x (hold the Ctrl key and press the x)</p>
+<p><strong>To move up, down, left or right with the document:</strong>
+Use the arrow keys and Page-up, Page-down keys</p>
+<p><strong>Deleting text:</strong>
+Navigate to where the text to be deleted located in the document using arrow
+keys. Use the Delete or Backspace keys to delete text.</p>
+<p><strong>To find:</strong>
+Ctrl + w then type the word to find and press enter (please note it is w not f as in most other editors).</p>
+</section>
+<section id="notepad-graphical">
+<h3>Notepad++ (graphical)<a class="headerlink" href="#notepad-graphical" title="Link to this heading"></a></h3>
+<p>If you are on Windows and want to use Notepad or Notepad++, you can
+configure this by providing the full path to the executable and optionally set
+some options. For example (adjust the path if needed, and note the quotation):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span><span class="s2">&quot;&#39;C:/Program Files/Notepad++/notepad++.exe&#39; -multiInst -notabbar -nosession -noPlugin&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="vi-vim">
+<h3>Vi/Vim<a class="headerlink" href="#vi-vim" title="Link to this heading"></a></h3>
+<p>This editor takes some effort to get started. But has more functionality
+than Nano, especially if you write programming code. Syntax highlighting,
+clever copy-paste and better refactoring are some features.</p>
+<p>Interactive Vim tutorial: <a class="reference external" href="http://www.openvim.com">http://www.openvim.com</a></p>
+<p><strong>To create or open a file</strong> called mytext.txt:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>vi<span class="w"> </span>mytext.txt
+</pre></div>
+</div>
+<p><strong>To close a file:</strong>
+Hit Escape, then type <code class="docutils literal notranslate"><span class="pre">:wq</span></code> and hit Enter.</p>
+</section>
+<section id="emacs">
+<h3>Emacs<a class="headerlink" href="#emacs" title="Link to this heading"></a></h3>
+<p>Like Vim, Emacs takes some effort and learning to get started and offers almost unlimited
+functionality. It is possible to interact with version control, even compile and run code,
+send emails, etc. all from the editor itself.</p>
+<p>Emacs guided tour: <a class="reference external" href="https://www.gnu.org/software/emacs/tour/">https://www.gnu.org/software/emacs/tour/</a></p>
+<p><strong>To create or open a file</strong> called mytext.txt:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>emacs<span class="w"> </span>mytext.txt
+</pre></div>
+</div>
+<p><strong>To close a file:</strong>
+Type Ctrl-x followed by Ctrl-c.</p>
+</section>
+</section>
+<span id="document-git-in-terminal"></span><section id="git-in-the-terminal">
+<span id="git-in-terminal"></span><h2>Git in the terminal<a class="headerlink" href="#git-in-the-terminal" title="Link to this heading"></a></h2>
+<p>This page is for setting up Git <strong>if you want to use it in a terminal</strong>.</p>
+<p>If you have never been in
+a terminal shell, please briefly read this <a class="reference external" href="https://scicomp.aalto.fi/scicomp/shell/">crash
+course</a>, and consider watching
+<a class="reference external" href="https://youtu.be/xbTTDLA3txI">this shell tutorial video by Richard Darst</a> (20
+min).</p>
+<p>Git is a version control system that lets you track who made changes to what
+and when, and has options for updating a shared or public version of your code
+on source code repository hosting platforms such as
+<a class="reference external" href="https://github.com">GitHub</a> or <a class="reference external" href="https://gitlab.com">GitLab</a> or
+<a class="reference external" href="https://bitbucket.org/">Bitbucket</a>.</p>
+<p>Please follow the installation, configuration, and verification instructions below.</p>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>You can follow the steps below by watching the
+<a class="reference external" href="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&amp;amp;playsinline=1&amp;amp;iv_load_policy=3&amp;amp;rel=0">Carpentries video tutorial</a>.</p>
+<ul>
+<li><p>Download the <a class="reference external" href="https://gitforwindows.org/">Git for Windows installer</a>.</p></li>
+<li><p>Run the installer and follow the steps below:</p>
+<ol class="arabic">
+<li><p>Click on “Next” four times (two times if you’ve previously
+installed Git).  You don’t need to change anything
+in the Information, location, components, and start menu screens.</p></li>
+<li><p><strong>From the dropdown menu select an editor</strong>:</p>
+<ul class="simple">
+<li><p>If you use VS Code: Select that from the list.  You must have
+VS Code installed already.</p></li>
+<li><p>If you don’t know what else to do: “Use the Nano editor by default”
+(NOTE: you will need to scroll <emph>up</emph> to find it) and
+click on “Next”.**</p></li>
+<li><p>If are comfortable with another editor and know it is
+installed, you can select it - but Nano is the safest if you
+don’t know what to choose.</p></li>
+</ul>
+<p>After this, you don’t have to do step 2 “selecting an editor”
+step below (but that step lets you change your choice).</p>
+</li>
+<li><p><strong>On the page that says “Adjusting the name of the initial branch in new repositories”, choose
+“Override the default branch name for new repositories” and choose <code class="docutils literal notranslate"><span class="pre">main</span></code>. This will ensure
+the highest level of compatibility for our lessons.</strong></p></li>
+<li><p>Ensure that “Git from the command line and also from 3rd-party software” is selected and
+click on “Next”. (If you don’t do this Git Bash will not work properly, requiring you to
+remove the Git Bash installation, re-run the installer and to select the “Git from the
+command line and also from 3rd-party software” option.)</p></li>
+<li><p>Choosing the OpenSSH executable: “Use bundled OpenSSH” and
+click “Next”.</p></li>
+<li><p><strong>Ensure that “Use the native Windows Secure Channel Library” is selected and click on “Next”.</strong></p></li>
+<li><p>Ensure that “Checkout Windows-style, commit Unix-style line endings” is selected and click on “Next”.</p></li>
+<li><p><strong>Ensure that “Use Windows’ default console window” is selected and click on “Next”.</strong></p></li>
+<li><p>Ensure that “Default (fast-forward or merge) is selected and click “Next”</p></li>
+<li><p>Ensure that “Git Credential Manager” is selected and click on
+“Next”. (if “Core” is an option, pick that)</p></li>
+<li><p>Ensure that “Enable file system caching” is selected and click on “Next”.</p></li>
+<li><p>Configuring experimental options: don’t select either and
+click “Next”.</p></li>
+<li><p>Click on “Install”.</p></li>
+<li><p>Click on “Finish” or “Next”.</p></li>
+</ol>
+</li>
+<li><p>If your “HOME” environment variable is not set (or you don’t know what this is):</p>
+<ol class="arabic simple">
+<li><p>Open command prompt (Open Start Menu then type <code class="docutils literal notranslate"><span class="pre">cmd</span></code> and press enter)</p></li>
+<li><p>Type the following line into the command prompt window exactly as shown: <code class="docutils literal notranslate"><span class="pre">setx</span> <span class="pre">HOME</span> <span class="pre">&quot;%USERPROFILE%&quot;</span></code></p></li>
+<li><p>Press enter, you should see <code class="docutils literal notranslate"><span class="pre">SUCCESS:</span> <span class="pre">Specified</span> <span class="pre">value</span> <span class="pre">was</span> <span class="pre">saved.</span></code></p></li>
+<li><p>Quit command prompt by typing <code class="docutils literal notranslate"><span class="pre">exit</span></code> then pressing enter.</p></li>
+</ol>
+</li>
+<li><p>If you are using a Windows laptop managed by your organization, it might be that your “HOME” variable is
+pointing to a network disk (a storage location that is not physically in your laptop, usually starting with
+“Z:”). This should not be an issue per se, but it has caused problems to some participants in the past.
+If you are experiencing issues with Git Bash, you can try setting HOME to a location on the physical disk,
+for example “C:\Users$USERNAME”. Please note that, depending on the settings of your organisation, automatic
+backups might not cover the newly set home folder. Follow instructions from your local ITs on how to make sure
+that also those folders are backed up.</p></li>
+</ul>
+<p>This will provide you with both Git and Bash in the Git Bash program. You can then start it by searching for “Git Bash” in your Start menu.</p>
+<p><em>Text copied and adapted from: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>Starting with macOS Catalina, macOS uses zsh as the default login shell and
+interactive shell.  Bash is the default shell in macOS Mojave and earlier.</p>
+<p><strong>The workshop will work fine with either zsh or bash</strong>.  If you experience
+that any of our exercises do not work with zsh, you can switch to bash by
+typing <code class="docutils literal notranslate"><span class="pre">bash</span></code> followed by Enter in your terminal.</p>
+<p>If you want to change your default shell, see <a class="reference external" href="https://support.apple.com/en-au/HT208050">this Apple Support
+article</a> and follow the
+instructions on “How to change your default shell”.</p>
+<p><strong>Check if git is already installed.</strong>  Xcode may have already
+installed it.  If the command <code class="docutils literal notranslate"><span class="pre">which</span> <span class="pre">git</span></code> from a terminal returns
+something such as <code class="docutils literal notranslate"><span class="pre">/usr/bin/git</span></code> (it doesn’t matter exactly what it
+says), then git is probably already installed.  If so, run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">--version</span></code> and if it reports 2.28 or higher, then you are good -
+proceed to configuration.</p>
+<p><strong>Install Git</strong> for Mac
+by downloading and running the most recent “mavericks” installer from
+<a class="reference external" href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+Because this installer is not signed by the developer, you may have to
+right click (control click) on the .pkg file, click Open, and click
+Open on the pop up window.
+After installing Git, there will not be anything in your <code class="docutils literal notranslate"><span class="pre">/Applications</span></code> folder,
+as Git is a command line program.
+See also the Git installation
+<a class="reference external" href="https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial">Carpentries video tutorial</a>.</p>
+<p>For older versions of OS X (10.5-10.8), use the
+most recent available installer labelled “snow-leopard”
+<a class="reference external" href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.</p>
+<p><em>Text copied and adapted from: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>On a Linux system you already have a shell and the default shell is usually
+Bash and there is <strong>no need to install a shell</strong>. But you may <strong>need to install Git</strong>.
+If Git is not already available on your machine you can try to install it via
+your distribution package manager.</p>
+<p>For Debian/Ubuntu run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+<p>For Fedora:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+<p><em>Reference: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div></div>
+<hr class="docutils" />
+</section>
+<section id="configuration">
+<span id="git-configuration"></span><h3>Configuration<a class="headerlink" href="#configuration" title="Link to this heading"></a></h3>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<p>We assume that you have:</p>
+<ul class="simple">
+<li><p>Bash (or Zsh on macOS) shell terminal on your machine</p></li>
+<li><p>Git installed on your machine</p></li>
+<li><p>Nano editor available (unless you prefer a different terminal editor)</p></li>
+</ul>
+</div>
+<section id="video-instruction">
+<h4>Video instruction<a class="headerlink" href="#video-instruction" title="Link to this heading"></a></h4>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=WdDTp8NeHBs&amp;amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">This video (9
+min)</a>
+shows how to configure Git. If you experience problems,
+watch <a class="reference external" href="https://www.youtube.com/watch?v=B27pUBrWp5w&amp;amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">this troubleshooting
+video</a>.</p>
+</section>
+<section id="step-0-start-your-terminal-that-has-git">
+<h4>Step 0: Start your terminal that has git<a class="headerlink" href="#step-0-start-your-terminal-that-has-git" title="Link to this heading"></a></h4>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">Windows</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-1-1-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-2" name="1-2" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><p>Start the application Git Bash.</p>
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><p>Start the application Terminal.</p>
+</div><div aria-labelledby="tab-1-1-2" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-2" name="1-2" role="tabpanel" tabindex="0"><p>Start the application Terminal.</p>
+</div></div>
+<p>This is the command line interface.  Did you read/watch the crash
+course above?</p>
+</section>
+<section id="step-1-setting-user-name-and-email">
+<h4>Step 1: Setting user name and email<a class="headerlink" href="#step-1-setting-user-name-and-email" title="Link to this heading"></a></h4>
+<p>First, the following commands will set your user name and email address:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>yourname@example.com
+</pre></div>
+</div>
+<p>If you are unsure which email to use, use the one that you have registered at
+GitHub with.</p>
+<p><strong>This name and email will be public on GitHub when you make
+contributions, including in this course.</strong>  If you prefer to not use a real email address but still want to make sure that
+GitHub counts your contributions, you can use
+<code class="docutils literal notranslate"><span class="pre">yourusername&#64;users.noreply.github.com</span></code> (replace <code class="docutils literal notranslate"><span class="pre">yourusername</span></code>).</p>
+<p>This is important since your Git commits use this information.  The <code class="docutils literal notranslate"><span class="pre">--global</span></code>
+option uses this information for every repository for this user on
+this computer.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Different name/emails for different repositories</p>
+<p>If you need different name/email for different
+repositories see <a class="reference external" href="https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig">this StackOverflow question
+for configuring based on
+directory</a>
+and <a class="reference external" href="https://git-scm.com/docs/git-config#_includes">the raw configuration
+options</a>, including
+something that works based on remote URLs (but it needs a newer
+git version).</p>
+</div>
+</section>
+<section id="step-2-setting-an-editor">
+<h4>Step 2: Setting an editor<a class="headerlink" href="#step-2-setting-an-editor" title="Link to this heading"></a></h4>
+<p>It is important to set also the default text editor to use with Git.  <strong>We
+recommend to use nano if you do not have any other preferences</strong> (it
+is included and simple for demonstrations).  But
+you can instead use your preferred editor (VS Code, vim, emacs or
+any other editor of your choice, see <a class="reference internal" href="#document-editors"><span class="doc">Text editors</span></a> for more instructions):</p>
+<p>This sets the editor to Nano:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>nano
+</pre></div>
+</div>
+<p>To set other editors, see <a class="reference internal" href="#document-editors"><span class="doc">Text editors</span></a>.</p>
+</section>
+<section id="step-3-set-default-branch">
+<h4>Step 3: Set default branch<a class="headerlink" href="#step-3-set-default-branch" title="Link to this heading"></a></h4>
+<p>The default branch on GitHub and GitLab is <code class="docutils literal notranslate"><span class="pre">main</span></code> but it used to be <code class="docutils literal notranslate"><span class="pre">master</span></code>.
+In our workshop we will use <code class="docutils literal notranslate"><span class="pre">main</span></code> as the default branch also in the terminal
+to be consistent with GitHub and GitLab:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultbranch<span class="w"> </span>main
+</pre></div>
+</div>
+<p>This configuration will unfortunately have no effect on Git older than 2.28.
+<strong>But this is not a problem</strong>. During the lesson we will have a workaround for
+this.</p>
+</section>
+<section id="step-4-two-more-settings-for-windows-only">
+<h4>Step 4: Two more settings for Windows only<a class="headerlink" href="#step-4-two-more-settings-for-windows-only" title="Link to this heading"></a></h4>
+<p>We have found that these two settings prevent warnings and/or seeing no output
+in some commands on Windows (no need to run these on macOS or Linux).  At the
+bottom of this page we motivate in more detail what these two do:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span><span class="nb">false</span>
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.pager<span class="w"> </span>cat
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="verification">
+<h3>Verification<a class="headerlink" href="#verification" title="Link to this heading"></a></h3>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-1">
+<p class="admonition-title">Prerequisites</p>
+<p>We assume that you have:</p>
+<ul class="simple">
+<li><p>Bash (or Zsh on macOS) shell terminal on your machine</p></li>
+<li><p>Git installed and configured, with <code class="docutils literal notranslate"><span class="pre">nano</span></code> as its editor on your machine
+(unless you prefer a different terminal text editor)</p></li>
+</ul>
+</div>
+<p>The following shows the same steps that are shown in the video above.  You can
+see verification part in <a class="reference external" href="https://www.youtube.com/watch?v=WdDTp8NeHBs&amp;amp;t=350s">the same video for configuration at
+5:50</a>.</p>
+<section id="step-1-check-your-git-version">
+<h4>Step 1: Check your Git version<a class="headerlink" href="#step-1-check-your-git-version" title="Link to this heading"></a></h4>
+<p>Check your git version:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>--version
+
+<span class="go">git version 2.39.2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>We recommend at least 2.23.</p></li>
+<li><p>Ideal is 2.28 and newer.</p></li>
+<li><p>But the lesson and workshop will still work even with Git 2.0
+and we will add instructions/workarounds for Git below 2.28 or 2.23.</p></li>
+</ul>
+</section>
+<section id="step-2-git-init-b-main-inside-a-new-folder">
+<h4>Step 2: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span> <span class="pre">-b</span> <span class="pre">main</span></code> inside a new folder<a class="headerlink" href="#step-2-git-init-b-main-inside-a-new-folder" title="Link to this heading"></a></h4>
+<p>Create a new example folder, step into it, and initialize a repository. Do <strong>not</strong>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span> <span class="pre">-b</span> <span class="pre">main</span></code> in your home directory:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>example
+<span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>example
+<span class="gp">$ </span>git<span class="w"> </span>init<span class="w"> </span>-b<span class="w"> </span>main
+</pre></div>
+</div>
+</section>
+<section id="step-3-make-a-new-file">
+<h4>Step 3: Make a new file<a class="headerlink" href="#step-3-make-a-new-file" title="Link to this heading"></a></h4>
+<p>Make a new file with some content:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nano<span class="w"> </span>example.txt
+</pre></div>
+</div>
+<p>Write some text in the <code class="docutils literal notranslate"><span class="pre">example.txt</span></code>, save (<code class="docutils literal notranslate"><span class="pre">ctrl+O</span></code> then <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>) and exit (<code class="docutils literal notranslate"><span class="pre">ctrl+X</span></code>).</p>
+</section>
+<section id="step-4-stage-the-change">
+<h4>Step 4: Stage the change<a class="headerlink" href="#step-4-stage-the-change" title="Link to this heading"></a></h4>
+<p>Stage a newly made file <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> before committing the change and record in
+Git:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>add<span class="w"> </span>example.txt
+</pre></div>
+</div>
+</section>
+<section id="step-5-commit-the-change-with-a-message">
+<h4>Step 5: Commit the change with a message<a class="headerlink" href="#step-5-commit-the-change-with-a-message" title="Link to this heading"></a></h4>
+<p>The following command will commit the change. It should open the editor which
+you have configured.  Then, add a commit message such as <code class="docutils literal notranslate"><span class="pre">initial</span> <span class="pre">commit</span></code> at the very top.  Then save an exit (if you use
+the default <code class="docutils literal notranslate"><span class="pre">nano</span></code> editor, <code class="docutils literal notranslate"><span class="pre">ctrl+O</span></code> <code class="docutils literal notranslate"><span class="pre">ENTER</span></code> then <code class="docutils literal notranslate"><span class="pre">ctrl+X</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>commit
+</pre></div>
+</div>
+</section>
+<section id="step-6-see-the-change-log">
+<h4>Step 6: See the change log<a class="headerlink" href="#step-6-see-the-change-log" title="Link to this heading"></a></h4>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>log
+</pre></div>
+</div>
+<p>If you see now something line this your Git is configured for the workshop (the
+name, email, commit message and also the “12e4cb8…” part will be different in
+your case):</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>commit 12e4cb892140bd14a413895b3b36c27db198eb22 (HEAD -&gt; main)
+Author: Radovan Bast &lt;bast@users.noreply.github.com&gt;
+Date:   Fri May 15 16:41:13 2020 +0200
+
+    making a test commit
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="troubleshooting">
+<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h3>
+<section id="where-is-this-configuration-stored">
+<h4>Where is this configuration stored?<a class="headerlink" href="#where-is-this-configuration-stored" title="Link to this heading"></a></h4>
+<p>To see where this information is stored (<code class="docutils literal notranslate"><span class="pre">--show-origin</span></code> works on git version
+2.8 or greater only), use:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--list<span class="w"> </span>--show-origin
+</pre></div>
+</div>
+</section>
+<section id="on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all">
+<h4>On Windows <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code> or other git commands show no output at all<a class="headerlink" href="#on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all" title="Link to this heading"></a></h4>
+<p>It seems this can be fixed by these configuration settings:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.log<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.diff<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.show<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.config<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.stash<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.help<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.blame<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.branch<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.annotate<span class="w"> </span>off
+</pre></div>
+</div>
+<p>Following other manuals and documentation, it seems that all the above can be set with the following
+(<code class="docutils literal notranslate"><span class="pre">cat</span></code> should be available within Git Bash but also PowerShell):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.pager<span class="w"> </span>cat
+</pre></div>
+</div>
+</section>
+<section id="on-windows-you-see-the-warning-lf-will-be-replaced-by-crlf-the-next-time-git-touches-it">
+<h4>On Windows you see the warning “LF will be replaced by CRLF the next time Git touches it”<a class="headerlink" href="#on-windows-you-see-the-warning-lf-will-be-replaced-by-crlf-the-next-time-git-touches-it" title="Link to this heading"></a></h4>
+<p>Solution is to set this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span><span class="nb">false</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<span id="document-git-in-vscode"></span><section id="git-in-vscode">
+<span id="id1"></span><h2>Git in VSCode<a class="headerlink" href="#git-in-vscode" title="Link to this heading"></a></h2>
+<p>This page is for setting up Git for VSCode. If you use a different IDE, try following
+these instructions. If you are comfortable with the terminal, see <a class="reference internal" href="index.html#git-in-terminal"><span class="std std-ref">Git in the terminal</span></a>.</p>
+<p>Git is a version control system that lets you track who made changes to what
+and when, and has options for updating a shared or public version of your code
+on source code repository hosting platforms such as
+<a class="reference external" href="https://github.com">GitHub</a> or <a class="reference external" href="https://gitlab.com">GitLab</a> or
+<a class="reference external" href="https://bitbucket.org/">Bitbucket</a>.</p>
+<p>Please follow the installation, configuration, and verification instructions below.</p>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>You can follow the steps below by watching the
+<a class="reference external" href="https://www.youtube-nocookie.com/embed/339AEqk9c-8?modestbranding=1&amp;amp;playsinline=1&amp;amp;iv_load_policy=3&amp;amp;rel=0">Carpentries video tutorial</a>.</p>
+<ul>
+<li><p>Download the <a class="reference external" href="https://gitforwindows.org/">Git for Windows installer</a>.</p></li>
+<li><p>Run the installer and follow the steps below:</p>
+<ol class="arabic">
+<li><p>Click on “Next” four times (two times if you’ve previously
+installed Git).  You don’t need to change anything
+in the Information, location, components, and start menu screens.</p></li>
+<li><p><strong>From the dropdown menu select an editor</strong>:</p>
+<ul class="simple">
+<li><p>Select VSCode from the list.  You must have
+VS Code installed already.</p></li>
+</ul>
+<p>After this, you don’t have to do step 2 “selecting an editor”
+step below (but that step lets you change your choice).</p>
+<ul class="simple">
+<li><p>If you use a different different IDE, select that one if available.
+Otherwise follow step 2 “selecting an editor” step below.</p></li>
+</ul>
+</li>
+<li><p><strong>On the page that says “Adjusting the name of the initial branch in new repositories”, choose
+“Override the default branch name for new repositories” and choose <code class="docutils literal notranslate"><span class="pre">main</span></code>. This will ensure
+the highest level of compatibility for our lessons.</strong></p></li>
+<li><p>Ensure that “Git from the command line and also from 3rd-party software” is selected and
+click on “Next”. This ensures compatibility if with different text editors and the terminal.</p></li>
+<li><p>Choosing the OpenSSH executable: “Use bundled OpenSSH” and
+click “Next”.</p></li>
+<li><p><strong>Ensure that “Use the native Windows Secure Channel Library” is selected and click on “Next”.</strong></p></li>
+<li><p>Ensure that “Checkout Windows-style, commit Unix-style line endings” is selected and click on “Next”.</p></li>
+<li><p><strong>Ensure that “Use Windows’ default console window” is selected and click on “Next”.</strong></p></li>
+<li><p>Ensure that “Default (fast-forward or merge) is selected and click “Next”</p></li>
+<li><p>Ensure that “Git Credential Manager” is selected and click on
+“Next”. (if “Core” is an option, pick that)</p></li>
+<li><p>Ensure that “Enable file system caching” is selected and click on “Next”.</p></li>
+<li><p>Configuring experimental options: don’t select either and
+click “Next”.</p></li>
+<li><p>Click on “Install”.</p></li>
+<li><p>Click on “Finish” or “Next”.</p></li>
+</ol>
+</li>
+</ul>
+<p><em>Text copied and adapted from: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p><strong>Install Git</strong> for Mac
+by downloading and running the most recent “mavericks” installer from
+<a class="reference external" href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+Because this installer is not signed by the developer, you may have to
+right click (control click) on the .pkg file, click Open, and click
+Open on the pop up window.
+After installing Git, there will not be anything in your <code class="docutils literal notranslate"><span class="pre">/Applications</span></code> folder,
+as Git is a command line program.
+See also the Git installation
+<a class="reference external" href="https://carpentries.github.io/workshop-template/#shell-macos-video-tutorial">Carpentries video tutorial</a>.</p>
+<p>For older versions of OS X (10.5-10.8), use the
+most recent available installer labelled “snow-leopard”
+<a class="reference external" href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.</p>
+<p><em>Text copied and adapted from: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>If Git is not already available on your machine you can try to install it via
+your distribution package manager.</p>
+<p>Open VSCode. In the toolbar open the “Terminal” menu and select “New Terminal”.</p>
+<p>For Debian/Ubuntu run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+<p>For Fedora:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+<p><em>Reference: <a class="reference external" href="https://carpentries.github.io/workshop-template/#shell">the Carpentries set up page</a></em></p>
+</div></div>
+<hr class="docutils" />
+</section>
+<section id="configuration">
+<span id="git-configuration"></span><h3>Configuration<a class="headerlink" href="#configuration" title="Link to this heading"></a></h3>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<p>We assume that you have:</p>
+<ul class="simple">
+<li><p>VSCode installed on your machine</p></li>
+<li><p>Git installed on your machine</p></li>
+</ul>
+</div>
+<section id="video-instruction">
+<h4>Video instruction<a class="headerlink" href="#video-instruction" title="Link to this heading"></a></h4>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=WdDTp8NeHBs&amp;amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">This video (9
+min)</a>
+shows how to configure Git. If you experience problems,
+watch <a class="reference external" href="https://www.youtube.com/watch?v=B27pUBrWp5w&amp;amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">this troubleshooting
+video</a>.</p>
+</section>
+<section id="step-0-start-your-terminal-that-has-git">
+<h4>Step 0: Start your terminal that has git<a class="headerlink" href="#step-0-start-your-terminal-that-has-git" title="Link to this heading"></a></h4>
+<p>Start Visual Studio Code. In the toolbar open the “Terminal” menu and select “New Terminal”.</p>
+<p>This is a command line interface.  You need to run a few commands to set up git. To run
+a command, write it into the terminal and press Enter.</p>
+</section>
+<section id="step-1-setting-user-name-and-email">
+<h4>Step 1: Setting user name and email<a class="headerlink" href="#step-1-setting-user-name-and-email" title="Link to this heading"></a></h4>
+<p>First, the following commands will set your user name and email address:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>yourname@example.com
+</pre></div>
+</div>
+<p>If you are unsure which email to use, use the one that you have registered at
+GitHub with.</p>
+<p><strong>This name and email will be public on GitHub when you make
+contributions, including in this course.</strong>  If you prefer to not use a real email address but still want to make sure that
+GitHub counts your contributions, you can use
+<code class="docutils literal notranslate"><span class="pre">yourusername&#64;users.noreply.github.com</span></code> (replace <code class="docutils literal notranslate"><span class="pre">yourusername</span></code>).</p>
+<p>This is important since your Git commits use this information.  The <code class="docutils literal notranslate"><span class="pre">--global</span></code>
+option uses this information for every repository for this user on
+this computer.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Different name/emails for different repositories</p>
+<p>If you need different name/email for different
+repositories see <a class="reference external" href="https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig">this StackOverflow question
+for configuring based on
+directory</a>
+and <a class="reference external" href="https://git-scm.com/docs/git-config#_includes">the raw configuration
+options</a>, including
+something that works based on remote URLs (but it needs a newer
+git version).</p>
+</div>
+</section>
+<section id="step-2-setting-an-editor">
+<h4>Step 2: Setting an editor<a class="headerlink" href="#step-2-setting-an-editor" title="Link to this heading"></a></h4>
+<p>You can skip this step if you already set it when installing git for Windows.</p>
+<p>This sets the text editor to git will use when called from the outside.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.editor<span class="w"> </span>code
+</pre></div>
+</div>
+<p>To set other editors, see <a class="reference internal" href="#document-editors"><span class="doc">Text editors</span></a>.</p>
+</section>
+<section id="step-3-set-default-branch">
+<h4>Step 3: Set default branch<a class="headerlink" href="#step-3-set-default-branch" title="Link to this heading"></a></h4>
+<p>You can skip this step if you already set it when installing git for Windows.</p>
+<p>The default branch on GitHub and GitLab is <code class="docutils literal notranslate"><span class="pre">main</span></code> but it used to be <code class="docutils literal notranslate"><span class="pre">master</span></code>.
+In our workshop we will use <code class="docutils literal notranslate"><span class="pre">main</span></code> as the default branch also in the terminal
+to be consistent with GitHub and GitLab:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultbranch<span class="w"> </span>main
+</pre></div>
+</div>
+<p>This configuration will unfortunately have no effect on Git older than 2.28.
+<strong>But this is not a problem</strong>. During the lesson we will have a workaround for
+this.</p>
+</section>
+<section id="step-4-two-more-settings-for-windows-only">
+<h4>Step 4: Two more settings for Windows only<a class="headerlink" href="#step-4-two-more-settings-for-windows-only" title="Link to this heading"></a></h4>
+<p>You can skip this step if you already set it when installing git for Windows.</p>
+<p>We have found that these two settings prevent warnings and/or seeing no output
+in some commands on Windows (no need to run these on macOS or Linux).  At the
+bottom of this page we motivate in more detail what these two do:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span><span class="nb">false</span>
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.pager<span class="w"> </span>cat
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="verification">
+<h3>Verification<a class="headerlink" href="#verification" title="Link to this heading"></a></h3>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-1">
+<p class="admonition-title">Prerequisites</p>
+<p>We assume that you have:</p>
+<ul class="simple">
+<li><p>VSCode installed on your machine</p></li>
+<li><p>Git installed on your machine</p></li>
+</ul>
+</div>
+<p>Before verifying, restart Visual Studio Code.</p>
+<p>The following shows the same steps that are shown in the video above.  You can
+see verification part in <a class="reference external" href="https://www.youtube.com/watch?v=WdDTp8NeHBs&amp;amp;t=350s">the same video for configuration at
+5:50</a>.</p>
+<section id="step-1-check-your-git-version">
+<h4>Step 1: Check your Git version<a class="headerlink" href="#step-1-check-your-git-version" title="Link to this heading"></a></h4>
+<p>Check your git version:</p>
+<p>Start Visual Studio Code. In the toolbar open the “Terminal” menu and select “New Terminal”.
+In the new terminal, run</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>--version
+
+<span class="go">git version 2.39.2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>We recommend at least 2.23.</p></li>
+<li><p>Ideal is 2.28 and newer.</p></li>
+<li><p>But the lesson and workshop will still work even with Git 2.0
+and we will add instructions/workarounds for Git below 2.28 or 2.23.</p></li>
+</ul>
+</section>
+<section id="step-2-git-init-b-main-inside-a-new-folder">
+<h4>Step 2: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span> <span class="pre">-b</span> <span class="pre">main</span></code> inside a new folder<a class="headerlink" href="#step-2-git-init-b-main-inside-a-new-folder" title="Link to this heading"></a></h4>
+<p>Create a new example folder and open it. Select the git interface on the left side panel
+and click “Initialize Repository”.</p>
+</section>
+<section id="step-3-make-a-new-file">
+<h4>Step 3: Make a new file<a class="headerlink" href="#step-3-make-a-new-file" title="Link to this heading"></a></h4>
+<p>Create a new file called <code class="docutils literal notranslate"><span class="pre">example.txt</span></code>. Write some content into the file.</p>
+</section>
+<section id="step-4-stage-the-change">
+<h4>Step 4: Stage the change<a class="headerlink" href="#step-4-stage-the-change" title="Link to this heading"></a></h4>
+<p>Stage a newly made file <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> before committing the change. Open the git section
+in the side panel, find the file and click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> button next to it. If the button is not
+there, it will appear when you hover the mouse pointer over the filename.</p>
+</section>
+<section id="step-5-commit-the-change-with-a-message">
+<h4>Step 5: Commit the change with a message<a class="headerlink" href="#step-5-commit-the-change-with-a-message" title="Link to this heading"></a></h4>
+<p>Write a commit message such as “initial commit” in the text box above the file list.
+Then click “Commit”.</p>
+</section>
+<section id="step-6-see-the-change-history">
+<h4>Step 6: See the change history<a class="headerlink" href="#step-6-see-the-change-history" title="Link to this heading"></a></h4>
+<p>Open the file view in the left side panel. Select <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> and click on “Timeline”
+below the file list. You should see you commit in the timeline. Click on the commit to see
+the changes you made.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="troubleshooting">
+<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h3>
+<section id="where-is-this-configuration-stored">
+<h4>Where is this configuration stored?<a class="headerlink" href="#where-is-this-configuration-stored" title="Link to this heading"></a></h4>
+<p>To see where this information is stored (<code class="docutils literal notranslate"><span class="pre">--show-origin</span></code> works on git version
+2.8 or greater only), use:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--list<span class="w"> </span>--show-origin
+</pre></div>
+</div>
+</section>
+<section id="on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all">
+<h4>On Windows <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code> or other git commands show no output at all<a class="headerlink" href="#on-windows-git-log-git-diff-git-branch-or-other-git-commands-show-no-output-at-all" title="Link to this heading"></a></h4>
+<p>It seems this can be fixed by these configuration settings:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.log<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.diff<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.show<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.config<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.stash<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.help<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.blame<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.branch<span class="w"> </span>off
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pager.annotate<span class="w"> </span>off
+</pre></div>
+</div>
+<p>Following other manuals and documentation, it seems that all the above can be set with the following
+(<code class="docutils literal notranslate"><span class="pre">cat</span></code> should be available within Git Bash but also PowerShell):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.pager<span class="w"> </span>cat
+</pre></div>
+</div>
+</section>
+<section id="on-windows-you-see-the-warning-lf-will-be-replaced-by-crlf-the-next-time-git-touches-it">
+<h4>On Windows you see the warning “LF will be replaced by CRLF the next time Git touches it”<a class="headerlink" href="#on-windows-you-see-the-warning-lf-will-be-replaced-by-crlf-the-next-time-git-touches-it" title="Link to this heading"></a></h4>
+<p>Solution is to set this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span><span class="nb">false</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<span id="document-ssh"></span><section id="ssh-or-https-connection-to-github-from-terminal">
+<span id="ssh"></span><h2>SSH or HTTPS connection to GitHub from terminal<a class="headerlink" href="#ssh-or-https-connection-to-github-from-terminal" title="Link to this heading"></a></h2>
+<section id="why-are-we-doing-this">
+<h3>Why are we doing this?<a class="headerlink" href="#why-are-we-doing-this" title="Link to this heading"></a></h3>
+<p>We need to connect to GitHub (or whatever other repository we may be
+using), and for that to work, we have to be able to identify
+ourselves. This is actually a pretty hard thing to do, and there are
+two main options <strong>when authenticating from a terminal</strong>.</p>
+<p>You do not need to configure the below if you are using <a class="reference internal" href="index.html#vscode"><span class="std std-ref">Visual Studio Code</span></a>.</p>
+</section>
+<section id="what-are-the-options">
+<h3>What are the options?<a class="headerlink" href="#what-are-the-options" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-U1NI" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-U1NI" name="U1NI" role="tab" tabindex="0">SSH</button><button aria-controls="panel-0-SFRUUFM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-SFRUUFM=" name="SFRUUFM=" role="tab" tabindex="-1">HTTPS</button><button aria-controls="panel-0-VlMgQ29kZQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tab" tabindex="-1">VS Code</button></div><div aria-labelledby="tab-0-U1NI" class="sphinx-tabs-panel group-tab" id="panel-0-U1NI" name="U1NI" role="tabpanel" tabindex="0"><p><strong>This is recommend if you are on Linux or macOS</strong>
+(it does work on Windows, but since the
+HTTPS method is included by default, you may as well use that
+instead).</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Secure_Shell">Secure Shell (SSH)</a> is the
+standard program for connecting to remote servers.  It’s well worth
+learning anyway.</p>
+<p>These days, every major operating system has it built in, but it
+requires more set up using “SSH keys” to use it for GitHub.  It’s
+really useful to set this up and get to know it well, even for things
+other than git.</p>
+</div><div aria-labelledby="tab-0-SFRUUFM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-SFRUUFM=" name="SFRUUFM=" role="tabpanel" tabindex="0"><p><strong>This is recommend if you are on Windows or macOS</strong>.</p>
+<p>Web browsers use HTTPS (secure hypertext transfer protocol) to
+communicate with web sites. It’s less secure if only a
+password is used, so GitHub doesn’t allow normal passwords anymore.
+With an extra tool, it becomes easy and secure, though.</p>
+</div><div aria-labelledby="tab-0-VlMgQ29kZQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tabpanel" tabindex="0"><p><strong>If you use VS Code</strong>.</p>
+<p>If you use VS Code, authentication to GitHub happens automatically via
+if you use <strong>HTTPS</strong>.</p>
+</div></div>
+<p>You should remember your choce for the lessons.</p>
+</section>
+<section id="instructions">
+<h3>Instructions<a class="headerlink" href="#instructions" title="Link to this heading"></a></h3>
+<p>Based on your decision above, try to set it up.  You can try the other
+one if your first choice doesn’t work.  There’s nothing wrong with
+doing both of them.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-U1NI" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-U1NI" name="U1NI" role="tab" tabindex="0">SSH</button><button aria-controls="panel-1-SFRUUFM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-SFRUUFM=" name="SFRUUFM=" role="tab" tabindex="-1">HTTPS</button><button aria-controls="panel-1-VlMgQ29kZQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tab" tabindex="-1">VS Code</button></div><div aria-labelledby="tab-1-U1NI" class="sphinx-tabs-panel group-tab" id="panel-1-U1NI" name="U1NI" role="tabpanel" tabindex="0"><div class="admonition-watch-this-in-video-form admonition">
+<p class="admonition-title">Watch this in video form</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=XCDg1mtaA5I&amp;amp;list=PLpLblYHCzJACyKCfHnPwRruOxllNoHsEg">This CodeRefinery video about ssh keys (7
+min)</a>
+shows how to set up SSH connection to GitHub.
+If you are new to SSH keys, We recommend you watch
+this first to understand what is going on.</p>
+</div>
+<p>For the instructions, please follow <a class="reference external" href="https://help.github.com/articles/connecting-to-github-with-ssh/">this
+guide from GitHub</a> to
+connect to GitHub with SSH keys.  These same instructions work
+with services other than GitHub as well (except the adding the key to
+GitHub part).</p>
+<ul class="simple">
+<li><p>If you think you might already have SSH keys, start with <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys">Checking
+for existing SSH
+keys</a></p></li>
+<li><p>Then start with <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Generating a new SSH key and adding it to the
+ssh-agent</a></p></li>
+<li><p>Then <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">Adding a new SSH key to your GitHub
+account</a></p></li>
+<li><p>Then <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection">Testing your SSH
+connection</a>
+(note that this is the same as the verification steps below)</p></li>
+<li><p>If on Windows, <a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases">Working with SSH key
+passphrases</a>
+is optional but can save you from retyping the passphrase so many times.</p></li>
+</ul>
+</div><div aria-labelledby="tab-1-SFRUUFM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-SFRUUFM=" name="SFRUUFM=" role="tabpanel" tabindex="0"><p>We use <a class="reference external" href="https://github.com/git-ecosystem/git-credential-manager">Git Credential
+Manager</a> to
+make HTTPS easy.</p>
+<p><strong>Windows</strong>: Git Credential Manager should have been installed as part
+of Git for Windows installation.  If not, go back to the git
+installation and make sure it is selected.</p>
+<p><strong>macOS</strong>: Follow the <a class="reference external" href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#macos">macOS installation
+instructions</a>
+for Git Credential Manager.</p>
+<p><strong>Linux</strong>: The <a class="reference external" href="https://github.com/git-ecosystem/git-credential-manager/blob/release/docs/install.md#linux">Linux install
+instructions</a>
+for Git Credential Manager work, but have to make one extra
+configuration step compared to other operating systems (since Linux
+has more options like connecting remotely to it to do work).  SSH is
+so natural on Linux you may as well do that.</p>
+</div><div aria-labelledby="tab-1-VlMgQ29kZQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tabpanel" tabindex="0"><p>No further setup is needed.  VS Code prompts you to automatically
+handles the authentication when needed.</p>
+</div></div>
+</section>
+<section id="how-to-verify-that-it-worked">
+<h3>How to verify that it worked<a class="headerlink" href="#how-to-verify-that-it-worked" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-U1NI" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-U1NI" name="U1NI" role="tab" tabindex="0">SSH</button><button aria-controls="panel-2-SFRUUFM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-SFRUUFM=" name="SFRUUFM=" role="tab" tabindex="-1">HTTPS</button><button aria-controls="panel-2-VlMgQ29kZQ==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tab" tabindex="-1">VS Code</button></div><div aria-labelledby="tab-2-U1NI" class="sphinx-tabs-panel group-tab" id="panel-2-U1NI" name="U1NI" role="tabpanel" tabindex="0"><p>Try this in your terminal shell:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
+</pre></div>
+</div>
+<p>If you set up ssh keys correctly, you will see:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hi yourusername! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</pre></div>
+</div>
+<p>If it says <strong>“You’ve successfully authenticated”</strong>
+then it works and your SSH keys are properly set up with GitHub.</p>
+<p>You possibly see this warning (the IP and the fingerprint may look differently):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
+
+<span class="go">The authenticity of host &#39;github.com (140.82.121.4)&#39; can&#39;t be established.</span>
+<span class="go">ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</span>
+<span class="go">This key is not known by any other names</span>
+<span class="go">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span>
+</pre></div>
+</div>
+<p>Before typing “yes”, verify that the fingerprint is <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints">one of
+these</a>.</p>
+<p>What this means: SSH is a secure protocol to send data between two computers
+but the very first time you ever connect to the remote host, SSH asks if this
+is really the host/server we meant to talk to and to verify that nobody is
+trying to impersonate the other host.  Once we validate the connection, SSH
+will remember that we trust that host and not ask this question again.</p>
+</div><div aria-labelledby="tab-2-SFRUUFM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-SFRUUFM=" name="SFRUUFM=" role="tabpanel" tabindex="0"><p>It’s hard to test this, but here is what we recommend:</p>
+<p><strong>Linux/macOS</strong>: Start your terminal application (wherever you have
+Git).</p>
+<p><strong>Windows</strong>: start Git Bash.</p>
+<p>Run the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rkdarst/private-example.git
+</pre></div>
+</div>
+<p>It should open a web browser window and ask “Authorize Git Credential
+Manager”?  This means that the program running on your computer will
+have access to GitHub as you.  <strong>Click “Authorize git-ecosystem”</strong> and
+close the tab when it asks you to.</p>
+<p>This is private so <strong>it will say the repository is not found, but
+that’s OK.</strong> If it sent you to your web browser, that means the
+authentication worked! This is what it looks like if <strong>the
+verification was successful:</strong></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rkdarst/private-example.git
+<span class="go">Cloning into &#39;private-example&#39;...</span>
+<span class="hll"><span class="go">info: please complete authentication in your browser...</span>
+</span><span class="go">remote: Repository not found.</span>
+<span class="go">fatal: repository &#39;https://github.com/rkdarst/private-example.git/&#39; not found</span>
+</pre></div>
+</div>
+<p>(If it asks you for a username and password in the terminal, then the
+verification failed - this won’t work with GitHub.)</p>
+<p>Git Credential Manager will remember your login the first time you use
+it on a repository you have access to.</p>
+<div class="dropdown admonition">
+<p class="admonition-title">Running on a remote server?</p>
+<p>If you are on a remote server and Git can’t automatically start a web
+browwser, you might get this prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Select</span> <span class="n">an</span> <span class="n">authentication</span> <span class="n">method</span> <span class="k">for</span> <span class="s1">&#39;https://github.com/&#39;</span><span class="p">:</span>
+<span class="mf">1.</span> <span class="n">Device</span> <span class="n">code</span> <span class="p">(</span><span class="n">default</span><span class="p">)</span>
+<span class="mf">2.</span> <span class="n">Personal</span> <span class="n">access</span> <span class="n">token</span>
+</pre></div>
+</div>
+<p>Select option 1 and do what it says.</p>
+</div>
+</div><div aria-labelledby="tab-2-VlMgQ29kZQ==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-VlMgQ29kZQ==" name="VlMgQ29kZQ==" role="tabpanel" tabindex="0"><p>No further checking is needed (we hope).</p>
+</div></div>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-conda"></span><section id="conda-environment">
+<h2>Conda environment<a class="headerlink" href="#conda-environment" title="Link to this heading"></a></h2>
+<p>[this page is adapted from <a class="reference external" href="https://aaltoscicomp.github.io/python-for-scicomp/installation/">https://aaltoscicomp.github.io/python-for-scicomp/installation/</a>]</p>
+<p>You only need this if you wish to go through examples and exercises during the
+second workshop week on your own computer.</p>
+<section id="choosing-an-installation-method">
+<h3>Choosing an installation method<a class="headerlink" href="#choosing-an-installation-method" title="Link to this heading"></a></h3>
+<p>For this course we will install an <strong>isolated environment</strong>
+with following dependencies:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">environment.yml</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">requirements.txt</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">coderefinery</span>
+<span class="nt">channels</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">conda-forge</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bioconda</span>
+<span class="nt">dependencies</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python&gt;=3.10,&lt;3.14</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">click=8.1.7</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ipywidgets=8.1.5</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jupyterlab=4.4.0</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jupyterlab-git=0.51.1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">matplotlib=3.10.1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">myst-parser=4.0.1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nbdime=4.0.2</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">numpy=2.2.4</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pandas=2.2.3</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pytest=8.3.5</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pytest-cov=6.0.0</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">seaborn=0.13.2</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snakemake-minimal=9.1.7</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx=8.2.3</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx-autobuild=2024.10.3</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx_rtd_theme=3.0.1</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sphinx-autodoc2=0.5.0</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">click</span><span class="o">==</span><span class="mf">8.1.7</span>
+<span class="n">ipywidgets</span><span class="o">==</span><span class="mf">8.1.5</span>
+<span class="n">jupyterlab</span><span class="o">==</span><span class="mf">4.4.0</span>
+<span class="n">jupyterlab</span><span class="o">-</span><span class="n">git</span><span class="o">==</span><span class="mf">0.51.1</span>
+<span class="n">matplotlib</span><span class="o">==</span><span class="mf">3.10.1</span>
+<span class="n">myst</span><span class="o">-</span><span class="n">parser</span><span class="o">==</span><span class="mf">4.0.1</span>
+<span class="n">nbdime</span><span class="o">==</span><span class="mf">4.0.2</span>
+<span class="n">numpy</span><span class="o">==</span><span class="mf">2.2.4</span>
+<span class="n">pandas</span><span class="o">==</span><span class="mf">2.2.3</span>
+<span class="n">pytest</span><span class="o">==</span><span class="mf">8.3.5</span>
+<span class="n">pytest</span><span class="o">-</span><span class="n">cov</span><span class="o">==</span><span class="mf">6.0.0</span>
+<span class="n">seaborn</span><span class="o">==</span><span class="mf">0.13.2</span>
+<span class="n">snakemake</span><span class="o">==</span><span class="mf">9.1.7</span>
+<span class="n">sphinx</span><span class="o">==</span><span class="mf">8.2.3</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">autobuild</span><span class="o">==</span><span class="mf">2024.10.3</span>
+<span class="n">sphinx_rtd_theme</span><span class="o">==</span><span class="mf">3.0.1</span>
+<span class="n">sphinx</span><span class="o">-</span><span class="n">autodoc2</span><span class="o">==</span><span class="mf">0.5.0</span>
+</pre></div>
+</div>
+</div></div>
+<div class="admonition-if-you-have-a-tool-method-that-works-for-you-keep-using-it admonition">
+<p class="admonition-title">If you have a tool/method that works for you, keep using it</p>
+<p>If you are used to installing Conda packages and know what to do with the
+above files, please follow your own preferred installation
+method.</p>
+<p><strong>If you are new to Conda or unsure</strong> how to create isolated environments from
+files above, please follow the instructions below where we do this with the help
+of Miniforge.</p>
+<p>If you already use <strong>Anaconda</strong> to manage your software environments, please
+continue using it. In this case you can skip <a class="reference internal" href="#miniforge"><span class="std std-ref">Installing Miniforge</span></a> and go directly to
+<a class="reference internal" href="#id1"><span class="std std-ref">Installing the software environment</span></a>.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Why do we recommend Miniforge and how does it relate to Conda?</p>
+<p>There are many choices and we try to suggest a good compromise
+There are very many ways to install packages with pros and cons and
+in addition there are several operating systems with their own quirks. This
+can be a huge challenge for beginners to navigate. It can also difficult for
+instructors to give recommendations for something which will work everywhere
+and which everybody will like.</p>
+<p>Below we will recommend <strong>Miniforge</strong> since it is free, open source, general,
+available on all operating systems, and provides a good basis for reproducible
+environments. However, it does not provide a graphical user interface during
+installation.</p>
+<p>But Miniforge is only one option. Unfortunately there are many options and a
+lot of jargon.  Here is a crash course:</p>
+<ul class="simple">
+<li><p><strong>Conda</strong> is a package manager: it allows distributing and
+installing packages, and is designed for complex scientific
+code.</p></li>
+<li><p><strong>Mamba</strong> is a re-implementation of Conda to be much faster with
+resolving dependencies and installing things.</p></li>
+<li><p>An <strong>environment</strong> is a self-contained collections of packages
+which can be installed separately from others.  They are used so
+each project can install what it needs without affecting others.</p></li>
+<li><p><strong>Anaconda</strong> is a commercial distribution of Python+Conda+many
+packages that all work together.  It used to be freely usable for
+research, but since ~2023-2024 it’s more limited.  Thus, we don’t
+recommend it (even though it has a nice graphical user interface).</p></li>
+<li><p><strong>conda-forge</strong> is another channel of distributing packages that
+is maintained by the community, and thus can be used by anyone.
+(Anaconda’s parent company also hosts conda-forge packages)</p></li>
+<li><p><strong>Miniforge</strong> is the installer recommended by the conda-forge community. It operates via the command line.</p></li>
+<li><p><strong>Miniconda</strong> is a distribution of conda pre-configured to use
+the Anaconda channels.</p></li>
+</ul>
+</div>
+</section>
+<section id="installing-miniforge">
+<span id="miniforge"></span><h3>Installing Miniforge<a class="headerlink" href="#installing-miniforge" title="Link to this heading"></a></h3>
+<p>Download the latest release from the <a class="reference external" href="https://conda-forge.org/download/">Miniforge download
+overview</a>.  This installs the base, and from
+here other packages can be installed.</p>
+<p>Unsure what to download and what to do with it?</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-1-TWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-TWFjT1M=" name="TWFjT1M=" role="tab" tabindex="-1">MacOS</button><button aria-controls="panel-1-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-1-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-1-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>You want to download and run <code class="docutils literal notranslate"><span class="pre">Miniforge3-Windows-x86_64.exe</span></code>.</p>
+</div><div aria-labelledby="tab-1-TWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-TWFjT1M=" name="TWFjT1M=" role="tabpanel" tabindex="0"><p>You probably want to download the <code class="docutils literal notranslate"><span class="pre">Miniforge3-MacOSX-arm64.sh</span></code> file (unless
+you don’t have an Arm processor) and then run it in the terminal with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>bash<span class="w"> </span>Miniforge3-MacOSX-arm64.sh
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>You probably want to download the <code class="docutils literal notranslate"><span class="pre">Miniforge3-Linux-x86_64.sh</span></code> file (unless
+you don’t have an x86_64 processor) and then run it in the terminal with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>bash<span class="w"> </span>Miniforge3-Linux-x86_64.sh
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="installing-the-software-environment">
+<span id="id1"></span><h3>Installing the software environment<a class="headerlink" href="#installing-the-software-environment" title="Link to this heading"></a></h3>
+<p>First we will start a command line environment in a way that activates
+conda/mamba.  Then we will install the software environment from <a class="reference external" href="https://raw.githubusercontent.com/coderefinery/software/main/environment.yml">this
+environment.yml
+file</a>
+(this is the same file as on top of this page).</p>
+<p>An <strong>environment</strong> is a self-contained set of extra libraries - different
+projects can use different environments to not interfere with each other.  This
+environment will have all of the software needed for this particular course.</p>
+<p>We will call the environment <code class="docutils literal notranslate"><span class="pre">coderefinery</span></code>.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-2-TGludXggLyBNYWNPUw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-2-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tab" tabindex="-1">Linux / MacOS</button></div><div aria-labelledby="tab-2-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-2-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Use the “Miniforge Prompt” to start Miniforge.  This
+will set up everything so that <code class="docutils literal notranslate"><span class="pre">conda</span></code> and <code class="docutils literal notranslate"><span class="pre">mamba</span></code> are
+available.
+Then type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl<span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/coderefinery/software/main/environment.yml&quot;</span><span class="w"> </span>-o<span class="w"> </span>environment.yml<span class="w"> </span>
+<span class="gp">$ </span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>coderefinery<span class="w"> </span>-f<span class="w"> </span>environment.yml
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-2-TGludXggLyBNYWNPUw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-2-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tabpanel" tabindex="0"><p>Each time you start a new command line terminal,
+you can activate Miniforge by running
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>~/miniforge3/bin/activate
+</pre></div>
+</div>
+<p>This is needed so that
+Miniforge is usable wherever you need, but doesn’t affect any
+other software on your computer (this is not needed if you
+choose “Do you wish to update your shell profile to
+automatically initialize conda?”, but then it will always be
+active).</p>
+<p>In the second step, we will install the software environment by first copying the definition file:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>curl<span class="w"> </span><span class="s2">&quot;https://raw.githubusercontent.com/coderefinery/software/main/environment.yml&quot;</span><span class="w"> </span>-o<span class="w"> </span>environment.yml<span class="w"> </span>
+<span class="gp">$ </span>mamba<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>coderefinery<span class="w"> </span>-f<span class="w"> </span>environment.yml
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="activating-the-software-environment">
+<span id="activating-environment"></span><h3>Activating the software environment<a class="headerlink" href="#activating-the-software-environment" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-3-TGludXggLyBNYWNPUw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-3-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tab" tabindex="-1">Linux / MacOS</button></div><div aria-labelledby="tab-3-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-3-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>Start the Miniforge Prompt. Then type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>activate<span class="w"> </span>coderefinery
+<span class="gp">$ </span>jupyter-lab
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-3-TGludXggLyBNYWNPUw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-3-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tabpanel" tabindex="0"><p>Start the terminal and in the terminal, type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>~/miniforge3/bin/activate
+<span class="gp">$ </span>conda<span class="w"> </span>activate<span class="w"> </span>coderefinery
+<span class="gp">$ </span>jupyter-lab
+</pre></div>
+</div>
+</div></div>
+</section>
+<section id="how-to-verify-the-environment">
+<h3>How to verify the environment<a class="headerlink" href="#how-to-verify-the-environment" title="Link to this heading"></a></h3>
+<p>Make sure you are in the Miniforge prompt (Windows) or in a terminal (Linux/MacOS).</p>
+<p>The following command should return a version number and not an error message:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>Is the coderefinery environment installed?</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+</pre></div>
+</div>
+<p>Make sure it’s activated (<a class="reference internal" href="#activating-environment"><span class="std std-ref">Activating the software environment</span></a>).
+Once activated, try the following commands.</p>
+<p>You should see versions printed and not see errors (exact version numbers are not too important):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>jupyter-lab<span class="w"> </span>--version
+
+<span class="go">4.1.2</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pytest<span class="w"> </span>--version
+
+<span class="go">8.0.2</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sphinx-build<span class="w"> </span>--version
+
+<span class="go">sphinx-build 7.2.6</span>
+</pre></div>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>snakemake<span class="w"> </span>--version
+
+<span class="go">8.5.3</span>
+</pre></div>
+</div>
+</section>
+<section id="removing-the-software-environment">
+<h3>Removing the software environment<a class="headerlink" href="#removing-the-software-environment" title="Link to this heading"></a></h3>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-4-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-4-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-4-TGludXggLyBNYWNPUw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-4-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tab" tabindex="-1">Linux / MacOS</button></div><div aria-labelledby="tab-4-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-4-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p>In the Miniforge Prompt, type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>--name<span class="w"> </span>coderefinery
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-4-TGludXggLyBNYWNPUw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-4-TGludXggLyBNYWNPUw==" name="TGludXggLyBNYWNPUw==" role="tabpanel" tabindex="0"><p>In the terminal, type
+(without the <code class="docutils literal notranslate"><span class="pre">$</span></code>):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span><span class="w"> </span>~/miniforge3/bin/activate
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>--name<span class="w"> </span>coderefinery
+<span class="gp">$ </span>conda<span class="w"> </span>env<span class="w"> </span>list
+</pre></div>
+</div>
+</div></div>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-problems"></span><section id="if-you-encounter-any-problems">
+<h2>If you encounter any problems<a class="headerlink" href="#if-you-encounter-any-problems" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Ask a friend/colleague/local IT support. These are standard tools
+which many people can help with (and don’t be afraid to ask - it’s
+an unfortunate fact that software installation and configuration is
+hard).</p></li>
+<li><p>Before a workshop we offer 2 drop-in installation-help sessions.
+Please try by yourself first, but if you cannot solve problems, join
+in the sessions. Schedule is shown in the workshop website.</p></li>
+<li><p>Ask in the <code class="docutils literal notranslate"><span class="pre">#help</span></code> stream on the <a class="reference external" href="https://coderefinery.zulipchat.com">CodeRefinery
+chat</a>. You can also send an
+email to <a class="reference external" href="mailto:support&#37;&#52;&#48;coderefinery&#46;org">support<span>&#64;</span>coderefinery<span>&#46;</span>org</a> to ask questions. Please
+describe the problem concretely as well as your operating system.</p></li>
+</ul>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-difftools"></span><section id="visual-diff-tools-optional">
+<h2>Visual diff tools (optional)<a class="headerlink" href="#visual-diff-tools-optional" title="Link to this heading"></a></h2>
+<p>Visual diff tools allow to visualize differences between files side by side.
+They can be used independently of version control but when coupled with Git,
+they can provide a nice alternative to command line output to show differences
+between file versions or branches.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Linux</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><p>On Windows we recommend the program <a class="reference external" href="https://meldmerge.org">meld</a>.
+Please follow installation instructions from <a class="reference external" href="http://meldmerge.org">http://meldmerge.org</a>.</p>
+<p>This is how you can configure Git to open Meld when doing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">difftool</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>diff.tool<span class="w"> </span>meld
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>mergetool.meld.path<span class="w"> </span><span class="s2">&quot;C:\Program Files (x86)\Meld\Meld.exe&quot;</span>
+</pre></div>
+</div>
+<p>For meld version 3.20.3, because of reasons discussed <a class="reference external" href="https://gitlab.gnome.org/GNOME/meld/-/issues/559">here</a>, you can have multiple “Could not create key” errors that you can get around by clicking ‘Ignore’.
+Then, to open Meld when doing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">difftool</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>diff.tool<span class="w"> </span>meld
+<span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>mergetool.meld.path<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$LOCALAPPDATA</span><span class="s2">\Programs\Meld\Meld.exe&quot;</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><p>For macOS we recommend to use Opendiff. You can install it following <a class="reference external" href="https://borgs.cybrilla.com/tils/opendiff-as-difftool/">this blog
+post</a>.</p>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>On Linux we recommend the program <a class="reference external" href="https://meldmerge.org">meld</a>.
+Install meld via your distribution package manager. For Debian/Ubuntu run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>meld
+</pre></div>
+</div>
+<p>For Fedora:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>meld
+</pre></div>
+</div>
+<p>This is how you can configure Git to open Meld when doing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">difftool</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>diff.tool<span class="w"> </span>meld
+</pre></div>
+</div>
+</div></div>
+<section id="how-to-verify-the-installation">
+<h3>How to verify the installation<a class="headerlink" href="#how-to-verify-the-installation" title="Link to this heading"></a></h3>
+<p>To test it create two text files which are similar and then compare them
+with Meld or Diffuse or Opendiff (or the tool which you have chosen above for visual
+differences):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>meld<span class="w"> </span>file1<span class="w"> </span>file2
+</pre></div>
+</div>
+<p>or:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>diffuse<span class="w"> </span>file1<span class="w"> </span>file2
+</pre></div>
+</div>
+<p>or:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>opendiff<span class="w"> </span>file1<span class="w"> </span>file2
+</pre></div>
+</div>
+<p>You should now see both versions side by side.</p>
+<p>To test launching Meld through Git, move into a folder that contains two or more files and instruct Git to compare files.
+For example, to see the difference between <code class="docutils literal notranslate"><span class="pre">file1.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">file2.txt</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>difftool<span class="w"> </span>--no-index<span class="w"> </span>file1.txt<span class="w"> </span>file2.txt
+</pre></div>
+</div>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-motivation"></span><section id="why-are-we-asking-participants-to-install-software">
+<h2>Why are we asking participants to install software?<a class="headerlink" href="#why-are-we-asking-participants-to-install-software" title="Link to this heading"></a></h2>
+<p>We could provide a virtual machine in the cloud with everything pre-installed
+and ask participants to connect to it.</p>
+<p>However, we prefer that participants follow the workshop in the environment
+where they are likely to work in future, and know how to set this up
+and configure it. We would like that participants are
+able to continue using tools also after the workshop, in a familiar development
+environment of their choice.</p>
+<p>We are aware that this choice comes at a price: it is very difficult for us to
+provide installation instructions that work “everywhere” and it requires from
+participants to do some work before they arrive at a workshop. <strong>Yes,
+installing software is harder than you might expect.</strong> Don’t be afraid
+to ask for help in setting it up: this is also a good skill to have.</p>
+<p>We are also aware that not everybody is comfortable with creating new accounts
+for this workshop. And therefore we provide <a class="reference internal" href="index.html#removing-accounts"><span class="std std-ref">Instructions for removing a GitHub repository or account</span></a>,
+if you wish to do so.</p>
+</section>
+<span id="document-removing-accounts"></span><section id="instructions-for-removing-a-github-repository-or-account">
+<span id="removing-accounts"></span><h2>Instructions for removing a GitHub repository or account<a class="headerlink" href="#instructions-for-removing-a-github-repository-or-account" title="Link to this heading"></a></h2>
+<p>You may wish to remove the projects and accounts that we have created. Here we
+list instructions for how to achieve that:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://help.github.com/articles/deleting-a-repository/">Deleting a GitHub repository</a></p></li>
+<li><p><a class="reference external" href="https://help.github.com/articles/deleting-your-user-account/">Deleting a GitHub account</a></p></li>
+</ul>
+</section>
+<span id="document-license"></span><section id="credit-and-license">
+<h2>Credit and license<a class="headerlink" href="#credit-and-license" title="Link to this heading"></a></h2>
+<p>These installation instructions are inspired by and derived from
+work by <a class="reference external" href="http://software-carpentry.org">Software Carpentry</a> which is licensed under the
+<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license (CC BY 4.0)</a>.</p>
+<p>In particular, we have copied a number of instructions from the <a class="reference external" href="https://swcarpentry.github.io/workshop-template/">workshop
+template website</a>
+(instructions to install Bash and Git),
+as well as copied and adapted
+most of their <a class="reference external" href="http://software-carpentry.org/license/">license text</a>.</p>
+<section id="instructional-material">
+<h3>Instructional Material<a class="headerlink" href="#instructional-material" title="Link to this heading"></a></h3>
+<p>All CodeRefinery instructional material is made available under the
+<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a>.
+The following is a human-readable summary of (and not a substitute for)
+the <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/legalcode">full legal text of the CC BY 4.0 license</a>.</p>
+<p>You are free:</p>
+<ul class="simple">
+<li><p>to <strong>Share</strong> - copy and redistribute the material in any medium or format</p></li>
+<li><p>to <strong>Adapt</strong> - remix, transform, and build upon the material</p></li>
+</ul>
+<p>for any purpose, even commercially. The licensor cannot revoke these freedoms as long as you follow these license terms:</p>
+<ul class="simple">
+<li><p><strong>Attribution</strong> - You must give appropriate credit
+(mentioning that your work is derived from work that is Copyright
+(c) CodeRefinery and, where practical, linking to
+http://coderefinery.org), provide
+a <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">link to the license</a>,
+and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor
+endorses you or your use.</p></li>
+</ul>
+<p><strong>No additional restrictions</strong> - You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
+With the understanding that:</p>
+<ul class="simple">
+<li><p>You do not have to comply with the license for elements of the material in
+the public domain or where your use is permitted by an applicable exception
+or limitation.</p></li>
+<li><p>No warranties are given. The license may not give you all of the
+permissions necessary for your intended use. For example, other
+rights such as publicity, privacy, or moral rights may limit how
+you use the material.</p></li>
+</ul>
+</section>
+<section id="software">
+<h3>Software<a class="headerlink" href="#software" title="Link to this heading"></a></h3>
+<p>Except where otherwise noted, the example programs and other software provided
+by CodeRefinery are made available under the
+<a class="reference external" href="http://opensource.org">OSI</a>-approved <a class="reference external" href="http://opensource.org/licenses/mit-license.html">MIT
+license</a>:</p>
+<p>Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the “Software”), to deal in the Software without
+restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the
+Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+</section>
+</section>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
